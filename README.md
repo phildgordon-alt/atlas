@@ -315,3 +315,7 @@ Large Lean datasets are stored xz-compressed (`*.txt.xz`; the verifier decompres
   - Reference papers and FLINT source files consulted during the work are **not** included, for copyright reasons.
     Citations: Bober–Hiary, arXiv:1607.00709; Hiary–Ireland–Kyi, arXiv:2408.00187; Platt–Trudgian, arXiv:2004.09765;
     Arias de Reyna, arXiv:2201.00342.
+
+## Contact
+
+Philip Gordon, phildgordon@me.com. Corrections, questions and expert review are very welcome.
