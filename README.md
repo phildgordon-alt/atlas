@@ -18,7 +18,7 @@ about 5 minutes (results below).
 > Status: research code and results by one independent researcher, **not yet reviewed by outside experts**. The new
 > mathematical step (Lemma 2 and THEORY_V4 §10, the no-parity S-layer) has had no external review. Expert review is pending.
 
-## Story (Philip Gordon, in his own words)
+## Story
 
 Atlas started as a moonshot: a launch pad for me to practise on. My role is the conductor. I don't understand all of the mathematics myself, so I push the limits, form the theories and decide where to aim next. The steps, simply:
 
