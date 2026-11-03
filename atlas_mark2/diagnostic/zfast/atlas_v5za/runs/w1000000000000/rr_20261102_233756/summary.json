@@ -1,0 +1,396 @@
+{
+ "T0": 1000000000000,
+ "grid": "v5",
+ "evaluator": "dirichlet",
+ "target_input": [
+  "1000000000000",
+  "1000000000010"
+ ],
+ "target": [
+  0.0,
+  10.0
+ ],
+ "target_note": "exact",
+ "name": "rr_20261102_233756",
+ "hull": [
+  0.0,
+  10.0
+ ],
+ "hull_exact": [
+  "1000000000000",
+  "1000000000010"
+ ],
+ "pieces": 10,
+ "test_hooks": {},
+ "zfast_session": {
+  "mode": "wide",
+  "center": "5.0",
+  "H": 91.0,
+  "Delta": 0.008,
+  "K": 18,
+  "J": 12,
+  "strict": true,
+  "threads": 4,
+  "z_span": [
+   -2.0,
+   12.0
+  ],
+  "lib": "v14d",
+  "turing_grid": {
+   "u0": -40.0,
+   "step": 0.004,
+   "n": 22501
+  }
+ },
+ "certificates": 10,
+ "replay_passed_plain_and_hardened": 10,
+ "tiling": {
+  "coordinates": "offsets from T0 (exact translation)",
+  "T0": 1000000000000,
+  "tiling_script": "/Users/kiosk/atlas/workbench/math_ablation_20260928/audit_20261004/exact_tiling_check.py",
+  "tiling_sha256": "0868990ee2027ba493593d514607acc0aad729ed94c7cf61b1cf3d1f22a08b45",
+  "tiling_sha_ok": true,
+  "hull": [
+   0.0,
+   10.0
+  ],
+  "target": [
+   0.0,
+   10.0
+  ],
+  "regions": 10,
+  "seams_hull": 0,
+  "seams_target": 0,
+  "gaps_d0": [],
+  "seams": []
+ },
+ "all_closed": true,
+ "simple_without_lemma2": true,
+ "claim_B": {
+  "np_certificates": 41,
+  "np_passed_both": 41,
+  "intervals_to_cover": 41,
+  "uncovered": [],
+  "np_min_candidate_lower": 0.9066191866605554,
+  "verifier": "pinned verify_zs5.py with one line changed (replay5.noparity_check)"
+ },
+ "generator": {
+  "seconds": 27.44,
+  "peak_gb": 0.216,
+  "killed": null,
+  "zs_seconds": 4.86,
+  "zs_intervals": 57,
+  "zs_evals": 3143,
+  "measurements": 82,
+  "meas_seconds": 6.7,
+  "attempts": 10,
+  "tiers": [
+   [
+    "p0_100",
+    "t1",
+    "CERTIFIED"
+   ],
+   [
+    "p100_200",
+    "t1",
+    "CERTIFIED"
+   ],
+   [
+    "p200_300",
+    "t1",
+    "CERTIFIED"
+   ],
+   [
+    "p300_400",
+    "t1",
+    "CERTIFIED"
+   ],
+   [
+    "p400_500",
+    "t1",
+    "CERTIFIED"
+   ],
+   [
+    "p500_600",
+    "t1",
+    "CERTIFIED"
+   ],
+   [
+    "p600_700",
+    "t1",
+    "CERTIFIED"
+   ],
+   [
+    "p700_800",
+    "t1",
+    "CERTIFIED"
+   ],
+   [
+    "p800_900",
+    "t1",
+    "CERTIFIED"
+   ],
+   [
+    "p900_1000",
+    "t1",
+    "CERTIFIED"
+   ]
+  ],
+  "main_done_at": 14.03,
+  "np_certificates": 41,
+  "np_intervals": 41,
+  "np_tiers": [
+   [
+    0,
+    "z1",
+    "CERTIFIED"
+   ],
+   [
+    1,
+    "z1",
+    "CERTIFIED"
+   ],
+   [
+    2,
+    "z1",
+    "CERTIFIED"
+   ],
+   [
+    3,
+    "z1",
+    "CERTIFIED"
+   ],
+   [
+    4,
+    "z1",
+    "CERTIFIED"
+   ],
+   [
+    5,
+    "z1",
+    "CERTIFIED"
+   ],
+   [
+    6,
+    "z1",
+    "CERTIFIED"
+   ],
+   [
+    7,
+    "z1",
+    "CERTIFIED"
+   ],
+   [
+    8,
+    "z1",
+    "CERTIFIED"
+   ],
+   [
+    9,
+    "z1",
+    "CERTIFIED"
+   ],
+   [
+    10,
+    "z1",
+    "CERTIFIED"
+   ],
+   [
+    11,
+    "z1",
+    "CERTIFIED"
+   ],
+   [
+    12,
+    "z1",
+    "CERTIFIED"
+   ],
+   [
+    13,
+    "z1",
+    "CERTIFIED"
+   ],
+   [
+    14,
+    "z1",
+    "CERTIFIED"
+   ],
+   [
+    15,
+    "z1",
+    "CERTIFIED"
+   ],
+   [
+    16,
+    "z1",
+    "CERTIFIED"
+   ],
+   [
+    17,
+    "z1",
+    "CERTIFIED"
+   ],
+   [
+    18,
+    "z1",
+    "CERTIFIED"
+   ],
+   [
+    19,
+    "z1",
+    "CERTIFIED"
+   ],
+   [
+    20,
+    "z1",
+    "CERTIFIED"
+   ],
+   [
+    21,
+    "z1",
+    "CERTIFIED"
+   ],
+   [
+    22,
+    "z1",
+    "CERTIFIED"
+   ],
+   [
+    23,
+    "z1",
+    "CERTIFIED"
+   ],
+   [
+    24,
+    "z1",
+    "CERTIFIED"
+   ],
+   [
+    25,
+    "z1",
+    "CERTIFIED"
+   ],
+   [
+    26,
+    "z1",
+    "CERTIFIED"
+   ],
+   [
+    27,
+    "z1",
+    "CERTIFIED"
+   ],
+   [
+    28,
+    "z1",
+    "CERTIFIED"
+   ],
+   [
+    29,
+    "z1",
+    "CERTIFIED"
+   ],
+   [
+    30,
+    "z1",
+    "CERTIFIED"
+   ],
+   [
+    31,
+    "z1",
+    "CERTIFIED"
+   ],
+   [
+    32,
+    "z1",
+    "CERTIFIED"
+   ],
+   [
+    33,
+    "z1",
+    "CERTIFIED"
+   ],
+   [
+    34,
+    "z1",
+    "CERTIFIED"
+   ],
+   [
+    35,
+    "z1",
+    "CERTIFIED"
+   ],
+   [
+    36,
+    "z1",
+    "CERTIFIED"
+   ],
+   [
+    37,
+    "z1",
+    "CERTIFIED"
+   ],
+   [
+    38,
+    "z1",
+    "CERTIFIED"
+   ],
+   [
+    39,
+    "z1",
+    "CERTIFIED"
+   ],
+   [
+    40,
+    "z1",
+    "CERTIFIED"
+   ]
+  ]
+ },
+ "replay": {
+  "seconds": 7.05,
+  "peak_gb": 0.033,
+  "min_candidate_lower": 0.9240829532860538
+ },
+ "sessions_per_window": 2,
+ "zfast_ckpt_replay": {
+  "path": "/Users/kiosk/atlas_mark2/diagnostic/zfast/atlas_v5za/runs/w1000000000000/rr_20261102_233756/zfast_ckpt_replay.txt",
+  "run_nonce": "cf8a0835e0bc7b241bc49122a540185a",
+  "ok": true,
+  "sessions": [
+   {
+    "pid": 56797,
+    "role": "replay",
+    "nonce": "cf8a0835e0bc7b241bc49122a540185a",
+    "items": 475,
+    "items_loaded": 0,
+    "verified": 0,
+    "lines_rejected": 0,
+    "lines_duplicate": 0,
+    "lines_written": 476,
+    "ckpt_write_errors": 0,
+    "created": 1
+   }
+  ]
+ },
+ "turing_grid": {
+  "stage": "turing_grid",
+  "spec": {
+   "u0": -40.0,
+   "step": 0.004,
+   "n": 22501,
+   "outdir": "/Users/kiosk/atlas_mark2/diagnostic/zfast/atlas_v5za/runs/w1000000000000/rr_20261102_233756/turing_grid"
+  },
+  "wall": 7.27,
+  "points": 22501,
+  "zeros_found": 369,
+  "undecided": 0,
+  "dips": 0,
+  "seconds": 7.3,
+  "t": 26.93
+ },
+ "wall_seconds": 34.5,
+ "peak_gb": 0.216,
+ "claim": "PASSED (A): every zero of zeta with height in the hull lies on the critical line and is simple (trust base: README.md; simplicity via Lemma 2)",
+ "claim_simple_without_lemma2": "PASSED (B): simplicity also holds without Lemma 2 (S-layer, THEORY_V4 section 10)"
+}

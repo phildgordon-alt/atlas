@@ -1,0 +1,8 @@
+file: zfast.c
+--- old
+    mag_div(tmp, tmp, tmp2);
+    mag_add(err, err, tmp);
++++ new
+    mag_div(tmp, tmp, tmp2);
+    mag_div_ui(tmp, tmp, 10);
+    mag_add(err, err, tmp);

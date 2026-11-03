@@ -1,0 +1,61 @@
+OK   baseline_fresh_ckpt_identical {"items": 480}
+OK   gen_file_replay_role_newkey_refused {"reason": "checkpoint key out_attack/keys/A_replay.key missing or unreadable (No such file or directory) for an existing checkpoint (refusing)"}
+OK   gen_file_replay_role_genkey_refused {"reason": "checkpoint out_attack/A_as_replay2.txt: header mismatch in field(s) [role] (refusing; M1/M2: a different session, role, run, library or environment)"}
+OK   other_nonce_refused {"reason": "checkpoint out_attack/A_as_replay2.txt: header mismatch in field(s) [nonce] (refusing; M1/M2: a different session, role, run, library or environment)"}
+OK   torn_at_0 {"rc": 0, "loaded": 0, "rejected": 0, "loaded2": 480, "reason": ""}
+OK   torn_at_10 {"rc": 3, "loaded": null, "rejected": null, "loaded2": null, "reason": "checkpoint out_attack/torn_10.txt: header line is not authenticated under this run's key (a foreign, tampered, v14-forma"}
+OK   torn_at_756 {"rc": 3, "loaded": null, "rejected": null, "loaded2": null, "reason": "checkpoint out_attack/torn_756.txt: header line is not authenticated under this run's key (a foreign, tampered, v14-form"}
+OK   torn_at_785 {"rc": 0, "loaded": 0, "rejected": 0, "loaded2": 480, "reason": ""}
+OK   torn_at_786 {"rc": 0, "loaded": 0, "rejected": 0, "loaded2": 480, "reason": ""}
+OK   torn_at_791 {"rc": 0, "loaded": 0, "rejected": 1, "loaded2": 480, "reason": ""}
+OK   torn_at_11450 {"rc": 0, "loaded": 5, "rejected": 1, "loaded2": 480, "reason": ""}
+OK   torn_at_203855 {"rc": 0, "loaded": 104, "rejected": 1, "loaded2": 480, "reason": ""}
+OK   torn_at_284159 {"rc": 0, "loaded": 146, "rejected": 1, "loaded2": 480, "reason": ""}
+OK   torn_at_313933 {"rc": 0, "loaded": 161, "rejected": 1, "loaded2": 480, "reason": ""}
+OK   torn_at_387094 {"rc": 0, "loaded": 199, "rejected": 1, "loaded2": 480, "reason": ""}
+OK   torn_at_437644 {"rc": 0, "loaded": 226, "rejected": 1, "loaded2": 480, "reason": ""}
+OK   torn_at_769063 {"rc": 0, "loaded": 407, "rejected": 1, "loaded2": 480, "reason": ""}
+OK   torn_at_842634 {"rc": 0, "loaded": 451, "rejected": 1, "loaded2": 480, "reason": ""}
+OK   torn_at_860802 {"rc": 0, "loaded": 463, "rejected": 1, "loaded2": 480, "reason": ""}
+OK   torn_at_866078 {"rc": 0, "loaded": 466, "rejected": 1, "loaded2": 480, "reason": ""}
+OK   glued_torn_line_ignored {"info": {"sec_build": 0.0932, "sec_head": 0.0588, "sec_fast": 0.0338, "buckets": 946, "Nw": 3989422, "nhead": 12654, "blocks": 2381, "max_phase_err": 5.855e-19, "D": 2, "workers": 1, "items": 480, "items_loaded": 478, "generic_kernel": 0, "lib": "v14b", "ckpt": 1, "role": "gen", "nonce": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa", "created": 0, "lines_read": 479, "lines_rejected": 1, "lines_duplicate": 0, "verify_n": 8, "verified": 8, "lines_written": 2, "ckpt_write_errors": 0, "test_hooks": 0}}
+OK   zero_length_key_refused (operational: needs manual cleanup) {"reason": "checkpoint key out_attack/keys/zero.key is not a 32-byte key file (refusing)"}
+OK   empty_ckpt_existing_key_reused (expected by design; enables splice below) {}
+items common (b,i,lo,hi) with different content: 480 of 480
+splice accepted: dup= 2 Z ref [0.5130726491365142486644840689383646582205 +/- 3.05e-11] Z spliced [0.4203205826408915330341675062763415589289 +/- 3.05e-11]
+FAIL splice_same_key_cross_session {"accepted": 6, "trials": 6, "accepted_and_wrong": 6, "note": "lines are not bound to the header/session; duplicates with different content are silently ignored (first wins)"}
+  mut b_eq_nb 3 t_attack/mut_b_eq_nb.txt line 4: authenticated but invalid: bucket out of range (refusing)
+  mut b_huge 3 ut_attack/mut_b_huge.txt line 4: authenticated but invalid: bucket out of range (refusing)
+  mut b_overflow 3 _attack/mut_b_overflow.txt line 4: authenticated but invalid: bad integer field (refusing)
+  mut i_eq_T 3 ttack/mut_i_eq_T.txt line 4: authenticated but invalid: item index out of range (refusing)
+  mut i_neg 3 t out_attack/mut_i_neg.txt line 4: authenticated but invalid: bad integer field (refusing)
+  mut lo_plus1 3 e 4: authenticated but invalid: item (b, i, lo, hi) does not match this session (refusing)
+  mut lo_leading0 3 attack/mut_lo_leading0.txt line 4: authenticated but invalid: bad integer field (refusing)
+  mut nbk_noncanon 3  out_attack/mut_nbk_noncanon.txt line 4: authenticated but invalid: bad nblocks (refusing)
+  mut nbk_dec 3 point out_attack/mut_nbk_dec.txt line 4: authenticated but invalid: bad nblocks (refusing)
+  mut nbk_neg 3 point out_attack/mut_nbk_neg.txt line 4: authenticated but invalid: bad nblocks (refusing)
+  mut mph_inf 3 ckpoint out_attack/mut_mph_inf.txt line 4: authenticated but invalid: bad maxph (refusing)
+  mut mph_nan 3 ckpoint out_attack/mut_mph_nan.txt line 4: authenticated but invalid: bad maxph (refusing)
+  mut arb_upper 3 t_arb_upper.txt line 4: authenticated but invalid: invalid moment / bound value (refusing)
+  mut arb_lead0 3 t_arb_lead0.txt line 4: authenticated but invalid: invalid moment / bound value (refusing)
+  mut arb_plus 3 ut_arb_plus.txt line 4: authenticated but invalid: invalid moment / bound value (refusing)
+  mut arb_rad_unnorm 0 
+  mut arb_rad_neg 3 arb_rad_neg.txt line 4: authenticated but invalid: invalid moment / bound value (refusing)
+  mut mag_unnorm 3 _mag_unnorm.txt line 4: authenticated but invalid: invalid moment / bound value (refusing)
+  mut mag_exp_huge 3 ag_exp_huge.txt line 4: authenticated but invalid: invalid moment / bound value (refusing)
+  mut mag_exp_lead0 3 g_exp_lead0.txt line 4: authenticated but invalid: invalid moment / bound value (refusing)
+  mut mag_neg0 3 ut_mag_neg0.txt line 4: authenticated but invalid: invalid moment / bound value (refusing)
+  mut double_space 3 ttack/mut_double_space.txt line 4: authenticated but invalid: bad integer field (refusing)
+  mut trailing_space 3 _attack/mut_trailing_space.txt line 4: authenticated but invalid: trailing data (refusing)
+  mut extra_token 3 out_attack/mut_extra_token.txt line 4: authenticated but invalid: trailing data (refusing)
+  mut missing_token 3 ssing_token.txt line 4: authenticated but invalid: invalid moment / bound value (refusing)
+  mut tab_sep 3  out_attack/mut_tab_sep.txt line 4: authenticated but invalid: not an item line (refusing)
+  mut first_tok_J 3 _attack/mut_first_tok_J.txt line 4: authenticated but invalid: not an item line (refusing)
+  mut nul_inside 3 nt out_attack/mut_nul_inside.txt line 4: authenticated but invalid: bad nblocks (refusing)
+FAIL strict_parser_mutations_refused {"n": 28, "not_refused": [["arb_rad_unnorm", 0, 480]]}
+OK   authenticated_zeroed_errors_vn0_ACCEPTED (key holder trusted) {"rc": 0, "same_as_ref": false}
+OK   header_tamper_resealed_refused {"cases": [["swap", 3, " [K,J] (refusing; M1/M2: a different session, role, run, library or environment)"], ["dup", 3, "count] (refusing; M1/M2: a different session, role, run, library or environment)"], ["extra", 3, "count] (refusing; M1/M2: a different session, role, run, library or environment)"], ["drop_os", 3, "count] (refusing; M1/M2: a different session, role, run, library or environment)"], ["prefast", 3, "efast] (refusing; M1/M2: a different session, role, run, library or environment)"]]}
+OK   lbshift_refused_prefast {"reason": "checkpoint out_attack/LT.txt: header mismatch in field(s) [prefast] (refusing; M1/M2: a different session, role, run, library or environment)"}
+OK   testhooks_ckpt_refused_by_production {"reason": "checkpoint out_attack/LT.txt: header mismatch in field(s) [bin_sha,hooks] (refusing; M1/M2: a different session, role, run, library or environment)"}
+OK   flock_held_refused {"reason": "checkpoint out_attack/A.txt is locked by another process (Resource temporarily unavailable) (refusing)"}
+{"n": 30, "fail": ["splice_same_key_cross_session", "strict_parser_mutations_refused"]}

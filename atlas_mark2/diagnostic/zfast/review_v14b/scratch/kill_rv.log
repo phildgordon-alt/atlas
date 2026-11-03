@@ -1,0 +1,4 @@
+{"trial": 0, "kills": 3, "lock_held_midrun": [true, true, false], "lines_before_final": 690, "final_loaded": 689, "items": 689, "rejected": 0, "dup": 0, "verified": 8, "identical": true}
+{"trial": 1, "kills": 2, "lock_held_midrun": [true, true], "lines_before_final": 690, "final_loaded": 689, "items": 689, "rejected": 0, "dup": 0, "verified": 8, "identical": true}
+{"trial": 2, "kills": 3, "lock_held_midrun": [true, true, true], "lines_before_final": 198, "final_loaded": 197, "items": 689, "rejected": 0, "dup": 0, "verified": 8, "identical": true}
+{"all_identical": true, "lock_always_held": false}

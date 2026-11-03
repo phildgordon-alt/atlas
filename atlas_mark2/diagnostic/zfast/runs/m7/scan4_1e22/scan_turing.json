@@ -1,0 +1,93 @@
+{
+ "T0": "10000000000000000000000",
+ "lib": "/Users/kiosk/atlas_mark2/diagnostic/zfast/bin/libzfast.v13b.dylib",
+ "session": {
+  "sec_build": 992.255,
+  "sec_head": 0.3101,
+  "sec_fast": 991.9429,
+  "buckets": 2520,
+  "Nw": 39894228040,
+  "nhead": 52193,
+  "blocks": 2444776,
+  "max_phase_err": 6.241e-20
+ },
+ "grid": {
+  "points": 45001,
+  "step": 0.004,
+  "undecided": 0,
+  "seconds": 174.3
+ },
+ "zeros_found": 1399,
+ "dips": 0,
+ "dip_zeros": 0,
+ "mean_spacing": 0.12870370047198235,
+ "closest_pair": {
+  "z1": [
+   18.456000000000003,
+   18.46
+  ],
+  "z2": [
+   18.472,
+   18.476
+  ],
+  "gap_mid": 0.015999999999998238,
+  "delta_mid": 0.12431654988413714,
+  "gap_lower": 0.012000000000000455,
+  "gap_upper": 0.01999999999999602,
+  "window_offsets": [
+   17,
+   19
+  ]
+ },
+ "turing": {
+  "0.0": {
+   "N_lower": 76106294246675308886088,
+   "N_upper": 76106294246675308886088,
+   "v": 0.0,
+   "Z_sign": -1,
+   "Z": "[-5.22709526338667304462714845",
+   "Delta": 40.0,
+   "U": "7.61062942467e+22",
+   "L": "7.61062942467e+22",
+   "U_minus_L": 0.47427869147061585,
+   "zeros_up": 311,
+   "zeros_down": 311,
+   "pinned": true,
+   "N": 76106294246675308886088
+  },
+  "100.0": {
+   "N_lower": 76106294246675308886865,
+   "N_upper": 76106294246675322406058,
+   "v": 100.0,
+   "Z_sign": 1,
+   "Z": "[2.084115035242586757436388390",
+   "Delta": 39.999999999,
+   "U": "7.61062942467e+22",
+   "L": "7.61062942467e+22",
+   "U_minus_L": 13519194.100465631,
+   "zeros_up": 311,
+   "zeros_down": 309,
+   "pinned": false,
+   "N": null
+  }
+ },
+ "session_params": {
+  "centre": 50.0,
+  "H": 91.0,
+  "Delta": 0.008,
+  "K": 18,
+  "J": 12,
+  "threads": 2,
+  "u0": -40.0,
+  "n": 45001,
+  "step": 0.004
+ },
+ "count_first_last": null,
+ "points": [
+  0.0,
+  100.0
+ ],
+ "sign_changes_first_last": 777,
+ "straddling_first_last": [],
+ "wall": 1166.7
+}

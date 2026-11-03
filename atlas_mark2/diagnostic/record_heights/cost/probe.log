@@ -1,0 +1,12 @@
+{"exp": 13, "flint": "0.9.0", "Z": "[-9.63287505507820 +/- 3.", "Z_rad": 1.3511361602103366e-47, "Z_seconds": 0.25, "jet_seconds": 1.19, "jet_rad": 2.8887876999946316e-47, "maxrss_mb": 74.4}
+WD peak_rss_kb=144 peak_footprint_mb=0 status=ok rc=0 wall=3s
+{"exp": 14, "flint": "0.9.0", "Z": "[3.78140939019188 +/- 1.2", "Z_rad": 5.777279361199654e-48, "Z_seconds": 0.76, "jet_seconds": 3.67, "jet_rad": 2.7204621903340953e-48, "maxrss_mb": 171.5}
+WD peak_rss_kb=167392 peak_footprint_mb=103 status=ok rc=0 wall=6s
+{"exp": 15, "flint": "0.9.0", "Z": "[4.44877146761162 +/- 1.2", "Z_rad": 7.799875417661036e-48, "Z_seconds": 2.42, "jet_seconds": 11.48, "jet_rad": 9.337922128864334e-49, "maxrss_mb": 482.3}
+WD peak_rss_kb=470992 peak_footprint_mb=335 status=ok rc=0 wall=15s
+{"exp": 16, "flint": "0.9.0", "Z": "[-10.1980786223810 +/- 1.", "Z_rad": 1.4369030349711828e-47, "Z_seconds": 8.45, "jet_seconds": 37.62, "jet_rad": 3.771182553335143e-50, "maxrss_mb": 1454.9}
+WD peak_rss_kb=1420784 peak_footprint_mb=1387 status=ok rc=0 wall=48s
+{"exp": 15, "flint": "0.9.0", "Z": "[4.44877146761162 +/- 1.2", "Z_rad": 7.799875417661036e-48, "Z_seconds": 2.41, "maxrss_mb": 481.9}
+WD peak_rss_kb=128 peak_footprint_mb=0 status=ok rc=0 wall=3s
+{"exp": 16, "flint": "0.9.0", "Z": "[-10.1980786223810 +/- 1.", "Z_rad": 1.4369030349711828e-47, "Z_seconds": 8.02, "maxrss_mb": 1297.3}
+WD peak_rss_kb=1120304 peak_footprint_mb=1386 status=ok rc=0 wall=9s

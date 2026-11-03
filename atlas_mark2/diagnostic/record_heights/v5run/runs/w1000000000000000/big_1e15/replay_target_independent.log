@@ -1,0 +1,2 @@
+{"passed": true, "passed_B_simple_without_lemma2": true, "np": "10/10", "certs": "2/2", "seams": [0, 0, 0], "min_candidate_lower": 0.8639199061388785, "seconds": 575.43, "replay_peak_gb": 0.535}
+WD peak_rss_kb=32112 peak_footprint_mb=18 status=ok rc=0 wall=576s

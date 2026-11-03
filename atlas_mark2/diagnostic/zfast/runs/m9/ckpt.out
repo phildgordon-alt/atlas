@@ -1,0 +1,19 @@
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "/Users/kiosk/atlas_mark2/engine/regress_v1/v5z6_gate.py", line 182, in <module>
+    main()
+  File "/Users/kiosk/atlas_mark2/engine/regress_v1/v5z6_gate.py", line 172, in main
+    elif a.ckpt: rep, kind = gate_ckpt(tag), 'ckpt'
+                             ^^^^^^^^^^^^^^
+  File "/Users/kiosk/atlas_mark2/engine/regress_v1/v5z6_gate.py", line 152, in gate_ckpt
+    gridsame = all(sha256(runA / 'turing_grid' / f) == sha256(runB / 'turing_grid' / f) for f in ('grid.npz', 'zeros_intervals.json'))
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/kiosk/atlas_mark2/engine/regress_v1/v5z6_gate.py", line 152, in <genexpr>
+    gridsame = all(sha256(runA / 'turing_grid' / f) == sha256(runB / 'turing_grid' / f) for f in ('grid.npz', 'zeros_intervals.json'))
+                                                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/kiosk/atlas_mark2/engine/regress_v1/common.py", line 31, in sha256
+    with open(p, 'rb') as f:
+         ^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/Users/kiosk/atlas_mark2/engine/regress_v1/work/trees/atlas_v5z6/runs/w10000000000000000/ck16_res_v5z6_20261101_185654/turing_grid/grid.npz'
+rc=1

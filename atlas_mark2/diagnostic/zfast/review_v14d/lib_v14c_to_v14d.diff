@@ -1,0 +1,84 @@
+--- ../bin/src_v14c/zfast_m3b.inc	2026-11-02 20:39:40
++++ ../bin/src_v14d/zfast_m3b.inc	2026-11-02 22:13:26
+@@ -20,6 +20,8 @@
+     long ck_lines_read, ck_rejected, ck_dup, ck_verified, ck_written, ck_werr; int ck_created, ck_verify_n, ck_on; char ck_role[8], ck_nonce[33];
+     /* v14c checkpoint record (PREDICTIONS_M13) */
+     long ck_overlong, ck_syncs; int ck_key_created, ck_key_reused; double ck_max_unsynced;
++    /* v14d checkpoint record (PREDICTIONS_M14) */
++    long ck_nul; int ck_dir_synced;
+ };
+ 
+ static inline long midx(const zfm_session *S, int j, slong b, int k) { return ((long)j * S->nb + b) * S->K2 + k; }
+@@ -272,7 +274,7 @@
+     else { arb_sub_ui(w, sg, 1, prec); arb_mul(w, w, l, prec); arb_exp(w, w, prec); }
+ }
+ 
+-#include "zfast_sched14c.inc"
++#include "zfast_sched14d.inc"
+ 
+ static zfm_session *zfm_build(const fmpz_t T0, double u0, double H, int kind, const arb_t sigma, const arb_t sigma2, const zf_params *P, double Delta, int K, int workers, const zf_ckcfg_t *ckpt, int *status)
+ {
+@@ -376,7 +378,7 @@
+         n++;
+     }
+     S->nhead = n - 1; S->sec_head = now() - t0; t0 = now();
+-    /* fast part (v14): v13b's exact items and merge, run by a work queue of `workers` threads; optional checkpoint (zfast_sched14c.inc) */
++    /* fast part (v14): v13b's exact items and merge, run by a work queue of `workers` threads; optional checkpoint (v14d: zfast_sched14d.inc) */
+     {
+         ck_stats_t cs;
+         int rc = zfm_fast14b(S, n, workers, ckpt, &cs);
+@@ -384,6 +386,7 @@
+         S->ck_lines_read = cs.lines_read; S->ck_rejected = cs.rejected; S->ck_dup = cs.dup; S->ck_verified = cs.verified;
+         S->ck_written = cs.written; S->ck_werr = cs.werr; S->ck_created = cs.created;
+         S->ck_overlong = cs.overlong; S->ck_syncs = cs.syncs; S->ck_key_created = cs.key_created; S->ck_key_reused = cs.key_reused; S->ck_max_unsynced = cs.max_unsynced;
++        S->ck_nul = cs.nul; S->ck_dir_synced = cs.dir_synced;
+         S->ck_on = ckpt && ckpt->path && ckpt->path[0];
+         if (S->ck_on) { S->ck_verify_n = ckpt->verify_n; snprintf(S->ck_role, sizeof S->ck_role, "%s", ckpt->role); snprintf(S->ck_nonce, sizeof S->ck_nonce, "%s", ckpt->nonce); }
+         if (status) *status = rc;
+@@ -405,7 +408,7 @@
+ /* v14b: the v14 entry point keeps its no-checkpoint behaviour; a checkpoint path is refused (the only checkpoint path is zfm_new14b) */
+ zfm_session *zfm_new14(const fmpz_t T0, double u0, double H, const zf_params *P, double Delta, int K, int workers, const char *ckpt)
+ {
+-    if (ckpt && ckpt[0]) { zf14b_seterr("zfa14_new/zfm_new14: v14-format checkpoints are not supported by v14b/v14c; use zfa14b_new (refusing)"); return NULL; }
++    if (ckpt && ckpt[0]) { zf14b_seterr("zfa14_new/zfm_new14: v14-format checkpoints are not supported by v14b/v14c/v14d; use zfa14b_new (refusing)"); return NULL; }
+     if (P->threads < 1 || P->threads > 16) { zf14b_seterr("decomposition D = %d out of range [1, 16] (review_m10 m7; refusing)", P->threads); return NULL; }
+     arb_t s; arb_init(s); arb_set_d(s, 0.5); int st = 0;
+     zfm_session *S = zfm_build(T0, u0, H, 0, s, s, P, Delta, K, workers, NULL, &st);
+@@ -413,7 +416,7 @@
+     return st == 0 ? S : NULL;
+ }
+ 
+-/* v14b/v14c: kind-0 session, W workers, optional hardened checkpoint (v14c: zfast_sched14c.inc, format v3); NULL on refusal (zfm14b_last_error) */
++/* v14b/v14c/v14d: kind-0 session, W workers, optional hardened checkpoint (v14d: zfast_sched14d.inc, format v3); NULL on refusal (zfm14b_last_error) */
+ zfm_session *zfm_new14b(const fmpz_t T0, double u0, double H, const zf_params *P, double Delta, int K, int workers, const char *ckpt,
+                         const char *role, const char *nonce, const char *keyfile, int verify_n)
+ {
+@@ -615,9 +618,9 @@
+ {
+     int n = snprintf(out, outlen, "\"ckpt\": %d, \"role\": \"%s\", \"nonce\": \"%s\", \"created\": %d, \"lines_read\": %ld, \"lines_rejected\": %ld, "
+                      "\"lines_duplicate\": %ld, \"verify_n\": %d, \"verified\": %ld, \"lines_written\": %ld, \"ckpt_write_errors\": %ld, \"test_hooks\": %d, "
+-                     "\"ckpt_format\": \"ZFAST14C CKPT v3\", \"lines_overlong\": %ld, \"ckpt_syncs\": %ld, \"max_unsynced_s\": %.4f, \"key_created\": %d, \"key_reused_new_header\": %d",
++                     "\"ckpt_format\": \"ZFAST14C CKPT v3\", \"lines_overlong\": %ld, \"ckpt_syncs\": %ld, \"max_unsynced_s\": %.4f, \"key_created\": %d, \"key_reused_new_header\": %d, \"lines_nul\": %ld, \"ckpt_dir_synced\": %d, \"ckpt_io_policy\": \"abort\"",
+                      S->ck_on, S->ck_on ? S->ck_role : "", S->ck_on ? S->ck_nonce : "", S->ck_created, S->ck_lines_read, S->ck_rejected, S->ck_dup,
+                      S->ck_verify_n, S->ck_verified, S->ck_written, S->ck_werr, ZF14B_HOOKS,
+-                     S->ck_overlong, S->ck_syncs, S->ck_max_unsynced, S->ck_key_created, S->ck_key_reused);
++                     S->ck_overlong, S->ck_syncs, S->ck_max_unsynced, S->ck_key_created, S->ck_key_reused, S->ck_nul, S->ck_dir_synced);
+     return n >= outlen ? -2 : 0;
+ }
+--- ../bin/src_v14c/zfast_api14b.c	2026-11-02 20:39:40
++++ ../bin/src_v14d/zfast_api14b.c	2026-11-02 22:13:26
+@@ -1,4 +1,5 @@
+-/* zfast_api14b.c (v14c, PREDICTIONS_M13: unchanged names and signatures; bad T0 now sets the error (mn5); info "lib": "v14c").
++/* zfast_api14b.c (v14d, PREDICTIONS_M14: only "lib": "v14d" changes.)
++   v14c, PREDICTIONS_M13: unchanged names and signatures; bad T0 now sets the error (mn5); info "lib": "v14c").
+    v14b, PREDICTIONS_M12: ctypes API for v14b sessions with the hardened checkpoint (review_m10 M1, M2, m1-m4, m7).
+    zfa14b_new: as zfa14_new plus role ("gen" | "replay"), a per-run nonce (32 lowercase hex), the HMAC key file path (created by the
+    library for a new checkpoint, O_EXCL 0600; required for an existing one) and verify_n (loaded items recomputed on resume).
+@@ -32,6 +33,6 @@
+     long it, il; int w, D, g; zfm_info14((zfm_session *)s, &it, &il, &w, &D, &g);
+     char ck[2048]; if (zfm_info14b_ck((zfm_session *)s, ck, sizeof ck)) return -2;
+     int n = snprintf(out, outlen, "{\"sec_build\": %.4f, \"sec_head\": %.4f, \"sec_fast\": %.4f, \"buckets\": %.0f, \"Nw\": %.0f, \"nhead\": %.0f, \"blocks\": %.0f, \"max_phase_err\": %.3e, "
+-                     "\"D\": %d, \"workers\": %d, \"items\": %ld, \"items_loaded\": %ld, \"generic_kernel\": %d, \"lib\": \"v14c\", %s}", sb, sh, sf, nb, Nw, nhd, bl, mp, D, w, it, il, g, ck);
++                     "\"D\": %d, \"workers\": %d, \"items\": %ld, \"items_loaded\": %ld, \"generic_kernel\": %d, \"lib\": \"v14d\", %s}", sb, sh, sf, nb, Nw, nhd, bl, mp, D, w, it, il, g, ck);
+     return n >= outlen ? -2 : 0;
+ }

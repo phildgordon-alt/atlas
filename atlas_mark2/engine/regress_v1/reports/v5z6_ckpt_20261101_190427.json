@@ -1,0 +1,109 @@
+{
+ "check": "C: checkpoint/resume identity",
+ "base": {
+  "state": "d14b27ee3e6bb65e514d8c9d47d5057d53aa1811b6fac0418a415c1978600847",
+  "build": 20.738
+ },
+ "results": {
+  "C1 test-hook exit + resume": {
+   "exit_rc": 77,
+   "resumed_items_loaded": 120,
+   "items": 1459,
+   "identical": true,
+   "resumed_build": 10.11,
+   "base_build": 20.738
+  },
+  "C2 SIGKILL + resume (W 8 -> 3)": {
+   "killed_rc": -9,
+   "lines_at_kill": 310,
+   "resumed_items_loaded": 309,
+   "identical": true
+  },
+  "C3 control: foreign checkpoint refused": {
+   "rc": 3,
+   "refused": true
+  },
+  "C4 pipeline: generator killed in its session, --resume": {
+   "ref_rc": 0,
+   "killed_rc": 1,
+   "killed_before_zs": true,
+   "resume_rc": 0,
+   "renamed": [
+    "gen.jsonl.attempt1",
+    "gen.log.attempt1"
+   ],
+   "ckpt_lines": 1076,
+   "compare": {
+    "certs": {
+     "frozen": 10,
+     "regenerated": 10,
+     "same_names": 10,
+     "canonical_identical": 10,
+     "byte_identical": 7,
+     "differing": [],
+     "only_frozen": [],
+     "only_new": []
+    },
+    "certs_np": {
+     "frozen": 55,
+     "regenerated": 55,
+     "same_names": 55,
+     "canonical_identical": 55,
+     "byte_identical": 43,
+     "differing": [],
+     "only_frozen": [],
+     "only_new": []
+    },
+    "pieces.json": {
+     "canonical_identical": true,
+     "byte_identical": true
+    },
+    "zs.json": {
+     "canonical_identical": true,
+     "byte_identical": true
+    },
+    "gen_measurements.json": {
+     "canonical_identical": true,
+     "byte_identical": true
+    },
+    "replay_check": {
+     "frozen": {
+      "passed": true,
+      "passed_B": true,
+      "certificates": 10,
+      "passed_both": 10,
+      "min_candidate_lower": 0.8256182590293205,
+      "seams": [
+       0,
+       0
+      ],
+      "gaps_d0": 0,
+      "uncovered": 0
+     },
+     "regenerated": {
+      "passed": true,
+      "passed_B": true,
+      "certificates": 10,
+      "passed_both": 10,
+      "min_candidate_lower": 0.8256182590293205,
+      "seams": [
+       0,
+       0
+      ],
+      "gaps_d0": 0,
+      "uncovered": 0
+     },
+     "identical": true
+    },
+    "replay_records_identical": true,
+    "identical": true
+   },
+   "turing_grid_identical": true,
+   "identical": true
+  }
+ },
+ "ok": true,
+ "tree": "atlas_v5z7",
+ "stamp": "20261101_190427",
+ "predictions": "diagnostic/zfast/PREDICTIONS_M9.md (sha in PREDICTIONS_M9.sha256)"
+}

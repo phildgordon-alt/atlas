@@ -1,0 +1,338 @@
+--- ../bin/src_v14c/zfast_sched14c.inc	2026-11-02 20:39:40
++++ ../bin/src_v14d/zfast_sched14d.inc	2026-11-02 22:13:26
+@@ -18,7 +18,19 @@
+        euid-owned, mode-0600-or-stricter, 32-byte file (a 0-byte key is refused with its own reason, never overwritten).
+    mn5 worker write/fsync errors are kept in the session and surfaced in zfa14b_last_error on the creating thread.
+    mn6 bounded line reader (overlong lines are skipped unstored and counted).
+-   (mn7 is the pipeline's verify default, atlas_v5z9.) */
++   (mn7 is the pipeline's verify default, atlas_v5z9.)
++   ===================== v14d (review_v14c; PREDICTIONS_M14 section 0): this file = zfast_sched14c.inc plus =====================
++   MJ-C1 parse_arb_strict builds the radius EXACTLY (mantissa token of at most MAG_BITS bits; MAG_MAN = m << (MAG_BITS - bits),
++         MAG_EXP = e + bits), as parse_mag_strict does; no rounding FLINT setter; canonical re-dump check kept.
++   mn-C1 an authenticated line identical (body SHA-256) to the loaded line of its item is ignored and counted (lines_duplicate);
++         a conflicting authenticated duplicate stays fatal.
++   mn-C4 abort policy: any checkpoint write / fsync error (item line, flusher, newline repair, header, final sync, directory fsync)
++         aborts the session (no new item is dispatched; in-flight items finish); zfa14b_new returns NULL with last_error
++         "CKPT-IO-ABORT: ..."; the checkpoint stays valid up to the error and is resumed after the cause is fixed.
++   nits  key and checkpoint opened O_NONBLOCK and must be regular files before any read (no FIFO hang); a line containing a NUL
++         byte is never authenticated (header: refuse; item: rejected, lines_nul); the stored header body must equal the expected one
++         byte for byte (whitespace included); the directory of a new checkpoint is fsynced.
++   Test hooks (-DZF_TEST_HOOKS only): ZFAST14D_TEST_WFAIL_AT=n, ZFAST14D_TEST_SYNCFAIL=n, ZFAST14D_TEST_RADIUS=1. */
+ #include <CommonCrypto/CommonDigest.h>
+ #include <CommonCrypto/CommonHMAC.h>
+ #include <unistd.h>
+@@ -38,7 +50,7 @@
+ #include <mpfr.h>
+ extern bool _dyld_get_shared_cache_uuid(uuid_t uuid);       /* libdyld (exported; declared in the private dyld_priv.h) */
+ 
+-#define ZF14B_LIB_ID "zfast-v14c(PREDICTIONS_M13)"
++#define ZF14B_LIB_ID "zfast-v14d(PREDICTIONS_M14)"
+ #ifdef ZF_TEST_HOOKS
+ #define ZF14B_HOOKS 1
+ #else
+@@ -71,6 +83,9 @@
+     char werrmsg[512];              /* mn5: first write/fsync error (any thread) */
+     double dirty_since, max_unsynced;   /* mn2: write time of the oldest unsynced line (0 = clean); largest observed write-to-sync age */
+     pthread_cond_t fcv; int fstop;  /* mn2: flusher thread */
++    /* v14d */
++    int ioabort;                    /* mn-C4: set (atomically) by the first checkpoint I/O error; workers then take no new item */
++    long th_wfail_at, th_syncfail_at, th_items_w, th_fsyncs; int th_radius;     /* test hooks (ZF_TEST_HOOKS builds only) */
+ } wq_t;
+ 
+ static void hex_of(char *out, const unsigned char *d, int n)
+@@ -102,6 +117,13 @@
+     char m[512]; va_list ap; va_start(ap, fmt); vsnprintf(m, sizeof m, fmt, ap); va_end(ap);
+     fprintf(stderr, "zfast14c: %s\n", m);
+     if (!Q->werrmsg[0]) snprintf(Q->werrmsg, sizeof Q->werrmsg, "%s", m);
++}
++/* v14d (mn-C4): a checkpoint I/O error (caller holds Q->io or is the only thread): record it, close the file, abort the session */
++static void ck_fail(wq_t *Q, const char *what, int err)
++{
++    ck_err(Q, "checkpoint %s failed (%s)", what, strerror(err));
++    Q->werr++; if (Q->fd >= 0) close(Q->fd);
++    Q->fd = -1; __atomic_store_n(&Q->ioabort, 1, __ATOMIC_SEQ_CST);
+ }
+ 
+ /* growable string */
+@@ -357,7 +379,10 @@
+ /* arb_dump_str = 4 hex tokens (mid man, mid exp, rad man, rad exp); must be finite and canonical.
+    v14c (mn1): the tokens are pre-validated BEFORE arb_load_str, which aborts the process (FLINT exception in
+    arf_set_fmpz_2exp_dump) on a zero mantissa with an exponent other than 0..3: a zero mantissa must come with exponent exactly 0 (a
+-   finite zero), the radius mantissa is unsigned, and every token is a canonical hex integer. */
++   finite zero), the radius mantissa is unsigned, and every token is a canonical hex integer.
++   v14d (review_v14c MJ-C1): the radius is built EXACTLY (mag_set_fmpz_2exp_fmpz rounds a 30-bit mantissa up by one ulp, which made
++   v14c refuse honest balls): a radius mantissa token of more than MAG_BITS significant bits is refused (arb_dump_str never emits one:
++   the dump of a mag is its odd part, at most MAG_BITS bits); otherwise MAG_MAN = m << (MAG_BITS - bits), MAG_EXP = e + bits. */
+ static int parse_arb_strict(arb_t x, const char **p, const char **why)
+ {
+     const char *s0 = NULL, *s, *ts[4]; size_t tot = 0, tn[4];
+@@ -375,7 +400,7 @@
+         { *why = "arb zero mantissa with a nonzero exponent (mn1 pre-validation; not a finite zero)"; return 0; }
+     /* v14c (mn1, second class found by the M13 fuzz of the first v14c build): FLINT's loader also aborts (mag_set_arf_dump) on a radius
+        mantissa that a mag cannot hold exactly (e.g. 7fffffff).  arb_load_str is therefore NOT called: the ball is built from the four
+-       tokens with arf_set_fmpz_2exp (exact) and mag_set_fmpz_2exp_fmpz (an upper bound; total functions without an abort path), and the
++       tokens with arf_set_fmpz_2exp (exact) and, v14d, an exact mag construction (no FLINT call that can abort or round), and the
+        canonical re-serialisation check below then accepts exactly the values whose dump equals the tokens (so a loaded honest ball equals
+        the dumped one bit for bit). */
+     char *buf = flint_malloc(tot + 1); memcpy(buf, s0, tot); buf[tot] = 0;
+@@ -390,7 +415,14 @@
+     if (ok)
+     {
+         if (fmpz_is_zero(f[0])) arf_zero(arb_midref(x)); else arf_set_fmpz_2exp(arb_midref(x), f[0], f[1]);
+-        if (fmpz_is_zero(f[2])) mag_zero(arb_radref(x)); else mag_set_fmpz_2exp_fmpz(arb_radref(x), f[2], f[3]);
++        if (fmpz_is_zero(f[2])) mag_zero(arb_radref(x));
++        else if (fmpz_sgn(f[2]) < 0 || fmpz_bits(f[2]) > MAG_BITS) { ok = 0; if (!*why) *why = "arb radius mantissa wider than a mag (MAG_BITS) or negative: not a canonical dump (MJ-C1)"; }
++        else
++        {   /* v14d (MJ-C1): exact, as parse_mag_strict */
++            mag_struct *r = arb_radref(x); flint_bitcnt_t nb = fmpz_bits(f[2]);
++            MAG_MAN(r) = (mp_limb_t)fmpz_get_ui(f[2]) << (MAG_BITS - nb);
++            fmpz_add_ui(MAG_EXPREF(r), f[3], (ulong)nb);
++        }
+     }
+     for (int t = 0; t < 4; t++) fmpz_clear(f[t]);
+     ok = ok && arb_is_finite(x) && mag_valid(arb_radref(x));
+@@ -401,7 +433,7 @@
+ }
+ 
+ /* parse an authenticated item line (`I x b i lo hi nbk mph ...`, seal already checked for index x) into item storage of Q;
+-   returns 1 loaded, 0 invalid or duplicate (fatal; why set).  v14c (MJ1 b): any second authenticated line for a loaded item is fatal. */
++   returns 1 loaded, 2 identical duplicate (ignored; v14d mn-C1), 0 invalid or conflicting duplicate (fatal; why set). */
+ static int load_line(wq_t *Q, const char *line, unsigned long xs, const char **why)
+ {
+     zfm_session *S = Q->S; const char *p = line, *s; size_t n; unsigned long v[5]; double nbk, mph;
+@@ -420,8 +452,8 @@
+     if (w->done)
+     {
+         unsigned char d[32]; CC_SHA256(line, (CC_LONG)strlen(line), d);
+-        *why = memcmp(d, Q->lhash + 32 * x, 32) ? "conflicting duplicate: a second authenticated line for an already loaded item, with different contents (MJ1)"
+-                                                 : "identical duplicate: a second authenticated line for an already loaded item (an honest writer never emits one; MJ1)";
++        if (!memcmp(d, Q->lhash + 32 * x, 32)) return 2;      /* v14d (review_v14c mn-C1): byte-identical => the same value: ignore, count */
++        *why = "conflicting duplicate: a second authenticated line for an already loaded item, with different contents (MJ1)";
+         return 0;
+     }
+     int na = S->nw * S->K2, good = 1; const char *aw = NULL;
+@@ -439,11 +471,14 @@
+    True bound: a line whose write(2) returned at time t is on stable storage by t + 1 s + one F_FULLFSYNC duration, unless a write/fsync
+    error is reported; max_unsynced (write-to-sync age) is measured.  A crash or power loss loses at most that unsynced tail, which is
+    torn/missing and recomputed on resume. */
+-static void ck_sync(wq_t *Q)
++static void ck_sync(wq_t *Q, int from_flusher)
+ {
+     if (Q->fd < 0 || Q->dirty_since == 0) return;
+-    if (fcntl(Q->fd, F_FULLFSYNC) == -1 && fsync(Q->fd) != 0)
+-    { ck_err(Q, "checkpoint fsync failed (%s); checkpointing stopped, the session continues", strerror(errno)); Q->werr++; close(Q->fd); Q->fd = -1; return; }
++#ifdef ZF_TEST_HOOKS
++    if (from_flusher && Q->th_syncfail_at > 0 && ++Q->th_fsyncs == Q->th_syncfail_at) { fprintf(stderr, "zfast14d: test hook ZFAST14D_TEST_SYNCFAIL\n"); ck_fail(Q, "fsync", EIO); return; }
++#endif
++    (void)from_flusher;
++    if (fcntl(Q->fd, F_FULLFSYNC) == -1 && fsync(Q->fd) != 0) { ck_fail(Q, "fsync", errno); return; }
+     double t = now(); if (t - Q->dirty_since > Q->max_unsynced) Q->max_unsynced = t - Q->dirty_since;
+     Q->dirty_since = 0; Q->last_sync = t; Q->syncs++;
+ }
+@@ -456,7 +491,7 @@
+     {
+         ssize_t r = write(Q->fd, s + off, n - off);
+         if (r < 0 && errno == EINTR) continue;
+-        if (r <= 0) { ck_err(Q, "checkpoint write failed (%s); checkpointing stopped, the session continues", r < 0 ? strerror(errno) : "short write"); Q->werr++; close(Q->fd); Q->fd = -1; return -1; }
++        if (r <= 0) { ck_fail(Q, "write", r < 0 ? errno : EIO); return -1; }
+         off += (size_t)r;
+     }
+     if (Q->dirty_since == 0) Q->dirty_since = now();
+@@ -470,6 +505,9 @@
+ }
+ static void ck_seal_write_item(wq_t *Q, sbuf_t *L, long x)
+ {
++#ifdef ZF_TEST_HOOKS
++    if (Q->fd >= 0 && Q->th_wfail_at > 0 && ++Q->th_items_w == Q->th_wfail_at) { fprintf(stderr, "zfast14d: test hook ZFAST14D_TEST_WFAIL_AT\n"); ck_fail(Q, "write", EIO); return; }
++#endif
+     char h[65]; seal_item_hex(h, Q->key, Q->hh, (unsigned long)x, L->s, L->n);
+     sb_add(L, " #"); sb_add(L, h); sb_add(L, "\n");
+     if (!ck_write(Q, L->s, L->n)) Q->written++;
+@@ -483,11 +521,29 @@
+     {
+         struct timespec ts = { 1, 0 };          /* 1.0 s, relative (immune to wall-clock steps) */
+         pthread_cond_timedwait_relative_np(&Q->fcv, &Q->io, &ts);
+-        if (!Q->fstop) ck_sync(Q);
++        if (!Q->fstop) ck_sync(Q, 1);
+     }
+     pthread_mutex_unlock(&Q->io);
+     return NULL;
++}
++
++#ifdef ZF_TEST_HOOKS
++/* v14d test hook ZFAST14D_TEST_RADIUS=1 (A/B tests of honest nonzero radii, PREDICTIONS_M14 R3): after mom_range, every moment ball's
++   radius := m 2^e, m odd of width w = 1 + ((7x + 2a + c) mod 30) bits (all widths 1..30 occur), e = -700 - a - c.  Deterministic in
++   (x, a, c), so a fresh, a resumed and a verify recomputation agree. */
++static void th_radius(const zfm_session *S, mrange_t *R, long x)
++{
++    int na = S->nw * S->K2;
++    for (int a = 0; a < na; a++)
++        for (int c = 0; c < 2; c++)
++        {
++            int w = 1 + (int)((7 * (unsigned long)x + 2 * (unsigned long)a + (unsigned long)c) % 30);
++            ulong m = (w == 1) ? 1 : ((UWORD(1) << (w - 1)) | (((ulong)x * 2654435761UL ^ ((ulong)a * 40503UL + (ulong)c)) & ((UWORD(1) << (w - 1)) - 1)) | 1);
++            arb_ptr bl = c ? acb_imagref(R->M + a) : acb_realref(R->M + a);
++            mag_set_ui_2exp_si(arb_radref(bl), m, -700 - a - c);
++        }
+ }
++#endif
+ 
+ static void merge_bucket(wq_t *Q, slong b)
+ {
+@@ -519,11 +575,14 @@
+     for (;;)
+     {
+         pthread_mutex_lock(&Q->mu);
+-        long x = Q->next < Q->nord ? Q->order[Q->next++] : -1;
++        long x = (!__atomic_load_n(&Q->ioabort, __ATOMIC_SEQ_CST) && Q->next < Q->nord) ? Q->order[Q->next++] : -1;     /* v14d (mn-C4) */
+         pthread_mutex_unlock(&Q->mu);
+         if (x < 0) break;
+         witem_t *w = Q->it + x;
+         mom_range(&w->R);
++#ifdef ZF_TEST_HOOKS
++        if (Q->th_radius) th_radius(S, &w->R, x);
++#endif
+         pthread_mutex_lock(&Q->io); int ck_on = Q->fd >= 0; pthread_mutex_unlock(&Q->io);
+         if (ck_on)          /* the line is built before the item can be merged (merge needs this item's decrement below) */
+         {
+@@ -563,6 +622,9 @@
+         witem_t *w = Q->it + V->sel[k];
+         mrange_t R = w->R; R.M = _acb_vec_init(na); R.err = _mag_vec_init(na); R.V = _mag_vec_init(S->nw);
+         mom_range(&R);
++#ifdef ZF_TEST_HOOKS
++        if (Q->th_radius) th_radius(S, &R, V->sel[k]);
++#endif
+         int same = !memcmp(&R.nblocks, &w->R.nblocks, sizeof(double)) && !memcmp(&R.maxph, &w->R.maxph, sizeof(double));
+         for (int a = 0; a < na && same; a++) same = arb_equal(acb_realref(R.M + a), acb_realref(w->R.M + a)) && arb_equal(acb_imagref(R.M + a), acb_imagref(w->R.M + a))
+                                                   && mag_equal(R.err + a, w->R.err + a);
+@@ -610,12 +672,13 @@
+ static int key_load(unsigned char *key, const char *path, int may_create, int *created)
+ {
+     *created = 0;
+-    int fd = open(path, O_RDONLY | O_CLOEXEC | O_NOFOLLOW);
++    int fd = open(path, O_RDONLY | O_CLOEXEC | O_NOFOLLOW | O_NONBLOCK);      /* v14d: O_NONBLOCK, so a FIFO cannot block the open */
+     if (fd >= 0)
+     {
+         struct stat st; ssize_t r = -1;
+         if (fstat(fd, &st)) { close(fd); zf14b_seterr("checkpoint key %s: fstat failed (refusing)", path); return -1; }
+         if (!S_ISREG(st.st_mode)) { close(fd); zf14b_seterr("checkpoint key %s is not a regular file (refusing)", path); return -1; }
++        { int fl = fcntl(fd, F_GETFL); if (fl == -1 || fcntl(fd, F_SETFL, fl & ~O_NONBLOCK) == -1) { close(fd); zf14b_seterr("checkpoint key %s: fcntl failed (refusing)", path); return -1; } }
+         if (st.st_uid != geteuid()) { close(fd); zf14b_seterr("checkpoint key %s is not owned by this user (refusing)", path); return -1; }
+         if (st.st_mode & 077) { close(fd); zf14b_seterr("checkpoint key %s has group/other permissions (mode %o; must be 0600 or stricter) (refusing)", path, (unsigned)(st.st_mode & 0777)); return -1; }
+         if (st.st_size == 0) { close(fd); zf14b_seterr("checkpoint key %s is a 0-byte file (an interrupted pre-v14c key creation); it is neither reused nor overwritten: start a fresh run name (refusing)", path); return -1; }
+@@ -649,7 +712,7 @@
+ }
+ 
+ typedef struct { long loaded, items, lines_read, rejected, dup, verified, written, werr, overlong, syncs; int created, key_created, key_reused;
+-                 double max_unsynced; char werrmsg[512]; } ck_stats_t;
++                 double max_unsynced; char werrmsg[512]; long nul; int dir_synced; } ck_stats_t;      /* v14d: nul, dir_synced */
+ 
+ /* v14c (mn6): bounded line reader.  Reads one line (without '\n') into buf (cap bytes + NUL).  Returns its length, or -1 at EOF with
+    nothing read, or -2 for an overlong line (skipped to its newline / EOF, nothing stored).  *nl = 1 if the line ended in '\n'. */
+@@ -699,6 +762,9 @@
+     pthread_mutex_init(&Q.mu, NULL); pthread_mutex_init(&Q.io, NULL); pthread_cond_init(&Q.fcv, NULL);
+ #ifdef ZF_TEST_HOOKS
+     { const char *e = getenv("ZFAST14_TEST_EXIT_AFTER"); Q.exit_after = e ? atol(e) : 0; }
++    { const char *e = getenv("ZFAST14D_TEST_WFAIL_AT"); Q.th_wfail_at = e ? atol(e) : 0; }
++    { const char *e = getenv("ZFAST14D_TEST_SYNCFAIL"); Q.th_syncfail_at = e ? atol(e) : 0; }
++    { const char *e = getenv("ZFAST14D_TEST_RADIUS"); Q.th_radius = e && e[0] == '1'; }
+ #endif
+     cs->items = nit;
+     int rc = 0, ck_on = 0; pthread_t fth; int fstarted = 0;
+@@ -708,8 +774,13 @@
+     {
+         ck_on = 1;
+         Q.lhash = flint_calloc(nit > 0 ? nit : 1, 32);
+-        int fd = open(ck->path, O_RDWR | O_CREAT | O_APPEND | O_CLOEXEC, 0644);
++        int fd = open(ck->path, O_RDWR | O_CREAT | O_APPEND | O_CLOEXEC | O_NONBLOCK, 0644);      /* v14d: O_NONBLOCK (no FIFO hang) */
+         if (fd < 0) REFUSE("cannot open checkpoint %s (%s)", ck->path, strerror(errno));
++        {
++            struct stat s0; int fl = fcntl(fd, F_GETFL);
++            if (fstat(fd, &s0) || !S_ISREG(s0.st_mode)) { close(fd); REFUSE("checkpoint %s is not a regular file (refusing)", ck->path); }
++            if (fl == -1 || fcntl(fd, F_SETFL, fl & ~O_NONBLOCK) == -1) { close(fd); REFUSE("checkpoint %s: fcntl failed (refusing)", ck->path); }
++        }
+         if (flock(fd, LOCK_EX | LOCK_NB)) { int e = errno; close(fd); REFUSE("checkpoint %s is locked by another process (%s) (refusing)", ck->path, strerror(e)); }
+         Q.fd = fd;
+         struct stat st; if (fstat(fd, &st)) REFUSE("fstat checkpoint failed");
+@@ -734,6 +805,11 @@
+                     if (first) { why = "header line is overlong (not a checkpoint written by this library)"; fatal = 1; break; }
+                     cs->lines_read++; cs->rejected++; cs->overlong++; continue;
+                 }
++                if (memchr(line, 0, (size_t)len))      /* v14d: a line with a NUL byte is never authenticated */
++                {
++                    if (first) { why = "header line contains a NUL byte"; fatal = 1; break; }
++                    cs->lines_read++; cs->rejected++; cs->nul++; continue;
++                }
+                 int auth = 0; unsigned long xs = 0;
+                 if (len > 66 && line[len - 66] == ' ' && line[len - 65] == '#')
+                 {
+@@ -755,13 +831,15 @@
+                     if (hl < 40 || memcmp(line + hl - 40, " hnonce=", 8) || !nonce_ok(line + hl - 32)) { snprintf(diff, sizeof diff, "hnonce"); fatal = 2; break; }
+                     CC_SHA256(line, (CC_LONG)hl, Q.hh);          /* MJ1: the stored header body, hnonce included */
+                     line[hl - 40] = 0;
+-                    if (header_diff(line, h.s, diff, sizeof diff)) { fatal = 2; break; }
++                    if (strcmp(line, h.s))       /* v14d: byte-for-byte; header_diff only names the fields */
++                    { if (!header_diff(line, h.s, diff, sizeof diff)) snprintf(diff, sizeof diff, "format (whitespace)"); fatal = 2; break; }
+                     continue;
+                 }
+                 cs->lines_read++;
+                 if (!auth) { cs->rejected++; continue; }
+                 int r = load_line(&Q, line, xs, &why);
+                 if (r == 0) { fatal = 3; break; }
++                if (r == 2) { cs->dup++; continue; }       /* v14d (mn-C1): identical duplicate ignored, counted */
+                 cs->loaded++;
+             }
+             flint_free(line); fclose(f);
+@@ -770,6 +848,7 @@
+             if (fatal == 3) { flint_free(h.s); REFUSE("checkpoint %s line %ld: authenticated but invalid: %s (refusing)", ck->path, ln, why); }
+             if (first) { flint_free(h.s); REFUSE("checkpoint %s: no header line (refusing)", ck->path); }
+             if (!lastnl) ck_write(&Q, "\n", 1);                 /* newline repair of a torn tail; not counted as a line */
++            if (Q.werr) { flint_free(h.s); REFUSE("CKPT-IO-ABORT: checkpoint %s: newline repair failed: %s (refusing; the file is unchanged up to its torn tail)", ck->path, Q.werrmsg); }
+         }
+         else
+         {
+@@ -781,8 +860,16 @@
+             unsigned char hn[16]; char hnx[33]; arc4random_buf(hn, 16); hex_of(hnx, hn, 16);
+             sbuf_t L = { 0 }; sb_addn(&L, h.s, h.n); sb_add(&L, " hnonce="); sb_add(&L, hnx);
+             CC_SHA256(L.s, (CC_LONG)L.n, Q.hh);
+-            ck_seal_write_hdr(&Q, &L); flint_free(L.s); cs->created = 1; ck_sync(&Q);
+-            if (Q.fd < 0) { flint_free(h.s); REFUSE("cannot write the checkpoint header to %s: %s", ck->path, Q.werrmsg); }
++            ck_seal_write_hdr(&Q, &L); flint_free(L.s); cs->created = 1; ck_sync(&Q, 0);
++            if (Q.fd < 0) { flint_free(h.s); REFUSE("CKPT-IO-ABORT: cannot write the checkpoint header to %s: %s", ck->path, Q.werrmsg); }
++            {   /* v14d: make the new file's directory entry durable */
++                char dcopy[4096]; snprintf(dcopy, sizeof dcopy, "%s", ck->path); const char *dir = dirname(dcopy);
++                int dfd = dir ? open(dir, O_RDONLY | O_CLOEXEC) : -1;
++                int dok = dfd >= 0 && (fcntl(dfd, F_FULLFSYNC) != -1 || fsync(dfd) == 0); int de = errno;
++                if (dfd >= 0) close(dfd);
++                if (!dok) { flint_free(h.s); REFUSE("CKPT-IO-ABORT: the directory of the new checkpoint %s could not be fsynced (%s) (refusing)", ck->path, strerror(de)); }
++                cs->dir_synced = 1;
++            }
+         }
+         flint_free(h.s);
+         if (verify_sample(&Q, ck->verify_n, workers, &cs->verified)) { rc = -1; goto done; }
+@@ -805,16 +892,23 @@
+         for (int t = 0; t < workers; t++) { if (pthread_create(&th[t], NULL, wq_worker, &Q)) { fprintf(stderr, "pthread_create\n"); abort(); } nt++; }
+         for (int t = 0; t < nt; t++) pthread_join(th[t], NULL);
+     }
++    if (__atomic_load_n(&Q.ioabort, __ATOMIC_SEQ_CST))      /* v14d (mn-C4): the abort policy */
++    {
++        long ndone = 0; for (long x = 0; x < nit; x++) ndone += it[x].done;
++        REFUSE("CKPT-IO-ABORT: %s; session aborted with %ld of %ld items done (%ld checkpoint lines, header included, written this session); the checkpoint is "
++               "valid up to the error: fix the cause and resume (review_v14c mn-C4, PREDICTIONS_M14)", Q.werrmsg, ndone, nit, Q.written);
++    }
+     for (slong b = 0; b < nb; b++) if (Q.left[b] != 0) { fprintf(stderr, "zfast14b: bucket %ld unfinished\n", (long)b); abort(); }
+     S->blocks = Q.nblocks; S->max_phase_err = Q.maxph;
+ done:
+ #undef REFUSE
+     if (fstarted) { pthread_mutex_lock(&Q.io); Q.fstop = 1; pthread_cond_signal(&Q.fcv); pthread_mutex_unlock(&Q.io); pthread_join(fth, NULL); }
+-    if (rc == 0) ck_sync(&Q);
++    if (rc == 0) ck_sync(&Q, 0);
++    if (rc == 0 && Q.werr)             /* v14d (mn-C4): the final sync failed: abort as well (the lines are written; resume reloads them) */
++    { zf14b_seterr("CKPT-IO-ABORT: %s (final sync; all items were computed; resume reloads the written lines) (review_v14c mn-C4, PREDICTIONS_M14)", Q.werrmsg); rc = -1; }
+     if (Q.fd >= 0) close(Q.fd);        /* releases the flock */
+     cs->written = Q.written; cs->werr = Q.werr; cs->syncs = Q.syncs; cs->max_unsynced = Q.max_unsynced;
+     snprintf(cs->werrmsg, sizeof cs->werrmsg, "%s", Q.werrmsg);
+-    if (rc == 0 && Q.werr) zf14b_seterr("checkpoint write error (the session result is unaffected; this checkpoint is not resumable past it): %s", Q.werrmsg);  /* mn5 */
+     pthread_mutex_destroy(&Q.mu); pthread_mutex_destroy(&Q.io); pthread_cond_destroy(&Q.fcv);
+     flint_free(Q.order); flint_free(Q.left); flint_free(Q.first); flint_free(Q.lhash); items_free(it, nit, S->nw, S->K2);
+     return rc;

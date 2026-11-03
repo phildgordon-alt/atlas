@@ -1,0 +1,5 @@
+file: zfast_m3b.inc
+--- old
+                mag_mul(term, trig, Xk);
++++ new
+                mag_mul(term, trig, Xk); mag_div_ui(term, term, 10);

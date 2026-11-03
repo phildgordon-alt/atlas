@@ -1,0 +1,14 @@
+build_v8.sh v14c v14c  Mon Nov  2 20:34:26 PST 2026
+Apple clang version 17.0.0 (clang-1700.6.4.2)
+ProductName:		macOS ProductVersion:		27.0 BuildVersion:		26A428 
+26A428
+Macmini9,1
+f9b8552500ef3106664b002609d10e07513537589215d90673143eccb3d3864a  build_v6.sh
+8479dcc0b8953cb6be2b065ad57230c9e8f50999fde897f9067972c57d3cfc31  build_v7.sh
+a4215c1a48125a4a676fb2d3aabf5b217b4286430e74a5e301220c4e388a421a  build_v8.sh
+../bin/libzfast.v14c.dylib:
+	../bin/libzfast.v14c.dylib (compatibility version 0.0.0, current version 0.0.0)
+	/opt/homebrew/opt/flint/lib/libflint.24.0.dylib (compatibility version 24.0.0, current version 24.0.0)
+	/opt/homebrew/opt/gmp/lib/libgmp.10.dylib (compatibility version 16.0.0, current version 16.0.0)
+	/opt/homebrew/opt/mpfr/lib/libmpfr.6.dylib (compatibility version 9.0.0, current version 9.2.0)
+	/usr/lib/libSystem.B.dylib (compatibility version 1.0.0, current version 1356.0.0)

@@ -1,0 +1,6 @@
+verify_out/
+__pycache__/
+*.pyc
+.DS_Store
+.venv/
+atlas_mark2/formal/.lake/

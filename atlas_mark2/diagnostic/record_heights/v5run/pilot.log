@@ -1,0 +1,6 @@
+big_1e15 rc=0 wall=3143s
+big_1e15 independent replay rc=0 wall=577s {"passed": true, "passed_B_simple_without_lemma2": true, "np": "10/10", "certs": "2/2", "seams": [0, 0, 0], "min_candidate_lower": 0.8639199061388785, "seconds": 575.43, "replay_peak_gb": 0.535} WD peak_rss_kb=32112 peak_footprint_mb=18 status=ok rc=0 wall=576s
+big_1e16 rc=0 wall=8874s
+big_1e16 independent replay rc=0 wall=2057s {"passed": true, "passed_B_simple_without_lemma2": true, "np": "10/10", "certs": "2/2", "seams": [0, 0, 0], "min_candidate_lower": 0.8256182590293206, "seconds": 2056.6, "replay_peak_gb": 1.464} WD peak_rss_kb=31696 peak_footprint_mb=18 status=ok rc=0 wall=2057s
+pair_1e15_286 rc=0 wall=3371s
+pair_1e15_286 independent replay wall=492s {"passed": true, "passed_B_simple_without_lemma2": true, "np": "10/10", "certs": "2/2", "seams": [0, 0, 0], "min_candidate_lower": 0.8644913957802675, "seconds": 490.35, "replay_peak_gb": 0.536} WD peak_rss_kb=32096 peak_footprint_mb=19 status=ok rc=0 wall=492s

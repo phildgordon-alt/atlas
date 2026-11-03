@@ -1,0 +1,1149 @@
+{
+ "ok": true,
+ "records": [
+  {
+   "record": "runs/m5/scan_1e16/scan_turing.json",
+   "v": "0.0",
+   "kind": "reproduce",
+   "old": {
+    "N": 54118226280292480,
+    "lo": null,
+    "hi": null,
+    "D": 40.0,
+    "pinned": true,
+    "UmL": 0.4032875583683155
+   },
+   "new": {
+    "N": 54118226280292478,
+    "lo": 54118226280292478,
+    "hi": 54118226280292478,
+    "D": "40",
+    "pinned": true,
+    "UmL": 0.4032875583683155
+   },
+   "U_L_strings_identical": true,
+   "ok": true
+  },
+  {
+   "record": "runs/m5/scan_1e16/scan_turing.json",
+   "v": "2.0",
+   "kind": "reproduce",
+   "old": {
+    "N": 54118226280292488,
+    "lo": null,
+    "hi": null,
+    "D": 40.0,
+    "pinned": true,
+    "UmL": 0.38088755836831617
+   },
+   "new": {
+    "N": 54118226280292488,
+    "lo": 54118226280292488,
+    "hi": 54118226280292488,
+    "D": "40",
+    "pinned": true,
+    "UmL": 0.38088755836831617
+   },
+   "U_L_strings_identical": true,
+   "ok": true
+  },
+  {
+   "record": "runs/m5/scan_1e16/scan_turing.json",
+   "v": "18.0",
+   "kind": "reproduce",
+   "old": {
+    "N": 54118226280292576,
+    "lo": null,
+    "hi": null,
+    "D": 40.0,
+    "pinned": true,
+    "UmL": 0.4066875583683267
+   },
+   "new": {
+    "N": 54118226280292578,
+    "lo": 54118226280292578,
+    "hi": 54118226280292578,
+    "D": "40",
+    "pinned": true,
+    "UmL": 0.4066875583683267
+   },
+   "U_L_strings_identical": true,
+   "ok": true
+  },
+  {
+   "record": "runs/m5/scan_1e16/scan_turing.json",
+   "v": "20.0",
+   "kind": "reproduce",
+   "old": {
+    "N": 54118226280292592,
+    "lo": null,
+    "hi": null,
+    "D": 40.0,
+    "pinned": true,
+    "UmL": 0.39288755836832817
+   },
+   "new": {
+    "N": 54118226280292589,
+    "lo": 54118226280292589,
+    "hi": 54118226280292589,
+    "D": "40",
+    "pinned": true,
+    "UmL": 0.39288755836832817
+   },
+   "U_L_strings_identical": true,
+   "ok": true
+  },
+  {
+   "record": "runs/m5/scan_1e16/scan_turing.json",
+   "window": "0,2",
+   "count": 10,
+   "sign_changes": 10,
+   "straddling": [],
+   "ok": true
+  },
+  {
+   "record": "runs/m5/scan_1e16/scan_turing.json",
+   "window": "18,20",
+   "count": 11,
+   "sign_changes": 11,
+   "straddling": [],
+   "ok": true
+  },
+  {
+   "record": "runs/m5/scan2_1e16/scan_turing.json",
+   "v": "0.0",
+   "kind": "reproduce",
+   "old": {
+    "N": 54118226280292478,
+    "lo": 54118226280292478,
+    "hi": 54118226280292478,
+    "D": 40.0,
+    "pinned": true,
+    "UmL": 0.4032875583683155
+   },
+   "new": {
+    "N": 54118226280292478,
+    "lo": 54118226280292478,
+    "hi": 54118226280292478,
+    "D": "40",
+    "pinned": true,
+    "UmL": 0.4032875583683155
+   },
+   "U_L_strings_identical": true,
+   "ok": true
+  },
+  {
+   "record": "runs/m5/scan2_1e16/scan_turing.json",
+   "v": "2.0",
+   "kind": "reproduce",
+   "old": {
+    "N": 54118226280292488,
+    "lo": 54118226280292488,
+    "hi": 54118226280292488,
+    "D": 40.0,
+    "pinned": true,
+    "UmL": 0.38088755836831617
+   },
+   "new": {
+    "N": 54118226280292488,
+    "lo": 54118226280292488,
+    "hi": 54118226280292488,
+    "D": "40",
+    "pinned": true,
+    "UmL": 0.38088755836831617
+   },
+   "U_L_strings_identical": true,
+   "ok": true
+  },
+  {
+   "record": "runs/m5/scan2_1e16/scan_turing.json",
+   "v": "18.0",
+   "kind": "reproduce",
+   "old": {
+    "N": 54118226280292578,
+    "lo": 54118226280292578,
+    "hi": 54118226280292578,
+    "D": 40.0,
+    "pinned": true,
+    "UmL": 0.4066875583683267
+   },
+   "new": {
+    "N": 54118226280292578,
+    "lo": 54118226280292578,
+    "hi": 54118226280292578,
+    "D": "40",
+    "pinned": true,
+    "UmL": 0.4066875583683267
+   },
+   "U_L_strings_identical": true,
+   "ok": true
+  },
+  {
+   "record": "runs/m5/scan2_1e16/scan_turing.json",
+   "v": "20.0",
+   "kind": "reproduce",
+   "old": {
+    "N": 54118226280292589,
+    "lo": 54118226280292589,
+    "hi": 54118226280292589,
+    "D": 40.0,
+    "pinned": true,
+    "UmL": 0.39288755836832817
+   },
+   "new": {
+    "N": 54118226280292589,
+    "lo": 54118226280292589,
+    "hi": 54118226280292589,
+    "D": "40",
+    "pinned": true,
+    "UmL": 0.39288755836832817
+   },
+   "U_L_strings_identical": true,
+   "ok": true
+  },
+  {
+   "record": "runs/m5/scan2_1e16/scan_turing.json",
+   "window": "0,2",
+   "count": 10,
+   "sign_changes": 10,
+   "straddling": [],
+   "ok": true
+  },
+  {
+   "record": "runs/m5/scan2_1e16/scan_turing.json",
+   "window": "18,20",
+   "count": 11,
+   "sign_changes": 11,
+   "straddling": [],
+   "ok": true
+  },
+  {
+   "record": "runs/m5/scan2_1e20/scan_turing.json",
+   "v": "0.0",
+   "kind": "reproduce",
+   "old": {
+    "N": 687769382578810314775,
+    "lo": 687769382578810314775,
+    "hi": 687769382578810314775,
+    "D": 40.0,
+    "pinned": true,
+    "UmL": 0.442581647103183
+   },
+   "new": {
+    "N": 687769382578810314775,
+    "lo": 687769382578810314775,
+    "hi": 687769382578810314775,
+    "D": "40",
+    "pinned": true,
+    "UmL": 0.442581647103183
+   },
+   "U_L_strings_identical": true,
+   "ok": true
+  },
+  {
+   "record": "runs/m5/scan2_1e20/scan_turing.json",
+   "v": "2.0",
+   "kind": "reproduce",
+   "old": {
+    "N": 687769382578810314788,
+    "lo": 687769382578810314788,
+    "hi": 687769382578810314788,
+    "D": 40.0,
+    "pinned": true,
+    "UmL": 0.4693816471031838
+   },
+   "new": {
+    "N": 687769382578810314788,
+    "lo": 687769382578810314788,
+    "hi": 687769382578810314788,
+    "D": "40",
+    "pinned": true,
+    "UmL": 0.4693816471031838
+   },
+   "U_L_strings_identical": true,
+   "ok": true
+  },
+  {
+   "record": "runs/m5/scan2_1e20/scan_turing.json",
+   "v": "4.0",
+   "kind": "reproduce",
+   "old": {
+    "N": 687769382578810314803,
+    "lo": 687769382578810314803,
+    "hi": 687769382578810314803,
+    "D": 40.0,
+    "pinned": true,
+    "UmL": 0.4383816471031846
+   },
+   "new": {
+    "N": 687769382578810314803,
+    "lo": 687769382578810314803,
+    "hi": 687769382578810314803,
+    "D": "40",
+    "pinned": true,
+    "UmL": 0.4383816471031846
+   },
+   "U_L_strings_identical": true,
+   "ok": true
+  },
+  {
+   "record": "runs/m5/scan2_1e20/scan_turing.json",
+   "v": "6.0",
+   "kind": "reproduce",
+   "old": {
+    "N": 687769382578810314817,
+    "lo": 687769382578810314817,
+    "hi": 687769382578810314817,
+    "D": 40.0,
+    "pinned": true,
+    "UmL": 0.4073816471031837
+   },
+   "new": {
+    "N": 687769382578810314817,
+    "lo": 687769382578810314817,
+    "hi": 687769382578810314817,
+    "D": "40",
+    "pinned": true,
+    "UmL": 0.4073816471031837
+   },
+   "U_L_strings_identical": true,
+   "ok": true
+  },
+  {
+   "record": "runs/m5/scan2_1e20/scan_turing.json",
+   "window": "0,2",
+   "count": 13,
+   "sign_changes": 13,
+   "straddling": [],
+   "ok": true
+  },
+  {
+   "record": "runs/m5/scan2_1e20/scan_turing.json",
+   "window": "4,6",
+   "count": 14,
+   "sign_changes": 14,
+   "straddling": [],
+   "ok": true
+  },
+  {
+   "record": "runs/m5/scan2_1e21/scan_turing.json",
+   "v": "-6.0",
+   "kind": "reproduce",
+   "old": {
+    "N": 7244161625227817018129,
+    "lo": 7244161625227817018129,
+    "hi": 7244161625227817018129,
+    "D": 40.0,
+    "pinned": true,
+    "UmL": 0.43183016928690177
+   },
+   "new": {
+    "N": 7244161625227817018129,
+    "lo": 7244161625227817018129,
+    "hi": 7244161625227817018129,
+    "D": "40",
+    "pinned": true,
+    "UmL": 0.43183016928690177
+   },
+   "U_L_strings_identical": true,
+   "ok": true
+  },
+  {
+   "record": "runs/m5/scan2_1e21/scan_turing.json",
+   "v": "-4.0",
+   "kind": "reproduce",
+   "old": {
+    "N": 7244161625227817018144,
+    "lo": 7244161625227817018144,
+    "hi": 7244161625227817018144,
+    "D": 40.0,
+    "pinned": true,
+    "UmL": 0.4585301692869021
+   },
+   "new": {
+    "N": 7244161625227817018144,
+    "lo": 7244161625227817018144,
+    "hi": 7244161625227817018144,
+    "D": "40",
+    "pinned": true,
+    "UmL": 0.4585301692869021
+   },
+   "U_L_strings_identical": true,
+   "ok": true
+  },
+  {
+   "record": "runs/m5/scan2_1e21/scan_turing.json",
+   "v": "0.0",
+   "kind": "reproduce",
+   "old": {
+    "N": 7244161625227817018173,
+    "lo": 7244161625227817018173,
+    "hi": 7244161625227817018173,
+    "D": 40.0,
+    "pinned": true,
+    "UmL": 0.45833016928690096
+   },
+   "new": {
+    "N": 7244161625227817018173,
+    "lo": 7244161625227817018173,
+    "hi": 7244161625227817018173,
+    "D": "40",
+    "pinned": true,
+    "UmL": 0.45833016928690096
+   },
+   "U_L_strings_identical": true,
+   "ok": true
+  },
+  {
+   "record": "runs/m5/scan2_1e21/scan_turing.json",
+   "v": "2.0",
+   "kind": "reproduce",
+   "old": {
+    "N": 7244161625227817018188,
+    "lo": 7244161625227817018188,
+    "hi": 7244161625227817018188,
+    "D": 40.0,
+    "pinned": true,
+    "UmL": 0.4279301692869009
+   },
+   "new": {
+    "N": 7244161625227817018188,
+    "lo": 7244161625227817018188,
+    "hi": 7244161625227817018188,
+    "D": "40",
+    "pinned": true,
+    "UmL": 0.4279301692869009
+   },
+   "U_L_strings_identical": true,
+   "ok": true
+  },
+  {
+   "record": "runs/m5/scan2_1e21/scan_turing.json",
+   "window": "-6,-4",
+   "count": 15,
+   "sign_changes": 15,
+   "straddling": [],
+   "ok": true
+  },
+  {
+   "record": "runs/m5/scan2_1e21/scan_turing.json",
+   "window": "0,2",
+   "count": 15,
+   "sign_changes": 15,
+   "straddling": [],
+   "ok": true
+  },
+  {
+   "record": "runs/m5/scan2_1e22/scan_turing.json",
+   "v": "0.0",
+   "kind": "reproduce",
+   "old": {
+    "N": 76106294246675308886088,
+    "lo": 76106294246675308886088,
+    "hi": 76106294246675308886088,
+    "D": 40.0,
+    "pinned": true,
+    "UmL": 0.47427869147061774
+   },
+   "new": {
+    "N": 76106294246675308886088,
+    "lo": 76106294246675308886088,
+    "hi": 76106294246675308886088,
+    "D": "40",
+    "pinned": true,
+    "UmL": 0.47427869147061774
+   },
+   "U_L_strings_identical": true,
+   "ok": true
+  },
+  {
+   "record": "runs/m5/scan2_1e22/scan_turing.json",
+   "v": "2.0",
+   "kind": "reproduce",
+   "old": {
+    "N": 76106294246675308886104,
+    "lo": 76106294246675308886104,
+    "hi": 76106294246675308886104,
+    "D": 40.0,
+    "pinned": true,
+    "UmL": 0.4450786914706174
+   },
+   "new": {
+    "N": 76106294246675308886104,
+    "lo": 76106294246675308886104,
+    "hi": 76106294246675308886104,
+    "D": "40",
+    "pinned": true,
+    "UmL": 0.4450786914706174
+   },
+   "U_L_strings_identical": true,
+   "ok": true
+  },
+  {
+   "record": "runs/m5/scan2_1e22/scan_turing.json",
+   "v": "17.0",
+   "kind": "reproduce",
+   "old": {
+    "N": 76106294246675308886220,
+    "lo": 76106294246675308886220,
+    "hi": 76106294246675308886220,
+    "D": 40.0,
+    "pinned": true,
+    "UmL": 0.49367869147061527
+   },
+   "new": {
+    "N": 76106294246675308886220,
+    "lo": 76106294246675308886220,
+    "hi": 76106294246675308886220,
+    "D": "40",
+    "pinned": true,
+    "UmL": 0.49367869147061527
+   },
+   "U_L_strings_identical": true,
+   "ok": true
+  },
+  {
+   "record": "runs/m5/scan2_1e22/scan_turing.json",
+   "v": "19.0",
+   "kind": "reproduce",
+   "old": {
+    "N": 76106294246675308886236,
+    "lo": 76106294246675308886236,
+    "hi": 76106294246675308886236,
+    "D": 40.0,
+    "pinned": true,
+    "UmL": 0.45487869147061544
+   },
+   "new": {
+    "N": 76106294246675308886236,
+    "lo": 76106294246675308886236,
+    "hi": 76106294246675308886236,
+    "D": "40",
+    "pinned": true,
+    "UmL": 0.45487869147061544
+   },
+   "U_L_strings_identical": true,
+   "ok": true
+  },
+  {
+   "record": "runs/m5/scan2_1e22/scan_turing.json",
+   "window": "0,2",
+   "count": 16,
+   "sign_changes": 16,
+   "straddling": [],
+   "ok": true
+  },
+  {
+   "record": "runs/m5/scan2_1e22/scan_turing.json",
+   "window": "17,19",
+   "count": 16,
+   "sign_changes": 16,
+   "straddling": [],
+   "ok": true
+  },
+  {
+   "record": "runs/m5/scan2_1e23/scan_turing.json",
+   "v": "0.0",
+   "kind": "reproduce",
+   "old": {
+    "N": 797709722410724475904516,
+    "lo": 797709722410724475904516,
+    "hi": 797709722410724475904516,
+    "D": 40.0,
+    "pinned": true,
+    "UmL": 0.5051272136543353
+   },
+   "new": {
+    "N": 797709722410724475904516,
+    "lo": 797709722410724475904516,
+    "hi": 797709722410724475904516,
+    "D": "40",
+    "pinned": true,
+    "UmL": 0.5051272136543353
+   },
+   "U_L_strings_identical": true,
+   "ok": true
+  },
+  {
+   "record": "runs/m5/scan2_1e23/scan_turing.json",
+   "v": "2.0",
+   "kind": "reproduce",
+   "old": {
+    "N": 797709722410724475904532,
+    "lo": 797709722410724475904532,
+    "hi": 797709722410724475904532,
+    "D": 40.0,
+    "pinned": true,
+    "UmL": 0.5216272136543356
+   },
+   "new": {
+    "N": 797709722410724475904532,
+    "lo": 797709722410724475904532,
+    "hi": 797709722410724475904532,
+    "D": "40",
+    "pinned": true,
+    "UmL": 0.5216272136543356
+   },
+   "U_L_strings_identical": true,
+   "ok": true
+  },
+  {
+   "record": "runs/m5/scan2_1e23/scan_turing.json",
+   "v": "4.0",
+   "kind": "reproduce",
+   "old": {
+    "N": 797709722410724475904548,
+    "lo": 797709722410724475904548,
+    "hi": 797709722410724475904548,
+    "D": 40.0,
+    "pinned": true,
+    "UmL": 0.4750272136543355
+   },
+   "new": {
+    "N": 797709722410724475904548,
+    "lo": 797709722410724475904548,
+    "hi": 797709722410724475904548,
+    "D": "40",
+    "pinned": true,
+    "UmL": 0.4750272136543355
+   },
+   "U_L_strings_identical": true,
+   "ok": true
+  },
+  {
+   "record": "runs/m5/scan2_1e23/scan_turing.json",
+   "window": "0,2",
+   "count": 16,
+   "sign_changes": 16,
+   "straddling": [],
+   "ok": true
+  },
+  {
+   "record": "runs/m5/scan2_1e23/scan_turing.json",
+   "window": "2,4",
+   "count": 16,
+   "sign_changes": 16,
+   "straddling": [],
+   "ok": true
+  },
+  {
+   "record": "runs/m6/turing_extra_1e23.json",
+   "v": "-24.0",
+   "kind": "reproduce",
+   "old": {
+    "N": 797709722410724475904320,
+    "lo": 797709722410724475904320,
+    "hi": 797709722410724475904320,
+    "D": 36.0,
+    "pinned": true,
+    "UmL": 0.526011936600966
+   },
+   "new": {
+    "N": 797709722410724475904320,
+    "lo": 797709722410724475904320,
+    "hi": 797709722410724475904320,
+    "D": "36",
+    "pinned": true,
+    "UmL": 0.526011936600966
+   },
+   "U_L_strings_identical": true,
+   "ok": true
+  },
+  {
+   "record": "runs/m6/turing_extra_1e23.json",
+   "v": "-22.0",
+   "kind": "reproduce",
+   "old": {
+    "N": 797709722410724475904337,
+    "lo": 797709722410724475904337,
+    "hi": 797709722410724475904337,
+    "D": 38.0,
+    "pinned": true,
+    "UmL": 0.5084671174501986
+   },
+   "new": {
+    "N": 797709722410724475904337,
+    "lo": 797709722410724475904337,
+    "hi": 797709722410724475904337,
+    "D": "38",
+    "pinned": true,
+    "UmL": 0.5084671174501986
+   },
+   "U_L_strings_identical": true,
+   "ok": true
+  },
+  {
+   "record": "runs/m6/turing_extra_1e23.json",
+   "v": "-2.0",
+   "kind": "reproduce",
+   "old": {
+    "N": 797709722410724475904499,
+    "lo": 797709722410724475904499,
+    "hi": 797709722410724475904499,
+    "D": 40.0,
+    "pinned": true,
+    "UmL": 0.4614272136543359
+   },
+   "new": {
+    "N": 797709722410724475904499,
+    "lo": 797709722410724475904499,
+    "hi": 797709722410724475904499,
+    "D": "40",
+    "pinned": true,
+    "UmL": 0.4614272136543359
+   },
+   "U_L_strings_identical": true,
+   "ok": true
+  },
+  {
+   "record": "runs/m6/turing_extra_1e23.json",
+   "v": "0.0",
+   "kind": "reproduce",
+   "old": {
+    "N": 797709722410724475904516,
+    "lo": 797709722410724475904516,
+    "hi": 797709722410724475904516,
+    "D": 40.0,
+    "pinned": true,
+    "UmL": 0.5051272136543353
+   },
+   "new": {
+    "N": 797709722410724475904516,
+    "lo": 797709722410724475904516,
+    "hi": 797709722410724475904516,
+    "D": "40",
+    "pinned": true,
+    "UmL": 0.5051272136543353
+   },
+   "U_L_strings_identical": true,
+   "ok": true
+  },
+  {
+   "record": "runs/m6/turing_extra_1e23.json",
+   "v": "2.0",
+   "kind": "reproduce",
+   "old": {
+    "N": 797709722410724475904532,
+    "lo": 797709722410724475904532,
+    "hi": 797709722410724475904532,
+    "D": 40.0,
+    "pinned": true,
+    "UmL": 0.5216272136543356
+   },
+   "new": {
+    "N": 797709722410724475904532,
+    "lo": 797709722410724475904532,
+    "hi": 797709722410724475904532,
+    "D": "40",
+    "pinned": true,
+    "UmL": 0.5216272136543356
+   },
+   "U_L_strings_identical": true,
+   "ok": true
+  },
+  {
+   "record": "runs/m6/turing_extra_1e23.json",
+   "window": "-24,-22",
+   "count": 17,
+   "sign_changes": 17,
+   "straddling": [],
+   "ok": true
+  },
+  {
+   "record": "runs/m6/turing_extra_1e23.json",
+   "window": "-2,0",
+   "count": 17,
+   "sign_changes": 17,
+   "straddling": [],
+   "ok": true
+  },
+  {
+   "record": "runs/m6/turing_extra_1e23.json",
+   "window": "0,2",
+   "count": 16,
+   "sign_changes": 16,
+   "straddling": [],
+   "ok": true
+  },
+  {
+   "record": "runs/m6/scan3_1e24/scan_turing.json",
+   "v": "-3.0",
+   "kind": "reproduce",
+   "old": {
+    "N": 8343565023546958629481519,
+    "lo": 8343565023546958629481519,
+    "hi": 8343565023546958629481519,
+    "D": 40.0,
+    "pinned": true,
+    "UmL": 0.5229757358380497
+   },
+   "new": {
+    "N": 8343565023546958629481519,
+    "lo": 8343565023546958629481519,
+    "hi": 8343565023546958629481519,
+    "D": "40",
+    "pinned": true,
+    "UmL": 0.5229757358380497
+   },
+   "U_L_strings_identical": true,
+   "ok": true
+  },
+  {
+   "record": "runs/m6/scan3_1e24/scan_turing.json",
+   "v": "-1.0",
+   "kind": "reproduce",
+   "old": {
+    "N": 8343565023546958629481535,
+    "lo": 8343565023546958629481535,
+    "hi": 8343565023546958629481535,
+    "D": 40.0,
+    "pinned": true,
+    "UmL": 0.5203757358380495
+   },
+   "new": {
+    "N": 8343565023546958629481535,
+    "lo": 8343565023546958629481535,
+    "hi": 8343565023546958629481535,
+    "D": "40",
+    "pinned": true,
+    "UmL": 0.5203757358380495
+   },
+   "U_L_strings_identical": true,
+   "ok": true
+  },
+  {
+   "record": "runs/m6/scan3_1e24/scan_turing.json",
+   "v": "0.0",
+   "kind": "reproduce",
+   "old": {
+    "N": 8343565023546958629481544,
+    "lo": 8343565023546958629481544,
+    "hi": 8343565023546958629481544,
+    "D": 40.0,
+    "pinned": true,
+    "UmL": 0.5031757358380494
+   },
+   "new": {
+    "N": 8343565023546958629481544,
+    "lo": 8343565023546958629481544,
+    "hi": 8343565023546958629481544,
+    "D": "40",
+    "pinned": true,
+    "UmL": 0.5031757358380494
+   },
+   "U_L_strings_identical": true,
+   "ok": true
+  },
+  {
+   "record": "runs/m6/scan3_1e24/scan_turing.json",
+   "v": "2.0",
+   "kind": "reproduce",
+   "old": {
+    "N": 8343565023546958629481561,
+    "lo": 8343565023546958629481561,
+    "hi": 8343565023546958629481561,
+    "D": 40.0,
+    "pinned": true,
+    "UmL": 0.4786757358380495
+   },
+   "new": {
+    "N": 8343565023546958629481561,
+    "lo": 8343565023546958629481561,
+    "hi": 8343565023546958629481561,
+    "D": "40",
+    "pinned": true,
+    "UmL": 0.4786757358380495
+   },
+   "U_L_strings_identical": true,
+   "ok": true
+  },
+  {
+   "record": "runs/m6/scan3_1e24/scan_turing.json",
+   "window": "-3,-1",
+   "count": 16,
+   "sign_changes": 16,
+   "straddling": [],
+   "ok": true
+  },
+  {
+   "record": "runs/m6/scan3_1e24/scan_turing.json",
+   "window": "0,2",
+   "count": 17,
+   "sign_changes": 17,
+   "straddling": [],
+   "ok": true
+  },
+  {
+   "record": "runs/m7/scan4_1e22/scan_turing.json",
+   "v": "0.0",
+   "kind": "reproduce",
+   "old": {
+    "N": 76106294246675308886088,
+    "lo": 76106294246675308886088,
+    "hi": 76106294246675308886088,
+    "D": 40.0,
+    "pinned": true,
+    "UmL": 0.47427869147061585
+   },
+   "new": {
+    "N": 76106294246675308886088,
+    "lo": 76106294246675308886088,
+    "hi": 76106294246675308886088,
+    "D": "40",
+    "pinned": true,
+    "UmL": 0.47427869147061585
+   },
+   "U_L_strings_identical": true,
+   "ok": true
+  },
+  {
+   "record": "runs/m7/scan4_1e22/scan_turing.json",
+   "v": "100.0",
+   "kind": "F-M7a fixed (old Delta not exact)",
+   "old": {
+    "N": null,
+    "lo": 76106294246675308886865,
+    "hi": 76106294246675322406058,
+    "D": 39.999999999,
+    "pinned": false,
+    "UmL": 13519194.100465631
+   },
+   "new": {
+    "N": 76106294246675308886865,
+    "lo": 76106294246675308886865,
+    "hi": 76106294246675308886865,
+    "D": "40",
+    "pinned": true,
+    "UmL": 0.46947869147061905
+   },
+   "U_L_strings_identical": true,
+   "ok": true
+  },
+  {
+   "record": "runs/m7/scan4_1e22/scan_turing.json",
+   "window": "0,100",
+   "count": 777,
+   "sign_changes": 777,
+   "straddling": [],
+   "ok": true
+  },
+  {
+   "record": "runs/m7/turing2_1e22_D39.json",
+   "v": "0.0",
+   "kind": "reproduce",
+   "old": {
+    "N": 76106294246675308886088,
+    "lo": 76106294246675308886088,
+    "hi": 76106294246675308886088,
+    "D": 39.0,
+    "pinned": true,
+    "UmL": 0.4763636565597429
+   },
+   "new": {
+    "N": 76106294246675308886088,
+    "lo": 76106294246675308886088,
+    "hi": 76106294246675308886088,
+    "D": "39",
+    "pinned": true,
+    "UmL": 0.4763636565597429
+   },
+   "U_L_strings_identical": true,
+   "ok": true
+  },
+  {
+   "record": "runs/m7/turing2_1e22_D39.json",
+   "v": "100.0",
+   "kind": "reproduce",
+   "old": {
+    "N": 76106294246675308886865,
+    "lo": 76106294246675308886865,
+    "hi": 76106294246675308886865,
+    "D": 39.0,
+    "pinned": true,
+    "UmL": 0.47656878476487313
+   },
+   "new": {
+    "N": 76106294246675308886865,
+    "lo": 76106294246675308886865,
+    "hi": 76106294246675308886865,
+    "D": "39",
+    "pinned": true,
+    "UmL": 0.47656878476487313
+   },
+   "U_L_strings_identical": true,
+   "ok": true
+  },
+  {
+   "record": "runs/m7/turing2_1e22_D39.json",
+   "window": "0,100",
+   "count": 777,
+   "sign_changes": 777,
+   "straddling": [],
+   "ok": true
+  },
+  {
+   "check": "scan4_1e22 v=100: exact D=40 value equals M7-A1 D=39 value",
+   "new": 76106294246675308886865,
+   "m7a1": 76106294246675308886865,
+   "ok": true
+  }
+ ],
+ "part2_fresh_vs_arb_crosscheck": [
+  {
+   "crosscheck": "atlas_v5z/runs/w1000000000000/z_1e12/crosscheck.json",
+   "arb_N": [
+    3945951430271,
+    3945951430279
+   ],
+   "scan_turing5_N": [
+    3945951430271,
+    3945951430279
+   ],
+   "ok": true
+  },
+  {
+   "crosscheck": "atlas_v5z/runs/w10000000000000/z_1e13/crosscheck.json",
+   "arb_N": [
+    43124192297102,
+    43124192297111
+   ],
+   "scan_turing5_N": [
+    43124192297102,
+    43124192297111
+   ],
+   "ok": true
+  },
+  {
+   "crosscheck": "atlas_v5z/runs/w100000000000000/z_1e14/crosscheck.json",
+   "arb_N": [
+    467888702914983,
+    467888702914992
+   ],
+   "scan_turing5_N": [
+    467888702914983,
+    467888702914992
+   ],
+   "ok": true
+  },
+  {
+   "crosscheck": "atlas_v5z/runs/w1000000000000000/z_1e15/crosscheck.json",
+   "arb_N": [
+    5045354828589535,
+    5045354828589545
+   ],
+   "scan_turing5_N": [
+    5045354828589535,
+    5045354828589545
+   ],
+   "ok": true
+  },
+  {
+   "crosscheck": "atlas_v5z/runs/w1000000000000000/z_pair_1e15_286/crosscheck.json",
+   "arb_N": [
+    5045354828591023,
+    5045354828591033
+   ],
+   "scan_turing5_N": [
+    5045354828591023,
+    5045354828591033
+   ],
+   "ok": true
+  },
+  {
+   "crosscheck": "atlas_v5z/runs/w10000000000000000/z_1e16/crosscheck.json",
+   "arb_N": [
+    54118226280292478,
+    54118226280292488
+   ],
+   "scan_turing5_N": [
+    54118226280292478,
+    54118226280292488
+   ],
+   "ok": true
+  },
+  {
+   "crosscheck": "atlas_v5z2/runs/w1000000000000/y_1e12/crosscheck.json",
+   "arb_N": [
+    3945951430271,
+    3945951430279
+   ],
+   "scan_turing5_N": [
+    3945951430271,
+    3945951430279
+   ],
+   "ok": true
+  },
+  {
+   "crosscheck": "atlas_v5z2/runs/w10000000000000/y_1e13/crosscheck.json",
+   "arb_N": [
+    43124192297102,
+    43124192297111
+   ],
+   "scan_turing5_N": [
+    43124192297102,
+    43124192297111
+   ],
+   "ok": true
+  },
+  {
+   "crosscheck": "atlas_v5z2/runs/w100000000000000/y_1e14/crosscheck.json",
+   "arb_N": [
+    467888702914983,
+    467888702914992
+   ],
+   "scan_turing5_N": [
+    467888702914983,
+    467888702914992
+   ],
+   "ok": true
+  },
+  {
+   "crosscheck": "atlas_v5z2/runs/w1000000000000000/y_1e15/crosscheck.json",
+   "arb_N": [
+    5045354828589535,
+    5045354828589545
+   ],
+   "scan_turing5_N": [
+    5045354828589535,
+    5045354828589545
+   ],
+   "ok": true
+  },
+  {
+   "crosscheck": "atlas_v5z2/runs/w1000000000000000/y_pair_1e15_286/crosscheck.json",
+   "arb_N": [
+    5045354828591023,
+    5045354828591033
+   ],
+   "scan_turing5_N": [
+    5045354828591023,
+    5045354828591033
+   ],
+   "ok": true
+  },
+  {
+   "crosscheck": "atlas_v5z2/runs/w10000000000000000/y_1e16/crosscheck.json",
+   "arb_N": [
+    54118226280292478,
+    54118226280292488
+   ],
+   "scan_turing5_N": [
+    54118226280292478,
+    54118226280292488
+   ],
+   "ok": true
+  },
+  {
+   "crosscheck": "atlas_v5z3/runs/w10000000000000000/x_1e16/crosscheck.json",
+   "arb_N": [
+    54118226280292478,
+    54118226280292488
+   ],
+   "scan_turing5_N": [
+    54118226280292478,
+    54118226280292488
+   ],
+   "ok": true
+  }
+ ]
+}

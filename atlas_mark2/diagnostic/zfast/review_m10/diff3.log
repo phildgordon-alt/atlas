@@ -1,0 +1,4 @@
+T0=1000000123456789012 H=61 Delta=0.012 D=1: W=2[hash = Z = grid = items 804 fast 3.9032]  ref_hash 00b97db2fd94e4de
+T0=1000004321987654321 H=61 Delta=0.012 D=2: W=1[hash = Z = grid = items 1104 fast 7.5921] W=2[hash = Z = grid = items 1104 fast 3.9234]  ref_hash 5cf2b889c9ae49b9
+T0=100000000987654321234 H=61 Delta=0.012 D=2: W=2[hash = Z = grid = items 1459 fast 81.4344]  ref_hash d740221cfd9dffff
+MISMATCHES 0

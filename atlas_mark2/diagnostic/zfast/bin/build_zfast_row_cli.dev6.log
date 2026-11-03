@@ -1,0 +1,14 @@
+../bin/src_dev6/zfast_row_cli.c:22:20: error: call to undeclared function 'acb_get_str'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+   22 |         char *s1 = acb_get_str(z, 25, 0), *s2 = acb_get_str(dz, 25, 0), *s3 = arb_get_str(acb_realref(q), 25, 0);
+      |                    ^
+../bin/src_dev6/zfast_row_cli.c:22:20: note: did you mean 'arb_get_str'?
+/opt/homebrew/include/flint/arb.h:156:8: note: 'arb_get_str' declared here
+  156 | char * arb_get_str(const arb_t x, slong n, ulong flags);
+      |        ^
+../bin/src_dev6/zfast_row_cli.c:22:15: error: incompatible integer to pointer conversion initializing 'char *' with an expression of type 'int' [-Wint-conversion]
+   22 |         char *s1 = acb_get_str(z, 25, 0), *s2 = acb_get_str(dz, 25, 0), *s3 = arb_get_str(acb_realref(q), 25, 0);
+      |               ^    ~~~~~~~~~~~~~~~~~~~~~
+../bin/src_dev6/zfast_row_cli.c:22:44: error: incompatible integer to pointer conversion initializing 'char *' with an expression of type 'int' [-Wint-conversion]
+   22 |         char *s1 = acb_get_str(z, 25, 0), *s2 = acb_get_str(dz, 25, 0), *s3 = arb_get_str(acb_realref(q), 25, 0);
+      |                                            ^    ~~~~~~~~~~~~~~~~~~~~~~
+3 errors generated.

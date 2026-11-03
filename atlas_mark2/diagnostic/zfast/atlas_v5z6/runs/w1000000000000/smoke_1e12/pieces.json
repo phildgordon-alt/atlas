@@ -1,0 +1,163 @@
+{
+ "format": "atlas_v5",
+ "T0": 1000000000000,
+ "grid": "v5",
+ "evaluator": "dirichlet",
+ "coordinates": "offsets from T0",
+ "target_input": [
+  "1000000000000",
+  "1000000000010"
+ ],
+ "target": [
+  0.0,
+  10.0
+ ],
+ "target_note": "exact",
+ "hull": [
+  0.0,
+  10.0
+ ],
+ "hull_bins": [
+  0,
+  1000
+ ],
+ "pw": 1.0,
+ "wm": 2.0,
+ "wm_bins": 200,
+ "zs_step": 0.005,
+ "zs_refine": 0.0001,
+ "pieces": [
+  {
+   "piece": "p0_100",
+   "bins": [
+    0,
+    100
+   ],
+   "col": [
+    0.0,
+    1.0
+   ]
+  },
+  {
+   "piece": "p100_200",
+   "bins": [
+    100,
+    200
+   ],
+   "col": [
+    1.0,
+    2.0
+   ]
+  },
+  {
+   "piece": "p200_300",
+   "bins": [
+    200,
+    300
+   ],
+   "col": [
+    2.0,
+    3.0
+   ]
+  },
+  {
+   "piece": "p300_400",
+   "bins": [
+    300,
+    400
+   ],
+   "col": [
+    3.0,
+    4.0
+   ]
+  },
+  {
+   "piece": "p400_500",
+   "bins": [
+    400,
+    500
+   ],
+   "col": [
+    4.0,
+    5.0
+   ]
+  },
+  {
+   "piece": "p500_600",
+   "bins": [
+    500,
+    600
+   ],
+   "col": [
+    5.0,
+    6.0
+   ]
+  },
+  {
+   "piece": "p600_700",
+   "bins": [
+    600,
+    700
+   ],
+   "col": [
+    6.0,
+    7.0
+   ]
+  },
+  {
+   "piece": "p700_800",
+   "bins": [
+    700,
+    800
+   ],
+   "col": [
+    7.0,
+    8.0
+   ]
+  },
+  {
+   "piece": "p800_900",
+   "bins": [
+    800,
+    900
+   ],
+   "col": [
+    8.0,
+    9.0
+   ]
+  },
+  {
+   "piece": "p900_1000",
+   "bins": [
+    900,
+    1000
+   ],
+   "col": [
+    9.0,
+    10.0
+   ]
+  }
+ ],
+ "z_provider": "zfast libzfast.v14 (= v13b bit-identically at equal D), provider v5z6 (THEORY_V5Z6); model5 fixed-precision N_win (v5z4)",
+ "zfast_session": {
+  "mode": "wide",
+  "center": "5.0",
+  "H": 91.0,
+  "Delta": 0.008,
+  "K": 18,
+  "J": 12,
+  "strict": true,
+  "threads": 2,
+  "z_span": [
+   -2.0,
+   12.0
+  ],
+  "lib": "v14",
+  "gen_workers": 4,
+  "turing_grid": {
+   "u0": -40.0,
+   "step": 0.004,
+   "n": 22501
+  }
+ }
+}

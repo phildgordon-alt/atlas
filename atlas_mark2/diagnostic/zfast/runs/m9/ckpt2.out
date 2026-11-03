@@ -1,0 +1,12 @@
+{
+ "check": "C: checkpoint/resume identity",
+ "base": {
+  "state": "d14b27ee3e6bb65e514d8c9d47d5057d53aa1811b6fac0418a415c1978600847",
+  "build": 20.656
+ },
+ "ok": false,
+ "stamp": "20261101_185956",
+ "predictions": "diagnostic/zfast/PREDICTIONS_M9.md (sha in PREDICTIONS_M9.sha256)"
+}
+REPORT /Users/kiosk/atlas_mark2/engine/regress_v1/reports/v5z6_ckpt_20261101_185956.json: FAIL
+rc=1

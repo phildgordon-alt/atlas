@@ -1,0 +1,118 @@
+{
+ "driver": "bin/rd4.ec",
+ "tag": "mut_ec",
+ "v10b": false,
+ "light": true,
+ "sec": 7.39978814125061,
+ "families": [
+  {
+   "family": "K",
+   "n": 1,
+   "excluded": 0,
+   "fails": 1,
+   "max_ratio": 3.4702930327868855,
+   "first_fail": {
+    "ok": false,
+    "ratio": 3.4702930327868855,
+    "what": "[{'cmd': 'KER', 'n': 300000, 'max_cos': 1.693503e-16, 'max_cos_only': 1.693503e-16, 'max_sin': 1.715278e-16, 'ZF_EC': 4.88e-17, 'ok': 0}]"
+   }
+  },
+  {
+   "family": "PH",
+   "n": 6,
+   "excluded": 0,
+   "fails": 0,
+   "max_ratio": 0.9999,
+   "first_fail": null
+  },
+  {
+   "family": "WP",
+   "n": 30,
+   "excluded": 0,
+   "fails": 0,
+   "max_ratio": 0.2189,
+   "first_fail": null
+  },
+  {
+   "family": "Z1_prod",
+   "n": 4,
+   "excluded": 0,
+   "fails": 0,
+   "max_ratio": 0.00039619898235074925,
+   "first_fail": null
+  },
+  {
+   "family": "Z1_stress",
+   "n": 10,
+   "excluded": 0,
+   "fails": 0,
+   "max_ratio": 0.0066552716054187715,
+   "first_fail": null
+  },
+  {
+   "family": "SZ_prod",
+   "n": 142,
+   "excluded": 0,
+   "fails": 0,
+   "max_ratio": 0.0005269206906670717,
+   "first_fail": null
+  },
+  {
+   "family": "SZ_stress",
+   "n": 72,
+   "excluded": 0,
+   "fails": 0,
+   "max_ratio": 0.1709961073301059,
+   "first_fail": null
+  },
+  {
+   "family": "SZ_stress2",
+   "n": 32,
+   "excluded": 0,
+   "fails": 0,
+   "max_ratio": 0.01588156255024959,
+   "first_fail": null
+  },
+  {
+   "family": "ROW_prod",
+   "n": 200,
+   "excluded": 20,
+   "fails": 0,
+   "max_ratio": 0.0002539357511396988,
+   "first_fail": null
+  },
+  {
+   "family": "ROW_stress",
+   "n": 120,
+   "excluded": 12,
+   "fails": 0,
+   "max_ratio": 0.17960980201386323,
+   "first_fail": null
+  },
+  {
+   "family": "ROW_stress2",
+   "n": 240,
+   "excluded": 3,
+   "fails": 0,
+   "max_ratio": 0.15496979929478422,
+   "first_fail": null
+  },
+  {
+   "family": "ROW1_prod",
+   "n": 140,
+   "excluded": 20,
+   "fails": 0,
+   "max_ratio": 0.00023007163750093988,
+   "first_fail": null
+  },
+  {
+   "family": "ROW1_stress2",
+   "n": 240,
+   "excluded": 3,
+   "fails": 0,
+   "max_ratio": 0.18624354157145098,
+   "first_fail": null
+  }
+ ],
+ "detected": true
+}

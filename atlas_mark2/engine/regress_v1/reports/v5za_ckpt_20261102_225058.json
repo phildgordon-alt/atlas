@@ -1,0 +1,144 @@
+{
+ "check": "I2/I3/I4/G2: v14b checkpoint/resume identity",
+ "results": {
+  "I2 fresh checkpoint == no checkpoint": {
+   "e20": true,
+   "e14": true,
+   "written20": 1460,
+   "items20": 1459,
+   "syncs20": 18,
+   "max_unsynced_s20": 1.021,
+   "sec_fast20": 16.8511
+  },
+  "cost 1e20 D2 W8 (checkpointed build seconds)": {
+   "v14": 16.404,
+   "v14b": 17.035,
+   "ratio": 1.0385
+  },
+  "I3a SIGKILL + resume (W 8 -> 3)": {
+   "killed_rc": -9,
+   "lines_at_kill": 306,
+   "loaded": 305,
+   "verified": 8,
+   "rejected": 0,
+   "resume_wall": 6.5,
+   "identical": true
+  },
+  "I3b test-hook exit + resume": {
+   "exit_rc": 77,
+   "loaded": 120,
+   "verified": 8,
+   "identical": true
+  },
+  "I4 generic kernel == production": {
+   "generic": 1,
+   "identical": true
+  },
+  "G2 pipeline: generator SIGKILLed in its session, --resume": {
+   "ref_rc": 0,
+   "killed_pid": 33568,
+   "lines_at_kill": 271,
+   "killed_before_zs": true,
+   "resume_rc": 0,
+   "compare": {
+    "certs": {
+     "frozen": 10,
+     "regenerated": 10,
+     "same_names": 10,
+     "canonical_identical": 10,
+     "byte_identical": 7,
+     "differing": [],
+     "only_frozen": [],
+     "only_new": []
+    },
+    "certs_np": {
+     "frozen": 55,
+     "regenerated": 55,
+     "same_names": 55,
+     "canonical_identical": 55,
+     "byte_identical": 36,
+     "differing": [],
+     "only_frozen": [],
+     "only_new": []
+    },
+    "pieces.json": {
+     "canonical_identical": true,
+     "byte_identical": true
+    },
+    "zs.json": {
+     "canonical_identical": true,
+     "byte_identical": true
+    },
+    "gen_measurements.json": {
+     "canonical_identical": true,
+     "byte_identical": true
+    },
+    "replay_check": {
+     "frozen": {
+      "passed": true,
+      "passed_B": true,
+      "certificates": 10,
+      "passed_both": 10,
+      "min_candidate_lower": 0.8256182590293205,
+      "seams": [
+       0,
+       0
+      ],
+      "gaps_d0": 0,
+      "uncovered": 0
+     },
+     "regenerated": {
+      "passed": true,
+      "passed_B": true,
+      "certificates": 10,
+      "passed_both": 10,
+      "min_candidate_lower": 0.8256182590293205,
+      "seams": [
+       0,
+       0
+      ],
+      "gaps_d0": 0,
+      "uncovered": 0
+     },
+     "identical": true
+    },
+    "replay_records_identical": true,
+    "identical": true
+   },
+   "turing_grid_identical": true,
+   "gen_sessions": [
+    {
+     "pid": 33579,
+     "loaded": 270,
+     "verified": 64,
+     "rejected": 0
+    }
+   ],
+   "replay_zfast_ckpt": {
+    "path": "/Users/kiosk/atlas_mark2/engine/regress_v1/work/trees/atlas_v5za/runs/w10000000000000000/ck16_res_za_20261102_225058/zfast_ckpt_replay.txt",
+    "run_nonce": "283de3b5001c9bcdd956c62879ac6694",
+    "ok": true,
+    "sessions": [
+     {
+      "pid": 34009,
+      "role": "replay",
+      "nonce": "283de3b5001c9bcdd956c62879ac6694",
+      "items": 1075,
+      "items_loaded": 0,
+      "verified": 0,
+      "lines_rejected": 0,
+      "lines_duplicate": 0,
+      "lines_written": 1076,
+      "ckpt_write_errors": 0,
+      "created": 1
+     }
+    ]
+   },
+   "identical": true
+  }
+ },
+ "ok": true,
+ "tree": "atlas_v5za",
+ "stamp": "20261102_225058",
+ "predictions": "diagnostic/zfast/PREDICTIONS_M14.md (sha in PREDICTIONS_M14.sha256)"
+}

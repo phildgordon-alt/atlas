@@ -1,0 +1,31 @@
+../bin/src_dev5/zfast.c:823:19: error: incompatible pointer types passing 'acb_t[4]' (aka 'acb_struct[4][1]') to parameter of type 'acb_ptr' (aka 'acb_struct *') [-Werror,-Wincompatible-pointer-types]
+  823 |     main_sums_row(Sm, sigma, t, tau, N, wp, P, S);
+      |                   ^~
+../bin/src_dev5/zfast.c:607:35: note: passing argument to parameter 'S' here
+  607 | static void main_sums_row(acb_ptr S, const arb_t sigma, const arb_t t, const arb_t tau, ulong N, slong wp, const zf_params *P, zf_stats *St)
+      |                                   ^
+../bin/src_dev5/zfast.c:825:16: error: incompatible pointer types passing 'acb_t *' (aka 'acb_struct (*)[1]') to parameter of type 'const acb_struct *' [-Werror,-Wincompatible-pointer-types]
+  825 |     acb_add(a, Sm + 2, G0, wp);
+      |                ^~~~~~
+/opt/homebrew/include/flint/acb.h:365:30: note: passing argument to parameter 'x' here
+  365 | acb_add(acb_t z, const acb_t x, const acb_t y, slong prec)
+      |                              ^
+../bin/src_dev5/zfast.c:826:43: error: incompatible pointer types passing 'acb_t *' (aka 'acb_struct (*)[1]') to parameter of type 'const acb_struct *' [-Werror,-Wincompatible-pointer-types]
+  826 |     acb_mul(b, chi, a, wp); acb_add(zeta, Sm + 0, H0, wp); acb_add(zeta, zeta, b, wp);
+      |                                           ^~~~~~
+/opt/homebrew/include/flint/acb.h:365:30: note: passing argument to parameter 'x' here
+  365 | acb_add(acb_t z, const acb_t x, const acb_t y, slong prec)
+      |                              ^
+../bin/src_dev5/zfast.c:827:45: error: incompatible pointer types passing 'acb_t *' (aka 'acb_struct (*)[1]') to parameter of type 'const acb_struct *' [-Werror,-Wincompatible-pointer-types]
+  827 |     acb_mul(b, dchi, a, wp); acb_add(dzeta, Sm + 1, H1, wp); acb_add(dzeta, dzeta, b, wp);
+      |                                             ^~~~~~
+/opt/homebrew/include/flint/acb.h:365:30: note: passing argument to parameter 'x' here
+  365 | acb_add(acb_t z, const acb_t x, const acb_t y, slong prec)
+      |                              ^
+../bin/src_dev5/zfast.c:828:16: error: incompatible pointer types passing 'acb_t *' (aka 'acb_struct (*)[1]') to parameter of type 'const acb_struct *' [-Werror,-Wincompatible-pointer-types]
+  828 |     acb_add(a, Sm + 3, G1, wp); acb_mul(b, chi, a, wp); acb_add(dzeta, dzeta, b, wp);
+      |                ^~~~~~
+/opt/homebrew/include/flint/acb.h:365:30: note: passing argument to parameter 'x' here
+  365 | acb_add(acb_t z, const acb_t x, const acb_t y, slong prec)
+      |                              ^
+5 errors generated.

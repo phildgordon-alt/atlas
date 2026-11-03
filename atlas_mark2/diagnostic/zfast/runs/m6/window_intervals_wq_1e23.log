@@ -1,0 +1,1 @@
+{"run": "atlas_v5z4/runs/w100000000000000000000000/wq_1e23", "T0": 100000000000000000000000, "closed": true, "claimB": true, "sign_changes_in_target": 17, "straddling": [], "disjoint": true, "min_gap_upper": 0.015312500000000284, "min_candidate_lower": 0.7437305083574092}

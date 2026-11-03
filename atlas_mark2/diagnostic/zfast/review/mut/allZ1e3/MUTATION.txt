@@ -1,0 +1,7 @@
+file: zfast.c
+--- old
+    arb_add_error_mag(acc, tot);
+    arb_set(res, acc);
++++ new
+    mag_div_ui(tot, tot, 1000); arb_add_error_mag(acc, tot);
+    arb_set(res, acc);

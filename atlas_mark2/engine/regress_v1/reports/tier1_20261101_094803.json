@@ -1,0 +1,97 @@
+{
+ "kind": "tier1",
+ "stamp": "20261101_094803",
+ "tag": "a4c",
+ "prereg_sha256": "80774906223b4f8e59c96633191377c646fd8c322daf5645a7be75b2419ecabd",
+ "sections": {
+  "Z1": {
+   "runs": [
+    {
+     "id": "atlas_v5z2:w1000000000000/y_1e12",
+     "process": {
+      "rc": 0,
+      "killed": null,
+      "peak_gb": 0.03,
+      "seconds": 7.81,
+      "zfast_env": {
+       "ZFAST_THREADS": 1,
+       "ZFAST_CENTER": "1.0"
+      }
+     },
+     "identical": true,
+     "compare": {
+      "certs": {
+       "frozen": 2,
+       "regenerated": 2,
+       "same_names": 2,
+       "canonical_identical": 2,
+       "byte_identical": 0,
+       "differing": [],
+       "only_frozen": [],
+       "only_new": []
+      },
+      "certs_np": {
+       "frozen": 8,
+       "regenerated": 8,
+       "same_names": 8,
+       "canonical_identical": 8,
+       "byte_identical": 0,
+       "differing": [],
+       "only_frozen": [],
+       "only_new": []
+      },
+      "pieces.json": {
+       "canonical_identical": true,
+       "byte_identical": true
+      },
+      "zs.json": {
+       "canonical_identical": true,
+       "byte_identical": true
+      },
+      "gen_measurements.json": {
+       "canonical_identical": true,
+       "byte_identical": true
+      },
+      "replay_check": {
+       "frozen": {
+        "passed": true,
+        "passed_B": true,
+        "certificates": 2,
+        "passed_both": 2,
+        "min_candidate_lower": 0.9435444104376903,
+        "seams": [
+         0,
+         0
+        ],
+        "gaps_d0": 0,
+        "uncovered": 0
+       },
+       "regenerated": {
+        "passed": true,
+        "passed_B": true,
+        "certificates": 2,
+        "passed_both": 2,
+        "min_candidate_lower": 0.9435444104376903,
+        "seams": [
+         0,
+         0
+        ],
+        "gaps_d0": 0,
+        "uncovered": 0
+       },
+       "identical": true
+      },
+      "replay_records_identical": true,
+      "identical": true
+     },
+     "ok": true
+    }
+   ],
+   "n": 1,
+   "passed": 1,
+   "ok": true
+  }
+ },
+ "ok": true,
+ "seconds": 7.9
+}

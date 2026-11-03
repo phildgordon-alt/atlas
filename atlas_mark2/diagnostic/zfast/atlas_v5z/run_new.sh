@@ -1,0 +1,5 @@
+#!/bin/bash
+cd /Users/kiosk/atlas_mark2/diagnostic/zfast/atlas_v5z
+./run_window.sh z_1e17 100000000000000000 100000000000000000 100000000000000002 0.005 - -
+./run_window.sh z_1e18 1000000000000000000 1000000000000000000 1000000000000000002 0.005 - -
+echo NEWDONE >> runs/v5z.log

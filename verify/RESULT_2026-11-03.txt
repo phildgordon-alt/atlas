@@ -1,0 +1,162 @@
+# quick_verify.sh result, recorded 2026-11-03 (Apple M1, 8 GB, macOS 27.0, nice 19), run from this repository copy
+# command: ATLAS_AUDIT_BIN=<host build of atlas_mark2/formal, lake build atlas_audit; sha256 b77863fc3b7854d8...> PY=<venv> OUT=$OUT ./verify/quick_verify.sh
+# (output directory shown as $OUT; this file is not itself listed in SHA256SUMS)
+
+[0] environment
+  python 3.12.13 | python-flint 0.9.0 | numpy 2.5.3 | scipy 1.18.1 | mpmath 1.4.1 | macOS-27.0-arm64-arm-64bit
+[1] SHA256SUMS (every file in the repository)
+  OK   all files match SHA256SUMS (9234 files)
+[2] RH windows: frozen replay logic on every certificate (stored measurements), comparison with the stored replay records,
+    exact tiling + claim (B), Arb/Turing cross-count, Turing recount from the stored grid; plus 2 negative controls
+  OK   record_heights:w1000000000000000/big_1e15                  records 24/24 main 2/2 S-layer 10/10 closed_A=True claim_B=True sign_changes=10 | identical to stored replay 24/24 | Arb/Turing cross-count 10 | 1.0 s, peak 0.0 GB
+  OK   record_heights:w1000000000000000/pair_1e15_286             records 24/24 main 2/2 S-layer 10/10 closed_A=True claim_B=True sign_changes=10 | identical to stored replay 24/24 | Arb/Turing cross-count 10 | 1.0 s, peak 0.0 GB
+  OK   record_heights:w10000000000000000/big_1e16                 records 24/24 main 2/2 S-layer 10/10 closed_A=True claim_B=True sign_changes=10 | identical to stored replay 24/24 | Arb/Turing cross-count 10 | 1.0 s, peak 0.0 GB
+  OK   atlas_v5z:w1000000000000/z_1e12                            records 20/20 main 2/2 S-layer 8/8 closed_A=True claim_B=True sign_changes=8 | identical to stored replay 20/20 | Arb/Turing cross-count 8 | 1.0 s, peak 0.0 GB
+  OK   atlas_v5z:w10000000000000/z_1e13                           records 22/22 main 2/2 S-layer 9/9 closed_A=True claim_B=True sign_changes=9 | identical to stored replay 22/22 | Arb/Turing cross-count 9 | 1.0 s, peak 0.0 GB
+  OK   atlas_v5z:w100000000000000/z_1e14                          records 22/22 main 2/2 S-layer 9/9 closed_A=True claim_B=True sign_changes=9 | identical to stored replay 22/22 | Arb/Turing cross-count 9 | 1.0 s, peak 0.0 GB
+  OK   atlas_v5z:w1000000000000000/z_1e15                         records 24/24 main 2/2 S-layer 10/10 closed_A=True claim_B=True sign_changes=10 | identical to stored replay 24/24 | Arb/Turing cross-count 10 | 1.0 s, peak 0.0 GB
+  OK   atlas_v5z:w1000000000000000/z_pair_1e15_286                records 24/24 main 2/2 S-layer 10/10 closed_A=True claim_B=True sign_changes=10 | identical to stored replay 24/24 | Arb/Turing cross-count 10 | 1.0 s, peak 0.0 GB
+  OK   atlas_v5z:w10000000000000000/z_1e16                        records 24/24 main 2/2 S-layer 10/10 closed_A=True claim_B=True sign_changes=10 | identical to stored replay 24/24 | Arb/Turing cross-count 10 | 1.0 s, peak 0.0 GB
+  OK   atlas_v5z:w100000000000000000/z_1e17                       records 26/26 main 2/2 S-layer 11/11 closed_A=True claim_B=True sign_changes=11 | identical to stored replay 26/26 | 1.0 s, peak 0.0 GB
+  OK   atlas_v5z:w1000000000000000000/z_1e18                      records 26/26 main 2/2 S-layer 11/11 closed_A=True claim_B=True sign_changes=11 | identical to stored replay 26/26 | 1.0 s, peak 0.0 GB
+  OK   atlas_v5z2:w1000000000000/y_1e12                           records 20/20 main 2/2 S-layer 8/8 closed_A=True claim_B=True sign_changes=8 | identical to stored replay 20/20 | Arb/Turing cross-count 8 | 1.0 s, peak 0.0 GB
+  OK   atlas_v5z2:w10000000000000/y_1e13                          records 22/22 main 2/2 S-layer 9/9 closed_A=True claim_B=True sign_changes=9 | identical to stored replay 22/22 | Arb/Turing cross-count 9 | 1.0 s, peak 0.0 GB
+  OK   atlas_v5z2:w100000000000000/y_1e14                         records 22/22 main 2/2 S-layer 9/9 closed_A=True claim_B=True sign_changes=9 | identical to stored replay 22/22 | Arb/Turing cross-count 9 | 1.0 s, peak 0.0 GB
+  OK   atlas_v5z2:w1000000000000000/y_1e15                        records 24/24 main 2/2 S-layer 10/10 closed_A=True claim_B=True sign_changes=10 | identical to stored replay 24/24 | Arb/Turing cross-count 10 | 1.0 s, peak 0.0 GB
+  OK   atlas_v5z2:w1000000000000000/y_pair_1e15_286               records 24/24 main 2/2 S-layer 10/10 closed_A=True claim_B=True sign_changes=10 | identical to stored replay 24/24 | Arb/Turing cross-count 10 | 1.0 s, peak 0.0 GB
+  OK   atlas_v5z2:w10000000000000000/y_1e16                       records 24/24 main 2/2 S-layer 10/10 closed_A=True claim_B=True sign_changes=10 | identical to stored replay 24/24 | Arb/Turing cross-count 10 | 1.0 s, peak 0.0 GB
+  OK   atlas_v5z2:w100000000000000000/y_1e17                      records 26/26 main 2/2 S-layer 11/11 closed_A=True claim_B=True sign_changes=11 | identical to stored replay 26/26 | 1.0 s, peak 0.0 GB
+  OK   atlas_v5z2:w1000000000000000000/y_1e18                     records 26/26 main 2/2 S-layer 11/11 closed_A=True claim_B=True sign_changes=11 | identical to stored replay 26/26 | 1.0 s, peak 0.0 GB
+  OK   atlas_v5z2:w100000000000000000000/h_1e20                   records 30/30 main 2/2 S-layer 13/13 closed_A=True claim_B=True sign_changes=13 | identical to stored replay 30/30 | 1.0 s, peak 0.0 GB
+  OK   atlas_v5z2:w100000000000000000000/hp_1e20                  records 32/32 main 2/2 S-layer 14/14 closed_A=True claim_B=True sign_changes=14 | identical to stored replay 32/32 | 1.0 s, peak 0.0 GB
+  OK   atlas_v5z2:w1000000000000000000000/h_1e21                  records 34/34 main 2/2 S-layer 15/15 closed_A=True claim_B=True sign_changes=15 | identical to stored replay 34/34 | 1.0 s, peak 0.0 GB
+  OK   atlas_v5z2:w1000000000000000000000/hp_1e21                 records 34/34 main 2/2 S-layer 15/15 closed_A=True claim_B=True sign_changes=15 | identical to stored replay 34/34 | 1.0 s, peak 0.0 GB
+  OK   atlas_v5z2:w10000000000000000000000/h_1e22                 records 36/36 main 2/2 S-layer 16/16 closed_A=True claim_B=True sign_changes=16 | identical to stored replay 36/36 | 1.0 s, peak 0.0 GB
+  OK   atlas_v5z2:w10000000000000000000000/hp_1e22                records 36/36 main 2/2 S-layer 16/16 closed_A=True claim_B=True sign_changes=16 | identical to stored replay 36/36 | 1.0 s, peak 0.0 GB
+  OK   atlas_v5z3:w10000000000000000/x_1e16                       records 24/24 main 2/2 S-layer 10/10 closed_A=True claim_B=True sign_changes=10 | identical to stored replay 24/24 | Arb/Turing cross-count 10 | 1.0 s, peak 0.0 GB
+  OK   atlas_v5z3:w100000000000000000000/x_1e20                   records 30/30 main 2/2 S-layer 13/13 closed_A=True claim_B=True sign_changes=13 | identical to stored replay 30/30 | 1.0 s, peak 0.0 GB
+  OK   atlas_v5z3:w100000000000000000000/xp_1e20                  records 32/32 main 2/2 S-layer 14/14 closed_A=True claim_B=True sign_changes=14 | identical to stored replay 32/32 | 1.0 s, peak 0.0 GB
+  OK   atlas_v5z3:w1000000000000000000000/x_1e21                  records 34/34 main 2/2 S-layer 15/15 closed_A=True claim_B=True sign_changes=15 | identical to stored replay 34/34 | 1.0 s, peak 0.0 GB
+  OK   atlas_v5z3:w1000000000000000000000/xp_1e21                 records 34/34 main 2/2 S-layer 15/15 closed_A=True claim_B=True sign_changes=15 | identical to stored replay 34/34 | 1.0 s, peak 0.0 GB
+  OK   atlas_v5z3:w10000000000000000000000/x_1e22                 records 36/36 main 2/2 S-layer 16/16 closed_A=True claim_B=True sign_changes=16 | identical to stored replay 36/36 | 1.0 s, peak 0.0 GB
+  OK   atlas_v5z3:w10000000000000000000000/xp_1e22                records 36/36 main 2/2 S-layer 16/16 closed_A=True claim_B=True sign_changes=16 | identical to stored replay 36/36 | 1.0 s, peak 0.0 GB
+  OK   atlas_v5z3:w100000000000000000000000/h_1e23                records 34/36 main 1/2 S-layer 16/16 closed_A=False claim_B=False sign_changes=16 | identical to stored replay 36/36 [recorded NOT closed (failed closed, not claim-bearing): must also be found NOT closed] | 1.0 s, peak 0.0 GB
+  OK   atlas_v5z3:w100000000000000000000000/hp_1e23               records 34/36 main 1/2 S-layer 16/16 closed_A=False claim_B=False sign_changes=16 | identical to stored replay 36/36 [recorded NOT closed (failed closed, not claim-bearing): must also be found NOT closed] | 1.0 s, peak 0.0 GB
+  OK   atlas_v5z4:w10000000000000000000000/w_1e22                 records 36/36 main 2/2 S-layer 16/16 closed_A=True claim_B=True sign_changes=16 | identical to stored replay 36/36 | 1.0 s, peak 0.0 GB
+  OK   atlas_v5z4:w100000000000000000000000/w_1e23                records 36/36 main 2/2 S-layer 16/16 closed_A=True claim_B=True sign_changes=16 | identical to stored replay 36/36 | 1.0 s, peak 0.0 GB
+  OK   atlas_v5z4:w100000000000000000000000/wp_1e23               records 36/36 main 2/2 S-layer 16/16 closed_A=True claim_B=True sign_changes=16 | identical to stored replay 36/36 | 1.0 s, peak 0.0 GB
+  OK   atlas_v5z4:w100000000000000000000000/wq_1e23               records 38/38 main 2/2 S-layer 17/17 closed_A=True claim_B=True sign_changes=17 | identical to stored replay 38/38 | 1.0 s, peak 0.0 GB
+  OK   atlas_v5z4:w100000000000000000000000/wr_1e23               records 38/38 main 2/2 S-layer 17/17 closed_A=True claim_B=True sign_changes=17 | identical to stored replay 38/38 | 1.0 s, peak 0.0 GB
+  OK   atlas_v5z4:w1000000000000000000000000/w_1e24               records 38/38 main 2/2 S-layer 17/17 closed_A=True claim_B=True sign_changes=17 | identical to stored replay 38/38 | 1.0 s, peak 0.0 GB
+  OK   atlas_v5z4:w1000000000000000000000000/wp_1e24              records 36/36 main 2/2 S-layer 16/16 closed_A=True claim_B=True sign_changes=16 | identical to stored replay 36/36 | 1.0 s, peak 0.0 GB
+  OK   atlas_v5z5:w10000000000000000000000/wide_1e22              records 1754/1754 main 100/100 S-layer 777/777 closed_A=True claim_B=True sign_changes=777 | identical to stored replay 1754/1754 | Arb/Turing cross-count 777 | 28.4 s, peak 0.056 GB
+  OK   atlas_v5z7:w10000000000000000000000/wide7_1e22             records 1754/1754 main 100/100 S-layer 777/777 closed_A=True claim_B=True sign_changes=777 | identical to stored replay 1754/1754 | Turing recount 777 (identical to stored: True) | 28.4 s, peak 0.051 GB
+  OK   atlas_v5z7:w10000000000000000000000000/wide7_1e25          records 1976/1976 main 100/100 S-layer 888/888 closed_A=True claim_B=True sign_changes=888 | identical to stored replay 1976/1976 | Arb/Turing cross-count 888 | Turing recount 888 (identical to stored: True) | 35.5 s, peak 0.056 GB
+  OK   atlas_v5z7:w100000000000000000000000000/wide7_1e26         records 2048/2048 main 100/100 S-layer 924/924 closed_A=True claim_B=True sign_changes=924 | identical to stored replay 2048/2048 | Arb/Turing cross-count 924 | Turing recount 924 (identical to stored: True) | 38.5 s, peak 0.051 GB
+  OK   NEGATIVE CONTROL --tamper-cert on z_1e17                   records 0/26 main 0/2 S-layer 0/11 closed_A=False claim_B=False sign_changes=11 | identical to stored replay 0/26 [negative control: must fail] | 1.0 s, peak 0.0 GB
+  OK   NEGATIVE CONTROL --wrong-y on z_1e17                       records 0/26 main 0/2 S-layer 0/11 closed_A=False claim_B=False sign_changes=11 | identical to stored replay 0/26 [negative control: must fail] | 1.0 s, peak 0.0 GB
+  windows verified: 47/47; failures 0; details $OUT/windows/verify_windows.json
+  OK   all windows
+[3] Lean: exact re-export of the certificate files must equal the stored Lean datasets; Lean audit if atlas_audit is built
+  OK   atlas_v5z       v5z_1e12                     re-export identical: True | Lean audit identical: True, violations 0
+  OK   atlas_v5z       v5z_1e13                     re-export identical: True | Lean audit identical: True, violations 0
+  OK   atlas_v5z       v5z_1e14                     re-export identical: True | Lean audit identical: True, violations 0
+  OK   atlas_v5z       v5z_1e15                     re-export identical: True | Lean audit identical: True, violations 0
+  OK   atlas_v5z       v5z_1e16                     re-export identical: True | Lean audit identical: True, violations 0
+  OK   atlas_v5z       v5z_1e17                     re-export identical: True | Lean audit identical: True, violations 0
+  OK   atlas_v5z       v5z_1e18                     re-export identical: True | Lean audit identical: True, violations 0
+  OK   atlas_v5z       v5z_pair_1e15_286            re-export identical: True | Lean audit identical: True, violations 0
+  OK   atlas_v5z2      v5z2_h_1e20                  re-export identical: True | Lean audit identical: True, violations 0
+  OK   atlas_v5z2      v5z2_h_1e21                  re-export identical: True | Lean audit identical: True, violations 0
+  OK   atlas_v5z2      v5z2_h_1e22                  re-export identical: True | Lean audit identical: True, violations 0
+  OK   atlas_v5z2      v5z2_hp_1e20                 re-export identical: True | Lean audit identical: True, violations 0
+  OK   atlas_v5z2      v5z2_hp_1e21                 re-export identical: True | Lean audit identical: True, violations 0
+  OK   atlas_v5z2      v5z2_hp_1e22                 re-export identical: True | Lean audit identical: True, violations 0
+  OK   atlas_v5z3      v5z3_x_1e16                  re-export identical: True | Lean audit identical: True, violations 0
+  OK   atlas_v5z3      v5z3_x_1e20                  re-export identical: True | Lean audit identical: True, violations 0
+  OK   atlas_v5z3      v5z3_x_1e21                  re-export identical: True | Lean audit identical: True, violations 0
+  OK   atlas_v5z3      v5z3_x_1e22                  re-export identical: True | Lean audit identical: True, violations 0
+  OK   atlas_v5z3      v5z3_xp_1e20                 re-export identical: True | Lean audit identical: True, violations 0
+  OK   atlas_v5z3      v5z3_xp_1e21                 re-export identical: True | Lean audit identical: True, violations 0
+  OK   atlas_v5z3      v5z3_xp_1e22                 re-export identical: True | Lean audit identical: True, violations 0
+  OK   atlas_v5z4      v5z4_w_1e23                  re-export identical: True | Lean audit identical: True, violations 0
+  OK   atlas_v5z4      v5z4_w_1e24                  re-export identical: True | Lean audit identical: True, violations 0
+  OK   atlas_v5z4      v5z4_wp_1e23                 re-export identical: True | Lean audit identical: True, violations 0
+  OK   atlas_v5z4      v5z4_wp_1e24                 re-export identical: True | Lean audit identical: True, violations 0
+  OK   atlas_v5z4      v5z4_wq_1e23                 re-export identical: True | Lean audit identical: True, violations 0
+  OK   atlas_v5z4      v5z4_wr_1e23                 re-export identical: True | Lean audit identical: True, violations 0
+  OK   atlas_v5z5      v5z5_wide_1e22               re-export identical: True | Lean audit identical: True, violations 0
+  OK   atlas_v5z7      v5z7_wide7_1e25              re-export identical: True | Lean audit identical: True, violations 0
+  OK   atlas_v5z7      v5z7_wide7_1e26              re-export identical: True | Lean audit identical: True, violations 0
+  OK   record_heights  record_1e15                  re-export identical: True | Lean audit identical: True, violations 0
+  OK   record_heights  record_1e16                  re-export identical: True | Lean audit identical: True, violations 0
+  OK   record_heights  record_pair_1e15_286         re-export identical: True | Lean audit identical: True, violations 0
+  OK   record_heights  v5_check_1e14                re-export identical: None | Lean audit identical: None, violations None
+  Lean datasets: 34/34 OK; atlas_audit: <host atlas_audit> sha256 b77863fc3b7854d8...
+  OK   Lean datasets
+done in 279 s; failures: 0; outputs in $OUT
+exit=0
+
+# full replay (verify/full_replay.sh atlas_v5z7 w10000000000000000000000/wide7_1e22), same machine, ZFAST_WORKERS=8:
+replay rc=0 wall=262 s (ZFAST_THREADS=2 ZFAST_WORKERS=8)
+new replay: passed (claim A) True, passed_B True; records 1754, identical to stored 1754/1754
+rc=0
+# modules loaded from outside the repository / scratch copy: none (boot log)
+
+# full replay (verify/full_replay.sh atlas_v5z w100000000000000000/z_1e17):
+replay rc=0 wall=15 s; new replay: passed (claim A) True, passed_B True; records 26, identical to stored 26/26
+
+# October bundle (data_release/atlas_bundle_2026-10-08.tar.gz), unpacked to a scratch dir, its own quick_verify.sh:
+[0] environment
+  python 3.12.13 | python-flint 0.9.0 | numpy 2.5.3 | scipy 1.18.1 | mpmath 1.4.1
+[1] SHA256SUMS (every bundled file)
+  OK   all files match SHA256SUMS
+[2] zeta, atlas_v4: independent replays (models + rows rebuilt, pinned verifier plain + hardened, exact tiling, claim B)
+  OK   w7000.00/lehmer_full_pair: {"passed": true, "passed_B_simple_without_lemma2": true, "np": "2/2", "certs": "1/1", "seams": [0, 0, 0], "min_candidate_lower": 1.345136820255405, "seconds": 0.61, "replay_peak_gb": 0.049}
+  OK   w7000.00/c7002: {"passed": true, "passed_B_simple_without_lemma2": true, "np": "0/0", "certs": "1/1", "seams": [0, 0, 0], "min_candidate_lower": 1.5188260012892645, "seconds": 0.29, "replay_peak_gb": 0.001}
+  OK   w6820046.00/rosser: {"passed": true, "passed_B_simple_without_lemma2": true, "np": "3/3", "certs": "2/2", "seams": [0, 0, 0], "min_candidate_lower": 0.7987567942814627, "seconds": 1.11, "replay_peak_gb": 0.051}
+  OK   w663310.00/t2_663318: {"passed": true, "passed_B_simple_without_lemma2": true, "np": "2/2", "certs": "1/1", "seams": [0, 0, 0], "min_candidate_lower": 1.3851588751197215, "seconds": 0.55, "replay_peak_gb": 0.05}
+  [bundle] engine modules: $SCRATCH/bundle/atlas_mark2/diagnostic/integer_mechanism.py, $SCRATCH/bundle/atlas_mark2/diagnostic/certify_sech_interferometer.py
+[3] L(s, 11.a): fresh-process replay of chunk [0, 10] (rows recomputed, A = 1.2 endpoint check, verifier plain + hardened; ~1-2 min)
+  OK   11.a [0,10]: closed, passed_both/certificates = 20/20 (replayed on a scratch copy in $SCRATCH/out/replay)
+[3b] zeta_K/zeta, d_K = -239 (tollis ADDENDUM 2, launched through run_ext2.py): fresh-process replay of chunk [100, 110] (~1-2 min)
+  OK   K239 [100,110]: closed, passed_both/certificates = 20/20 (via run_ext2.py; scratch copy in $SCRATCH/out/replay)
+[4] 389.a1 / 37.a1 central zero
+  OK   389.a1 L(E,1) = 0 (modular-symbol certificate re-verified in exact Fractions)
+  OK   389.a1 Lambda''(1) != 0 => central order exactly 2
+  OK   37.a1 Lambda'(1) != 0 => central zero simple
+[5] exact unions over the STORED replay records (Fractions), compared with the stored union logs where they exist
+  OK   11a [0,300]: covered, cells/sign changes = 600/388, identical to stored log: (no stored log)
+  OK   11a [0,300]: recomputed union agrees with the stored record UNION_0_300.json (cells, gaps, 388, per-chunk verdicts)
+  OK   37a [0,200]: covered, cells/sign changes = 400/273, identical to stored log: True
+  OK   389a [0,200]: covered, cells/sign changes = 400/346, identical to stored log: True
+  OK   tollis_K23 [0,110]: covered, cells/sign changes = 220/121, identical to stored log: True
+  OK   tollis_K31 [0,110]: covered, cells/sign changes = 220/126, identical to stored log: True
+  OK   tollis_K44 [0,110]: covered, cells/sign changes = 220/132, identical to stored log: True
+  OK   tollis_K59 [0,110]: covered, cells/sign changes = 220/137, identical to stored log: True
+  OK   tollis_K76 [0,110]: covered, cells/sign changes = 220/141, identical to stored log: True
+  OK   tollis_K83 [0,110]: covered, cells/sign changes = 220/143, identical to stored log: True
+  OK   tollis_K87 [0,110]: covered, cells/sign changes = 220/143, identical to stored log: True
+  OK   tollis_K104 [0,110]: covered, cells/sign changes = 220/147, identical to stored log: True
+  OK   tollis_K107 [0,110]: covered, cells/sign changes = 220/147, identical to stored log: True
+  OK   tollis_K108 [0,110]: covered, cells/sign changes = 220/147, identical to stored log: True
+  OK   tollis_K116 [0,110]: covered, cells/sign changes = 220/149, identical to stored log: True
+  OK   tollis_K135 [0,110]: covered, cells/sign changes = 220/151, identical to stored log: True
+  OK   tollis_K139 [0,110]: covered, cells/sign changes = 220/152, identical to stored log: True
+  OK   tollis_K140 [0,110]: covered, cells/sign changes = 220/152, identical to stored log: True
+  OK   tollis_K152 [0,110]: covered, cells/sign changes = 220/153, identical to stored log: True
+  OK   tollis_K172 [0,110]: covered, cells/sign changes = 220/155, identical to stored log: True
+  OK   tollis_K175 [0,110]: covered, cells/sign changes = 220/156, identical to stored log: True
+  OK   tollis_K199 [0,110]: covered, cells/sign changes = 220/158, identical to stored log: True
+  OK   tollis_K200 [0,110]: covered, cells/sign changes = 220/158, identical to stored log: True
+  OK   tollis_K204 [0,110]: covered, cells/sign changes = 220/158, identical to stored log: True
+  OK   tollis_K211 [0,110]: covered, cells/sign changes = 220/158, identical to stored log: True
+  OK   tollis_K212 [0,110]: covered, cells/sign changes = 220/159, identical to stored log: True
+  OK   tollis_K216 [0,110]: covered, cells/sign changes = 220/159, identical to stored log: True
+  OK   tollis_K231 [0,110]: covered, cells/sign changes = 220/161, identical to stored log: True
+  OK   tollis_K239 [0,110]: covered, cells/sign changes = 220/161, identical to stored log: True
+  OK   tollis_K23_200 [0,200]: covered, cells/sign changes = 400/257, identical to stored log: True
+[6] Lean: certificate-file audit (only if the Lean project has been built; see README)
+  SKIP atlas_audit not built (lean/: lake build atlas_audit)
+done in 151 s; failures: 0; outputs in $SCRATCH/out
+exit=0

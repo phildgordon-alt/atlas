@@ -1,0 +1,13 @@
+M10_iv_meets0            CAUGHT  CERT runs/val_0_10/cell_0.0000.json: [central policy (m0 = 2, recorded = true, window ∋ 0: true)]
+M11_np_dropped           CAUGHT  CLAIM (B) w9000.00/v1_9000: S-layer coverage fails
+M12_bin_dropped          CAUGHT  CERT w9000.00/v1_9000/certs/cert_p0_100.json: [v4 model: bins malformed or do not cover the window]
+M1_drop_cert             CAUGHT  TARGET runs/contig/c_100_110 [100, 110] NOT covered
+M2_not_passed            CAUGHT  TARGET runs/t_11a_100_110 [100, 110] NOT covered
+M3_iv_outside            CAUGHT  CERT runs/t_11a_100_110/cell_103.5000.json: [interval not in window or t1 >= t2]
+M4_unsorted              CAUGHT  CERT runs/t_11a_100_110/cell_104.5000.json: [intervals not sorted/disjoint]
+M5_d1                    CAUGHT  CERT runs/t_11a_100_110/cell_105.5000.json: [region not in window / d-range]
+M6_region_outside        CAUGHT  CERT runs/t_11a_100_110/cell_106.5000.json: [region not in window / d-range]
+M7_touching              CAUGHT  CERT runs/t_11a_100_110/cell_107.5000.json: [intervals not sorted/disjoint]
+M8_central_dropped       CAUGHT  CERT runs/val_0_10/cell_0.0000.json: [central policy (m0 = 0, recorded = false, window ∋ 0: true)]
+M9_m0_3                  CAUGHT  CERT runs/val_0_10/cell_0.0000.json: [central policy (m0 = 3, recorded = true, window ∋ 0: true)]
+mutations caught: 12/12

@@ -1,0 +1,255 @@
+Only in ../atlas_v5z9: THEORY_V5Z9.md
+Only in ../atlas_v5za: THEORY_V5ZA.md
+diff -ru -x runs -x *.sha256 ../atlas_v5z9/atlas_v5.py ../atlas_v5za/atlas_v5.py
+--- ../atlas_v5z9/atlas_v5.py	2026-11-02 20:42:56
++++ ../atlas_v5za/atlas_v5.py	2026-11-02 22:15:18
+@@ -34,14 +34,19 @@
+ atlas_v5z8 (PREDICTIONS_M12, THEORY_V5Z8.md): libzfast.v14b; per-run nonce RUN/zfast_ckpt_nonce.txt; role-tagged, HMAC-sealed checkpoints
+   (keys in diagnostic/zfast/ckpt_keys/, outside RUN); the replay of record refuses any checkpoint it did not create; test hooks refused.
+ atlas_v5z9 (PREDICTIONS_M13, THEORY_V5Z9.md): libzfast.v14c (checkpoint format v3, review_v14b MJ1/mn1-mn6); the generator session
+-  recomputes ZFAST_CKPT_VERIFY = 64 loaded items on resume by default (mn7; the replay stays 8)."""
++  recomputes ZFAST_CKPT_VERIFY = 64 loaded items on resume by default (mn7; the replay stays 8).
++atlas_v5za (PREDICTIONS_M14, THEORY_V5ZA.md): libzfast.v14d.  (mn-C4) a checkpoint I/O error aborts the zfast session; the driver then
++  logs stage ckpt_io_abort, prints a banner and exits 3 (fix the cause, then --resume).  (mn-C3) --resume also after the generator's
++  session build: while the replay has not started, the run's generator checkpoint and nonce exist and the generator sidecar holds a
++  gen-role record of this nonce, every generator output is MOVED to RUN/gen_postbuild.attempt<k>/ and the generator re-runs on the
++  complete checkpoint (same nonce and key).  The generator counts as finished only with gen_done and, if requested, its turing_grid."""
+ import argparse, json, os, re, shutil, subprocess, sys, time, hashlib, math, platform
+ from pathlib import Path
+ if sys.flags.optimize != 0 or os.environ.get('PYTHONOPTIMIZE'):
+-    raise SystemExit('atlas_v5z9: refusing to run under python -O / PYTHONOPTIMIZE (Atlas rule)')
+-HOOK_PREFIXES = ('ZFAST14_TEST', 'ZFAST14B_TEST', 'ZFAST14C_TEST', 'ZFAST14_GENERIC_KERNEL')
++    raise SystemExit('atlas_v5za: refusing to run under python -O / PYTHONOPTIMIZE (Atlas rule)')
++HOOK_PREFIXES = ('ZFAST14_TEST', 'ZFAST14B_TEST', 'ZFAST14C_TEST', 'ZFAST14D_TEST', 'ZFAST14_GENERIC_KERNEL')
+ if any(k.startswith(HOOK_PREFIXES) for k in os.environ):
+-    raise SystemExit('atlas_v5z9: refusing to start with a libzfast test-hook variable set (review_m10 m8): ' + ', '.join(k for k in os.environ if k.startswith(HOOK_PREFIXES)))
++    raise SystemExit('atlas_v5za: refusing to start with a libzfast test-hook variable set (review_m10 m8): ' + ', '.join(k for k in os.environ if k.startswith(HOOK_PREFIXES)))
+ KEYDIR = Path('/Users/kiosk/atlas_mark2/diagnostic/zfast/ckpt_keys')        # v5z8: HMAC keys live OUTSIDE every run directory
+ 
+ V4 = Path(__file__).resolve().parent
+@@ -52,7 +57,7 @@
+ VERIFY_ZS5_SHA = open(V4 / 'VERIFY_ZS5.sha256').read().split()[0]
+ GEN_LIB = ('gen_target5.py', 'gen4.py', 'model5.py', 'sech5.py', 'heights.py', 'zs5.py', 'zfun5.py', 'verify.py', 'lp.py', 'zfast_provider.py')
+ LIM_GB = float(os.environ.get('V4_LIM_GB', '2.5')); H = 0.01
+-Z_PROVIDER = 'zfast libzfast.v14c (= v14 = v13b bit-identically at equal D; checkpoint v3), provider v5z9 (THEORY_V5Z9); model5 fixed-precision N_win (v5z4)'
++Z_PROVIDER = 'zfast libzfast.v14d (= v14 = v13b bit-identically at equal D; checkpoint v3), provider v5za (THEORY_V5ZA); model5 fixed-precision N_win (v5z4)'
+ ENV_KEYS = ('ZFAST_CENTER', 'ZFAST_THREADS', 'ZFAST_H', 'ZFAST_DELTA', 'ZFAST_K', 'ZFAST_J', 'ZFAST_STRICT', 'CSTEP', 'CND', 'MINW_BINS',
+             'ZS_REFINE', 'ZS_DIP', 'EPS', 'V4_LIM_GB', 'V4_TEST_SKIP_TIERS', 'V4_TEST_SPLIT', 'SECH_TABLE', 'OMP_NUM_THREADS',
+             'OPENBLAS_NUM_THREADS', 'VECLIB_MAXIMUM_THREADS', 'PYTHONHASHSEED', 'ZFAST_WORKERS', 'ZFAST_CKPT', 'ZFAST_TURING_GRID',
+@@ -135,6 +140,38 @@
+     return ulo, uhi, ('exact' if (Fraction(ulo), Fraction(uhi)) == (lo, hi) else 'rounded outward to binary64 offsets')
+ 
+ 
++POSTBUILD = ('zs.json', 'certs', 'certs_np', 'gen_measurements.json', 'turing_grid')     # v5za (mn-C3): generator outputs after its session build
++
++
++def gen_finished(RUN, want_tg):
++    """v5za: the generator finished = gen_done AND (if a Turing grid was requested) its turing_grid stage (gen_done is logged before it)."""
++    if not (RUN / 'gen.jsonl').exists(): return False
++    st = {json.loads(l).get('stage') for l in open(RUN / 'gen.jsonl') if l.strip()}
++    return 'gen_done' in st and (not want_tg or 'turing_grid' in st)
++
++
++def io_abort(ckpt, t_since, logf=None):
++    """v5za (mn-C4): the CKPT-IO-ABORT refusal recorded by this attempt's zfast session (refusal sidecar; the process log as fallback)."""
++    p = Path(str(ckpt) + '.refusals.jsonl')
++    if p.exists():
++        for l in open(p):
++            try: x = json.loads(l)
++            except ValueError: continue
++            if x.get('t', 0) >= t_since and str(x.get('error', '')).startswith('CKPT-IO-ABORT'): return x['error']
++    if logf is not None and Path(logf).exists():
++        tail = open(logf, errors='replace').read()[-20000:]
++        if 'CKPT-IO-ABORT' in tail: return tail[tail.rindex('CKPT-IO-ABORT'):][:600]
++    return None
++
++
++def io_abort_exit(log, RUN, role, err):
++    log(stage='ckpt_io_abort', role=role, error=err)
++    print('\n==== ATLAS v5za: CHECKPOINT I/O ERROR, zfast SESSION ABORTED (CKPT-IO-ABORT), role ' + role + ' ====\n' + err +
++          f'\nThe checkpoint {RUN}/zfast_ckpt_{role}.txt is valid up to the error.  Fix the cause (e.g. free disk space), then re-run the\n'
++          'same command with --resume (run_wideA.sh: RESUME=1).  Nothing was deleted.\n', file=sys.stderr, flush=True)
++    sys.exit(3)
++
++
+ def main():
+     ap = argparse.ArgumentParser()
+     ap.add_argument('T0', type=int); ap.add_argument('tlo'); ap.add_argument('thi')
+@@ -166,7 +203,7 @@
+             raise SystemExit(f'--wide: Z span {span} (+0.02) is not inside the session [{c} - {a.zfast_h}, {c} + {a.zfast_h}]')
+         ZSESS = dict(mode='wide', center=repr(float(c)), H=float(a.zfast_h), Delta=float(a.zfast_delta), K=a.zfast_k, J=a.zfast_j, strict=True,
+                      threads=gen_threads, z_span=span)
+-        ZSESS.update(lib='v14c')       # v5z7 (F-M9b): W is output-free and recorded only in drive.jsonl (env ZFAST_WORKERS); v5z9: libzfast.v14c
++        ZSESS.update(lib='v14d')       # v5z7 (F-M9b): W is output-free and recorded only in drive.jsonl (env ZFAST_WORKERS); v5za: libzfast.v14d
+         if a.turing_grid:
+             TG = dict(u0=float(ulo) - 40.0, step=0.004, n=int(round((float(uhi) - float(ulo) + 80.0) / 0.004)) + 1)
+             gend = TG['u0'] + (TG['n'] - 1) * TG['step']
+@@ -208,24 +245,48 @@
+         v6['ZFAST_CKPT'] = str(RUN / 'zfast_ckpt_gen.txt')
+         if ZSESS.get('turing_grid'): v6['ZFAST_TURING_GRID'] = json.dumps(dict(ZSESS['turing_grid'], outdir=str(RUN / 'turing_grid')))
+     env = child_env(os.environ, ZSESS, PYTHONDONTWRITEBYTECODE='1', EPS='', CSTEP=os.environ.get('CSTEP', '0.005'), CND=os.environ.get('CND', '10'), **v6)
+-    done = (RUN / 'gen.jsonl').exists() and any(json.loads(l).get('stage') == 'gen_done' for l in open(RUN / 'gen.jsonl'))
++    want_tg = bool(ZSESS.get('turing_grid'))
++    done = gen_finished(RUN, want_tg)
+     if not done:
+-        if any((RUN / f).exists() for f in ('certs', 'gen.jsonl', 'gen.log', 'zs.json')):
+-            if not (a.resume and a.wide and not (RUN / 'zs.json').exists() and not (RUN / 'turing_grid').exists()
+-                    and not any((RUN / 'certs').glob('*')) and not (RUN / 'certs_np').exists()):
++        post = [f for f in POSTBUILD if (RUN / f).exists() and (f != 'certs' or any((RUN / 'certs').glob('*')))]
++        if post:      # v5za (review_v14c mn-C3): the generator died after its session build
++            why = None
++            if not (a.resume and a.wide): why = 'the generator died after its session build: re-run with --resume (wide runs only)'
++            elif (RUN / 'replay_check').exists() or (RUN / 'zfast_ckpt_replay.txt').exists(): why = 'the replay has already started'
++            elif not (RUN / 'zfast_ckpt_gen.txt').exists(): why = 'no generator checkpoint'
++            else:
++                sc = RUN / 'zfast_ckpt_gen.txt.sessions.jsonl'
++                recs = [json.loads(l) for l in open(sc) if l.strip()] if sc.exists() else []
++                if not any(x.get('role') == 'gen' and x.get('nonce') == nonce for x in recs): why = 'no generator session record of this run nonce (zfast_ckpt_gen.txt.sessions.jsonl)'
++            if why: raise RuntimeError(f'v5z never deletes: {why}; otherwise use a fresh --name (generator outputs present: {post})')
++            k = 1
++            while (RUN / f'gen_postbuild.attempt{k}').exists(): k += 1
++            dk = RUN / f'gen_postbuild.attempt{k}'; dk.mkdir()
++            moved = [f for f in POSTBUILD + ('gen.log', 'gen.jsonl') if (RUN / f).exists()]
++            for f in moved: (RUN / f).rename(dk / f)
++            (dk / 'README.txt').write_text(f'atlas_v5za --resume after the generator session build (review_v14c mn-C3): the outputs of the interrupted generator attempt, moved here\n'
++                                           f'(never deleted) before the generator re-ran on the complete checkpoint {RUN}/zfast_ckpt_gen.txt (same nonce and key). Not used by any later stage.\n')
++            log(stage='resume_generator_postbuild', attempt=k, moved=moved, ckpt=v6.get('ZFAST_CKPT'))
++        elif any((RUN / f).exists() for f in ('certs', 'gen.jsonl', 'gen.log', 'zs.json')):
++            if not (a.resume and a.wide):
+                 raise RuntimeError('v5z never deletes: use a fresh --name (--resume only while the generator session is being built)')
+             k = 1
+             while any((RUN / f'{f}.attempt{k}').exists() for f in ('gen.log', 'gen.jsonl')): k += 1
+             for f in ('gen.log', 'gen.jsonl'):
+                 if (RUN / f).exists(): (RUN / f).rename(RUN / f'{f}.attempt{k}')
+             log(stage='resume_generator', attempt=k, ckpt=v6.get('ZFAST_CKPT'))
++        t_gen = time.time()
+         g = guarded([PY, '-u', '-B', 'gen_target5.py', str(RUN)], W, RUN / 'gen.log', env=env, timeout=a.gen_timeout)
++        if a.wide and g.get('rc') != 0:
++            err = io_abort(RUN / 'zfast_ckpt_gen.txt', t_gen - 1, RUN / 'gen.log')
++            if err: log(stage='generator', **g); io_abort_exit(log, RUN, 'gen', err)
+     else: g = dict(resumed=True)
+     log(stage='generator', **g)
+     def sidecar(p):
+         return [json.loads(l) for l in open(p)] if p.exists() else []
+     if a.wide: log(stage='ckpt_sessions_gen', records=[dict(t=x['t'], pid=x['pid'], role=x['role'], nonce=x['nonce'], **{k: x['info'].get(k) for k in
+-                   ('items', 'items_loaded', 'verified', 'lines_rejected', 'lines_duplicate', 'lines_written', 'ckpt_write_errors', 'created')})
++                   ('items', 'items_loaded', 'verified', 'lines_rejected', 'lines_duplicate', 'lines_written', 'ckpt_write_errors', 'created',
++                    'key_created', 'key_reused_new_header', 'lines_nul', 'ckpt_dir_synced')})
+                    for x in sidecar(RUN / 'zfast_ckpt_gen.txt.sessions.jsonl')])
+     # 3 replay (independent; no generator code)
+     renv = dict({k: v for k, v in os.environ.items() if not k.startswith(HOOK_PREFIXES)}, PYTHONDONTWRITEBYTECODE='1')     # v5z8 (m8)
+@@ -233,7 +294,7 @@
+         renv['ZFAST_CKPT'] = str(RUN / 'zfast_ckpt_replay.txt')         # the replay's own checkpoint, never the generator's
+         renv.update(ZFAST_CKPT_ROLE='replay', ZFAST_CKPT_NONCE=nonce, ZFAST_CKPT_KEY=str(KEYDIR / f'{nonce}_replay.key'),
+                     ZFAST_CKPT_VERIFY=os.environ.get('ZFAST_CKPT_VERIFY') or '8')      # v5z8 (M2): role replay, the run's nonce, the replay's key
+-    gen_ok = (RUN / 'gen.jsonl').exists() and any(json.loads(l).get('stage') == 'gen_done' for l in open(RUN / 'gen.jsonl'))
++    gen_ok = gen_finished(RUN, want_tg)        # v5za: gen_done and (if requested) the turing_grid stage
+     rprev = json.load(open(RUN / 'replay_check' / 'replay_check.json')) if (RUN / 'replay_check' / 'replay_check.json').exists() else None
+     if not gen_ok: r = dict(skipped='generator did not finish (v5z7, F-M9c): no replay', seconds=None, peak_gb=0)
+     elif a.resume and rprev is not None and rprev.get('passed') is True: r = dict(resumed=True, seconds=None, peak_gb=0)
+@@ -245,7 +306,11 @@
+             (RUN / 'replay_check').rename(RUN / f'replay_check.attempt{k}')
+             if (RUN / 'replay_target.log').exists(): (RUN / 'replay_target.log').rename(RUN / f'replay_target.log.attempt{k}')
+             log(stage='resume_replay', attempt=k, ckpt=renv.get('ZFAST_CKPT'))
++        t_rep = time.time()
+         r = guarded([PY, '-u', '-B', str(V4 / 'replay_target5.py'), str(RUN)], V4, RUN / 'replay_target.log', env=renv)
++        if a.wide:
++            err = io_abort(RUN / 'zfast_ckpt_replay.txt', t_rep - 1)
++            if err: log(stage='replay_target', **r); io_abort_exit(log, RUN, 'replay', err)
+     log(stage='replay_target', **r)
+     rc = json.load(open(RUN / 'replay_check' / 'replay_check.json')) if (RUN / 'replay_check' / 'replay_check.json').exists() else {}
+     gl = [json.loads(l) for l in open(RUN / 'gen.jsonl')] if (RUN / 'gen.jsonl').exists() else []
+diff -ru -x runs -x *.sha256 ../atlas_v5z9/lib/zfast_provider.py ../atlas_v5za/lib/zfast_provider.py
+--- ../atlas_v5z9/lib/zfast_provider.py	2026-11-02 20:42:56
++++ ../atlas_v5za/lib/zfast_provider.py	2026-11-02 22:15:18
+@@ -1,4 +1,8 @@
+-"""atlas_v5z9 Z / row provider (TRUSTED; PREDICTIONS_M13 / THEORY_V5Z9.md) = the v5z8 provider on libzfast.v14c (same ctypes API;
++"""atlas_v5za Z / row provider (TRUSTED; PREDICTIONS_M14 / THEORY_V5ZA.md) = the v5z9 provider on libzfast.v14d (same ctypes API; exact
++radius parse (MJ-C1), identical duplicates ignored, checkpoint I/O error => session aborted (CKPT-IO-ABORT)).  A refused checkpointed
++session appends {t, pid, role, nonce, ckpt, lib_sha, error} to CKPT + '.refusals.jsonl' (read by the v5za driver); a session reporting
++ckpt_write_errors > 0 raises.  Hook prefixes add ZFAST14D_TEST.  v5z9 docstring follows.
++atlas_v5z9 Z / row provider (TRUSTED; PREDICTIONS_M13 / THEORY_V5Z9.md) = the v5z8 provider on libzfast.v14c (same ctypes API;
+ checkpoint format v3: header-bound, index-bound line seals, duplicates refused, atomic keys, no FLINT abort in the parser, time-based
+ fsync, environment identity without placeholders).  Hook prefixes add ZFAST14C_TEST.  v5z8 docstring follows.
+ atlas_v5z8 Z / row provider (TRUSTED; PREDICTIONS_M12 / THEORY_V5Z8.md) = the v5z6 provider on libzfast.v14b (compute path = v14 =
+@@ -27,15 +31,15 @@
+ from fractions import Fraction
+ 
+ if sys.flags.optimize != 0 or os.environ.get('PYTHONOPTIMIZE'):
+-    raise SystemExit('atlas_v5z9: refusing to run under python -O / PYTHONOPTIMIZE (Atlas rule)')
+-HOOK_PREFIXES = ('ZFAST14_TEST', 'ZFAST14B_TEST', 'ZFAST14C_TEST', 'ZFAST14_GENERIC_KERNEL')
++    raise SystemExit('atlas_v5za: refusing to run under python -O / PYTHONOPTIMIZE (Atlas rule)')
++HOOK_PREFIXES = ('ZFAST14_TEST', 'ZFAST14B_TEST', 'ZFAST14C_TEST', 'ZFAST14D_TEST', 'ZFAST14_GENERIC_KERNEL')
+ if any(k.startswith(HOOK_PREFIXES) for k in os.environ):
+-    raise SystemExit('atlas_v5z9 zfast_provider: a libzfast test-hook variable is set (review_m10 m8): ' + ', '.join(k for k in os.environ if k.startswith(HOOK_PREFIXES)))
++    raise SystemExit('atlas_v5za zfast_provider: a libzfast test-hook variable is set (review_m10 m8): ' + ', '.join(k for k in os.environ if k.startswith(HOOK_PREFIXES)))
+ 
+ from flint import arb, ctx  # noqa: E402
+ 
+-LIBPATH = '/Users/kiosk/atlas_mark2/diagnostic/zfast/bin/libzfast.v14c.dylib'
+-LIB_SHA = '59883f5e2d83585b67c08a2e3816d180248cd760c705642f13b571b71ad37471'
++LIBPATH = '/Users/kiosk/atlas_mark2/diagnostic/zfast/bin/libzfast.v14d.dylib'
++LIB_SHA = 'e0ed15f3cd4d62f887ab62cf6f6af0be5f378d356e35663ef9bafd432c425b81'
+ if hashlib.sha256(open(LIBPATH, 'rb').read()).hexdigest() != LIB_SHA:
+     raise RuntimeError('libzfast sha mismatch')
+ 
+@@ -94,7 +98,7 @@
+ def config():
+     """the provider configuration of this process (recorded by the driver / replay)."""
+     return dict(H=PARAMS['H'], Delta=PARAMS['Delta'], K=PARAMS['K'], J=PARAMS['J'], threads=PARAMS['threads'], strict=STRICT,
+-                center=os.environ.get('ZFAST_CENTER'), lib_sha=LIB_SHA, lib='v14c', workers=WORKERS, ckpt=CKPT or None,
++                center=os.environ.get('ZFAST_CENTER'), lib_sha=LIB_SHA, lib='v14d', workers=WORKERS, ckpt=CKPT or None,
+                 ckpt_role=CK_ROLE or None, ckpt_nonce=CK_NONCE or None, ckpt_verify=CK_VERIFY if CKPT else None)
+ 
+ 
+@@ -116,15 +120,24 @@
+         s = _L.zfa14b_new(str(T0).encode(), c, PARAMS['H'], PARAMS['Delta'], PARAMS['K'], PARAMS['J'], PARAMS['threads'], WORKERS, CKPT.encode(),
+                           CK_ROLE.encode(), CK_NONCE.encode(), CK_KEY.encode(), CK_VERIFY)
+         if not s:
+-            _L.zfa14b_last_error(_BUF, 4096)
+-            raise RuntimeError('zfa14b_new refused the session: ' + _BUF.value.decode())
++            _L.zfa14b_last_error(_BUF, 4096); err = _BUF.value.decode()
++            if CKPT:          # v5za (review_v14c mn-C4): the refusal reason is recorded for the driver
++                import time as _t
++                try:
++                    with open(CKPT + '.refusals.jsonl', 'a') as _f:
++                        _f.write(json.dumps(dict(t=_t.time(), pid=os.getpid(), role=CK_ROLE, nonce=CK_NONCE, ckpt=CKPT, lib_sha=LIB_SHA, error=err)) + '\n'); _f.flush(); os.fsync(_f.fileno())
++                except OSError as ex:
++                    print(f'zfast_provider: could not record the refusal ({ex})', file=sys.stderr, flush=True)
++                if err.startswith('CKPT-IO-ABORT'):
++                    print('zfast_provider: ==== CHECKPOINT I/O ERROR: SESSION ABORTED (CKPT-IO-ABORT) ====\n' + err, file=sys.stderr, flush=True)
++            raise RuntimeError('zfa14b_new refused the session: ' + err)
+         if _L.zfa14b_info(s, _BUF, 4096) != 0: raise RuntimeError('zfa14b_info failed')
+         info = json.loads(_BUF.value.decode()); STATS['info'] = info
+         if CKPT:
+             import time as _t
+             rec = dict(t=_t.time(), pid=os.getpid(), role=CK_ROLE, nonce=CK_NONCE, ckpt=CKPT, lib_sha=LIB_SHA, info=info)
+             with open(CKPT + '.sessions.jsonl', 'a') as _f: _f.write(json.dumps(rec) + '\n'); _f.flush(); os.fsync(_f.fileno())
+-            if info.get('ckpt_write_errors'): print(f'zfast_provider WARNING: {info["ckpt_write_errors"]} checkpoint write error(s); this session is NOT resumable', file=sys.stderr, flush=True)
++            if info.get('ckpt_write_errors'): raise RuntimeError(f'zfast_provider: CKPT-IO-ABORT: {info["ckpt_write_errors"]} checkpoint write error(s) in a returned session (v14d aborts on any; refusing)')
+         STATS['sessions'] += 1; STATS['build_seconds'] += info['sec_build']; STATS['session_keys'].append([str(T0), c])
+         _S[key] = s
+     if not abs(u - c) <= PARAMS['H']: raise RuntimeError(f'zfast_provider: point u={u!r} outside session centre {c} H {PARAMS["H"]}')
+@@ -209,7 +222,7 @@
+     for i in range(len(fine) - 1):
+         if not fine[i][1] <= fine[i + 1][0]: raise RuntimeError(f'turing_grid: intervals not disjoint at {fine[i]} {fine[i + 1]}')
+     os.makedirs(outdir)
+-    rec = dict(tool='atlas_v5z9 zfast_provider.turing_grid (scan_turing5 scan logic; counts by scan_turing5.py recount)', T0=str(T0), lib=LIBPATH,
++    rec = dict(tool='atlas_v5za zfast_provider.turing_grid (scan_turing5 scan logic; counts by scan_turing5.py recount)', T0=str(T0), lib=LIBPATH,
+                lib_sha256=LIB_SHA, session=STATS.get('info'), session_params=dict(centre=c, H=PARAMS['H'], Delta=PARAMS['Delta'], K=PARAMS['K'],
+                J=PARAMS['J'], threads=PARAMS['threads'], workers=WORKERS, u0=u0, n=n, step=step),
+                grid=dict(points=len(u), step=step, undecided=int(np.sum(sg == 0)), seconds=round(time.time() - t0, 1), ends=[repr(float(u[0])), repr(float(u[-1]))]),
+diff -ru -x runs -x *.sha256 ../atlas_v5z9/replay_target5.py ../atlas_v5za/replay_target5.py
+--- ../atlas_v5z9/replay_target5.py	2026-11-02 20:42:56
++++ ../atlas_v5za/replay_target5.py	2026-11-02 22:15:18
+@@ -22,7 +22,7 @@
+ ZFAST_CKPT.sessions.jsonl) and `passed` requires at least one record, every one role replay with the run's nonce (RUN/zfast_ckpt_nonce.txt)."""
+ import json, sys, os, shutil, hashlib, importlib.util, glob, time
+ if sys.flags.optimize != 0 or os.environ.get('PYTHONOPTIMIZE'):
+-    raise SystemExit('atlas_v5z9: refusing to run under python -O / PYTHONOPTIMIZE (Atlas rule)')
++    raise SystemExit('atlas_v5za: refusing to run under python -O / PYTHONOPTIMIZE (Atlas rule)')
+ from fractions import Fraction as Fr
+ from pathlib import Path
+ V4 = Path(__file__).resolve().parent; sys.path.insert(0, str(V4))
+Only in ../atlas_v5z9: run_wide9.sh
+Only in ../atlas_v5za: run_wideA.sh

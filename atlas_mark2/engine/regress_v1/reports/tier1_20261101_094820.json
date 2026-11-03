@@ -1,0 +1,2141 @@
+{
+ "kind": "tier1",
+ "stamp": "20261101_094820",
+ "tag": "r2",
+ "prereg_sha256": "80774906223b4f8e59c96633191377c646fd8c322daf5645a7be75b2419ecabd",
+ "sections": {
+  "Z1": {
+   "runs": [
+    {
+     "id": "atlas_v5:w10000000.00/t4v4_10000000",
+     "process": {
+      "rc": 0,
+      "killed": null,
+      "peak_gb": 0.03,
+      "seconds": 6.75,
+      "zfast_env": {
+       "ZFAST_THREADS": 2
+      }
+     },
+     "identical": true,
+     "compare": {
+      "certs": {
+       "frozen": 2,
+       "regenerated": 2,
+       "same_names": 2,
+       "canonical_identical": 2,
+       "byte_identical": 0,
+       "differing": [],
+       "only_frozen": [],
+       "only_new": []
+      },
+      "certs_np": {
+       "frozen": 5,
+       "regenerated": 5,
+       "same_names": 5,
+       "canonical_identical": 5,
+       "byte_identical": 0,
+       "differing": [],
+       "only_frozen": [],
+       "only_new": []
+      },
+      "pieces.json": {
+       "canonical_identical": true,
+       "byte_identical": true
+      },
+      "zs.json": {
+       "canonical_identical": true,
+       "byte_identical": true
+      },
+      "gen_measurements.json": {
+       "canonical_identical": true,
+       "byte_identical": true
+      },
+      "replay_check": {
+       "frozen": {
+        "passed": true,
+        "passed_B": true,
+        "certificates": 2,
+        "passed_both": 2,
+        "min_candidate_lower": 1.0119071289786687,
+        "seams": [
+         0,
+         0
+        ],
+        "gaps_d0": 0,
+        "uncovered": 0
+       },
+       "regenerated": {
+        "passed": true,
+        "passed_B": true,
+        "certificates": 2,
+        "passed_both": 2,
+        "min_candidate_lower": 1.0119071289786687,
+        "seams": [
+         0,
+         0
+        ],
+        "gaps_d0": 0,
+        "uncovered": 0
+       },
+       "identical": true
+      },
+      "replay_records_identical": true,
+      "identical": true
+     },
+     "ok": true
+    },
+    {
+     "id": "atlas_v5:w1000000000000/big_1e12",
+     "process": {
+      "rc": 0,
+      "killed": null,
+      "peak_gb": 0.03,
+      "seconds": 122.86,
+      "zfast_env": {
+       "ZFAST_THREADS": 2
+      }
+     },
+     "identical": true,
+     "compare": {
+      "certs": {
+       "frozen": 2,
+       "regenerated": 2,
+       "same_names": 2,
+       "canonical_identical": 2,
+       "byte_identical": 1,
+       "differing": [],
+       "only_frozen": [],
+       "only_new": []
+      },
+      "certs_np": {
+       "frozen": 8,
+       "regenerated": 8,
+       "same_names": 8,
+       "canonical_identical": 8,
+       "byte_identical": 3,
+       "differing": [],
+       "only_frozen": [],
+       "only_new": []
+      },
+      "pieces.json": {
+       "canonical_identical": true,
+       "byte_identical": true
+      },
+      "zs.json": {
+       "canonical_identical": true,
+       "byte_identical": true
+      },
+      "gen_measurements.json": {
+       "canonical_identical": true,
+       "byte_identical": true
+      },
+      "replay_check": {
+       "frozen": {
+        "passed": true,
+        "passed_B": true,
+        "certificates": 2,
+        "passed_both": 2,
+        "min_candidate_lower": 0.9435444104376921,
+        "seams": [
+         0,
+         0
+        ],
+        "gaps_d0": 0,
+        "uncovered": 0
+       },
+       "regenerated": {
+        "passed": true,
+        "passed_B": true,
+        "certificates": 2,
+        "passed_both": 2,
+        "min_candidate_lower": 0.9435444104376921,
+        "seams": [
+         0,
+         0
+        ],
+        "gaps_d0": 0,
+        "uncovered": 0
+       },
+       "identical": true
+      },
+      "replay_records_identical": true,
+      "identical": true
+     },
+     "ok": true
+    },
+    {
+     "id": "atlas_v5:w663310.00/t2_663318",
+     "process": {
+      "rc": 0,
+      "killed": null,
+      "peak_gb": 0.03,
+      "seconds": 2.69,
+      "zfast_env": {
+       "ZFAST_THREADS": 2
+      }
+     },
+     "identical": true,
+     "compare": {
+      "certs": {
+       "frozen": 1,
+       "regenerated": 1,
+       "same_names": 1,
+       "canonical_identical": 1,
+       "byte_identical": 0,
+       "differing": [],
+       "only_frozen": [],
+       "only_new": []
+      },
+      "certs_np": {
+       "frozen": 2,
+       "regenerated": 2,
+       "same_names": 2,
+       "canonical_identical": 2,
+       "byte_identical": 2,
+       "differing": [],
+       "only_frozen": [],
+       "only_new": []
+      },
+      "pieces.json": {
+       "canonical_identical": true,
+       "byte_identical": true
+      },
+      "zs.json": {
+       "canonical_identical": true,
+       "byte_identical": true
+      },
+      "gen_measurements.json": {
+       "canonical_identical": true,
+       "byte_identical": true
+      },
+      "replay_check": {
+       "frozen": {
+        "passed": true,
+        "passed_B": true,
+        "certificates": 1,
+        "passed_both": 1,
+        "min_candidate_lower": 1.3851588751197215,
+        "seams": [
+         0,
+         0
+        ],
+        "gaps_d0": 0,
+        "uncovered": 0
+       },
+       "regenerated": {
+        "passed": true,
+        "passed_B": true,
+        "certificates": 1,
+        "passed_both": 1,
+        "min_candidate_lower": 1.3851588751197215,
+        "seams": [
+         0,
+         0
+        ],
+        "gaps_d0": 0,
+        "uncovered": 0
+       },
+       "identical": true
+      },
+      "replay_records_identical": true,
+      "identical": true
+     },
+     "ok": true
+    },
+    {
+     "id": "atlas_v5:w6820046.00/rosser",
+     "process": {
+      "rc": 0,
+      "killed": null,
+      "peak_gb": 0.03,
+      "seconds": 6.43,
+      "zfast_env": {
+       "ZFAST_THREADS": 2
+      }
+     },
+     "identical": true,
+     "compare": {
+      "certs": {
+       "frozen": 2,
+       "regenerated": 2,
+       "same_names": 2,
+       "canonical_identical": 2,
+       "byte_identical": 0,
+       "differing": [],
+       "only_frozen": [],
+       "only_new": []
+      },
+      "certs_np": {
+       "frozen": 3,
+       "regenerated": 3,
+       "same_names": 3,
+       "canonical_identical": 3,
+       "byte_identical": 0,
+       "differing": [],
+       "only_frozen": [],
+       "only_new": []
+      },
+      "pieces.json": {
+       "canonical_identical": true,
+       "byte_identical": true
+      },
+      "zs.json": {
+       "canonical_identical": true,
+       "byte_identical": true
+      },
+      "gen_measurements.json": {
+       "canonical_identical": true,
+       "byte_identical": true
+      },
+      "replay_check": {
+       "frozen": {
+        "passed": true,
+        "passed_B": true,
+        "certificates": 2,
+        "passed_both": 2,
+        "min_candidate_lower": 0.7987567942814627,
+        "seams": [
+         0,
+         0
+        ],
+        "gaps_d0": 0,
+        "uncovered": 0
+       },
+       "regenerated": {
+        "passed": true,
+        "passed_B": true,
+        "certificates": 2,
+        "passed_both": 2,
+        "min_candidate_lower": 0.7987567942814627,
+        "seams": [
+         0,
+         0
+        ],
+        "gaps_d0": 0,
+        "uncovered": 0
+       },
+       "identical": true
+      },
+      "replay_records_identical": true,
+      "identical": true
+     },
+     "ok": true
+    },
+    {
+     "id": "atlas_v5:w7000.00/c7002",
+     "process": {
+      "rc": 0,
+      "killed": null,
+      "peak_gb": 0.03,
+      "seconds": 2.23,
+      "zfast_env": {
+       "ZFAST_THREADS": 2
+      }
+     },
+     "identical": true,
+     "compare": {
+      "certs": {
+       "frozen": 1,
+       "regenerated": 1,
+       "same_names": 1,
+       "canonical_identical": 1,
+       "byte_identical": 0,
+       "differing": [],
+       "only_frozen": [],
+       "only_new": []
+      },
+      "certs_np": {
+       "frozen": 0,
+       "regenerated": 0,
+       "same_names": 0,
+       "canonical_identical": 0,
+       "byte_identical": 0,
+       "differing": [],
+       "only_frozen": [],
+       "only_new": []
+      },
+      "pieces.json": {
+       "canonical_identical": true,
+       "byte_identical": true
+      },
+      "zs.json": {
+       "canonical_identical": true,
+       "byte_identical": true
+      },
+      "gen_measurements.json": {
+       "canonical_identical": true,
+       "byte_identical": true
+      },
+      "replay_check": {
+       "frozen": {
+        "passed": true,
+        "passed_B": true,
+        "certificates": 1,
+        "passed_both": 1,
+        "min_candidate_lower": 1.5188260012892645,
+        "seams": [
+         0,
+         0
+        ],
+        "gaps_d0": 0,
+        "uncovered": 0
+       },
+       "regenerated": {
+        "passed": true,
+        "passed_B": true,
+        "certificates": 1,
+        "passed_both": 1,
+        "min_candidate_lower": 1.5188260012892645,
+        "seams": [
+         0,
+         0
+        ],
+        "gaps_d0": 0,
+        "uncovered": 0
+       },
+       "identical": true
+      },
+      "replay_records_identical": true,
+      "identical": true
+     },
+     "ok": true
+    },
+    {
+     "id": "atlas_v5:w7000.00/lehmer",
+     "process": {
+      "rc": 0,
+      "killed": null,
+      "peak_gb": 0.031,
+      "seconds": 2.09,
+      "zfast_env": {
+       "ZFAST_THREADS": 2
+      }
+     },
+     "identical": true,
+     "compare": {
+      "certs": {
+       "frozen": 1,
+       "regenerated": 1,
+       "same_names": 1,
+       "canonical_identical": 1,
+       "byte_identical": 0,
+       "differing": [],
+       "only_frozen": [],
+       "only_new": []
+      },
+      "certs_np": {
+       "frozen": 1,
+       "regenerated": 1,
+       "same_names": 1,
+       "canonical_identical": 1,
+       "byte_identical": 0,
+       "differing": [],
+       "only_frozen": [],
+       "only_new": []
+      },
+      "pieces.json": {
+       "canonical_identical": true,
+       "byte_identical": true
+      },
+      "zs.json": {
+       "canonical_identical": true,
+       "byte_identical": true
+      },
+      "gen_measurements.json": {
+       "canonical_identical": true,
+       "byte_identical": true
+      },
+      "replay_check": {
+       "frozen": {
+        "passed": true,
+        "passed_B": true,
+        "certificates": 1,
+        "passed_both": 1,
+        "min_candidate_lower": 1.4326700009021966,
+        "seams": [
+         0,
+         0
+        ],
+        "gaps_d0": 0,
+        "uncovered": 0
+       },
+       "regenerated": {
+        "passed": true,
+        "passed_B": true,
+        "certificates": 1,
+        "passed_both": 1,
+        "min_candidate_lower": 1.4326700009021966,
+        "seams": [
+         0,
+         0
+        ],
+        "gaps_d0": 0,
+        "uncovered": 0
+       },
+       "identical": true
+      },
+      "replay_records_identical": true,
+      "identical": true
+     },
+     "ok": true
+    },
+    {
+     "id": "atlas_v5:w7000.00/lehmer_full_pair",
+     "process": {
+      "rc": 0,
+      "killed": null,
+      "peak_gb": 0.03,
+      "seconds": 2.38,
+      "zfast_env": {
+       "ZFAST_THREADS": 2
+      }
+     },
+     "identical": true,
+     "compare": {
+      "certs": {
+       "frozen": 1,
+       "regenerated": 1,
+       "same_names": 1,
+       "canonical_identical": 1,
+       "byte_identical": 1,
+       "differing": [],
+       "only_frozen": [],
+       "only_new": []
+      },
+      "certs_np": {
+       "frozen": 2,
+       "regenerated": 2,
+       "same_names": 2,
+       "canonical_identical": 2,
+       "byte_identical": 2,
+       "differing": [],
+       "only_frozen": [],
+       "only_new": []
+      },
+      "pieces.json": {
+       "canonical_identical": true,
+       "byte_identical": true
+      },
+      "zs.json": {
+       "canonical_identical": true,
+       "byte_identical": true
+      },
+      "gen_measurements.json": {
+       "canonical_identical": true,
+       "byte_identical": true
+      },
+      "replay_check": {
+       "frozen": {
+        "passed": true,
+        "passed_B": true,
+        "certificates": 1,
+        "passed_both": 1,
+        "min_candidate_lower": 1.345136820255405,
+        "seams": [
+         0,
+         0
+        ],
+        "gaps_d0": 0,
+        "uncovered": 0
+       },
+       "regenerated": {
+        "passed": true,
+        "passed_B": true,
+        "certificates": 1,
+        "passed_both": 1,
+        "min_candidate_lower": 1.345136820255405,
+        "seams": [
+         0,
+         0
+        ],
+        "gaps_d0": 0,
+        "uncovered": 0
+       },
+       "identical": true
+      },
+      "replay_records_identical": true,
+      "identical": true
+     },
+     "ok": true
+    },
+    {
+     "id": "atlas_v5:w9000.00/v1_9000",
+     "process": {
+      "rc": 0,
+      "killed": null,
+      "peak_gb": 0.03,
+      "seconds": 11.42,
+      "zfast_env": {
+       "ZFAST_THREADS": 2
+      }
+     },
+     "identical": true,
+     "compare": {
+      "certs": {
+       "frozen": 10,
+       "regenerated": 10,
+       "same_names": 10,
+       "canonical_identical": 10,
+       "byte_identical": 4,
+       "differing": [],
+       "only_frozen": [],
+       "only_new": []
+      },
+      "certs_np": {
+       "frozen": 11,
+       "regenerated": 11,
+       "same_names": 11,
+       "canonical_identical": 11,
+       "byte_identical": 3,
+       "differing": [],
+       "only_frozen": [],
+       "only_new": []
+      },
+      "pieces.json": {
+       "canonical_identical": true,
+       "byte_identical": true
+      },
+      "zs.json": {
+       "canonical_identical": true,
+       "byte_identical": true
+      },
+      "gen_measurements.json": {
+       "canonical_identical": true,
+       "byte_identical": true
+      },
+      "replay_check": {
+       "frozen": {
+        "passed": true,
+        "passed_B": true,
+        "certificates": 10,
+        "passed_both": 10,
+        "min_candidate_lower": 1.0440785352643986,
+        "seams": [
+         0,
+         0
+        ],
+        "gaps_d0": 0,
+        "uncovered": 0
+       },
+       "regenerated": {
+        "passed": true,
+        "passed_B": true,
+        "certificates": 10,
+        "passed_both": 10,
+        "min_candidate_lower": 1.0440785352643986,
+        "seams": [
+         0,
+         0
+        ],
+        "gaps_d0": 0,
+        "uncovered": 0
+       },
+       "identical": true
+      },
+      "replay_records_identical": true,
+      "identical": true
+     },
+     "ok": true
+    },
+    {
+     "id": "atlas_v5z:w1000000000000/z_1e12",
+     "process": {
+      "rc": 0,
+      "killed": null,
+      "peak_gb": 0.03,
+      "seconds": 7.89,
+      "zfast_env": {
+       "ZFAST_THREADS": 2
+      }
+     },
+     "identical": true,
+     "compare": {
+      "certs": {
+       "frozen": 2,
+       "regenerated": 2,
+       "same_names": 2,
+       "canonical_identical": 2,
+       "byte_identical": 0,
+       "differing": [],
+       "only_frozen": [],
+       "only_new": []
+      },
+      "certs_np": {
+       "frozen": 8,
+       "regenerated": 8,
+       "same_names": 8,
+       "canonical_identical": 8,
+       "byte_identical": 2,
+       "differing": [],
+       "only_frozen": [],
+       "only_new": []
+      },
+      "pieces.json": {
+       "canonical_identical": true,
+       "byte_identical": true
+      },
+      "zs.json": {
+       "canonical_identical": true,
+       "byte_identical": true
+      },
+      "gen_measurements.json": {
+       "canonical_identical": true,
+       "byte_identical": true
+      },
+      "replay_check": {
+       "frozen": {
+        "passed": true,
+        "passed_B": true,
+        "certificates": 2,
+        "passed_both": 2,
+        "min_candidate_lower": 0.9435444104376903,
+        "seams": [
+         0,
+         0
+        ],
+        "gaps_d0": 0,
+        "uncovered": 0
+       },
+       "regenerated": {
+        "passed": true,
+        "passed_B": true,
+        "certificates": 2,
+        "passed_both": 2,
+        "min_candidate_lower": 0.9435444104376903,
+        "seams": [
+         0,
+         0
+        ],
+        "gaps_d0": 0,
+        "uncovered": 0
+       },
+       "identical": true
+      },
+      "replay_records_identical": true,
+      "identical": true
+     },
+     "ok": true
+    },
+    {
+     "id": "atlas_v5z:w10000000000000/z_1e13",
+     "process": {
+      "rc": 0,
+      "killed": null,
+      "peak_gb": 0.031,
+      "seconds": 8.13,
+      "zfast_env": {
+       "ZFAST_THREADS": 2
+      }
+     },
+     "identical": true,
+     "compare": {
+      "certs": {
+       "frozen": 2,
+       "regenerated": 2,
+       "same_names": 2,
+       "canonical_identical": 2,
+       "byte_identical": 0,
+       "differing": [],
+       "only_frozen": [],
+       "only_new": []
+      },
+      "certs_np": {
+       "frozen": 9,
+       "regenerated": 9,
+       "same_names": 9,
+       "canonical_identical": 9,
+       "byte_identical": 2,
+       "differing": [],
+       "only_frozen": [],
+       "only_new": []
+      },
+      "pieces.json": {
+       "canonical_identical": true,
+       "byte_identical": true
+      },
+      "zs.json": {
+       "canonical_identical": true,
+       "byte_identical": true
+      },
+      "gen_measurements.json": {
+       "canonical_identical": true,
+       "byte_identical": true
+      },
+      "replay_check": {
+       "frozen": {
+        "passed": true,
+        "passed_B": true,
+        "certificates": 2,
+        "passed_both": 2,
+        "min_candidate_lower": 0.9392192753735757,
+        "seams": [
+         0,
+         0
+        ],
+        "gaps_d0": 0,
+        "uncovered": 0
+       },
+       "regenerated": {
+        "passed": true,
+        "passed_B": true,
+        "certificates": 2,
+        "passed_both": 2,
+        "min_candidate_lower": 0.9392192753735757,
+        "seams": [
+         0,
+         0
+        ],
+        "gaps_d0": 0,
+        "uncovered": 0
+       },
+       "identical": true
+      },
+      "replay_records_identical": true,
+      "identical": true
+     },
+     "ok": true
+    },
+    {
+     "id": "atlas_v5z:w100000000000000/z_1e14",
+     "process": {
+      "rc": 0,
+      "killed": null,
+      "peak_gb": 0.03,
+      "seconds": 8.68,
+      "zfast_env": {
+       "ZFAST_THREADS": 2
+      }
+     },
+     "identical": true,
+     "compare": {
+      "certs": {
+       "frozen": 2,
+       "regenerated": 2,
+       "same_names": 2,
+       "canonical_identical": 2,
+       "byte_identical": 0,
+       "differing": [],
+       "only_frozen": [],
+       "only_new": []
+      },
+      "certs_np": {
+       "frozen": 9,
+       "regenerated": 9,
+       "same_names": 9,
+       "canonical_identical": 9,
+       "byte_identical": 0,
+       "differing": [],
+       "only_frozen": [],
+       "only_new": []
+      },
+      "pieces.json": {
+       "canonical_identical": true,
+       "byte_identical": true
+      },
+      "zs.json": {
+       "canonical_identical": true,
+       "byte_identical": true
+      },
+      "gen_measurements.json": {
+       "canonical_identical": true,
+       "byte_identical": true
+      },
+      "replay_check": {
+       "frozen": {
+        "passed": true,
+        "passed_B": true,
+        "certificates": 2,
+        "passed_both": 2,
+        "min_candidate_lower": 0.9024751707675914,
+        "seams": [
+         0,
+         0
+        ],
+        "gaps_d0": 0,
+        "uncovered": 0
+       },
+       "regenerated": {
+        "passed": true,
+        "passed_B": true,
+        "certificates": 2,
+        "passed_both": 2,
+        "min_candidate_lower": 0.9024751707675914,
+        "seams": [
+         0,
+         0
+        ],
+        "gaps_d0": 0,
+        "uncovered": 0
+       },
+       "identical": true
+      },
+      "replay_records_identical": true,
+      "identical": true
+     },
+     "ok": true
+    },
+    {
+     "id": "atlas_v5z:w1000000000000000/z_1e15",
+     "process": {
+      "rc": 0,
+      "killed": null,
+      "peak_gb": 0.03,
+      "seconds": 10.78,
+      "zfast_env": {
+       "ZFAST_THREADS": 2
+      }
+     },
+     "identical": true,
+     "compare": {
+      "certs": {
+       "frozen": 2,
+       "regenerated": 2,
+       "same_names": 2,
+       "canonical_identical": 2,
+       "byte_identical": 1,
+       "differing": [],
+       "only_frozen": [],
+       "only_new": []
+      },
+      "certs_np": {
+       "frozen": 10,
+       "regenerated": 10,
+       "same_names": 10,
+       "canonical_identical": 10,
+       "byte_identical": 0,
+       "differing": [],
+       "only_frozen": [],
+       "only_new": []
+      },
+      "pieces.json": {
+       "canonical_identical": true,
+       "byte_identical": true
+      },
+      "zs.json": {
+       "canonical_identical": true,
+       "byte_identical": true
+      },
+      "gen_measurements.json": {
+       "canonical_identical": true,
+       "byte_identical": true
+      },
+      "replay_check": {
+       "frozen": {
+        "passed": true,
+        "passed_B": true,
+        "certificates": 2,
+        "passed_both": 2,
+        "min_candidate_lower": 0.8639199061388787,
+        "seams": [
+         0,
+         0
+        ],
+        "gaps_d0": 0,
+        "uncovered": 0
+       },
+       "regenerated": {
+        "passed": true,
+        "passed_B": true,
+        "certificates": 2,
+        "passed_both": 2,
+        "min_candidate_lower": 0.8639199061388787,
+        "seams": [
+         0,
+         0
+        ],
+        "gaps_d0": 0,
+        "uncovered": 0
+       },
+       "identical": true
+      },
+      "replay_records_identical": true,
+      "identical": true
+     },
+     "ok": true
+    },
+    {
+     "id": "atlas_v5z:w1000000000000000/z_pair_1e15_286",
+     "process": {
+      "rc": 0,
+      "killed": null,
+      "peak_gb": 0.031,
+      "seconds": 10.49,
+      "zfast_env": {
+       "ZFAST_THREADS": 2
+      }
+     },
+     "identical": true,
+     "compare": {
+      "certs": {
+       "frozen": 2,
+       "regenerated": 2,
+       "same_names": 2,
+       "canonical_identical": 2,
+       "byte_identical": 0,
+       "differing": [],
+       "only_frozen": [],
+       "only_new": []
+      },
+      "certs_np": {
+       "frozen": 10,
+       "regenerated": 10,
+       "same_names": 10,
+       "canonical_identical": 10,
+       "byte_identical": 0,
+       "differing": [],
+       "only_frozen": [],
+       "only_new": []
+      },
+      "pieces.json": {
+       "canonical_identical": true,
+       "byte_identical": true
+      },
+      "zs.json": {
+       "canonical_identical": true,
+       "byte_identical": true
+      },
+      "gen_measurements.json": {
+       "canonical_identical": true,
+       "byte_identical": true
+      },
+      "replay_check": {
+       "frozen": {
+        "passed": true,
+        "passed_B": true,
+        "certificates": 2,
+        "passed_both": 2,
+        "min_candidate_lower": 0.8644913957802872,
+        "seams": [
+         0,
+         0
+        ],
+        "gaps_d0": 0,
+        "uncovered": 0
+       },
+       "regenerated": {
+        "passed": true,
+        "passed_B": true,
+        "certificates": 2,
+        "passed_both": 2,
+        "min_candidate_lower": 0.8644913957802872,
+        "seams": [
+         0,
+         0
+        ],
+        "gaps_d0": 0,
+        "uncovered": 0
+       },
+       "identical": true
+      },
+      "replay_records_identical": true,
+      "identical": true
+     },
+     "ok": true
+    },
+    {
+     "id": "atlas_v5z:w10000000000000000/z_1e16",
+     "process": {
+      "rc": 0,
+      "killed": null,
+      "peak_gb": 0.03,
+      "seconds": 16.28,
+      "zfast_env": {
+       "ZFAST_THREADS": 2
+      }
+     },
+     "identical": true,
+     "compare": {
+      "certs": {
+       "frozen": 2,
+       "regenerated": 2,
+       "same_names": 2,
+       "canonical_identical": 2,
+       "byte_identical": 1,
+       "differing": [],
+       "only_frozen": [],
+       "only_new": []
+      },
+      "certs_np": {
+       "frozen": 10,
+       "regenerated": 10,
+       "same_names": 10,
+       "canonical_identical": 10,
+       "byte_identical": 4,
+       "differing": [],
+       "only_frozen": [],
+       "only_new": []
+      },
+      "pieces.json": {
+       "canonical_identical": true,
+       "byte_identical": true
+      },
+      "zs.json": {
+       "canonical_identical": true,
+       "byte_identical": true
+      },
+      "gen_measurements.json": {
+       "canonical_identical": true,
+       "byte_identical": true
+      },
+      "replay_check": {
+       "frozen": {
+        "passed": true,
+        "passed_B": true,
+        "certificates": 2,
+        "passed_both": 2,
+        "min_candidate_lower": 0.8256182590293083,
+        "seams": [
+         0,
+         0
+        ],
+        "gaps_d0": 0,
+        "uncovered": 0
+       },
+       "regenerated": {
+        "passed": true,
+        "passed_B": true,
+        "certificates": 2,
+        "passed_both": 2,
+        "min_candidate_lower": 0.8256182590293083,
+        "seams": [
+         0,
+         0
+        ],
+        "gaps_d0": 0,
+        "uncovered": 0
+       },
+       "identical": true
+      },
+      "replay_records_identical": true,
+      "identical": true
+     },
+     "ok": true
+    },
+    {
+     "id": "atlas_v5z:w100000000000000000/z_1e17",
+     "process": {
+      "rc": 0,
+      "killed": null,
+      "peak_gb": 0.03,
+      "seconds": 33.11,
+      "zfast_env": {
+       "ZFAST_THREADS": 2
+      }
+     },
+     "identical": true,
+     "compare": {
+      "certs": {
+       "frozen": 2,
+       "regenerated": 2,
+       "same_names": 2,
+       "canonical_identical": 2,
+       "byte_identical": 0,
+       "differing": [],
+       "only_frozen": [],
+       "only_new": []
+      },
+      "certs_np": {
+       "frozen": 11,
+       "regenerated": 11,
+       "same_names": 11,
+       "canonical_identical": 11,
+       "byte_identical": 3,
+       "differing": [],
+       "only_frozen": [],
+       "only_new": []
+      },
+      "pieces.json": {
+       "canonical_identical": true,
+       "byte_identical": true
+      },
+      "zs.json": {
+       "canonical_identical": true,
+       "byte_identical": true
+      },
+      "gen_measurements.json": {
+       "canonical_identical": true,
+       "byte_identical": true
+      },
+      "replay_check": {
+       "frozen": {
+        "passed": true,
+        "passed_B": true,
+        "certificates": 2,
+        "passed_both": 2,
+        "min_candidate_lower": 0.8362815697257229,
+        "seams": [
+         0,
+         0
+        ],
+        "gaps_d0": 0,
+        "uncovered": 0
+       },
+       "regenerated": {
+        "passed": true,
+        "passed_B": true,
+        "certificates": 2,
+        "passed_both": 2,
+        "min_candidate_lower": 0.8362815697257229,
+        "seams": [
+         0,
+         0
+        ],
+        "gaps_d0": 0,
+        "uncovered": 0
+       },
+       "identical": true
+      },
+      "replay_records_identical": true,
+      "identical": true
+     },
+     "ok": true
+    },
+    {
+     "id": "atlas_v5z:w1000000000000000000/z_1e18",
+     "process": {
+      "rc": 0,
+      "killed": null,
+      "peak_gb": 0.03,
+      "seconds": 83.66,
+      "zfast_env": {
+       "ZFAST_THREADS": 2
+      }
+     },
+     "identical": true,
+     "compare": {
+      "certs": {
+       "frozen": 2,
+       "regenerated": 2,
+       "same_names": 2,
+       "canonical_identical": 2,
+       "byte_identical": 0,
+       "differing": [],
+       "only_frozen": [],
+       "only_new": []
+      },
+      "certs_np": {
+       "frozen": 11,
+       "regenerated": 11,
+       "same_names": 11,
+       "canonical_identical": 11,
+       "byte_identical": 1,
+       "differing": [],
+       "only_frozen": [],
+       "only_new": []
+      },
+      "pieces.json": {
+       "canonical_identical": true,
+       "byte_identical": true
+      },
+      "zs.json": {
+       "canonical_identical": true,
+       "byte_identical": true
+      },
+      "gen_measurements.json": {
+       "canonical_identical": true,
+       "byte_identical": true
+      },
+      "replay_check": {
+       "frozen": {
+        "passed": true,
+        "passed_B": true,
+        "certificates": 2,
+        "passed_both": 2,
+        "min_candidate_lower": 0.8092282336034444,
+        "seams": [
+         0,
+         0
+        ],
+        "gaps_d0": 0,
+        "uncovered": 0
+       },
+       "regenerated": {
+        "passed": true,
+        "passed_B": true,
+        "certificates": 2,
+        "passed_both": 2,
+        "min_candidate_lower": 0.8092282336034444,
+        "seams": [
+         0,
+         0
+        ],
+        "gaps_d0": 0,
+        "uncovered": 0
+       },
+       "identical": true
+      },
+      "replay_records_identical": true,
+      "identical": true
+     },
+     "ok": true
+    },
+    {
+     "id": "atlas_v5z2:w1000000000000/y_1e12",
+     "process": {
+      "rc": 0,
+      "killed": null,
+      "peak_gb": 0.03,
+      "seconds": 7.35,
+      "zfast_env": {
+       "ZFAST_THREADS": 1,
+       "ZFAST_CENTER": "1.0"
+      }
+     },
+     "identical": true,
+     "compare": {
+      "certs": {
+       "frozen": 2,
+       "regenerated": 2,
+       "same_names": 2,
+       "canonical_identical": 2,
+       "byte_identical": 0,
+       "differing": [],
+       "only_frozen": [],
+       "only_new": []
+      },
+      "certs_np": {
+       "frozen": 8,
+       "regenerated": 8,
+       "same_names": 8,
+       "canonical_identical": 8,
+       "byte_identical": 0,
+       "differing": [],
+       "only_frozen": [],
+       "only_new": []
+      },
+      "pieces.json": {
+       "canonical_identical": true,
+       "byte_identical": true
+      },
+      "zs.json": {
+       "canonical_identical": true,
+       "byte_identical": true
+      },
+      "gen_measurements.json": {
+       "canonical_identical": true,
+       "byte_identical": true
+      },
+      "replay_check": {
+       "frozen": {
+        "passed": true,
+        "passed_B": true,
+        "certificates": 2,
+        "passed_both": 2,
+        "min_candidate_lower": 0.9435444104376903,
+        "seams": [
+         0,
+         0
+        ],
+        "gaps_d0": 0,
+        "uncovered": 0
+       },
+       "regenerated": {
+        "passed": true,
+        "passed_B": true,
+        "certificates": 2,
+        "passed_both": 2,
+        "min_candidate_lower": 0.9435444104376903,
+        "seams": [
+         0,
+         0
+        ],
+        "gaps_d0": 0,
+        "uncovered": 0
+       },
+       "identical": true
+      },
+      "replay_records_identical": true,
+      "identical": true
+     },
+     "ok": true
+    },
+    {
+     "id": "atlas_v5z2:w10000000000000/y_1e13",
+     "process": {
+      "rc": 0,
+      "killed": null,
+      "peak_gb": 0.03,
+      "seconds": 7.1,
+      "zfast_env": {
+       "ZFAST_THREADS": 1,
+       "ZFAST_CENTER": "1.0"
+      }
+     },
+     "identical": true,
+     "compare": {
+      "certs": {
+       "frozen": 2,
+       "regenerated": 2,
+       "same_names": 2,
+       "canonical_identical": 2,
+       "byte_identical": 0,
+       "differing": [],
+       "only_frozen": [],
+       "only_new": []
+      },
+      "certs_np": {
+       "frozen": 9,
+       "regenerated": 9,
+       "same_names": 9,
+       "canonical_identical": 9,
+       "byte_identical": 0,
+       "differing": [],
+       "only_frozen": [],
+       "only_new": []
+      },
+      "pieces.json": {
+       "canonical_identical": true,
+       "byte_identical": true
+      },
+      "zs.json": {
+       "canonical_identical": true,
+       "byte_identical": true
+      },
+      "gen_measurements.json": {
+       "canonical_identical": true,
+       "byte_identical": true
+      },
+      "replay_check": {
+       "frozen": {
+        "passed": true,
+        "passed_B": true,
+        "certificates": 2,
+        "passed_both": 2,
+        "min_candidate_lower": 0.9392192753735759,
+        "seams": [
+         0,
+         0
+        ],
+        "gaps_d0": 0,
+        "uncovered": 0
+       },
+       "regenerated": {
+        "passed": true,
+        "passed_B": true,
+        "certificates": 2,
+        "passed_both": 2,
+        "min_candidate_lower": 0.9392192753735759,
+        "seams": [
+         0,
+         0
+        ],
+        "gaps_d0": 0,
+        "uncovered": 0
+       },
+       "identical": true
+      },
+      "replay_records_identical": true,
+      "identical": true
+     },
+     "ok": true
+    },
+    {
+     "id": "atlas_v5z2:w100000000000000/y_1e14",
+     "process": {
+      "rc": 0,
+      "killed": null,
+      "peak_gb": 0.031,
+      "seconds": 7.61,
+      "zfast_env": {
+       "ZFAST_THREADS": 1,
+       "ZFAST_CENTER": "1.0"
+      }
+     },
+     "identical": true,
+     "compare": {
+      "certs": {
+       "frozen": 2,
+       "regenerated": 2,
+       "same_names": 2,
+       "canonical_identical": 2,
+       "byte_identical": 0,
+       "differing": [],
+       "only_frozen": [],
+       "only_new": []
+      },
+      "certs_np": {
+       "frozen": 9,
+       "regenerated": 9,
+       "same_names": 9,
+       "canonical_identical": 9,
+       "byte_identical": 0,
+       "differing": [],
+       "only_frozen": [],
+       "only_new": []
+      },
+      "pieces.json": {
+       "canonical_identical": true,
+       "byte_identical": true
+      },
+      "zs.json": {
+       "canonical_identical": true,
+       "byte_identical": true
+      },
+      "gen_measurements.json": {
+       "canonical_identical": true,
+       "byte_identical": true
+      },
+      "replay_check": {
+       "frozen": {
+        "passed": true,
+        "passed_B": true,
+        "certificates": 2,
+        "passed_both": 2,
+        "min_candidate_lower": 0.9024751707675914,
+        "seams": [
+         0,
+         0
+        ],
+        "gaps_d0": 0,
+        "uncovered": 0
+       },
+       "regenerated": {
+        "passed": true,
+        "passed_B": true,
+        "certificates": 2,
+        "passed_both": 2,
+        "min_candidate_lower": 0.9024751707675914,
+        "seams": [
+         0,
+         0
+        ],
+        "gaps_d0": 0,
+        "uncovered": 0
+       },
+       "identical": true
+      },
+      "replay_records_identical": true,
+      "identical": true
+     },
+     "ok": true
+    },
+    {
+     "id": "atlas_v5z2:w1000000000000000/y_1e15",
+     "process": {
+      "rc": 0,
+      "killed": null,
+      "peak_gb": 0.03,
+      "seconds": 8.67,
+      "zfast_env": {
+       "ZFAST_THREADS": 1,
+       "ZFAST_CENTER": "1.0"
+      }
+     },
+     "identical": true,
+     "compare": {
+      "certs": {
+       "frozen": 2,
+       "regenerated": 2,
+       "same_names": 2,
+       "canonical_identical": 2,
+       "byte_identical": 0,
+       "differing": [],
+       "only_frozen": [],
+       "only_new": []
+      },
+      "certs_np": {
+       "frozen": 10,
+       "regenerated": 10,
+       "same_names": 10,
+       "canonical_identical": 10,
+       "byte_identical": 0,
+       "differing": [],
+       "only_frozen": [],
+       "only_new": []
+      },
+      "pieces.json": {
+       "canonical_identical": true,
+       "byte_identical": true
+      },
+      "zs.json": {
+       "canonical_identical": true,
+       "byte_identical": true
+      },
+      "gen_measurements.json": {
+       "canonical_identical": true,
+       "byte_identical": true
+      },
+      "replay_check": {
+       "frozen": {
+        "passed": true,
+        "passed_B": true,
+        "certificates": 2,
+        "passed_both": 2,
+        "min_candidate_lower": 0.8639199061388787,
+        "seams": [
+         0,
+         0
+        ],
+        "gaps_d0": 0,
+        "uncovered": 0
+       },
+       "regenerated": {
+        "passed": true,
+        "passed_B": true,
+        "certificates": 2,
+        "passed_both": 2,
+        "min_candidate_lower": 0.8639199061388787,
+        "seams": [
+         0,
+         0
+        ],
+        "gaps_d0": 0,
+        "uncovered": 0
+       },
+       "identical": true
+      },
+      "replay_records_identical": true,
+      "identical": true
+     },
+     "ok": true
+    },
+    {
+     "id": "atlas_v5z2:w1000000000000000/y_pair_1e15_286",
+     "process": {
+      "rc": 0,
+      "killed": null,
+      "peak_gb": 0.031,
+      "seconds": 8.41,
+      "zfast_env": {
+       "ZFAST_THREADS": 1,
+       "ZFAST_CENTER": "287.0"
+      }
+     },
+     "identical": true,
+     "compare": {
+      "certs": {
+       "frozen": 2,
+       "regenerated": 2,
+       "same_names": 2,
+       "canonical_identical": 2,
+       "byte_identical": 0,
+       "differing": [],
+       "only_frozen": [],
+       "only_new": []
+      },
+      "certs_np": {
+       "frozen": 10,
+       "regenerated": 10,
+       "same_names": 10,
+       "canonical_identical": 10,
+       "byte_identical": 0,
+       "differing": [],
+       "only_frozen": [],
+       "only_new": []
+      },
+      "pieces.json": {
+       "canonical_identical": true,
+       "byte_identical": true
+      },
+      "zs.json": {
+       "canonical_identical": true,
+       "byte_identical": true
+      },
+      "gen_measurements.json": {
+       "canonical_identical": true,
+       "byte_identical": true
+      },
+      "replay_check": {
+       "frozen": {
+        "passed": true,
+        "passed_B": true,
+        "certificates": 2,
+        "passed_both": 2,
+        "min_candidate_lower": 0.8644913957802872,
+        "seams": [
+         0,
+         0
+        ],
+        "gaps_d0": 0,
+        "uncovered": 0
+       },
+       "regenerated": {
+        "passed": true,
+        "passed_B": true,
+        "certificates": 2,
+        "passed_both": 2,
+        "min_candidate_lower": 0.8644913957802872,
+        "seams": [
+         0,
+         0
+        ],
+        "gaps_d0": 0,
+        "uncovered": 0
+       },
+       "identical": true
+      },
+      "replay_records_identical": true,
+      "identical": true
+     },
+     "ok": true
+    },
+    {
+     "id": "atlas_v5z2:w10000000000000000/y_1e16",
+     "process": {
+      "rc": 0,
+      "killed": null,
+      "peak_gb": 0.031,
+      "seconds": 11.28,
+      "zfast_env": {
+       "ZFAST_THREADS": 1,
+       "ZFAST_CENTER": "1.0"
+      }
+     },
+     "identical": true,
+     "compare": {
+      "certs": {
+       "frozen": 2,
+       "regenerated": 2,
+       "same_names": 2,
+       "canonical_identical": 2,
+       "byte_identical": 0,
+       "differing": [],
+       "only_frozen": [],
+       "only_new": []
+      },
+      "certs_np": {
+       "frozen": 10,
+       "regenerated": 10,
+       "same_names": 10,
+       "canonical_identical": 10,
+       "byte_identical": 0,
+       "differing": [],
+       "only_frozen": [],
+       "only_new": []
+      },
+      "pieces.json": {
+       "canonical_identical": true,
+       "byte_identical": true
+      },
+      "zs.json": {
+       "canonical_identical": true,
+       "byte_identical": true
+      },
+      "gen_measurements.json": {
+       "canonical_identical": true,
+       "byte_identical": true
+      },
+      "replay_check": {
+       "frozen": {
+        "passed": true,
+        "passed_B": true,
+        "certificates": 2,
+        "passed_both": 2,
+        "min_candidate_lower": 0.8256182590293206,
+        "seams": [
+         0,
+         0
+        ],
+        "gaps_d0": 0,
+        "uncovered": 0
+       },
+       "regenerated": {
+        "passed": true,
+        "passed_B": true,
+        "certificates": 2,
+        "passed_both": 2,
+        "min_candidate_lower": 0.8256182590293206,
+        "seams": [
+         0,
+         0
+        ],
+        "gaps_d0": 0,
+        "uncovered": 0
+       },
+       "identical": true
+      },
+      "replay_records_identical": true,
+      "identical": true
+     },
+     "ok": true
+    },
+    {
+     "id": "atlas_v5z2:w100000000000000000/y_1e17",
+     "process": {
+      "rc": 0,
+      "killed": null,
+      "peak_gb": 0.03,
+      "seconds": 19.92,
+      "zfast_env": {
+       "ZFAST_THREADS": 1,
+       "ZFAST_CENTER": "1.0"
+      }
+     },
+     "identical": true,
+     "compare": {
+      "certs": {
+       "frozen": 2,
+       "regenerated": 2,
+       "same_names": 2,
+       "canonical_identical": 2,
+       "byte_identical": 0,
+       "differing": [],
+       "only_frozen": [],
+       "only_new": []
+      },
+      "certs_np": {
+       "frozen": 11,
+       "regenerated": 11,
+       "same_names": 11,
+       "canonical_identical": 11,
+       "byte_identical": 0,
+       "differing": [],
+       "only_frozen": [],
+       "only_new": []
+      },
+      "pieces.json": {
+       "canonical_identical": true,
+       "byte_identical": true
+      },
+      "zs.json": {
+       "canonical_identical": true,
+       "byte_identical": true
+      },
+      "gen_measurements.json": {
+       "canonical_identical": true,
+       "byte_identical": true
+      },
+      "replay_check": {
+       "frozen": {
+        "passed": true,
+        "passed_B": true,
+        "certificates": 2,
+        "passed_both": 2,
+        "min_candidate_lower": 0.8362815697257229,
+        "seams": [
+         0,
+         0
+        ],
+        "gaps_d0": 0,
+        "uncovered": 0
+       },
+       "regenerated": {
+        "passed": true,
+        "passed_B": true,
+        "certificates": 2,
+        "passed_both": 2,
+        "min_candidate_lower": 0.8362815697257229,
+        "seams": [
+         0,
+         0
+        ],
+        "gaps_d0": 0,
+        "uncovered": 0
+       },
+       "identical": true
+      },
+      "replay_records_identical": true,
+      "identical": true
+     },
+     "ok": true
+    },
+    {
+     "id": "atlas_v5z2:w1000000000000000000/y_1e18",
+     "process": {
+      "rc": 0,
+      "killed": null,
+      "peak_gb": 0.031,
+      "seconds": 46.47,
+      "zfast_env": {
+       "ZFAST_THREADS": 1,
+       "ZFAST_CENTER": "1.0"
+      }
+     },
+     "identical": true,
+     "compare": {
+      "certs": {
+       "frozen": 2,
+       "regenerated": 2,
+       "same_names": 2,
+       "canonical_identical": 2,
+       "byte_identical": 0,
+       "differing": [],
+       "only_frozen": [],
+       "only_new": []
+      },
+      "certs_np": {
+       "frozen": 11,
+       "regenerated": 11,
+       "same_names": 11,
+       "canonical_identical": 11,
+       "byte_identical": 0,
+       "differing": [],
+       "only_frozen": [],
+       "only_new": []
+      },
+      "pieces.json": {
+       "canonical_identical": true,
+       "byte_identical": true
+      },
+      "zs.json": {
+       "canonical_identical": true,
+       "byte_identical": true
+      },
+      "gen_measurements.json": {
+       "canonical_identical": true,
+       "byte_identical": true
+      },
+      "replay_check": {
+       "frozen": {
+        "passed": true,
+        "passed_B": true,
+        "certificates": 2,
+        "passed_both": 2,
+        "min_candidate_lower": 0.8092282336034444,
+        "seams": [
+         0,
+         0
+        ],
+        "gaps_d0": 0,
+        "uncovered": 0
+       },
+       "regenerated": {
+        "passed": true,
+        "passed_B": true,
+        "certificates": 2,
+        "passed_both": 2,
+        "min_candidate_lower": 0.8092282336034444,
+        "seams": [
+         0,
+         0
+        ],
+        "gaps_d0": 0,
+        "uncovered": 0
+       },
+       "identical": true
+      },
+      "replay_records_identical": true,
+      "identical": true
+     },
+     "ok": true
+    },
+    {
+     "id": "atlas_v5z3:w10000000000000000/x_1e16",
+     "process": {
+      "rc": 0,
+      "killed": null,
+      "peak_gb": 0.03,
+      "seconds": 9.57,
+      "zfast_env": {
+       "ZFAST_THREADS": 2,
+       "ZFAST_CENTER": "1.0"
+      }
+     },
+     "identical": true,
+     "compare": {
+      "certs": {
+       "frozen": 2,
+       "regenerated": 2,
+       "same_names": 2,
+       "canonical_identical": 2,
+       "byte_identical": 0,
+       "differing": [],
+       "only_frozen": [],
+       "only_new": []
+      },
+      "certs_np": {
+       "frozen": 10,
+       "regenerated": 10,
+       "same_names": 10,
+       "canonical_identical": 10,
+       "byte_identical": 3,
+       "differing": [],
+       "only_frozen": [],
+       "only_new": []
+      },
+      "pieces.json": {
+       "canonical_identical": true,
+       "byte_identical": true
+      },
+      "zs.json": {
+       "canonical_identical": true,
+       "byte_identical": true
+      },
+      "gen_measurements.json": {
+       "canonical_identical": true,
+       "byte_identical": true
+      },
+      "replay_check": {
+       "frozen": {
+        "passed": true,
+        "passed_B": true,
+        "certificates": 2,
+        "passed_both": 2,
+        "min_candidate_lower": 0.8256182590293206,
+        "seams": [
+         0,
+         0
+        ],
+        "gaps_d0": 0,
+        "uncovered": 0
+       },
+       "regenerated": {
+        "passed": true,
+        "passed_B": true,
+        "certificates": 2,
+        "passed_both": 2,
+        "min_candidate_lower": 0.8256182590293206,
+        "seams": [
+         0,
+         0
+        ],
+        "gaps_d0": 0,
+        "uncovered": 0
+       },
+       "identical": true
+      },
+      "replay_records_identical": true,
+      "identical": true
+     },
+     "ok": true
+    }
+   ],
+   "n": 25,
+   "passed": 25,
+   "ok": true
+  },
+  "Z-X": {
+   "id": "Z-X v5z4 code on v5z3 x_1e16",
+   "process": {
+    "rc": 0,
+    "killed": null,
+    "peak_gb": 0.03,
+    "seconds": 9.36,
+    "zfast_env": {
+     "ZFAST_THREADS": 2,
+     "ZFAST_CENTER": "1.0"
+    }
+   },
+   "compare": {
+    "certs": {
+     "frozen": 2,
+     "regenerated": 2,
+     "same_names": 2,
+     "canonical_identical": 2,
+     "byte_identical": 0,
+     "differing": [],
+     "only_frozen": [],
+     "only_new": []
+    },
+    "certs_np": {
+     "frozen": 10,
+     "regenerated": 10,
+     "same_names": 10,
+     "canonical_identical": 10,
+     "byte_identical": 2,
+     "differing": [],
+     "only_frozen": [],
+     "only_new": []
+    },
+    "pieces.json": {
+     "canonical_identical": false,
+     "byte_identical": false
+    },
+    "zs.json": {
+     "canonical_identical": true,
+     "byte_identical": true
+    },
+    "gen_measurements.json": {
+     "canonical_identical": true,
+     "byte_identical": true
+    },
+    "replay_check": {
+     "frozen": {
+      "passed": true,
+      "passed_B": true,
+      "certificates": 2,
+      "passed_both": 2,
+      "min_candidate_lower": 0.8256182590293206,
+      "seams": [
+       0,
+       0
+      ],
+      "gaps_d0": 0,
+      "uncovered": 0
+     },
+     "regenerated": {
+      "passed": true,
+      "passed_B": true,
+      "certificates": 2,
+      "passed_both": 2,
+      "min_candidate_lower": 0.8256182590293206,
+      "seams": [
+       0,
+       0
+      ],
+      "gaps_d0": 0,
+      "uncovered": 0
+     },
+     "identical": true
+    },
+    "replay_records_identical": true,
+    "identical": false
+   },
+   "pieces_differing_keys": [
+    "z_provider"
+   ],
+   "ok": true
+  },
+  "G1": {
+   "id": "G1 geval_c 5.1.22352.1",
+   "process": {
+    "rc": 0,
+    "killed": null,
+    "peak_gb": 0.238,
+    "seconds": 19.8
+   },
+   "new_files": [
+    "FE_5.1.22352.1_A.json",
+    "FE_5.1.22352.1_B.json",
+    "k10_5.1.22352.1_A.json",
+    "k10_5.1.22352.1_B.json"
+   ],
+   "vs_scored_r2": {
+    "FE_5.1.22352.1_A.json": true,
+    "FE_5.1.22352.1_B.json": true,
+    "k10_5.1.22352.1_A.json": true,
+    "k10_5.1.22352.1_B.json": true
+   },
+   "vs_base": {
+    "FE_5.1.22352.1_A.json": true,
+    "FE_5.1.22352.1_B.json": true,
+    "k10_5.1.22352.1_A.json": true,
+    "k10_5.1.22352.1_B.json": true
+   },
+   "ok": true
+  },
+  "L1": {
+   "id": "L1 level1 k=12 gen",
+   "process": {
+    "rc": 0,
+    "killed": null,
+    "peak_gb": 0.027,
+    "seconds": 2.95
+   },
+   "compared": {
+    "k0012.json": true
+   },
+   "ok": true
+  },
+  "K1": {
+   "id": "K1 flagship_K23 w_2640",
+   "process": {
+    "rc": 0,
+    "killed": null,
+    "peak_gb": 0.407,
+    "seconds": 54.82
+   },
+   "cells": "20/20",
+   "differing": [],
+   "other": {
+    "intervals.json": true,
+    "gen_summary.json": true,
+    "rows.json": true
+   },
+   "ok": true
+  }
+ },
+ "ok": true,
+ "seconds": 550.6
+}

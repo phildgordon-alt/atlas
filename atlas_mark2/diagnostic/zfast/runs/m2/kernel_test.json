@@ -1,0 +1,1 @@
+{"test": "kernel", "count": 10000056, "max_err_cos": 1.7543e-16, "argmax_cos": "2249977226798780248", "max_err_sin": 1.7313e-16, "argmax_sin": "6846529055188934015", "E_c": 4.88e-16, "pass": true}

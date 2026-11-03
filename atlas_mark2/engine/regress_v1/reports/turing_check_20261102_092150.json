@@ -1,0 +1,26 @@
+{
+ "check": "Turing count-equality gate",
+ "run": "/Users/kiosk/atlas_mark2/diagnostic/zfast/atlas_v5z7/runs/w10000000000000000000000000/wide7_1e25",
+ "T0": "10000000000000000000000000",
+ "target": [
+  "0",
+  "100"
+ ],
+ "turing_record": [
+  "/Users/kiosk/atlas_mark2/diagnostic/zfast/atlas_v5z7/runs/w10000000000000000000000000/wide7_1e25/turing_recount.json",
+  "898bf5c506fea8f97a75c19b684f32901b98de97e1d00c250f473fca0618b2da"
+ ],
+ "N_lo": 87100328229866724999179370,
+ "N_hi": 87100328229866724999180258,
+ "U_minus_L": [
+  0.5475242580217679,
+  0.529424258021775
+ ],
+ "turing_count": 888,
+ "certified_sign_changes": 888,
+ "straddling": [],
+ "fails": [],
+ "ok": true,
+ "stamp": "20261102_092150",
+ "amendment": "PREREG_AMENDMENTS.md A6"
+}

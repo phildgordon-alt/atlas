@@ -1,0 +1,32 @@
+x_1e16 pipeline rc=0 wall=9s
+x_1e16 independent replay rc=0 wall=3s {"passed": true, "passed_B_simple_without_lemma2": true, "np": "10/10", "certs": "2/2", "seams": [0, 0, 0], "min_candidate_lower": 0.8256182590293206, "seconds": 3.01, "replay_peak_gb": 0.097}
+{"arb_count": 10, "atlas_sign_changes_in_target": 10, "straddling": [], "disjoint": true, "match": true, "closed": true, "claimB": true} [["p0_100", "t1", "CERTIFIED", 0.8256182608919693, 3, 27], ["p100_200", "t1", "CERTIFIED", 0.8326265868205767, 3, 27]]
+x_1e16 done
+x_1e20 pipeline rc=0 wall=200s
+x_1e20 independent replay rc=0 wall=98s {"passed": true, "passed_B_simple_without_lemma2": true, "np": "13/13", "certs": "2/2", "seams": [0, 0, 0], "min_candidate_lower": 0.7936622631856001, "seconds": 98.18, "replay_peak_gb": 0.089}
+x_1e20 done
+xp_1e20 pipeline rc=0 wall=200s
+xp_1e20 independent replay rc=0 wall=99s {"passed": true, "passed_B_simple_without_lemma2": true, "np": "14/14", "certs": "2/2", "seams": [0, 0, 0], "min_candidate_lower": 0.7726391951627157, "seconds": 99.04, "replay_peak_gb": 0.088}
+xp_1e20 done
+X5DONE
+x_1e21 pipeline rc=0 wall=615s
+x_1e21 independent replay rc=0 wall=306s {"passed": true, "passed_B_simple_without_lemma2": true, "np": "15/15", "certs": "2/2", "seams": [0, 0, 0], "min_candidate_lower": 0.7693532418017396, "seconds": 305.25, "replay_peak_gb": 0.087}
+x_1e21 done
+xp_1e21 pipeline rc=0 wall=614s
+xp_1e21 independent replay rc=0 wall=305s {"passed": true, "passed_B_simple_without_lemma2": true, "np": "15/15", "certs": "2/2", "seams": [0, 0, 0], "min_candidate_lower": 0.7942768215466341, "seconds": 305.53, "replay_peak_gb": 0.087}
+xp_1e21 done
+x_1e22 pipeline rc=0 wall=1925s
+x_1e22 independent replay rc=0 wall=960s {"passed": true, "passed_B_simple_without_lemma2": true, "np": "16/16", "certs": "2/2", "seams": [0, 0, 0], "min_candidate_lower": 0.7475326795220493, "seconds": 960.23, "replay_peak_gb": 0.088}
+x_1e22 done
+xp_1e22 pipeline rc=0 wall=1927s
+xp_1e22 independent replay rc=0 wall=960s {"passed": true, "passed_B_simple_without_lemma2": true, "np": "16/16", "certs": "2/2", "seams": [0, 0, 0], "min_candidate_lower": 0.7686889707178968, "seconds": 960.18, "replay_peak_gb": 0.08}
+xp_1e22 done
+X6DONE
+scan_1e23 rc=0 wall=3105s
+h_1e23 pipeline rc=1 wall=6063s
+h_1e23 independent replay rc=1 wall=3053s {"passed": false, "passed_B_simple_without_lemma2": false, "np": "16/16", "certs": "1/2", "seams": [1, 1, 1], "min_candidate_lower": 0.7553842622248133, "seconds": 3052.52, "replay_peak_gb": 0.078}
+h_1e23 done
+hp_1e23 pipeline rc=1 wall=6069s
+hp_1e23 independent replay rc=1 wall=3031s {"passed": false, "passed_B_simple_without_lemma2": false, "np": "16/16", "certs": "1/2", "seams": [1, 1, 1], "min_candidate_lower": 0.7263942695185815, "seconds": 3030.56, "replay_peak_gb": 0.077}
+hp_1e23 done
+HEIGHT 23 DONE (pair window offset 2)

@@ -1,0 +1,87 @@
+{
+ "run": "/Users/kiosk/atlas_mark2/diagnostic/zfast/atlas_v5z5/runs/w10000000000000000000000/wide_1e22",
+ "hull_ok": true,
+ "certificates": 100,
+ "structure_ok": 877,
+ "passed_both": 100,
+ "failed": [],
+ "min_candidate_lower": 0.5806231051610221,
+ "replay_process": {
+  "rc": 0,
+  "killed": null,
+  "peak_gb": 0.093,
+  "seconds": 1082.97
+ },
+ "tiling": {
+  "coordinates": "offsets from T0 (exact translation)",
+  "T0": 10000000000000000000000,
+  "tiling_script": "/Users/kiosk/atlas/workbench/math_ablation_20260928/audit_20261004/exact_tiling_check.py",
+  "tiling_sha256": "0868990ee2027ba493593d514607acc0aad729ed94c7cf61b1cf3d1f22a08b45",
+  "tiling_sha_ok": true,
+  "hull": [
+   0.0,
+   100.0
+  ],
+  "target": [
+   0.0,
+   100.0
+  ],
+  "regions": 100,
+  "seams_hull": 0,
+  "seams_target": 0,
+  "gaps_d0": [],
+  "seams": []
+ },
+ "passed": true,
+ "claim_B": {
+  "np_certificates": 777,
+  "np_passed_both": 777,
+  "intervals_to_cover": 777,
+  "uncovered": [],
+  "np_min_candidate_lower": 0.8780986919961851,
+  "verifier": "pinned verify_zs5.py with one line changed (replay5.noparity_check)"
+ },
+ "zfast_session": {
+  "mode": "wide",
+  "center": "50.0",
+  "H": 61.0,
+  "Delta": 0.012,
+  "K": 18,
+  "J": 12,
+  "strict": true,
+  "threads": 2,
+  "z_span": [
+   -2.0,
+   102.0
+  ]
+ },
+ "zfast_env": {
+  "ZFAST_CENTER": "50.0",
+  "ZFAST_THREADS": "2",
+  "ZFAST_H": "61.0",
+  "ZFAST_DELTA": "0.012",
+  "ZFAST_K": "18",
+  "ZFAST_J": "12",
+  "ZFAST_STRICT": "1",
+  "CSTEP": null,
+  "CND": null,
+  "MINW_BINS": null,
+  "ZS_REFINE": null,
+  "ZS_DIP": null,
+  "EPS": null,
+  "V4_LIM_GB": "1.0",
+  "V4_TEST_SKIP_TIERS": null,
+  "V4_TEST_SPLIT": null,
+  "SECH_TABLE": null,
+  "OMP_NUM_THREADS": null,
+  "OPENBLAS_NUM_THREADS": null,
+  "VECLIB_MAXIMUM_THREADS": null,
+  "PYTHONHASHSEED": null,
+  "python": "3.12.13",
+  "flint": "0.9.0",
+  "platform": "macOS-27.0-arm64-arm-64bit",
+  "executable": "/Users/kiosk/projects/atlas-rerun/.venv/bin/python"
+ },
+ "seconds": 1084.47,
+ "passed_B": true
+}

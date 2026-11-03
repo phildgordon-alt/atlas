@@ -1,0 +1,5 @@
+file: zfast_m3.inc
+--- old
+                mag_add(R->err + j * K2 + k, R->err + j * K2 + k, term);
++++ new
+                mag_div_ui(term, term, 100000); mag_add(R->err + j * K2 + k, R->err + j * K2 + k, term);

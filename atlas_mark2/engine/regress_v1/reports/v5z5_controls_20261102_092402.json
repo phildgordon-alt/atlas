@@ -1,0 +1,97 @@
+{
+ "check": "NC-W controls on /Users/kiosk/atlas_mark2/diagnostic/zfast/atlas_v5z7/runs/w10000000000000000000000000/wide7_1e25",
+ "results": {
+  "baseline": {
+   "process": {
+    "rc": 0,
+    "killed": null,
+    "peak_gb": 0.055,
+    "seconds": 34.66
+   },
+   "records": 1976,
+   "passed": 1976,
+   "main_records": 200,
+   "main_passed": 200,
+   "main_certs_failing_both": 0,
+   "main_certs_failing_any": 0,
+   "main_certs": 100
+  },
+  "NC-W1 w x 1.10": {
+   "process": {
+    "rc": 0,
+    "killed": null,
+    "peak_gb": 0.055,
+    "seconds": 6.41
+   },
+   "records": 1976,
+   "passed": 0,
+   "main_records": 200,
+   "main_passed": 0,
+   "main_certs_failing_both": 100,
+   "main_certs_failing_any": 100,
+   "main_certs": 100
+  },
+  "NC-W2 swapped interval": {
+   "process": {
+    "rc": 0,
+    "killed": null,
+    "peak_gb": 0.055,
+    "seconds": 26.2
+   },
+   "records": 1976,
+   "passed": 162,
+   "main_records": 200,
+   "main_passed": 0,
+   "main_certs_failing_both": 100,
+   "main_certs_failing_any": 100,
+   "main_certs": 100
+  },
+  "NC-W3 w x (1+1e-3)": {
+   "process": {
+    "rc": 0,
+    "killed": null,
+    "peak_gb": 0.043,
+    "seconds": 1.87
+   },
+   "records": 200,
+   "passed": 0,
+   "main_records": 200,
+   "main_passed": 0,
+   "main_certs_failing_both": 100,
+   "main_certs_failing_any": 100,
+   "main_certs": 100
+  },
+  "NC-W4 deleted interval": {
+   "process": {
+    "rc": 0,
+    "killed": null,
+    "peak_gb": 0.043,
+    "seconds": 7.22
+   },
+   "records": 200,
+   "passed": 200,
+   "main_records": 200,
+   "main_passed": 200,
+   "main_certs_failing_both": 0,
+   "main_certs_failing_any": 0,
+   "main_certs": 100,
+   "cert": "cert_p5400_5500.json",
+   "deleted": [
+    54.037968750000005,
+    54.038046875000006
+   ],
+   "count_original": 888,
+   "count_mutated": 888
+  }
+ },
+ "detected": {
+  "NC-W1 w x 1.10": true,
+  "NC-W2 swapped interval": true,
+  "NC-W3 w x (1+1e-3)": true,
+  "NC-W4 deleted interval": false
+ },
+ "baseline_ok": true,
+ "ok": false,
+ "stamp": "20261102_092402",
+ "predictions": "diagnostic/zfast/PREDICTIONS_M7.md sha 34b281570dc2415757d5d3d93f1331031c3d30c48a585c4dca7fa31f58d3c5b6"
+}

@@ -1,0 +1,34 @@
+{
+ "points": 188,
+ "fails": [],
+ "by_height": [
+  {
+   "T0": "1000000000000000",
+   "n": 122,
+   "all_inside": true,
+   "all_overlap": true,
+   "max_diff": 1.9972542275377678e-15,
+   "max_rad": 3.417103e-11,
+   "median_rad_over_diff": 96012.85192244209,
+   "min_rad_over_diff": 17109.0037156293,
+   "med_sec_zfast": 0.19845000000000002,
+   "med_sec_ref": 3.8421080112457275,
+   "max_rss_zfast": 4.2,
+   "max_rss_ref": 453.671875
+  },
+  {
+   "T0": "10000000000000000",
+   "n": 66,
+   "all_inside": true,
+   "all_overlap": true,
+   "max_diff": 1.7539384867538422e-15,
+   "max_rad": 6.159433e-11,
+   "median_rad_over_diff": 125400.02309899373,
+   "min_rad_over_diff": 35117.72531658033,
+   "med_sec_zfast": 0.53185,
+   "med_sec_ref": 11.1145,
+   "max_rss_zfast": 4.2,
+   "max_rss_ref": 4.5
+  }
+ ]
+}

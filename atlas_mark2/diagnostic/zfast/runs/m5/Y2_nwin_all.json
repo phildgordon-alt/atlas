@@ -1,0 +1,856 @@
+{
+ "summary": {
+  "certificates": 92,
+  "equal": 92,
+  "ambient_independent": 92,
+  "mismatches": [],
+  "heights": [
+   7000,
+   9000,
+   663310,
+   6820046,
+   10000000,
+   1000000000000,
+   10000000000000,
+   100000000000000,
+   1000000000000000,
+   10000000000000000,
+   100000000000000000,
+   1000000000000000000,
+   100000000000000000000,
+   1000000000000000000000,
+   10000000000000000000000,
+   100000000000000000000000
+  ]
+ },
+ "rows": [
+  {
+   "cert": "atlas_v5/runs/w10000000.00/t4v4_10000000/certs/cert_p0_100.json",
+   "T0": 10000000,
+   "stored": 21.539938506403207,
+   "v5z4_amb128": 21.539938506403207,
+   "v5z4_amb256": 21.539938506403207,
+   "equal": true,
+   "ambient_independent": true
+  },
+  {
+   "cert": "atlas_v5/runs/w10000000.00/t4v4_10000000/certs/cert_p100_200.json",
+   "T0": 10000000,
+   "stored": 21.539938611830202,
+   "v5z4_amb128": 21.539938611830202,
+   "v5z4_amb256": 21.539938611830202,
+   "equal": true,
+   "ambient_independent": true
+  },
+  {
+   "cert": "atlas_v5/runs/w1000000000000/big_1e12/certs/cert_p0_100.json",
+   "T0": 1000000000000,
+   "stored": 33.58021073362056,
+   "v5z4_amb128": 33.58021073362056,
+   "v5z4_amb256": 33.58021073362056,
+   "equal": true,
+   "ambient_independent": true
+  },
+  {
+   "cert": "atlas_v5/runs/w1000000000000/big_1e12/certs/cert_p100_200.json",
+   "T0": 1000000000000,
+   "stored": 33.5802107336216,
+   "v5z4_amb128": 33.5802107336216,
+   "v5z4_amb256": 33.5802107336216,
+   "equal": true,
+   "ambient_independent": true
+  },
+  {
+   "cert": "atlas_v5/runs/w10000000000000/big_1e13/certs/cert_p0_100.json",
+   "T0": 10000000000000,
+   "stored": 35.972832537115266,
+   "v5z4_amb128": 35.972832537115266,
+   "v5z4_amb256": 35.972832537115266,
+   "equal": true,
+   "ambient_independent": true
+  },
+  {
+   "cert": "atlas_v5/runs/w10000000000000/big_1e13/certs/cert_p100_200.json",
+   "T0": 10000000000000,
+   "stored": 35.972832537115366,
+   "v5z4_amb128": 35.972832537115366,
+   "v5z4_amb256": 35.972832537115366,
+   "equal": true,
+   "ambient_independent": true
+  },
+  {
+   "cert": "atlas_v5/runs/w100000000000000/big_1e14/certs/cert_p0_100.json",
+   "T0": 100000000000000,
+   "stored": 38.362154627661866,
+   "v5z4_amb128": 38.362154627661866,
+   "v5z4_amb256": 38.362154627661866,
+   "equal": true,
+   "ambient_independent": true
+  },
+  {
+   "cert": "atlas_v5/runs/w100000000000000/big_1e14/certs/cert_p100_200.json",
+   "T0": 100000000000000,
+   "stored": 38.36215462766188,
+   "v5z4_amb128": 38.36215462766188,
+   "v5z4_amb256": 38.36215462766188,
+   "equal": true,
+   "ambient_independent": true
+  },
+  {
+   "cert": "atlas_v5/runs/w663310.00/t2_663318/certs/cert_p840_860.json",
+   "T0": 663310,
+   "stored": 17.19795185799865,
+   "v5z4_amb128": 17.19795185799865,
+   "v5z4_amb256": 17.19795185799865,
+   "equal": true,
+   "ambient_independent": true
+  },
+  {
+   "cert": "atlas_v5/runs/w6820046.00/rosser/certs/cert_p498_556.json",
+   "T0": 6820046,
+   "stored": 20.20731147694837,
+   "v5z4_amb128": 20.20731147694837,
+   "v5z4_amb256": 20.20731147694837,
+   "equal": true,
+   "ambient_independent": true
+  },
+  {
+   "cert": "atlas_v5/runs/w6820046.00/rosser/certs/cert_p556_615.json",
+   "T0": 6820046,
+   "stored": 20.229430124652023,
+   "v5z4_amb128": 20.229430124652023,
+   "v5z4_amb256": 20.229430124652023,
+   "equal": true,
+   "ambient_independent": true
+  },
+  {
+   "cert": "atlas_v5/runs/w7000.00/c7002/certs/cert_p248_249.json",
+   "T0": 7000,
+   "stored": 12.693729375247958,
+   "v5z4_amb128": 12.693729375247958,
+   "v5z4_amb256": 12.693729375247958,
+   "equal": true,
+   "ambient_independent": true
+  },
+  {
+   "cert": "atlas_v5/runs/w7000.00/lehmer/certs/cert_p506_510.json",
+   "T0": 7000,
+   "stored": 12.727574071391766,
+   "v5z4_amb128": 12.727574071391766,
+   "v5z4_amb256": 12.727574071391766,
+   "equal": true,
+   "ambient_independent": true
+  },
+  {
+   "cert": "atlas_v5/runs/w7000.00/lehmer_full_pair/certs/cert_p500_520.json",
+   "T0": 7000,
+   "stored": 12.906254128633318,
+   "v5z4_amb128": 12.906254128633318,
+   "v5z4_amb256": 12.906254128633318,
+   "equal": true,
+   "ambient_independent": true
+  },
+  {
+   "cert": "atlas_v5/runs/w9000.00/v1_9000/certs/cert_p0_100.json",
+   "T0": 9000,
+   "stored": 14.070736100573995,
+   "v5z4_amb128": 14.070736100573995,
+   "v5z4_amb256": 14.070736100573995,
+   "equal": true,
+   "ambient_independent": true
+  },
+  {
+   "cert": "atlas_v5/runs/w9000.00/v1_9000/certs/cert_p100_200.json",
+   "T0": 9000,
+   "stored": 14.070856171506195,
+   "v5z4_amb128": 14.070856171506195,
+   "v5z4_amb256": 14.070856171506195,
+   "equal": true,
+   "ambient_independent": true
+  },
+  {
+   "cert": "atlas_v5/runs/w9000.00/v1_9000/certs/cert_p200_300.json",
+   "T0": 9000,
+   "stored": 14.070976229018408,
+   "v5z4_amb128": 14.070976229018408,
+   "v5z4_amb256": 14.070976229018408,
+   "equal": true,
+   "ambient_independent": true
+  },
+  {
+   "cert": "atlas_v5/runs/w9000.00/v1_9000/certs/cert_p300_400.json",
+   "T0": 9000,
+   "stored": 14.071096273113621,
+   "v5z4_amb128": 14.071096273113621,
+   "v5z4_amb256": 14.071096273113621,
+   "equal": true,
+   "ambient_independent": true
+  },
+  {
+   "cert": "atlas_v5/runs/w9000.00/v1_9000/certs/cert_p400_500.json",
+   "T0": 9000,
+   "stored": 14.07121630379483,
+   "v5z4_amb128": 14.07121630379483,
+   "v5z4_amb256": 14.07121630379483,
+   "equal": true,
+   "ambient_independent": true
+  },
+  {
+   "cert": "atlas_v5/runs/w9000.00/v1_9000/certs/cert_p500_600.json",
+   "T0": 9000,
+   "stored": 14.071336321065026,
+   "v5z4_amb128": 14.071336321065026,
+   "v5z4_amb256": 14.071336321065026,
+   "equal": true,
+   "ambient_independent": true
+  },
+  {
+   "cert": "atlas_v5/runs/w9000.00/v1_9000/certs/cert_p600_700.json",
+   "T0": 9000,
+   "stored": 14.071456324927194,
+   "v5z4_amb128": 14.071456324927194,
+   "v5z4_amb256": 14.071456324927194,
+   "equal": true,
+   "ambient_independent": true
+  },
+  {
+   "cert": "atlas_v5/runs/w9000.00/v1_9000/certs/cert_p700_800.json",
+   "T0": 9000,
+   "stored": 14.071576315384323,
+   "v5z4_amb128": 14.071576315384323,
+   "v5z4_amb256": 14.071576315384323,
+   "equal": true,
+   "ambient_independent": true
+  },
+  {
+   "cert": "atlas_v5/runs/w9000.00/v1_9000/certs/cert_p800_900.json",
+   "T0": 9000,
+   "stored": 14.071696292439404,
+   "v5z4_amb128": 14.071696292439404,
+   "v5z4_amb256": 14.071696292439404,
+   "equal": true,
+   "ambient_independent": true
+  },
+  {
+   "cert": "atlas_v5/runs/w9000.00/v1_9000/certs/cert_p900_1000.json",
+   "T0": 9000,
+   "stored": 14.07181625609542,
+   "v5z4_amb128": 14.07181625609542,
+   "v5z4_amb256": 14.07181625609542,
+   "equal": true,
+   "ambient_independent": true
+  },
+  {
+   "cert": "record_heights/v5run/runs/w1000000000000000/big_1e15/certs/cert_p0_100.json",
+   "T0": 1000000000000000,
+   "stored": 40.748632722237836,
+   "v5z4_amb128": 40.748632722237836,
+   "v5z4_amb256": 40.748632722237836,
+   "equal": true,
+   "ambient_independent": true
+  },
+  {
+   "cert": "record_heights/v5run/runs/w1000000000000000/big_1e15/certs/cert_p100_200.json",
+   "T0": 1000000000000000,
+   "stored": 40.74863272223784,
+   "v5z4_amb128": 40.74863272223784,
+   "v5z4_amb256": 40.74863272223784,
+   "equal": true,
+   "ambient_independent": true
+  },
+  {
+   "cert": "record_heights/v5run/runs/w1000000000000000/pair_1e15_286/certs/cert_p28600_28700.json",
+   "T0": 1000000000000000,
+   "stored": 40.748632722238135,
+   "v5z4_amb128": 40.748632722238135,
+   "v5z4_amb256": 40.748632722238135,
+   "equal": true,
+   "ambient_independent": true
+  },
+  {
+   "cert": "record_heights/v5run/runs/w1000000000000000/pair_1e15_286/certs/cert_p28700_28800.json",
+   "T0": 1000000000000000,
+   "stored": 40.748632722238135,
+   "v5z4_amb128": 40.748632722238135,
+   "v5z4_amb256": 40.748632722238135,
+   "equal": true,
+   "ambient_independent": true
+  },
+  {
+   "cert": "record_heights/v5run/runs/w10000000000000000/big_1e16/certs/cert_p0_100.json",
+   "T0": 10000000000000000,
+   "stored": 43.132634198019566,
+   "v5z4_amb128": 43.132634198019566,
+   "v5z4_amb256": 43.132634198019566,
+   "equal": true,
+   "ambient_independent": true
+  },
+  {
+   "cert": "record_heights/v5run/runs/w10000000000000000/big_1e16/certs/cert_p100_200.json",
+   "T0": 10000000000000000,
+   "stored": 43.132634198019566,
+   "v5z4_amb128": 43.132634198019566,
+   "v5z4_amb256": 43.132634198019566,
+   "equal": true,
+   "ambient_independent": true
+  },
+  {
+   "cert": "zfast/atlas_v5z/runs/w1000000000000/z_1e12/certs/cert_p0_100.json",
+   "T0": 1000000000000,
+   "stored": 33.58021073362056,
+   "v5z4_amb128": 33.58021073362056,
+   "v5z4_amb256": 33.58021073362056,
+   "equal": true,
+   "ambient_independent": true
+  },
+  {
+   "cert": "zfast/atlas_v5z/runs/w1000000000000/z_1e12/certs/cert_p100_200.json",
+   "T0": 1000000000000,
+   "stored": 33.5802107336216,
+   "v5z4_amb128": 33.5802107336216,
+   "v5z4_amb256": 33.5802107336216,
+   "equal": true,
+   "ambient_independent": true
+  },
+  {
+   "cert": "zfast/atlas_v5z/runs/w10000000000000/z_1e13/certs/cert_p0_100.json",
+   "T0": 10000000000000,
+   "stored": 35.972832537115266,
+   "v5z4_amb128": 35.972832537115266,
+   "v5z4_amb256": 35.972832537115266,
+   "equal": true,
+   "ambient_independent": true
+  },
+  {
+   "cert": "zfast/atlas_v5z/runs/w10000000000000/z_1e13/certs/cert_p100_200.json",
+   "T0": 10000000000000,
+   "stored": 35.972832537115366,
+   "v5z4_amb128": 35.972832537115366,
+   "v5z4_amb256": 35.972832537115366,
+   "equal": true,
+   "ambient_independent": true
+  },
+  {
+   "cert": "zfast/atlas_v5z/runs/w100000000000000/z_1e14/certs/cert_p0_100.json",
+   "T0": 100000000000000,
+   "stored": 38.362154627661866,
+   "v5z4_amb128": 38.362154627661866,
+   "v5z4_amb256": 38.362154627661866,
+   "equal": true,
+   "ambient_independent": true
+  },
+  {
+   "cert": "zfast/atlas_v5z/runs/w100000000000000/z_1e14/certs/cert_p100_200.json",
+   "T0": 100000000000000,
+   "stored": 38.36215462766188,
+   "v5z4_amb128": 38.36215462766188,
+   "v5z4_amb256": 38.36215462766188,
+   "equal": true,
+   "ambient_independent": true
+  },
+  {
+   "cert": "zfast/atlas_v5z/runs/w1000000000000000/z_1e15/certs/cert_p0_100.json",
+   "T0": 1000000000000000,
+   "stored": 40.748632722237836,
+   "v5z4_amb128": 40.748632722237836,
+   "v5z4_amb256": 40.748632722237836,
+   "equal": true,
+   "ambient_independent": true
+  },
+  {
+   "cert": "zfast/atlas_v5z/runs/w1000000000000000/z_1e15/certs/cert_p100_200.json",
+   "T0": 1000000000000000,
+   "stored": 40.74863272223784,
+   "v5z4_amb128": 40.74863272223784,
+   "v5z4_amb256": 40.74863272223784,
+   "equal": true,
+   "ambient_independent": true
+  },
+  {
+   "cert": "zfast/atlas_v5z/runs/w1000000000000000/z_pair_1e15_286/certs/cert_p28600_28700.json",
+   "T0": 1000000000000000,
+   "stored": 40.748632722238135,
+   "v5z4_amb128": 40.748632722238135,
+   "v5z4_amb256": 40.748632722238135,
+   "equal": true,
+   "ambient_independent": true
+  },
+  {
+   "cert": "zfast/atlas_v5z/runs/w1000000000000000/z_pair_1e15_286/certs/cert_p28700_28800.json",
+   "T0": 1000000000000000,
+   "stored": 40.748632722238135,
+   "v5z4_amb128": 40.748632722238135,
+   "v5z4_amb256": 40.748632722238135,
+   "equal": true,
+   "ambient_independent": true
+  },
+  {
+   "cert": "zfast/atlas_v5z/runs/w10000000000000000/z_1e16/certs/cert_p0_100.json",
+   "T0": 10000000000000000,
+   "stored": 43.132634198019566,
+   "v5z4_amb128": 43.132634198019566,
+   "v5z4_amb256": 43.132634198019566,
+   "equal": true,
+   "ambient_independent": true
+  },
+  {
+   "cert": "zfast/atlas_v5z/runs/w10000000000000000/z_1e16/certs/cert_p100_200.json",
+   "T0": 10000000000000000,
+   "stored": 43.132634198019566,
+   "v5z4_amb128": 43.132634198019566,
+   "v5z4_amb256": 43.132634198019566,
+   "equal": true,
+   "ambient_independent": true
+  },
+  {
+   "cert": "zfast/atlas_v5z/runs/w100000000000000000/z_1e17/certs/cert_p0_100.json",
+   "T0": 100000000000000000,
+   "stored": 45.514459545778735,
+   "v5z4_amb128": 45.514459545778735,
+   "v5z4_amb256": 45.514459545778735,
+   "equal": true,
+   "ambient_independent": true
+  },
+  {
+   "cert": "zfast/atlas_v5z/runs/w100000000000000000/z_1e17/certs/cert_p100_200.json",
+   "T0": 100000000000000000,
+   "stored": 45.514459545778735,
+   "v5z4_amb128": 45.514459545778735,
+   "v5z4_amb256": 45.514459545778735,
+   "equal": true,
+   "ambient_independent": true
+  },
+  {
+   "cert": "zfast/atlas_v5z/runs/w1000000000000000000/z_1e18/certs/cert_p0_100.json",
+   "T0": 1000000000000000000,
+   "stored": 47.89435768190298,
+   "v5z4_amb128": 47.89435768190298,
+   "v5z4_amb256": 47.89435768190298,
+   "equal": true,
+   "ambient_independent": true
+  },
+  {
+   "cert": "zfast/atlas_v5z/runs/w1000000000000000000/z_1e18/certs/cert_p100_200.json",
+   "T0": 1000000000000000000,
+   "stored": 47.89435768190298,
+   "v5z4_amb128": 47.89435768190298,
+   "v5z4_amb256": 47.89435768190298,
+   "equal": true,
+   "ambient_independent": true
+  },
+  {
+   "cert": "zfast/atlas_v5z2/runs/w1000000000000/y_1e12/certs/cert_p0_100.json",
+   "T0": 1000000000000,
+   "stored": 33.58021073362056,
+   "v5z4_amb128": 33.58021073362056,
+   "v5z4_amb256": 33.58021073362056,
+   "equal": true,
+   "ambient_independent": true
+  },
+  {
+   "cert": "zfast/atlas_v5z2/runs/w1000000000000/y_1e12/certs/cert_p100_200.json",
+   "T0": 1000000000000,
+   "stored": 33.5802107336216,
+   "v5z4_amb128": 33.5802107336216,
+   "v5z4_amb256": 33.5802107336216,
+   "equal": true,
+   "ambient_independent": true
+  },
+  {
+   "cert": "zfast/atlas_v5z2/runs/w10000000000000/y_1e13/certs/cert_p0_100.json",
+   "T0": 10000000000000,
+   "stored": 35.972832537115266,
+   "v5z4_amb128": 35.972832537115266,
+   "v5z4_amb256": 35.972832537115266,
+   "equal": true,
+   "ambient_independent": true
+  },
+  {
+   "cert": "zfast/atlas_v5z2/runs/w10000000000000/y_1e13/certs/cert_p100_200.json",
+   "T0": 10000000000000,
+   "stored": 35.972832537115366,
+   "v5z4_amb128": 35.972832537115366,
+   "v5z4_amb256": 35.972832537115366,
+   "equal": true,
+   "ambient_independent": true
+  },
+  {
+   "cert": "zfast/atlas_v5z2/runs/w100000000000000/y_1e14/certs/cert_p0_100.json",
+   "T0": 100000000000000,
+   "stored": 38.362154627661866,
+   "v5z4_amb128": 38.362154627661866,
+   "v5z4_amb256": 38.362154627661866,
+   "equal": true,
+   "ambient_independent": true
+  },
+  {
+   "cert": "zfast/atlas_v5z2/runs/w100000000000000/y_1e14/certs/cert_p100_200.json",
+   "T0": 100000000000000,
+   "stored": 38.36215462766188,
+   "v5z4_amb128": 38.36215462766188,
+   "v5z4_amb256": 38.36215462766188,
+   "equal": true,
+   "ambient_independent": true
+  },
+  {
+   "cert": "zfast/atlas_v5z2/runs/w1000000000000000/y_1e15/certs/cert_p0_100.json",
+   "T0": 1000000000000000,
+   "stored": 40.748632722237836,
+   "v5z4_amb128": 40.748632722237836,
+   "v5z4_amb256": 40.748632722237836,
+   "equal": true,
+   "ambient_independent": true
+  },
+  {
+   "cert": "zfast/atlas_v5z2/runs/w1000000000000000/y_1e15/certs/cert_p100_200.json",
+   "T0": 1000000000000000,
+   "stored": 40.74863272223784,
+   "v5z4_amb128": 40.74863272223784,
+   "v5z4_amb256": 40.74863272223784,
+   "equal": true,
+   "ambient_independent": true
+  },
+  {
+   "cert": "zfast/atlas_v5z2/runs/w1000000000000000/y_pair_1e15_286/certs/cert_p28600_28700.json",
+   "T0": 1000000000000000,
+   "stored": 40.748632722238135,
+   "v5z4_amb128": 40.748632722238135,
+   "v5z4_amb256": 40.748632722238135,
+   "equal": true,
+   "ambient_independent": true
+  },
+  {
+   "cert": "zfast/atlas_v5z2/runs/w1000000000000000/y_pair_1e15_286/certs/cert_p28700_28800.json",
+   "T0": 1000000000000000,
+   "stored": 40.748632722238135,
+   "v5z4_amb128": 40.748632722238135,
+   "v5z4_amb256": 40.748632722238135,
+   "equal": true,
+   "ambient_independent": true
+  },
+  {
+   "cert": "zfast/atlas_v5z2/runs/w10000000000000000/y_1e16/certs/cert_p0_100.json",
+   "T0": 10000000000000000,
+   "stored": 43.132634198019566,
+   "v5z4_amb128": 43.132634198019566,
+   "v5z4_amb256": 43.132634198019566,
+   "equal": true,
+   "ambient_independent": true
+  },
+  {
+   "cert": "zfast/atlas_v5z2/runs/w10000000000000000/y_1e16/certs/cert_p100_200.json",
+   "T0": 10000000000000000,
+   "stored": 43.132634198019566,
+   "v5z4_amb128": 43.132634198019566,
+   "v5z4_amb256": 43.132634198019566,
+   "equal": true,
+   "ambient_independent": true
+  },
+  {
+   "cert": "zfast/atlas_v5z2/runs/w100000000000000000/y_1e17/certs/cert_p0_100.json",
+   "T0": 100000000000000000,
+   "stored": 45.514459545778735,
+   "v5z4_amb128": 45.514459545778735,
+   "v5z4_amb256": 45.514459545778735,
+   "equal": true,
+   "ambient_independent": true
+  },
+  {
+   "cert": "zfast/atlas_v5z2/runs/w100000000000000000/y_1e17/certs/cert_p100_200.json",
+   "T0": 100000000000000000,
+   "stored": 45.514459545778735,
+   "v5z4_amb128": 45.514459545778735,
+   "v5z4_amb256": 45.514459545778735,
+   "equal": true,
+   "ambient_independent": true
+  },
+  {
+   "cert": "zfast/atlas_v5z2/runs/w1000000000000000000/y_1e18/certs/cert_p0_100.json",
+   "T0": 1000000000000000000,
+   "stored": 47.89435768190298,
+   "v5z4_amb128": 47.89435768190298,
+   "v5z4_amb256": 47.89435768190298,
+   "equal": true,
+   "ambient_independent": true
+  },
+  {
+   "cert": "zfast/atlas_v5z2/runs/w1000000000000000000/y_1e18/certs/cert_p100_200.json",
+   "T0": 1000000000000000000,
+   "stored": 47.89435768190298,
+   "v5z4_amb128": 47.89435768190298,
+   "v5z4_amb256": 47.89435768190298,
+   "equal": true,
+   "ambient_independent": true
+  },
+  {
+   "cert": "zfast/atlas_v5z2/runs/w100000000000000000000/h_1e20/certs/cert_p0_100.json",
+   "T0": 100000000000000000000,
+   "stored": 52.64917424466721,
+   "v5z4_amb128": 52.64917424466721,
+   "v5z4_amb256": 52.64917424466721,
+   "equal": true,
+   "ambient_independent": true
+  },
+  {
+   "cert": "zfast/atlas_v5z2/runs/w100000000000000000000/h_1e20/certs/cert_p100_200.json",
+   "T0": 100000000000000000000,
+   "stored": 52.64917424466721,
+   "v5z4_amb128": 52.64917424466721,
+   "v5z4_amb256": 52.64917424466721,
+   "equal": true,
+   "ambient_independent": true
+  },
+  {
+   "cert": "zfast/atlas_v5z2/runs/w100000000000000000000/hp_1e20/certs/cert_p400_500.json",
+   "T0": 100000000000000000000,
+   "stored": 52.64917424466721,
+   "v5z4_amb128": 52.64917424466721,
+   "v5z4_amb256": 52.64917424466721,
+   "equal": true,
+   "ambient_independent": true
+  },
+  {
+   "cert": "zfast/atlas_v5z2/runs/w100000000000000000000/hp_1e20/certs/cert_p500_600.json",
+   "T0": 100000000000000000000,
+   "stored": 52.64917424466721,
+   "v5z4_amb128": 52.64917424466721,
+   "v5z4_amb256": 52.64917424466721,
+   "equal": true,
+   "ambient_independent": true
+  },
+  {
+   "cert": "zfast/atlas_v5z2/runs/w1000000000000000000000/h_1e21/certs/cert_p0_100.json",
+   "T0": 1000000000000000000000,
+   "stored": 55.024419633974645,
+   "v5z4_amb128": 55.024419633974645,
+   "v5z4_amb256": 55.024419633974645,
+   "equal": true,
+   "ambient_independent": true
+  },
+  {
+   "cert": "zfast/atlas_v5z2/runs/w1000000000000000000000/h_1e21/certs/cert_p100_200.json",
+   "T0": 1000000000000000000000,
+   "stored": 55.024419633974645,
+   "v5z4_amb128": 55.024419633974645,
+   "v5z4_amb256": 55.024419633974645,
+   "equal": true,
+   "ambient_independent": true
+  },
+  {
+   "cert": "zfast/atlas_v5z2/runs/w1000000000000000000000/hp_1e21/certs/cert_p-500_-400.json",
+   "T0": 1000000000000000000000,
+   "stored": 55.024419633974645,
+   "v5z4_amb128": 55.024419633974645,
+   "v5z4_amb256": 55.024419633974645,
+   "equal": true,
+   "ambient_independent": true
+  },
+  {
+   "cert": "zfast/atlas_v5z2/runs/w1000000000000000000000/hp_1e21/certs/cert_p-600_-500.json",
+   "T0": 1000000000000000000000,
+   "stored": 55.024419633974645,
+   "v5z4_amb128": 55.024419633974645,
+   "v5z4_amb256": 55.024419633974645,
+   "equal": true,
+   "ambient_independent": true
+  },
+  {
+   "cert": "zfast/atlas_v5z2/runs/w10000000000000000000000/h_1e22/certs/cert_p0_100.json",
+   "T0": 10000000000000000000000,
+   "stored": 57.39840282069688,
+   "v5z4_amb128": 57.39840282069688,
+   "v5z4_amb256": 57.39840282069688,
+   "equal": true,
+   "ambient_independent": true
+  },
+  {
+   "cert": "zfast/atlas_v5z2/runs/w10000000000000000000000/h_1e22/certs/cert_p100_200.json",
+   "T0": 10000000000000000000000,
+   "stored": 57.39840282069688,
+   "v5z4_amb128": 57.39840282069688,
+   "v5z4_amb256": 57.39840282069688,
+   "equal": true,
+   "ambient_independent": true
+  },
+  {
+   "cert": "zfast/atlas_v5z2/runs/w10000000000000000000000/hp_1e22/certs/cert_p1700_1800.json",
+   "T0": 10000000000000000000000,
+   "stored": 57.39840282069688,
+   "v5z4_amb128": 57.39840282069688,
+   "v5z4_amb256": 57.39840282069688,
+   "equal": true,
+   "ambient_independent": true
+  },
+  {
+   "cert": "zfast/atlas_v5z2/runs/w10000000000000000000000/hp_1e22/certs/cert_p1800_1900.json",
+   "T0": 10000000000000000000000,
+   "stored": 57.39840282069688,
+   "v5z4_amb128": 57.39840282069688,
+   "v5z4_amb256": 57.39840282069688,
+   "equal": true,
+   "ambient_independent": true
+  },
+  {
+   "cert": "zfast/atlas_v5z3/runs/w10000000000000000/x_1e16/certs/cert_p0_100.json",
+   "T0": 10000000000000000,
+   "stored": 43.132634198019566,
+   "v5z4_amb128": 43.132634198019566,
+   "v5z4_amb256": 43.132634198019566,
+   "equal": true,
+   "ambient_independent": true
+  },
+  {
+   "cert": "zfast/atlas_v5z3/runs/w10000000000000000/x_1e16/certs/cert_p100_200.json",
+   "T0": 10000000000000000,
+   "stored": 43.132634198019566,
+   "v5z4_amb128": 43.132634198019566,
+   "v5z4_amb256": 43.132634198019566,
+   "equal": true,
+   "ambient_independent": true
+  },
+  {
+   "cert": "zfast/atlas_v5z3/runs/w100000000000000000000/x_1e20/certs/cert_p0_100.json",
+   "T0": 100000000000000000000,
+   "stored": 52.64917424466721,
+   "v5z4_amb128": 52.64917424466721,
+   "v5z4_amb256": 52.64917424466721,
+   "equal": true,
+   "ambient_independent": true
+  },
+  {
+   "cert": "zfast/atlas_v5z3/runs/w100000000000000000000/x_1e20/certs/cert_p100_200.json",
+   "T0": 100000000000000000000,
+   "stored": 52.64917424466721,
+   "v5z4_amb128": 52.64917424466721,
+   "v5z4_amb256": 52.64917424466721,
+   "equal": true,
+   "ambient_independent": true
+  },
+  {
+   "cert": "zfast/atlas_v5z3/runs/w100000000000000000000/xp_1e20/certs/cert_p400_500.json",
+   "T0": 100000000000000000000,
+   "stored": 52.64917424466721,
+   "v5z4_amb128": 52.64917424466721,
+   "v5z4_amb256": 52.64917424466721,
+   "equal": true,
+   "ambient_independent": true
+  },
+  {
+   "cert": "zfast/atlas_v5z3/runs/w100000000000000000000/xp_1e20/certs/cert_p500_600.json",
+   "T0": 100000000000000000000,
+   "stored": 52.64917424466721,
+   "v5z4_amb128": 52.64917424466721,
+   "v5z4_amb256": 52.64917424466721,
+   "equal": true,
+   "ambient_independent": true
+  },
+  {
+   "cert": "zfast/atlas_v5z3/runs/w1000000000000000000000/x_1e21/certs/cert_p0_100.json",
+   "T0": 1000000000000000000000,
+   "stored": 55.024419633974645,
+   "v5z4_amb128": 55.024419633974645,
+   "v5z4_amb256": 55.024419633974645,
+   "equal": true,
+   "ambient_independent": true
+  },
+  {
+   "cert": "zfast/atlas_v5z3/runs/w1000000000000000000000/x_1e21/certs/cert_p100_200.json",
+   "T0": 1000000000000000000000,
+   "stored": 55.024419633974645,
+   "v5z4_amb128": 55.024419633974645,
+   "v5z4_amb256": 55.024419633974645,
+   "equal": true,
+   "ambient_independent": true
+  },
+  {
+   "cert": "zfast/atlas_v5z3/runs/w1000000000000000000000/xp_1e21/certs/cert_p-500_-400.json",
+   "T0": 1000000000000000000000,
+   "stored": 55.024419633974645,
+   "v5z4_amb128": 55.024419633974645,
+   "v5z4_amb256": 55.024419633974645,
+   "equal": true,
+   "ambient_independent": true
+  },
+  {
+   "cert": "zfast/atlas_v5z3/runs/w1000000000000000000000/xp_1e21/certs/cert_p-600_-500.json",
+   "T0": 1000000000000000000000,
+   "stored": 55.024419633974645,
+   "v5z4_amb128": 55.024419633974645,
+   "v5z4_amb256": 55.024419633974645,
+   "equal": true,
+   "ambient_independent": true
+  },
+  {
+   "cert": "zfast/atlas_v5z3/runs/w10000000000000000000000/x_1e22/certs/cert_p0_100.json",
+   "T0": 10000000000000000000000,
+   "stored": 57.39840282069688,
+   "v5z4_amb128": 57.39840282069688,
+   "v5z4_amb256": 57.39840282069688,
+   "equal": true,
+   "ambient_independent": true
+  },
+  {
+   "cert": "zfast/atlas_v5z3/runs/w10000000000000000000000/x_1e22/certs/cert_p100_200.json",
+   "T0": 10000000000000000000000,
+   "stored": 57.39840282069688,
+   "v5z4_amb128": 57.39840282069688,
+   "v5z4_amb256": 57.39840282069688,
+   "equal": true,
+   "ambient_independent": true
+  },
+  {
+   "cert": "zfast/atlas_v5z3/runs/w10000000000000000000000/xp_1e22/certs/cert_p1700_1800.json",
+   "T0": 10000000000000000000000,
+   "stored": 57.39840282069688,
+   "v5z4_amb128": 57.39840282069688,
+   "v5z4_amb256": 57.39840282069688,
+   "equal": true,
+   "ambient_independent": true
+  },
+  {
+   "cert": "zfast/atlas_v5z3/runs/w10000000000000000000000/xp_1e22/certs/cert_p1800_1900.json",
+   "T0": 10000000000000000000000,
+   "stored": 57.39840282069688,
+   "v5z4_amb128": 57.39840282069688,
+   "v5z4_amb256": 57.39840282069688,
+   "equal": true,
+   "ambient_independent": true
+  },
+  {
+   "cert": "zfast/atlas_v5z3/runs/w100000000000000000000000/h_1e23/certs/cert_p0_100.json",
+   "T0": 100000000000000000000000,
+   "stored": 59.7712360587155,
+   "v5z4_amb128": 59.7712360587155,
+   "v5z4_amb256": 59.7712360587155,
+   "equal": true,
+   "ambient_independent": true
+  },
+  {
+   "cert": "zfast/atlas_v5z3/runs/w100000000000000000000000/h_1e23/certs/cert_p100_200.json",
+   "T0": 100000000000000000000000,
+   "stored": 59.7712360587155,
+   "v5z4_amb128": 59.7712360587155,
+   "v5z4_amb256": 59.7712360587155,
+   "equal": true,
+   "ambient_independent": true
+  },
+  {
+   "cert": "zfast/atlas_v5z3/runs/w100000000000000000000000/hp_1e23/certs/cert_p200_300.json",
+   "T0": 100000000000000000000000,
+   "stored": 59.7712360587155,
+   "v5z4_amb128": 59.7712360587155,
+   "v5z4_amb256": 59.7712360587155,
+   "equal": true,
+   "ambient_independent": true
+  },
+  {
+   "cert": "zfast/atlas_v5z3/runs/w100000000000000000000000/hp_1e23/certs/cert_p300_400.json",
+   "T0": 100000000000000000000000,
+   "stored": 59.7712360587155,
+   "v5z4_amb128": 59.7712360587155,
+   "v5z4_amb256": 59.7712360587155,
+   "equal": true,
+   "ambient_independent": true
+  }
+ ]
+}

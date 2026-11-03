@@ -1,0 +1,7 @@
+file: zfast.c
+--- old
+        mag_mul_ui(e1, err, 7);
+
++++ new
+        mag_mul_ui(e1, err, 7); mag_div_ui(e1, e1, 10);
+

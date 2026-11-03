@@ -1,0 +1,5 @@
+file: zfast.c
+--- old
+mag_set_d(tmp, 3.03 * u + ZF_EC);
++++ new
+mag_set_d(tmp, 0.303 * u + ZF_EC);

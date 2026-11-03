@@ -1,0 +1,21 @@
+{
+ "check": "Turing gate negative controls on /Users/kiosk/atlas_mark2/diagnostic/zfast/atlas_v5z7/runs/w100000000000000000000000000/wide7_1e26",
+ "turing_json": "/Users/kiosk/atlas_mark2/diagnostic/zfast/atlas_v5z7/runs/w100000000000000000000000000/wide7_1e26/turing_recount.json",
+ "detected": {
+  "NC-T1 one zero deleted from all covering certificates": true,
+  "NC-T2 Turing N(hi) + 1": true,
+  "NC-T3 lower end unpinned": true,
+  "NC-T4 record from a pre-fix tool": true
+ },
+ "baseline_ok": true,
+ "ok": true,
+ "stamp": "20261102_185901",
+ "amendment": "PREREG_AMENDMENTS.md A6"
+}
+{
+ "NC-T1 one zero deleted from all covering certificates": true,
+ "NC-T2 Turing N(hi) + 1": true,
+ "NC-T3 lower end unpinned": true,
+ "NC-T4 record from a pre-fix tool": true
+}
+REPORT /Users/kiosk/atlas_mark2/engine/regress_v1/reports/turing_controls_20261102_185901.json: PASS

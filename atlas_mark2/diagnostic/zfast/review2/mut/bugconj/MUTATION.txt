@@ -1,0 +1,5 @@
+file: zfast_m3c.inc
+--- old
+    zfm_sum_c(Sm + 2, S, b, -1, 0, u, Nt, prec); acb_conj(Sm + 2, Sm + 2);
++++ new
+    zfm_sum_c(Sm + 2, S, b, -1, 0, u, Nt, prec);

@@ -1,0 +1,66 @@
+{
+ "tool": "scan_turing5.py recount",
+ "tool_sha256": "898bf5c506fea8f97a75c19b684f32901b98de97e1d00c250f473fca0618b2da",
+ "T0": "10000000000000000000000000",
+ "scan": "/Users/kiosk/atlas_mark2/diagnostic/zfast/atlas_v5z7/runs/w10000000000000000000000000/wide7_1e25/turing_grid",
+ "DT": "40",
+ "grid_ends": [
+  "-40",
+  "140"
+ ],
+ "zeros_in_scan": 1596,
+ "turing": {
+  "0": {
+   "v": 0.0,
+   "v_exact": "0",
+   "Delta": 40.0,
+   "Delta_exact": "40",
+   "N_lower": 87100328229866724999179370,
+   "N_upper": 87100328229866724999179370,
+   "Z_sign": -1,
+   "Z_src": {
+    "source": "grid",
+    "k": 10000,
+    "mid": -3.4176983882804737,
+    "rad": 2.29362547843337e-08
+   },
+   "U": "8.71003282299e+25",
+   "L": "8.71003282299e+25",
+   "U_minus_L": 0.5475242580217679,
+   "zeros_up": 355,
+   "zeros_down": 353,
+   "pinned": true,
+   "N": 87100328229866724999179370
+  },
+  "100": {
+   "v": 100.0,
+   "v_exact": "100",
+   "Delta": 40.0,
+   "Delta_exact": "40",
+   "N_lower": 87100328229866724999180258,
+   "N_upper": 87100328229866724999180258,
+   "Z_sign": -1,
+   "Z_src": {
+    "source": "grid",
+    "k": 35000,
+    "mid": -1.7242583978498023,
+    "rad": 2.5063913611234057e-08
+   },
+   "U": "8.71003282299e+25",
+   "L": "8.71003282299e+25",
+   "U_minus_L": 0.529424258021775,
+   "zeros_up": 355,
+   "zeros_down": 355,
+   "pinned": true,
+   "N": 87100328229866724999180258
+  }
+ },
+ "windows": {
+  "0,100": {
+   "count": 888,
+   "sign_changes_in_window": 888,
+   "straddling": []
+  }
+ },
+ "flint": "0.9.0"
+}

@@ -1,0 +1,11 @@
+GZ 18 9 WD peak_rss_kb=4144 peak_footprint_mb=0 status=ok rc=0 wall=419s /Users/kiosk/atlas_mark2/diagnostic/general_eval/calegari2/wd_fp.sh:6: nice(5) failed: operation not permitted
+GZ 19 7 WD peak_rss_kb=4112 peak_footprint_mb=0 status=ok rc=0 wall=1045s /Users/kiosk/atlas_mark2/diagnostic/general_eval/calegari2/wd_fp.sh:6: nice(5) failed: operation not permitted
+GZ 17 7 WD peak_rss_kb=4560 peak_footprint_mb=0 status=ok rc=0 wall=79s /Users/kiosk/atlas_mark2/diagnostic/general_eval/calegari2/wd_fp.sh:6: nice(5) failed: operation not permitted
+GZ 20 2 WD peak_rss_kb=4336 peak_footprint_mb=0 status=ok rc=0 wall=734s /Users/kiosk/atlas_mark2/diagnostic/general_eval/calegari2/wd_fp.sh:6: nice(5) failed: operation not permitted
+AZ 18 1 WD peak_rss_kb=4144 peak_footprint_mb=0 status=ok rc=0 wall=54s /Users/kiosk/atlas_mark2/diagnostic/general_eval/calegari2/wd_fp.sh:6: nice(5) failed: operation not permitted
+AZ 19 1 WD peak_rss_kb=4224 peak_footprint_mb=0 status=ok rc=0 wall=179s /Users/kiosk/atlas_mark2/diagnostic/general_eval/calegari2/wd_fp.sh:6: nice(5) failed: operation not permitted
+ALLDONE
+WD peak_rss_kb=4288 peak_footprint_mb=0 status=ok rc=0 wall=1491s
+ /Users/kiosk/atlas_mark2/diagnostic/general_eval/calegari2/wd_fp.sh:6: nice(5) failed: operation not permitted
+
+ROWSDONE

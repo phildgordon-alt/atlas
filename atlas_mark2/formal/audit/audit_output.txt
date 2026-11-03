@@ -1,0 +1,162 @@
+dataset deg2
+  certificates 737 (main 737, no-parity 0), replay-passed 737, regions 737, intervals 20088, central reductions 0, model boxes 0
+  expect_m0 0; per-certificate checks passed 737/737
+  targets covered (target x [0,1/2], exact, binary64 endpoints as stored) 36/36; claim (B) groups 0/0; decimal-endpoint versions covered 0/0
+  VIOLATIONS 0
+dataset ec37a
+  certificates 400 (main 400, no-parity 0), replay-passed 400, regions 400, intervals 11920, central reductions 0, model boxes 0
+  expect_m0 0; per-certificate checks passed 400/400
+  targets covered (target x [0,1/2], exact, binary64 endpoints as stored) 21/21; claim (B) groups 0/0; decimal-endpoint versions covered 0/0
+  VIOLATIONS 0
+dataset ec389a
+  certificates 420 (main 420, no-parity 0), replay-passed 420, regions 420, intervals 15560, central reductions 40, model boxes 0
+  expect_m0 2; per-certificate checks passed 420/420
+  targets covered (target x [0,1/2], exact, binary64 endpoints as stored) 22/22; claim (B) groups 0/0; decimal-endpoint versions covered 0/0
+  VIOLATIONS 0
+dataset tollis
+  certificates 1764 (main 1764, no-parity 0), replay-passed 1764, regions 1764, intervals 47544, central reductions 0, model boxes 0
+  expect_m0 0; per-certificate checks passed 1764/1764
+  targets covered (target x [0,1/2], exact, binary64 endpoints as stored) 94/94; claim (B) groups 0/0; decimal-endpoint versions covered 0/6
+  decimal-endpoint check: runs/core/K23_91.81_103.81:decimal [9181/100, 10381/100] not covered (binary64 target is)
+  decimal-endpoint check: runs/core/K31_92.11_104.11:decimal [9211/100, 10411/100] not covered (binary64 target is)
+  decimal-endpoint check: runs/core/K44_91.98_103.98:decimal [4599/50, 5199/50] not covered (binary64 target is)
+  decimal-endpoint check: runs/core/K59_91.78_103.78:decimal [4589/50, 5189/50] not covered (binary64 target is)
+  decimal-endpoint check: runs/core/K76_91.89_103.89:decimal [9189/100, 10389/100] not covered (binary64 target is)
+  decimal-endpoint check: runs/core/K83_91.73_103.73:decimal [9173/100, 10373/100] not covered (binary64 target is)
+  VIOLATIONS 0
+dataset tollis_extra
+  certificates 4636 (main 4636, no-parity 0), replay-passed 4636, regions 4636, intervals 146928, central reductions 0, model boxes 0
+  expect_m0 0; per-certificate checks passed 4636/4636
+  targets covered (target x [0,1/2], exact, binary64 endpoints as stored) 228/228; claim (B) groups 0/0; decimal-endpoint versions covered 0/19
+  decimal-endpoint check: runs/core/K104_91.06_103.06:decimal [4553/50, 5153/50] not covered (binary64 target is)
+  decimal-endpoint check: runs/core/K107_91.34_103.34:decimal [4567/50, 5167/50] not covered (binary64 target is)
+  decimal-endpoint check: runs/core/K108_92.26_104.26:decimal [4613/50, 5213/50] not covered (binary64 target is)
+  decimal-endpoint check: runs/core/K116_91.73_103.73:decimal [9173/100, 10373/100] not covered (binary64 target is)
+  decimal-endpoint check: runs/core/K135_91.12_103.12:decimal [2278/25, 2578/25] not covered (binary64 target is)
+  decimal-endpoint check: runs/core/K139_91.40_103.40:decimal [457/5, 517/5] not covered (binary64 target is)
+  decimal-endpoint check: runs/core/K140_91.35_103.35:decimal [1827/20, 2067/20] not covered (binary64 target is)
+  decimal-endpoint check: runs/core/K152_92.20_104.20:decimal [461/5, 521/5] not covered (binary64 target is)
+  decimal-endpoint check: runs/core/K172_91.79_103.79:decimal [9179/100, 10379/100] not covered (binary64 target is)
+  decimal-endpoint check: runs/core/K175_91.20_103.20:decimal [456/5, 516/5] not covered (binary64 target is)
+  decimal-endpoint check: runs/core/K199_90.30_102.30:decimal [903/10, 1023/10] not covered (binary64 target is)
+  decimal-endpoint check: runs/core/K200_91.67_103.67:decimal [9167/100, 10367/100] not covered (binary64 target is)
+  decimal-endpoint check: runs/core/K204_91.07_103.07:decimal [9107/100, 10307/100] not covered (binary64 target is)
+  decimal-endpoint check: runs/core/K211_90.83_102.83:decimal [9083/100, 10283/100] not covered (binary64 target is)
+  decimal-endpoint check: runs/core/K212_91.27_103.27:decimal [9127/100, 10327/100] not covered (binary64 target is)
+  decimal-endpoint check: runs/core/K216_92.07_104.07:decimal [9207/100, 10407/100] not covered (binary64 target is)
+  decimal-endpoint check: runs/core/K231_91.14_103.14:decimal [4557/50, 5157/50] not covered (binary64 target is)
+  decimal-endpoint check: runs/core/K239_91.83_103.83:decimal [9183/100, 10383/100] not covered (binary64 target is)
+  decimal-endpoint check: runs/core/K87_91.38_103.38:decimal [4569/50, 5169/50] not covered (binary64 target is)
+  VIOLATIONS 0
+dataset tollis_ext_unions
+  certificates 4636 (main 4636, no-parity 0), replay-passed 4636, regions 4636, intervals 146928, central reductions 0, model boxes 0
+  expect_m0 0; per-certificate checks passed 4636/4636
+  targets covered (target x [0,1/2], exact, binary64 endpoints as stored) 247/247; claim (B) groups 0/0; decimal-endpoint versions covered 0/19
+  decimal-endpoint check: runs/core/K87_91.38_103.38:decimal [4569/50, 5169/50] not covered (binary64 target is)
+  decimal-endpoint check: runs/core/K104_91.06_103.06:decimal [4553/50, 5153/50] not covered (binary64 target is)
+  decimal-endpoint check: runs/core/K107_91.34_103.34:decimal [4567/50, 5167/50] not covered (binary64 target is)
+  decimal-endpoint check: runs/core/K108_92.26_104.26:decimal [4613/50, 5213/50] not covered (binary64 target is)
+  decimal-endpoint check: runs/core/K116_91.73_103.73:decimal [9173/100, 10373/100] not covered (binary64 target is)
+  decimal-endpoint check: runs/core/K135_91.12_103.12:decimal [2278/25, 2578/25] not covered (binary64 target is)
+  decimal-endpoint check: runs/core/K139_91.40_103.40:decimal [457/5, 517/5] not covered (binary64 target is)
+  decimal-endpoint check: runs/core/K140_91.35_103.35:decimal [1827/20, 2067/20] not covered (binary64 target is)
+  decimal-endpoint check: runs/core/K152_92.20_104.20:decimal [461/5, 521/5] not covered (binary64 target is)
+  decimal-endpoint check: runs/core/K172_91.79_103.79:decimal [9179/100, 10379/100] not covered (binary64 target is)
+  decimal-endpoint check: runs/core/K175_91.20_103.20:decimal [456/5, 516/5] not covered (binary64 target is)
+  decimal-endpoint check: runs/core/K199_90.30_102.30:decimal [903/10, 1023/10] not covered (binary64 target is)
+  decimal-endpoint check: runs/core/K200_91.67_103.67:decimal [9167/100, 10367/100] not covered (binary64 target is)
+  decimal-endpoint check: runs/core/K204_91.07_103.07:decimal [9107/100, 10307/100] not covered (binary64 target is)
+  decimal-endpoint check: runs/core/K211_90.83_102.83:decimal [9083/100, 10283/100] not covered (binary64 target is)
+  decimal-endpoint check: runs/core/K212_91.27_103.27:decimal [9127/100, 10327/100] not covered (binary64 target is)
+  decimal-endpoint check: runs/core/K216_92.07_104.07:decimal [9207/100, 10407/100] not covered (binary64 target is)
+  decimal-endpoint check: runs/core/K231_91.14_103.14:decimal [4557/50, 5157/50] not covered (binary64 target is)
+  decimal-endpoint check: runs/core/K239_91.83_103.83:decimal [9183/100, 10383/100] not covered (binary64 target is)
+  VIOLATIONS 0
+dataset v4_acceptance
+  certificates 32 (main 15, no-parity 17), replay-passed 32, regions 32, intervals 185, central reductions 0, model boxes 27918
+  expect_m0 0; per-certificate checks passed 32/32
+  targets covered (target x [0,1/2], exact, binary64 endpoints as stored) 10/10; claim (B) groups 5/5; decimal-endpoint versions covered 0/8
+  decimal-endpoint check: w7000.00/lehmer:target:decimal [350253/50, 70051/10] not covered (binary64 target is)
+  decimal-endpoint check: w7000.00/lehmer:hull:decimal [350253/50, 70051/10] not covered (binary64 target is)
+  decimal-endpoint check: w7000.00/c7002:target:decimal [175062/25, 700249/100] not covered (binary64 target is)
+  decimal-endpoint check: w7000.00/c7002:hull:decimal [175062/25, 700249/100] not covered (binary64 target is)
+  decimal-endpoint check: w6820046.00/rosser:target:decimal [341002549/50, 136401043/20] not covered (binary64 target is)
+  decimal-endpoint check: w6820046.00/rosser:hull:decimal [341002549/50, 136401043/20] not covered (binary64 target is)
+  decimal-endpoint check: w663310.00/t2_663318:target:decimal [3316592/5, 3316593/5] not covered (binary64 target is)
+  decimal-endpoint check: w663310.00/t2_663318:hull:decimal [3316592/5, 3316593/5] not covered (binary64 target is)
+  VIOLATIONS 0
+dataset v4_other
+  certificates 102 (main 43, no-parity 59), replay-passed 102, regions 102, intervals 633, central reductions 0, model boxes 89434
+  expect_m0 0; per-certificate checks passed 102/102
+  targets covered (target x [0,1/2], exact, binary64 endpoints as stored) 30/30; claim (B) groups 15/15; decimal-endpoint versions covered 0/10
+  decimal-endpoint check: w663310.00/dev_663318:target:decimal [3316592/5, 3316593/5] not covered (binary64 target is)
+  decimal-endpoint check: w663310.00/dev_663318:hull:decimal [3316592/5, 3316593/5] not covered (binary64 target is)
+  decimal-endpoint check: w6820046.00/dev_rosser:target:decimal [341002549/50, 136401043/20] not covered (binary64 target is)
+  decimal-endpoint check: w6820046.00/dev_rosser:hull:decimal [341002549/50, 136401043/20] not covered (binary64 target is)
+  decimal-endpoint check: w7000.00/dev_c7002:target:decimal [175062/25, 700249/100] not covered (binary64 target is)
+  decimal-endpoint check: w7000.00/dev_c7002:hull:decimal [175062/25, 700249/100] not covered (binary64 target is)
+  decimal-endpoint check: w7000.00/lehmer_full_pair:target:decimal [7005, 35026/5] not covered (binary64 target is)
+  decimal-endpoint check: w7000.00/lehmer_full_pair:hull:decimal [7005, 35026/5] not covered (binary64 target is)
+  decimal-endpoint check: w7000.00/pathtest:target:decimal [35023/5, 35028/5] not covered (binary64 target is)
+  decimal-endpoint check: w7000.00/pathtest:hull:decimal [35023/5, 35028/5] not covered (binary64 target is)
+  VIOLATIONS 0
+dataset deg2_nc (NEGATIVE CONTROLS: violations expected where the control breaks a checked condition)
+  certificates 1 (main 1, no-parity 0), replay-passed 0, regions 1, intervals 15, central reductions 0, model boxes 0
+  expect_m0 0; per-certificate checks passed 1/1
+  targets covered (target x [0,1/2], exact, binary64 endpoints as stored) 0/0; claim (B) groups 0/0; decimal-endpoint versions covered 0/0
+  VIOLATIONS 0
+dataset ec37a_nc (NEGATIVE CONTROLS: violations expected where the control breaks a checked condition)
+  certificates 28 (main 28, no-parity 0), replay-passed 0, regions 28, intervals 236, central reductions 0, model boxes 0
+  expect_m0 0; per-certificate checks passed 28/28
+  targets covered (target x [0,1/2], exact, binary64 endpoints as stored) 0/0; claim (B) groups 0/0; decimal-endpoint versions covered 0/0
+  VIOLATIONS 0
+dataset ec389a_nc (NEGATIVE CONTROLS: violations expected where the control breaks a checked condition)
+  certificates 59 (main 59, no-parity 0), replay-passed 0, regions 59, intervals 1023, central reductions 40, model boxes 0
+  expect_m0 2; per-certificate checks passed 20/59
+  targets covered (target x [0,1/2], exact, binary64 endpoints as stored) 0/0; claim (B) groups 0/0; decimal-endpoint versions covered 0/0
+  CERT runs/nc/m0_0/cell_0.5000.json: [central policy (m0 = 0, recorded = false, window ∋ 0: true)]
+  CERT runs/nc/m0_0/cell_1.0000.json: [central policy (m0 = 0, recorded = false, window ∋ 0: true)]
+  CERT runs/nc/m0_0/cell_1.5000.json: [central policy (m0 = 0, recorded = false, window ∋ 0: true)]
+  CERT runs/nc/m0_0/cell_2.0000.json: [central policy (m0 = 0, recorded = false, window ∋ 0: true)]
+  CERT runs/nc/m0_0/cell_2.5000.json: [central policy (m0 = 0, recorded = false, window ∋ 0: true)]
+  CERT runs/nc/m0_0/cell_3.0000.json: [central policy (m0 = 0, recorded = false, window ∋ 0: true)]
+  CERT runs/nc/m0_0/cell_3.5000.json: [central policy (m0 = 0, recorded = false, window ∋ 0: true)]
+  CERT runs/nc/m0_0/cell_4.0000.json: [central policy (m0 = 0, recorded = false, window ∋ 0: true)]
+  CERT runs/nc/m0_0/cell_4.5000.json: [central policy (m0 = 0, recorded = false, window ∋ 0: true)]
+  CERT runs/nc/m0_0/cell_5.0000.json: [central policy (m0 = 0, recorded = false, window ∋ 0: true)]
+  CERT runs/nc/m0_0/cell_5.5000.json: [central policy (m0 = 0, recorded = false, window ∋ 0: true)]
+  CERT runs/nc/m0_0/cell_6.0000.json: [central policy (m0 = 0, recorded = false, window ∋ 0: true)]
+  CERT runs/nc/m0_0/cell_6.5000.json: [central policy (m0 = 0, recorded = false, window ∋ 0: true)]
+  CERT runs/nc/m0_0/cell_7.0000.json: [central policy (m0 = 0, recorded = false, window ∋ 0: true)]
+  CERT runs/nc/m0_0/cell_7.5000.json: [central policy (m0 = 0, recorded = false, window ∋ 0: true)]
+  CERT runs/nc/m0_0/cell_8.0000.json: [central policy (m0 = 0, recorded = false, window ∋ 0: true)]
+  CERT runs/nc/m0_0/cell_8.5000.json: [central policy (m0 = 0, recorded = false, window ∋ 0: true)]
+  CERT runs/nc/m0_0/cell_9.0000.json: [central policy (m0 = 0, recorded = false, window ∋ 0: true)]
+  CERT runs/nc/m0_0/cell_9.5000.json: [central policy (m0 = 0, recorded = false, window ∋ 0: true)]
+  CERT runs/nc/m0_1/cell_0.0000.json: [central policy (m0 = 1, recorded = true, window ∋ 0: true)]
+  CERT runs/nc/m0_1/cell_0.5000.json: [central policy (m0 = 1, recorded = true, window ∋ 0: true)]
+  CERT runs/nc/m0_1/cell_1.0000.json: [central policy (m0 = 1, recorded = true, window ∋ 0: true)]
+  CERT runs/nc/m0_1/cell_1.5000.json: [central policy (m0 = 1, recorded = true, window ∋ 0: true)]
+  CERT runs/nc/m0_1/cell_2.0000.json: [central policy (m0 = 1, recorded = true, window ∋ 0: true)]
+  CERT runs/nc/m0_1/cell_2.5000.json: [central policy (m0 = 1, recorded = true, window ∋ 0: true)]
+  CERT runs/nc/m0_1/cell_3.0000.json: [central policy (m0 = 1, recorded = true, window ∋ 0: true)]
+  CERT runs/nc/m0_1/cell_3.5000.json: [central policy (m0 = 1, recorded = true, window ∋ 0: true)]
+  CERT runs/nc/m0_1/cell_4.0000.json: [central policy (m0 = 1, recorded = true, window ∋ 0: true)]
+  CERT runs/nc/m0_1/cell_4.5000.json: [central policy (m0 = 1, recorded = true, window ∋ 0: true)]
+  CERT runs/nc/m0_1/cell_5.0000.json: [central policy (m0 = 1, recorded = true, window ∋ 0: true)]
+  CERT runs/nc/m0_1/cell_5.5000.json: [central policy (m0 = 1, recorded = true, window ∋ 0: true)]
+  CERT runs/nc/m0_1/cell_6.0000.json: [central policy (m0 = 1, recorded = true, window ∋ 0: true)]
+  CERT runs/nc/m0_1/cell_6.5000.json: [central policy (m0 = 1, recorded = true, window ∋ 0: true)]
+  CERT runs/nc/m0_1/cell_7.0000.json: [central policy (m0 = 1, recorded = true, window ∋ 0: true)]
+  CERT runs/nc/m0_1/cell_7.5000.json: [central policy (m0 = 1, recorded = true, window ∋ 0: true)]
+  CERT runs/nc/m0_1/cell_8.0000.json: [central policy (m0 = 1, recorded = true, window ∋ 0: true)]
+  CERT runs/nc/m0_1/cell_8.5000.json: [central policy (m0 = 1, recorded = true, window ∋ 0: true)]
+  CERT runs/nc/m0_1/cell_9.0000.json: [central policy (m0 = 1, recorded = true, window ∋ 0: true)]
+  CERT runs/nc/m0_1/cell_9.5000.json: [central policy (m0 = 1, recorded = true, window ∋ 0: true)]
+  VIOLATIONS 39
+dataset tollis_nc (NEGATIVE CONTROLS: violations expected where the control breaks a checked condition)
+  certificates 20 (main 20, no-parity 0), replay-passed 0, regions 20, intervals 200, central reductions 0, model boxes 0
+  expect_m0 0; per-certificate checks passed 20/20
+  targets covered (target x [0,1/2], exact, binary64 endpoints as stored) 0/0; claim (B) groups 0/0; decimal-endpoint versions covered 0/0
+  VIOLATIONS 0
+TOTAL VIOLATIONS (non-control datasets): 0

@@ -1,0 +1,6 @@
+start Sun Nov  1 14:05:27 PST 2026
+exit 0 peak_rss_kb 6800
+1e20 wall=609s Sun Nov  1 14:15:36 PST 2026
+exit 0 peak_rss_kb 5824
+1e22 wall=3589s Sun Nov  1 15:15:25 PST 2026
+DONE

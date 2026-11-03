@@ -1,0 +1,11 @@
+w_1e22 pipeline rc=0 wall=1928s
+w_1e22 independent replay rc=0 wall=960s {"passed": true, "passed_B_simple_without_lemma2": true, "np": "16/16", "certs": "2/2", "seams": [0, 0, 0], "min_candidate_lower": 0.7475326795220493, "seconds": 960.47, "replay_peak_gb": 0.078}
+w_1e22 done
+Y3DONE
+w_1e23 pipeline rc=0 wall=6072s
+w_1e23 independent replay rc=0 wall=3035s {"passed": true, "passed_B_simple_without_lemma2": true, "np": "16/16", "certs": "2/2", "seams": [0, 0, 0], "min_candidate_lower": 0.729413761191354, "seconds": 3035.26, "replay_peak_gb": 0.082}
+w_1e23 done
+wp_1e23 pipeline rc=0 wall=6073s
+wp_1e23 independent replay rc=0 wall=3032s {"passed": true, "passed_B_simple_without_lemma2": true, "np": "16/16", "certs": "2/2", "seams": [0, 0, 0], "min_candidate_lower": 0.7263942695185815, "seconds": 3032.21, "replay_peak_gb": 0.079}
+wp_1e23 done
+Y4DONE

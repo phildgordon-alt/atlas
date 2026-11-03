@@ -1,0 +1,49 @@
+OK   A_fresh_identical_and_dir_synced {"lines_nul": 0}
+OK   DUP_append_one_identical_ignored {"dup": 1}
+OK   DUP_before_original_ignored {}
+OK   DUP_whole_file_doubled {"dup": 480}
+OK   DUP_triple_copy_verify_all {}
+OK   DUP_torn_prefix_then_full_copy {}
+OK   DUP_partial_plus_dup_then_resume_twice {"r_dup": 1, "r2_loaded": 480}
+OK   DUP_keyholder_conflicting_after_still_fatal {"reason": "checkpoint out_a14d/dup7.txt line 482: authenticated but invalid: conflicting duplicate: a second authenticated line for an already loaded item, with different contents (MJ1) (refusing)"}
+OK   DUP_keyholder_conflicting_before_still_fatal {"reason": "checkpoint out_a14d/dup8.txt line 13: authenticated but invalid: conflicting duplicate: a second authenticated line for an already loaded item, with different contents (MJ1) (refusing)"}
+OK   DUP_bad_tag_copy_rejected_not_dup {}
+OK   DUP_keyholder_same_body_other_x_fatal {"reason": "checkpoint out_a14d/dup10.txt line 482: authenticated but invalid: item index x does not equal first[b] + i (refusing)"}
+OK   NUL_keyholder_sealed_line_with_nul_rejected {"nul": 1}
+OK   NUL_in_header_refused {"reason": "checkpoint out_a14d/nul2.txt: header line contains a NUL byte (refusing)"}
+OK   NUL_padded_tail_8KiB_resume_twice {"nul": 1, "nul2": 1}
+OK   NUL_zero_block_mid_file {"nul": 1, "rej": 1, "loaded": 477}
+OK   HDR_hdr_dspace_resealed_refused {"reason": "checkpoint out_a14d/hdr_dspace.txt: header mismatch in field(s) [format (whitespace)] (refusing; M1/M2: a different session, role, run, library or environment)"}
+OK   HDR_hdr_trail_resealed_refused {"reason": "checkpoint out_a14d/hdr_trail.txt: header mismatch in field(s) [fieldcount] (refusing; M1/M2: a different session, role, run, library or environment)"}
+OK   HDR_hdr_tab_resealed_refused {"reason": "checkpoint out_a14d/hdr_tab.txt: header mismatch in field(s) [format] (refusing; M1/M2: a different session, role, run, library or environment)"}
+OK   PATH_ckpt_fifo_refused_no_hang {"wall": 0.1, "reason": "checkpoint out_a14d/fifo.txt is not a regular file (refusing)"}
+OK   PATH_key_fifo_refused_no_hang {"wall": 0.1, "reason": "checkpoint key out_a14d/keys/kf.key is not a regular file (refusing)"}
+OK   PATH_ckpt_symlink_to_dev_null_refused {"wall": 0.1, "reason": "checkpoint out_a14d/devnull.txt is not a regular file (refusing)"}
+OK   PATH_ckpt_is_dir_refused {"reason": "cannot open checkpoint out_a14d/dir.txt (Is a directory)"}
+FAIL PATH_ckpt_symlink_to_regular_followed (info, unchanged from v14c) {"loaded": null}
+OK   PATH_dangling_symlink_creates_target (info, unchanged from v14c) {"rc": 3, "target_created": false}
+OK   IO_rlimit_mid_line_30pct {"limit": 266684, "size": 266684, "torn": true, "torn_complete": false, "abort_wall": 0.16, "reason": "CKPT-IO-ABORT: checkpoint write failed (File too large); session aborted with 138 of 480 items done (137 checkpoint lines, header included, written this session); the checkpoint is valid up to the err", "r2_loaded": 136, "r2_rej": 1, "r3_loaded": 480}
+OK   IO_rlimit_mid_line_70pct {"limit": 622227, "size": 622227, "torn": true, "torn_complete": false, "abort_wall": 0.19, "reason": "CKPT-IO-ABORT: checkpoint write failed (File too large); session aborted with 325 of 480 items done (324 checkpoint lines, header included, written this session); the checkpoint is valid up to the err", "r2_loaded": 323, "r2_rej": 1, "r3_loaded": 480}
+OK   IO_rlimit_exact_line_end_k40 {"limit": 79379, "size": 79379, "torn": false, "torn_complete": false, "abort_wall": 0.15, "reason": "CKPT-IO-ABORT: checkpoint write failed (File too large); session aborted with 41 of 480 items done (41 checkpoint lines, header included, written this session); the checkpoint is valid up to the error", "r2_loaded": 40, "r2_rej": 0, "r3_loaded": 480}
+OK   IO_rlimit_exact_header_end {"limit": 1211, "size": 1211, "torn": false, "torn_complete": false, "abort_wall": 0.13, "reason": "CKPT-IO-ABORT: checkpoint write failed (File too large); session aborted with 1 of 480 items done (1 checkpoint lines, header included, written this session); the checkpoint is valid up to the error: ", "r2_loaded": 0, "r2_rej": 0, "r3_loaded": 480}
+OK   IO_rlimit_one_byte_after_header {"limit": 1212, "size": 1212, "torn": true, "torn_complete": false, "abort_wall": 0.12, "reason": "CKPT-IO-ABORT: checkpoint write failed (File too large); session aborted with 1 of 480 items done (1 checkpoint lines, header included, written this session); the checkpoint is valid up to the error: ", "r2_loaded": 0, "r2_rej": 1, "r3_loaded": 480}
+OK   IO_rlimit_last_byte_missing {"limit": 888891, "size": 888891, "torn": true, "torn_complete": true, "abort_wall": 0.28, "reason": "CKPT-IO-ABORT: checkpoint write failed (File too large); session aborted with 480 of 480 items done (480 checkpoint lines, header included, written this session); the checkpoint is valid up to the err", "r2_loaded": 480, "r2_rej": 0, "r3_loaded": 480}
+OK   IO_rlimit_inside_header (info: fresh name needed, 0 items lost) {"reason": "CKPT-IO-ABORT: cannot write the checkpoint header to out_a14d/io_hdr.txt: checkpoint write failed (File too large)", "rerun_reason": "checkpoint out_a14d/io_hdr.txt: header line is not authenticated under this run's key (a foreign, tampered, v14/v14b-format or differently keyed checkpoint) (refusing)"}
+OK   IO_newline_repair_fails_file_unchanged_then_resume {"reason": "CKPT-IO-ABORT: checkpoint out_a14d/io_nl.txt: newline repair failed: checkpoint write failed (File too large) (refusing; the file is unchanged up to its torn tail)"}
+OK   IO_rlimit_during_resume_then_resume {"loaded": 250, "reason": "CKPT-IO-ABORT: checkpoint write failed (File too large); session aborted with 252 of 480 items done (150 checkpoint lines, header included, written this session"}
+OK   HOOK_testhooks_no_env_equals_v14 {}
+OK   HOOK_wfail1_abort_then_resume {"reason": "CKPT-IO-ABORT: checkpoint write failed (Input/output error); session aborted with 2 of 480 items done (1 checkpoint lines, header included, written this session); the checkpoint is valid up to the err", "loaded": 0, "rejected": 0}
+OK   HOOK_wfail200_abort_then_resume {"reason": "CKPT-IO-ABORT: checkpoint write failed (Input/output error); session aborted with 201 of 480 items done (200 checkpoint lines, header included, written this session); the checkpoint is valid up to the", "loaded": 199, "rejected": 0}
+OK   HOOK_syncfail1_1e18_abort_then_resume {"reason": "CKPT-IO-ABORT: checkpoint fsync failed (Input/output error); session aborted with 30 of 689 items done (29 checkpoint lines, header included, written this session); the checkpoint is valid up to the e", "loaded": 28, "items": 689, "fsec": null}
+OK   HOOK_syncfail3_1e18_abort_then_resume {"reason": "CKPT-IO-ABORT: checkpoint fsync failed (Input/output error); session aborted with 136 of 689 items done (135 checkpoint lines, header included, written this session); the checkpoint is valid up to the", "loaded": 134, "items": 689, "fsec": null}
+OK   HOOK_radius_fresh_resume_verifyall_consistent {"lines_with_nonzero_first_radius": 480, "loaded_partial": 183}
+OK   RAD_production_loads_resealed_radii_all_widths {"forged_balls": 6400, "reason": ""}
+OK   RAD_production_30bit_radius_loads (v14c refused this) {"reason": ""}
+OK   RAD_production_31bit_radius_refused {"reason": "checkpoint out_a14d/rad31.txt line 2: authenticated but invalid: arb radius mantissa wider than a mag (MAG_BITS) or negative: not a canonical dump (MJ-C1) (refusing)"}
+OK   RAD_production_even_radius_mantissa_refused {"reason": "checkpoint out_a14d/radeven.txt line 2: authenticated but invalid: arb value not canonical / not finite / radius not a valid mag (refusing)"}
+OK   RAD_production_radius_exp_2^40_refused_no_crash {"reason": "checkpoint out_a14d/radbig.txt line 2: authenticated but invalid: arb value not canonical / not finite / radius not a valid mag (refusing)"}
+OK   PROV_provider_and_driver_refuse_ZFAST14D_TEST_WFAIL_AT {"prc": 1, "drc": 1}
+OK   PROV_provider_and_driver_refuse_ZFAST14D_TEST_SYNCFAIL {"prc": 1, "drc": 1}
+OK   PROV_provider_and_driver_refuse_ZFAST14D_TEST_RADIUS {"prc": 1, "drc": 1}
+OK   PROV_provider_and_driver_refuse_ZFAST14D_TEST_ANYTHING {"prc": 1, "drc": 1}
+{"total": 48, "fail": ["PATH_ckpt_symlink_to_regular_followed (info, unchanged from v14c)"]}

@@ -1,0 +1,16 @@
+dataset v5_acceptance
+  certificates 42 (main 18, no-parity 24), replay-passed 42, regions 42, intervals 262, central reductions 0, model boxes 36372
+  expect_m0 0; per-certificate checks passed 42/42
+  targets covered (target x [0,1/2], exact, binary64 endpoints as stored) 14/14; claim (B) groups 7/7; decimal-endpoint versions covered 0/5
+  decimal-endpoint check: w7000.00/lehmer:target:decimal [350253/50, 70051/10] not covered (binary64 target is)
+  decimal-endpoint check: w7000.00/c7002:target:decimal [175062/25, 700249/100] not covered (binary64 target is)
+  decimal-endpoint check: w6820046.00/rosser:target:decimal [341002549/50, 136401043/20] not covered (binary64 target is)
+  decimal-endpoint check: w663310.00/t2_663318:target:decimal [3316592/5, 3316593/5] not covered (binary64 target is)
+  decimal-endpoint check: w7000.00/lehmer_full_pair:target:decimal [7005, 35026/5] not covered (binary64 target is)
+  VIOLATIONS 0
+dataset v5_big
+  certificates 32 (main 6, no-parity 26), replay-passed 32, regions 32, intervals 616, central reductions 0, model boxes 26852
+  expect_m0 0; per-certificate checks passed 32/32
+  targets covered (target x [0,1/2], exact, binary64 endpoints as stored) 6/6; claim (B) groups 3/3; decimal-endpoint versions covered 0/0
+  VIOLATIONS 0
+TOTAL VIOLATIONS (non-control datasets): 0

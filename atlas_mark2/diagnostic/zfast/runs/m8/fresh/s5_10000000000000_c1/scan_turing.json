@@ -1,0 +1,102 @@
+{
+ "tool": "scan_turing5.py scan",
+ "tool_sha256": "898bf5c506fea8f97a75c19b684f32901b98de97e1d00c250f473fca0618b2da",
+ "T0": "10000000000000",
+ "lib": "/Users/kiosk/atlas_mark2/diagnostic/zfast/bin/libzfast.v13b.dylib",
+ "lib_sha256": "82489d1a89e25bef117cd87f47d591d9426282c4b211f92ace12d097767dffca",
+ "session": {
+  "sec_build": 0.18,
+  "sec_head": 0.0536,
+  "sec_fast": 0.1257,
+  "buckets": 850,
+  "Nw": 1261566,
+  "nhead": 10600,
+  "blocks": 1592,
+  "max_phase_err": 1.06e-19
+ },
+ "session_params": {
+  "centre": 1.0,
+  "H": 61.0,
+  "Delta": 0.012,
+  "K": 18,
+  "J": 12,
+  "threads": 2,
+  "u0": -59.0,
+  "n": 30001,
+  "step": 0.004
+ },
+ "grid": {
+  "points": 30001,
+  "step": 0.004,
+  "undecided": 0,
+  "seconds": 41.0,
+  "ends": [
+   "-59",
+   "61"
+  ]
+ },
+ "zeros_found": 537,
+ "dips": 0,
+ "dip_zeros": 0,
+ "DT": "40",
+ "turing": {
+  "0": {
+   "v": 0.0,
+   "v_exact": "0",
+   "Delta": 40.0,
+   "Delta_exact": "40",
+   "N_lower": 43124192297102,
+   "N_upper": 43124192297102,
+   "Z_sign": -1,
+   "Z_src": {
+    "source": "grid",
+    "k": 14750,
+    "mid": -0.12746039272673992,
+    "rad": 1.5494018232049128e-11
+   },
+   "U": "4.31241922971e+13",
+   "L": "4.31241922971e+13",
+   "U_minus_L": 0.3129419918171763,
+   "zeros_up": 179,
+   "zeros_down": 179,
+   "pinned": true,
+   "N": 43124192297102
+  },
+  "2": {
+   "v": 2.0,
+   "v_exact": "2",
+   "Delta": 40.0,
+   "Delta_exact": "40",
+   "N_lower": 43124192297111,
+   "N_upper": 43124192297111,
+   "Z_sign": 1,
+   "Z_src": {
+    "source": "grid",
+    "k": 15250,
+    "mid": 0.06710246274897382,
+    "rad": 1.706245344665347e-11
+   },
+   "U": "4.31241922971e+13",
+   "L": "4.31241922971e+13",
+   "U_minus_L": 0.2991419918184503,
+   "zeros_up": 179,
+   "zeros_down": 179,
+   "pinned": true,
+   "N": 43124192297111
+  }
+ },
+ "windows": {
+  "0,2": {
+   "count": 9,
+   "sign_changes_in_window": 9,
+   "straddling": []
+  }
+ },
+ "build_seconds": 0.2,
+ "wall": 41.2,
+ "flint": "0.9.0",
+ "env": {
+  "ZFAST_THREADS": null,
+  "OMP_NUM_THREADS": null
+ }
+}

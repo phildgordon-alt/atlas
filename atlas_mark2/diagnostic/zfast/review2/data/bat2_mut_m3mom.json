@@ -1,0 +1,79 @@
+{
+ "driver": "/Users/kiosk/atlas_mark2/diagnostic/zfast/review2/bin/rd4.m3mom",
+ "tag": "mut_m3mom",
+ "v10b": false,
+ "light": true,
+ "sec": 4.816219806671143,
+ "families": [
+  {
+   "family": "K",
+   "n": 1,
+   "fails": 0,
+   "max_ratio": 0.3470293032786885,
+   "first_fail": null
+  },
+  {
+   "family": "PH",
+   "n": 6,
+   "fails": 0,
+   "max_ratio": 0.9999,
+   "first_fail": null
+  },
+  {
+   "family": "WP",
+   "n": 30,
+   "fails": 0,
+   "max_ratio": 0.2189,
+   "first_fail": null
+  },
+  {
+   "family": "Z1_prod",
+   "n": 4,
+   "fails": 0,
+   "max_ratio": 0.00032514511542892043,
+   "first_fail": null
+  },
+  {
+   "family": "Z1_stress",
+   "n": 10,
+   "fails": 0,
+   "max_ratio": 0.005519005726588304,
+   "first_fail": null
+  },
+  {
+   "family": "SZ_prod",
+   "n": 142,
+   "fails": 0,
+   "max_ratio": 0.004365284089284025,
+   "first_fail": null
+  },
+  {
+   "family": "SZ_stress",
+   "n": 72,
+   "fails": 0,
+   "max_ratio": 0.1709961073301059,
+   "first_fail": null
+  },
+  {
+   "family": "ROW_prod",
+   "n": 200,
+   "fails": 20,
+   "max_ratio": 656263394.7725809,
+   "first_fail": {
+    "ok": false,
+    "ratio": 92428421.48375054,
+    "what": "P a2.8 999998594275 1.1752200836134767 ok=0",
+    "z": "[0.2660404307562011644361545038385728023176 +/- 1.26e-14]",
+    "ref": "[0.266039266158087957199122698441861762941234352 +/- 4.51e-46]"
+   }
+  },
+  {
+   "family": "ROW_stress",
+   "n": 120,
+   "fails": 0,
+   "max_ratio": NaN,
+   "first_fail": null
+  }
+ ],
+ "detected": true
+}

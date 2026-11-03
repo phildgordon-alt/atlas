@@ -1,0 +1,21 @@
+M00_unmutated              clean (0 violations), as required
+M01_drop_flagship_cert     CAUGHT  [3] TARGET flagship_K23/runs/w_5000 [5000, 5010] NOT covered
+M02_drop_tollis_cert       CAUGHT  [3] TARGET new_territory/tollis/runs/contig/K23/c_0_10 [0, 10] NOT covered
+M03_not_passed             CAUGHT  [3] TARGET flagship_K23/runs/w_9990 [9990, 10000] NOT covered
+M04_iv_outside             CAUGHT  [1] CERT flagship_K23/runs/w_200/cell_202.0000.json: [interval not in window or t1 >= t2]
+M05_unsorted               CAUGHT  [1] CERT flagship_K23/runs/w_7770/cell_7772.5000.json: [intervals not sorted/disjoint]
+M06_touching               CAUGHT  [1] CERT flagship_K23/runs/w_7770/cell_7773.0000.json: [intervals not sorted/disjoint]
+M07_d1                     CAUGHT  [4] CERT flagship_K23/runs/w_5000/cell_5004.0000.json: [region not in window / d-range]
+M08_d0                     CAUGHT  [4] CERT flagship_K23/runs/w_5000/cell_5004.5000.json: [region not in window / d-range]
+M09_region_outside         CAUGHT  [1] CERT flagship_K23/runs/w_5000/cell_5005.0000.json: [region not in window / d-range]
+M10_central_inserted       CAUGHT  [1] CERT flagship_K23/runs/w_5000/cell_5005.5000.json: [central policy (m0 = 2, recorded = true, window ∋ 0: false)]
+M11_subulp_gap             CAUGHT  [3] TARGET flagship_K23/runs/w_5000 [5000, 5010] NOT covered
+M12_degenerate_iv          CAUGHT  [1] CERT flagship_K23/runs/w_9990/cell_9991.5000.json: [interval not in window or t1 >= t2]
+M13_wrong_group            CAUGHT  [1] TARGET flagship_K23/runs/w_5000 [5000, 5010] NOT covered
+M14_union_overreach        CAUGHT  [1] TARGET union_0_10000 [0, 10995116277760001/1099511627776] NOT covered
+M15_marked_nc              CAUGHT  [1] CERT flagship_K23/runs/w_200/cell_200.0000.json: marked negative_control in a real dataset
+M16_dup_iv                 CAUGHT  [1] CERT flagship_K23/runs/w_200/cell_200.5000.json: [intervals not sorted/disjoint]
+mutations caught: 16/16
+real 117.65
+user 113.22
+sys 2.56

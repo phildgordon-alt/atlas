@@ -1,0 +1,5 @@
+file: zfast.c
+--- old
+mag_add_ui_2exp_si(err, err, 1, -257);
++++ new
+mag_add_ui_2exp_si(err, err, 1, -261);

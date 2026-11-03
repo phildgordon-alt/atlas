@@ -1,0 +1,6 @@
+dataset v5z_1e17
+  certificates 13 (main 2, no-parity 11), replay-passed 13, regions 13, intervals 319, central reductions 0, model boxes 10822
+  expect_m0 0; per-certificate checks passed 13/13
+  targets covered (target x [0,1/2], exact, binary64 endpoints as stored) 2/2; claim (B) groups 1/1; decimal-endpoint versions covered 0/0
+  VIOLATIONS 0
+TOTAL VIOLATIONS (non-control datasets): 0

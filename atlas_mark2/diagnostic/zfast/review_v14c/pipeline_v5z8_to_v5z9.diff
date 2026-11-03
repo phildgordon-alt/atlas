@@ -1,0 +1,141 @@
+--- atlas_v5z8/atlas_v5.py	2026-11-02 10:03:20
++++ atlas_v5z9/atlas_v5.py	2026-11-02 20:42:56
+@@ -32,14 +32,16 @@
+   The replay of record is the driver's stage 3 (a fresh process, replay_target5.py byte copy); v5z6 runs no second replay.
+ atlas_v5z7 (RESULTS_M9 F-M9b, F-M9c): W not in pieces.json; no replay unless the generator finished; --resume reuses only a passed replay.
+ atlas_v5z8 (PREDICTIONS_M12, THEORY_V5Z8.md): libzfast.v14b; per-run nonce RUN/zfast_ckpt_nonce.txt; role-tagged, HMAC-sealed checkpoints
+-  (keys in diagnostic/zfast/ckpt_keys/, outside RUN); the replay of record refuses any checkpoint it did not create; test hooks refused."""
++  (keys in diagnostic/zfast/ckpt_keys/, outside RUN); the replay of record refuses any checkpoint it did not create; test hooks refused.
++atlas_v5z9 (PREDICTIONS_M13, THEORY_V5Z9.md): libzfast.v14c (checkpoint format v3, review_v14b MJ1/mn1-mn6); the generator session
++  recomputes ZFAST_CKPT_VERIFY = 64 loaded items on resume by default (mn7; the replay stays 8)."""
+ import argparse, json, os, re, shutil, subprocess, sys, time, hashlib, math, platform
+ from pathlib import Path
+ if sys.flags.optimize != 0 or os.environ.get('PYTHONOPTIMIZE'):
+-    raise SystemExit('atlas_v5z8: refusing to run under python -O / PYTHONOPTIMIZE (Atlas rule)')
+-HOOK_PREFIXES = ('ZFAST14_TEST', 'ZFAST14B_TEST', 'ZFAST14_GENERIC_KERNEL')
++    raise SystemExit('atlas_v5z9: refusing to run under python -O / PYTHONOPTIMIZE (Atlas rule)')
++HOOK_PREFIXES = ('ZFAST14_TEST', 'ZFAST14B_TEST', 'ZFAST14C_TEST', 'ZFAST14_GENERIC_KERNEL')
+ if any(k.startswith(HOOK_PREFIXES) for k in os.environ):
+-    raise SystemExit('atlas_v5z8: refusing to start with a libzfast test-hook variable set (review_m10 m8): ' + ', '.join(k for k in os.environ if k.startswith(HOOK_PREFIXES)))
++    raise SystemExit('atlas_v5z9: refusing to start with a libzfast test-hook variable set (review_m10 m8): ' + ', '.join(k for k in os.environ if k.startswith(HOOK_PREFIXES)))
+ KEYDIR = Path('/Users/kiosk/atlas_mark2/diagnostic/zfast/ckpt_keys')        # v5z8: HMAC keys live OUTSIDE every run directory
+ 
+ V4 = Path(__file__).resolve().parent
+@@ -50,7 +52,7 @@
+ VERIFY_ZS5_SHA = open(V4 / 'VERIFY_ZS5.sha256').read().split()[0]
+ GEN_LIB = ('gen_target5.py', 'gen4.py', 'model5.py', 'sech5.py', 'heights.py', 'zs5.py', 'zfun5.py', 'verify.py', 'lp.py', 'zfast_provider.py')
+ LIM_GB = float(os.environ.get('V4_LIM_GB', '2.5')); H = 0.01
+-Z_PROVIDER = 'zfast libzfast.v14b (= v14 = v13b bit-identically at equal D; hardened checkpoint), provider v5z8 (THEORY_V5Z8); model5 fixed-precision N_win (v5z4)'
++Z_PROVIDER = 'zfast libzfast.v14c (= v14 = v13b bit-identically at equal D; checkpoint v3), provider v5z9 (THEORY_V5Z9); model5 fixed-precision N_win (v5z4)'
+ ENV_KEYS = ('ZFAST_CENTER', 'ZFAST_THREADS', 'ZFAST_H', 'ZFAST_DELTA', 'ZFAST_K', 'ZFAST_J', 'ZFAST_STRICT', 'CSTEP', 'CND', 'MINW_BINS',
+             'ZS_REFINE', 'ZS_DIP', 'EPS', 'V4_LIM_GB', 'V4_TEST_SKIP_TIERS', 'V4_TEST_SPLIT', 'SECH_TABLE', 'OMP_NUM_THREADS',
+             'OPENBLAS_NUM_THREADS', 'VECLIB_MAXIMUM_THREADS', 'PYTHONHASHSEED', 'ZFAST_WORKERS', 'ZFAST_CKPT', 'ZFAST_TURING_GRID',
+@@ -164,7 +166,7 @@
+             raise SystemExit(f'--wide: Z span {span} (+0.02) is not inside the session [{c} - {a.zfast_h}, {c} + {a.zfast_h}]')
+         ZSESS = dict(mode='wide', center=repr(float(c)), H=float(a.zfast_h), Delta=float(a.zfast_delta), K=a.zfast_k, J=a.zfast_j, strict=True,
+                      threads=gen_threads, z_span=span)
+-        ZSESS.update(lib='v14b')       # v5z7 (F-M9b): W is output-free and recorded only in drive.jsonl (env ZFAST_WORKERS); v5z8: libzfast.v14b
++        ZSESS.update(lib='v14c')       # v5z7 (F-M9b): W is output-free and recorded only in drive.jsonl (env ZFAST_WORKERS); v5z9: libzfast.v14c
+         if a.turing_grid:
+             TG = dict(u0=float(ulo) - 40.0, step=0.004, n=int(round((float(uhi) - float(ulo) + 80.0) / 0.004)) + 1)
+             gend = TG['u0'] + (TG['n'] - 1) * TG['step']
+@@ -202,7 +204,7 @@
+         if KEYDIR.stat().st_mode & 0o077: raise RuntimeError(f'{KEYDIR} must be mode 0700')
+         log(stage='ckpt_nonce', nonce=nonce, keydir=str(KEYDIR))
+         v6.update(ZFAST_CKPT_ROLE='gen', ZFAST_CKPT_NONCE=nonce, ZFAST_CKPT_KEY=str(KEYDIR / f'{nonce}_gen.key'),
+-                  ZFAST_CKPT_VERIFY=os.environ.get('ZFAST_CKPT_VERIFY') or '8')
++                  ZFAST_CKPT_VERIFY=os.environ.get('ZFAST_CKPT_VERIFY') or '64')      # v5z9 (review_v14b mn7): generator verify default 64
+         v6['ZFAST_CKPT'] = str(RUN / 'zfast_ckpt_gen.txt')
+         if ZSESS.get('turing_grid'): v6['ZFAST_TURING_GRID'] = json.dumps(dict(ZSESS['turing_grid'], outdir=str(RUN / 'turing_grid')))
+     env = child_env(os.environ, ZSESS, PYTHONDONTWRITEBYTECODE='1', EPS='', CSTEP=os.environ.get('CSTEP', '0.005'), CND=os.environ.get('CND', '10'), **v6)
+--- atlas_v5z8/lib/zfast_provider.py	2026-11-02 10:03:20
++++ atlas_v5z9/lib/zfast_provider.py	2026-11-02 20:42:56
+@@ -1,4 +1,7 @@
+-"""atlas_v5z8 Z / row provider (TRUSTED; PREDICTIONS_M12 / THEORY_V5Z8.md) = the v5z6 provider on libzfast.v14b (compute path = v14 =
++"""atlas_v5z9 Z / row provider (TRUSTED; PREDICTIONS_M13 / THEORY_V5Z9.md) = the v5z8 provider on libzfast.v14c (same ctypes API;
++checkpoint format v3: header-bound, index-bound line seals, duplicates refused, atomic keys, no FLINT abort in the parser, time-based
++fsync, environment identity without placeholders).  Hook prefixes add ZFAST14C_TEST.  v5z8 docstring follows.
++atlas_v5z8 Z / row provider (TRUSTED; PREDICTIONS_M12 / THEORY_V5Z8.md) = the v5z6 provider on libzfast.v14b (compute path = v14 =
+ v13b at equal D; hardened checkpoint).  Checkpoints (strict mode only) need ZFAST_CKPT_ROLE (gen | replay), ZFAST_CKPT_NONCE (the run's
+ 32-hex nonce) and ZFAST_CKPT_KEY (HMAC key file, created by libzfast for a new checkpoint); ZFAST_CKPT_VERIFY (default 8, >= 1) loaded items
+ are recomputed on resume.  A refused session raises with libzfast's reason.  D (ZFAST_THREADS) must be in [1, 16].  Importing this module
+@@ -24,15 +27,15 @@
+ from fractions import Fraction
+ 
+ if sys.flags.optimize != 0 or os.environ.get('PYTHONOPTIMIZE'):
+-    raise SystemExit('atlas_v5z8: refusing to run under python -O / PYTHONOPTIMIZE (Atlas rule)')
+-HOOK_PREFIXES = ('ZFAST14_TEST', 'ZFAST14B_TEST', 'ZFAST14_GENERIC_KERNEL')
++    raise SystemExit('atlas_v5z9: refusing to run under python -O / PYTHONOPTIMIZE (Atlas rule)')
++HOOK_PREFIXES = ('ZFAST14_TEST', 'ZFAST14B_TEST', 'ZFAST14C_TEST', 'ZFAST14_GENERIC_KERNEL')
+ if any(k.startswith(HOOK_PREFIXES) for k in os.environ):
+-    raise SystemExit('atlas_v5z8 zfast_provider: a libzfast test-hook variable is set (review_m10 m8): ' + ', '.join(k for k in os.environ if k.startswith(HOOK_PREFIXES)))
++    raise SystemExit('atlas_v5z9 zfast_provider: a libzfast test-hook variable is set (review_m10 m8): ' + ', '.join(k for k in os.environ if k.startswith(HOOK_PREFIXES)))
+ 
+ from flint import arb, ctx  # noqa: E402
+ 
+-LIBPATH = '/Users/kiosk/atlas_mark2/diagnostic/zfast/bin/libzfast.v14b.dylib'
+-LIB_SHA = 'd77bf28f21752e7c90c9990221a1ff702e4227b1038a2fb4106fb5d9eb9e7d52'
++LIBPATH = '/Users/kiosk/atlas_mark2/diagnostic/zfast/bin/libzfast.v14c.dylib'
++LIB_SHA = '59883f5e2d83585b67c08a2e3816d180248cd760c705642f13b571b71ad37471'
+ if hashlib.sha256(open(LIBPATH, 'rb').read()).hexdigest() != LIB_SHA:
+     raise RuntimeError('libzfast sha mismatch')
+ 
+@@ -91,7 +94,7 @@
+ def config():
+     """the provider configuration of this process (recorded by the driver / replay)."""
+     return dict(H=PARAMS['H'], Delta=PARAMS['Delta'], K=PARAMS['K'], J=PARAMS['J'], threads=PARAMS['threads'], strict=STRICT,
+-                center=os.environ.get('ZFAST_CENTER'), lib_sha=LIB_SHA, lib='v14b', workers=WORKERS, ckpt=CKPT or None,
++                center=os.environ.get('ZFAST_CENTER'), lib_sha=LIB_SHA, lib='v14c', workers=WORKERS, ckpt=CKPT or None,
+                 ckpt_role=CK_ROLE or None, ckpt_nonce=CK_NONCE or None, ckpt_verify=CK_VERIFY if CKPT else None)
+ 
+ 
+@@ -206,7 +209,7 @@
+     for i in range(len(fine) - 1):
+         if not fine[i][1] <= fine[i + 1][0]: raise RuntimeError(f'turing_grid: intervals not disjoint at {fine[i]} {fine[i + 1]}')
+     os.makedirs(outdir)
+-    rec = dict(tool='atlas_v5z8 zfast_provider.turing_grid (scan_turing5 scan logic; counts by scan_turing5.py recount)', T0=str(T0), lib=LIBPATH,
++    rec = dict(tool='atlas_v5z9 zfast_provider.turing_grid (scan_turing5 scan logic; counts by scan_turing5.py recount)', T0=str(T0), lib=LIBPATH,
+                lib_sha256=LIB_SHA, session=STATS.get('info'), session_params=dict(centre=c, H=PARAMS['H'], Delta=PARAMS['Delta'], K=PARAMS['K'],
+                J=PARAMS['J'], threads=PARAMS['threads'], workers=WORKERS, u0=u0, n=n, step=step),
+                grid=dict(points=len(u), step=step, undecided=int(np.sum(sg == 0)), seconds=round(time.time() - t0, 1), ends=[repr(float(u[0])), repr(float(u[-1]))]),
+--- atlas_v5z8/replay_target5.py	2026-11-02 10:03:20
++++ atlas_v5z9/replay_target5.py	2026-11-02 20:42:56
+@@ -22,7 +22,7 @@
+ ZFAST_CKPT.sessions.jsonl) and `passed` requires at least one record, every one role replay with the run's nonce (RUN/zfast_ckpt_nonce.txt)."""
+ import json, sys, os, shutil, hashlib, importlib.util, glob, time
+ if sys.flags.optimize != 0 or os.environ.get('PYTHONOPTIMIZE'):
+-    raise SystemExit('atlas_v5z8: refusing to run under python -O / PYTHONOPTIMIZE (Atlas rule)')
++    raise SystemExit('atlas_v5z9: refusing to run under python -O / PYTHONOPTIMIZE (Atlas rule)')
+ from fractions import Fraction as Fr
+ from pathlib import Path
+ V4 = Path(__file__).resolve().parent; sys.path.insert(0, str(V4))
+--- atlas_v5z8/run_wide8.sh	2026-11-02 10:03:20
++++ atlas_v5z9/run_wide9.sh	2026-11-02 20:42:56
+@@ -1,10 +1,10 @@
+ #!/bin/bash
+-# run_wide8.sh NAME T0 TLO THI H DELTA [CENTER] : v5z8 (= v5z7 on libzfast.v14b, hardened checkpoints; THEORY_V5Z8) two-session wide window:
++# run_wide9.sh NAME T0 TLO THI H DELTA [CENTER] : v5z9 (= v5z8 on libzfast.v14c, checkpoint v3; THEORY_V5Z9) two-session wide window:
+ #   1 pipeline: generator session (+ Turing grid in the same session) and the replay of record (driver stage 3, fresh process);
+ #   2 scan_turing5.py recount on RUN/turing_grid (the unchanged tool of record; no zfast call);
+ #   3 engine/regress_v1 turing_gate check (required gate, amendment A6).
+ # nice 19; ZFAST_THREADS = decomposition D (recorded), ZFAST_WORKERS = OS threads (output-free); RESUME=1 passes --resume.  Never deletes.
+-P=/Users/kiosk/projects/atlas-rerun/.venv/bin/python; Z=/Users/kiosk/atlas_mark2/diagnostic/zfast/atlas_v5z8; cd $Z; mkdir -p runs
++P=/Users/kiosk/projects/atlas-rerun/.venv/bin/python; Z=/Users/kiosk/atlas_mark2/diagnostic/zfast/atlas_v5z9; cd $Z; mkdir -p runs
+ N=$1; T0=$2; LO=$3; HI=$4; HH=$5; DD=$6; C=$7
+ export ZFAST_THREADS=${ZFAST_THREADS:-2}; export ZFAST_WORKERS=${ZFAST_WORKERS:-$ZFAST_THREADS}; export V4_LIM_GB=${V4_LIM_GB:-1.0}
+ unset PYTHONOPTIMIZE ZFAST_CENTER ZFAST_H ZFAST_DELTA ZFAST_K ZFAST_J ZFAST_STRICT ZFAST_CKPT ZFAST_TURING_GRID ZFAST_CKPT_ROLE ZFAST_CKPT_NONCE ZFAST_CKPT_KEY
+@@ -12,10 +12,10 @@
+ [ -e runs/w$T0/$N ] && [ -z "$RA" ] && { echo "exists runs/w$T0/$N"; exit 1; }
+ CA=""; [ -n "$C" ] && CA="--zfast-center $C"
+ s=$(date +%s); nice -n 19 $P -u -B atlas_v5.py $T0 $LO $HI --name $N --zs-step 0.005 --gen-timeout 1209600 --wide --zfast-h $HH --zfast-delta $DD $CA --turing-grid $RA >> runs/$N.out 2>&1; rc=$?
+-echo "$N pipeline rc=$rc wall=$(( $(date +%s) - s ))s D=$ZFAST_THREADS W=$ZFAST_WORKERS" >> runs/v5z8.log
++echo "$N pipeline rc=$rc wall=$(( $(date +%s) - s ))s D=$ZFAST_THREADS W=$ZFAST_WORKERS" >> runs/v5z9.log
+ R=runs/w$T0/$N; ULO=$($P -c "import json; print(json.load(open('$R/pieces.json'))['target'][0])"); UHI=$($P -c "import json; print(json.load(open('$R/pieces.json'))['target'][1])")
+ s=$(date +%s); nice -n 19 $P -B ../tools/scan_turing5.py recount $R/turing_grid $R/turing_recount.json --points $ULO,$UHI --win $ULO,$UHI > $R/turing_recount.log 2>&1; rc3=$?
+-echo "$N turing recount rc=$rc3 wall=$(( $(date +%s) - s ))s $(tail -1 $R/turing_recount.log | cut -c1-300)" >> runs/v5z8.log
++echo "$N turing recount rc=$rc3 wall=$(( $(date +%s) - s ))s $(tail -1 $R/turing_recount.log | cut -c1-300)" >> runs/v5z9.log
+ ( cd /Users/kiosk/atlas_mark2 && $P -B -m engine.regress_v1.turing_gate check $Z/$R $Z/$R/turing_recount.json > $Z/$R/turing_gate.log 2>&1 ); rc4=$?
+-echo "$N turing gate rc=$rc4 $(tail -1 $R/turing_gate.log)" >> runs/v5z8.log
+-echo "$N done" >> runs/v5z8.log
++echo "$N turing gate rc=$rc4 $(tail -1 $R/turing_gate.log)" >> runs/v5z9.log
++echo "$N done" >> runs/v5z9.log

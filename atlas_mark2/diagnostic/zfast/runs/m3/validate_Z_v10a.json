@@ -1,0 +1,51 @@
+{
+ "R1_10000000000": {
+  "n": 100,
+  "overlap": 100,
+  "max_diff": 1.075705663e-15,
+  "max_rad_ratio": 2.9587387726880725,
+  "session_build": 0.0368,
+  "med_point_sec": 0.00013,
+  "single_med_sec": 0.0133
+ },
+ "R1_10000000000000": {
+  "n": 100,
+  "overlap": 100,
+  "max_diff": 2.225809921e-15,
+  "max_rad_ratio": 2.570191275207382,
+  "session_build": 0.1299,
+  "med_point_sec": 0.00014,
+  "single_med_sec": 0.0399
+ },
+ "R1_10000000000000000": {
+  "n": 100,
+  "overlap": 100,
+  "max_diff": 2.430841681e-15,
+  "max_rad_ratio": 2.482531662832437,
+  "session_build": 1.266,
+  "med_point_sec": 0.00016,
+  "single_med_sec": 0.3366
+ },
+ "R2": {
+  "points": 136,
+  "contained": 136
+ },
+ "R3_1000000000000": {
+  "n": 20,
+  "overlap": 20,
+  "N_values": [
+   398946,
+   398947
+  ],
+  "Nw": 398947
+ },
+ "R3_100000000000000": {
+  "n": 20,
+  "overlap": 20,
+  "N_values": [
+   3989426,
+   3989427
+  ],
+  "Nw": 3989427
+ }
+}

@@ -1,0 +1,102 @@
+{
+ "tool": "scan_turing5.py scan",
+ "tool_sha256": "898bf5c506fea8f97a75c19b684f32901b98de97e1d00c250f473fca0618b2da",
+ "T0": "100000000000000000",
+ "lib": "/Users/kiosk/atlas_mark2/diagnostic/zfast/bin/libzfast.v13b.dylib",
+ "lib_sha256": "82489d1a89e25bef117cd87f47d591d9426282c4b211f92ace12d097767dffca",
+ "session": {
+  "sec_build": 4.4785,
+  "sec_head": 0.1131,
+  "sec_fast": 4.3644,
+  "buckets": 1234,
+  "Nw": 126156626,
+  "nhead": 21527,
+  "blocks": 11715,
+  "max_phase_err": 7.573e-20
+ },
+ "session_params": {
+  "centre": 1.0,
+  "H": 61.0,
+  "Delta": 0.012,
+  "K": 18,
+  "J": 12,
+  "threads": 2,
+  "u0": -59.0,
+  "n": 30001,
+  "step": 0.004
+ },
+ "grid": {
+  "points": 30001,
+  "step": 0.004,
+  "undecided": 0,
+  "seconds": 60.9,
+  "ends": [
+   "-59",
+   "61"
+  ]
+ },
+ "zeros_found": 713,
+ "dips": 0,
+ "dip_zeros": 0,
+ "DT": "40",
+ "turing": {
+  "0": {
+   "v": 0.0,
+   "v_exact": "0",
+   "Delta": 40.0,
+   "Delta_exact": "40",
+   "N_lower": 577829042746896155,
+   "N_upper": 577829042746896155,
+   "Z_sign": 1,
+   "Z_src": {
+    "source": "grid",
+    "k": 14750,
+    "mid": 0.2736460489322211,
+    "rad": 1.5105683891236676e-10
+   },
+   "U": "5.77829042747e+17",
+   "L": "5.77829042747e+17",
+   "U_minus_L": 0.3687360805520353,
+   "zeros_up": 237,
+   "zeros_down": 238,
+   "pinned": true,
+   "N": 577829042746896155
+  },
+  "2": {
+   "v": 2.0,
+   "v_exact": "2",
+   "Delta": 40.0,
+   "Delta_exact": "40",
+   "N_lower": 577829042746896166,
+   "N_upper": 577829042746896166,
+   "Z_sign": -1,
+   "Z_src": {
+    "source": "grid",
+    "k": 15250,
+    "mid": -1.6661619436638933,
+    "rad": 1.8269488005762113e-10
+   },
+   "U": "5.77829042747e+17",
+   "L": "5.77829042747e+17",
+   "U_minus_L": 0.40563608055203587,
+   "zeros_up": 237,
+   "zeros_down": 237,
+   "pinned": true,
+   "N": 577829042746896166
+  }
+ },
+ "windows": {
+  "0,2": {
+   "count": 11,
+   "sign_changes_in_window": 11,
+   "straddling": []
+  }
+ },
+ "build_seconds": 4.5,
+ "wall": 65.4,
+ "flint": "0.9.0",
+ "env": {
+  "ZFAST_THREADS": null,
+  "OMP_NUM_THREADS": null
+ }
+}

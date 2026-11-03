@@ -1,0 +1,5 @@
+D 2 W 1 build 79.547 cpu 79.98 d14b27ee3e6bb65e maxrss 28.4
+D 2 W 4 build 26.743 cpu 106.52 d14b27ee3e6bb65e maxrss 29.5
+D 2 W 8 build 20.584 cpu 125.92 d14b27ee3e6bb65e maxrss 30.8
+D 8 W 8 build 20.664 cpu 126.04 d88cd5114ec2ca41 maxrss 36.6
+D 4 W 4 build 26.796 cpu 106.7 9431ef1b97a1f603 maxrss 31.6

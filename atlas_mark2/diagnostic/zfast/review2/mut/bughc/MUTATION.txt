@@ -1,0 +1,5 @@
+file: zfast_m3c.inc
+--- old
+if (ws > 0) arb_neg(acb_imagref(hc), acb_imagref(hc));
++++ new
+if (ws < 0) arb_neg(acb_imagref(hc), acb_imagref(hc));

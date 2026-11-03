@@ -1,0 +1,5 @@
+file: zfast_m3c.inc
+--- old
+arb_set_d(e, 0.5); if (ws > 0) arb_add(e, e, b, S->wp); else arb_sub(e, e, b, S->wp);
++++ new
+arb_set_d(e, 0.5); if (ws < 0) arb_add(e, e, b, S->wp); else arb_sub(e, e, b, S->wp);

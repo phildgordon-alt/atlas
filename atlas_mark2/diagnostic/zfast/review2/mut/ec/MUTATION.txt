@@ -1,0 +1,5 @@
+file: zfast.c
+--- old
+#define ZF_EC 4.88e-16
++++ new
+#define ZF_EC 4.88e-17

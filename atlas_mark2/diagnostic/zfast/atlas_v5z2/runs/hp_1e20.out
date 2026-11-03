@@ -1,0 +1,5 @@
+{"stage": "start", "args": {"T0": 100000000000000000000, "tlo": "100000000000000000004", "thi": "100000000000000000006", "grid": "v5", "evaluator": "dirichlet", "zs_refine": 0.0001, "name": "hp_1e20", "pw": 1.0, "wm": 2.0, "zs_step": 0.005, "gen_timeout": 21600.0}, "lim_gb": 2.5, "lib_sha": {"gen_ta
+{"stage": "pieces", "hull": [4.0, 6.0], "n": 2, "t": 0.0}
+{"stage": "generator", "rc": 0, "killed": null, "peak_gb": 0.223, "seconds": 271.53, "t": 271.53}
+{"stage": "replay_target", "rc": 0, "killed": null, "peak_gb": 0.032, "seconds": 263.7, "t": 535.23}
+{"stage": "done", "all_closed": true, "wall_seconds": 535.23, "peak_gb": 0.223, "t": 535.24}

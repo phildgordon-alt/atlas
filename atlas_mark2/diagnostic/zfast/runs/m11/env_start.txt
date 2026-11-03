@@ -1,0 +1,16 @@
+env snapshot Mon Nov  2 09:46:32 PST 2026
+ProductName:		macOS
+ProductVersion:		27.0
+BuildVersion:		26A428
+Darwin Home-mac-MIni.local 27.0.0 Darwin Kernel Version 27.0.0: Tue Aug 11 21:05:27 PDT 2026; root:xnu-13432.1.9~1/RELEASE_ARM64_T8103 arm64
+7abaaa8aa0a913290cdb202a55d18c6c195130b20032614f3a60d07f0f10fa5b  /Users/kiosk/atlas_mark2/diagnostic/zfast/bin/libzfast.v14.dylib
+/opt/homebrew/opt/flint/lib/libflint.24.0.dylib -> /opt/homebrew/Cellar/flint/3.6.0/lib/libflint.24.0.dylib
+b1494fcc5a92f5618349bca8585ffca83839884edd3df464c7e651009d6d7d7e  /opt/homebrew/Cellar/flint/3.6.0/lib/libflint.24.0.dylib
+/opt/homebrew/opt/gmp/lib/libgmp.10.dylib -> /opt/homebrew/Cellar/gmp/6.3.0/lib/libgmp.10.dylib
+9e9030352a38d1397fd23dccec5397c260890d2a54e9164b579c96548a9fd531  /opt/homebrew/Cellar/gmp/6.3.0/lib/libgmp.10.dylib
+/opt/homebrew/opt/mpfr/lib/libmpfr.6.dylib -> /opt/homebrew/Cellar/mpfr/4.2.2/lib/libmpfr.6.dylib
+783c63a1eabe253aed197c1fa3ad5352ca0ac9796d0bc0950d7e296d1645a321  /opt/homebrew/Cellar/mpfr/4.2.2/lib/libmpfr.6.dylib
+flint 3.6.0
+gmp 6.3.0
+mpfr 4.2.2
+python-flint 0.9.0

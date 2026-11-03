@@ -1,0 +1,5 @@
+file: zfast.c
+--- old
+        acb_add_error_mag(H1, e1);
++++ new
+        mag_div_ui(e1, e1, 10); acb_add_error_mag(H1, e1);

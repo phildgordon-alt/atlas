@@ -1,0 +1,46 @@
+{
+ "run": "/Users/kiosk/atlas_mark2/diagnostic/zfast/atlas_v5z2/runs/w1000000000000000/y_1e15",
+ "hull_ok": true,
+ "certificates": 2,
+ "structure_ok": 12,
+ "passed_both": 2,
+ "failed": [],
+ "min_candidate_lower": 0.8639199061388787,
+ "replay_process": {
+  "rc": 0,
+  "killed": null,
+  "peak_gb": 0.093,
+  "seconds": 3.69
+ },
+ "tiling": {
+  "coordinates": "offsets from T0 (exact translation)",
+  "T0": 1000000000000000,
+  "tiling_script": "/Users/kiosk/atlas/workbench/math_ablation_20260928/audit_20261004/exact_tiling_check.py",
+  "tiling_sha256": "0868990ee2027ba493593d514607acc0aad729ed94c7cf61b1cf3d1f22a08b45",
+  "tiling_sha_ok": true,
+  "hull": [
+   0.0,
+   2.0
+  ],
+  "target": [
+   0.0,
+   2.0
+  ],
+  "regions": 2,
+  "seams_hull": 0,
+  "seams_target": 0,
+  "gaps_d0": [],
+  "seams": []
+ },
+ "passed": true,
+ "claim_B": {
+  "np_certificates": 10,
+  "np_passed_both": 10,
+  "intervals_to_cover": 10,
+  "uncovered": [],
+  "np_min_candidate_lower": 0.9124097033032084,
+  "verifier": "pinned verify_zs5.py with one line changed (replay5.noparity_check)"
+ },
+ "seconds": 3.71,
+ "passed_B": true
+}

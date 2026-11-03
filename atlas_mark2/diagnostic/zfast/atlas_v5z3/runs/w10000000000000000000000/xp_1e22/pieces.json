@@ -1,0 +1,54 @@
+{
+ "format": "atlas_v5",
+ "T0": 10000000000000000000000,
+ "grid": "v5",
+ "evaluator": "dirichlet",
+ "coordinates": "offsets from T0",
+ "target_input": [
+  "10000000000000000000017",
+  "10000000000000000000019"
+ ],
+ "target": [
+  17.0,
+  19.0
+ ],
+ "target_note": "exact",
+ "hull": [
+  17.0,
+  19.0
+ ],
+ "hull_bins": [
+  1700,
+  1900
+ ],
+ "pw": 1.0,
+ "wm": 2.0,
+ "wm_bins": 200,
+ "zs_step": 0.005,
+ "zs_refine": 0.0001,
+ "pieces": [
+  {
+   "piece": "p1700_1800",
+   "bins": [
+    1700,
+    1800
+   ],
+   "col": [
+    17.0,
+    18.0
+   ]
+  },
+  {
+   "piece": "p1800_1900",
+   "bins": [
+    1800,
+    1900
+   ],
+   "col": [
+    18.0,
+    19.0
+   ]
+  }
+ ],
+ "z_provider": "zfast libzfast.v13b, provider v5z3 (THEORY_M5, THEORY_M5b, review2 fixes)"
+}

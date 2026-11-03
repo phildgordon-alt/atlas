@@ -1,0 +1,93 @@
+{
+ "kind": "controls",
+ "stamp": "20261101_095741",
+ "prereg_sha256": "80774906223b4f8e59c96633191377c646fd8c322daf5645a7be75b2419ecabd",
+ "controls": [
+  {
+   "control": "NC1 1-ulp tampered y (copy)",
+   "sha_detected": true,
+   "golden_detected": true,
+   "math_still_certifies": false,
+   "detected": true
+  },
+  {
+   "control": "NC2 w x 1.10 on atlas_v5z:w1000000000000/z_1e12",
+   "passed_records": "0/20",
+   "closed_A": false,
+   "claim_B": false,
+   "detected": true
+  },
+  {
+   "control": "NC2 w x 1.10 on atlas_v5z4:w1000000000000000000000000/w_1e24",
+   "passed_records": "0/38",
+   "closed_A": false,
+   "claim_B": false,
+   "detected": true
+  },
+  {
+   "control": "NC3 Ehi - 1e-3 on atlas_v5z:w1000000000000/z_1e12",
+   "passed_records": "20/20",
+   "closed_A": true,
+   "claim_B": true,
+   "detected": false
+  },
+  {
+   "control": "NC3 Ehi - 1e-3 on atlas_v5z4:w1000000000000000000000000/w_1e24",
+   "passed_records": "38/38",
+   "closed_A": true,
+   "claim_B": true,
+   "detected": false
+  },
+  {
+   "control": "NC4 wrong y on atlas_v5z:w1000000000000/z_1e12",
+   "passed_records": "0/20",
+   "closed_A": false,
+   "claim_B": false,
+   "detected": true
+  },
+  {
+   "control": "NC4 wrong y on atlas_v5z4:w1000000000000000000000000/w_1e24",
+   "passed_records": "0/38",
+   "closed_A": false,
+   "claim_B": false,
+   "detected": true
+  },
+  {
+   "control": "NC5 swapped zero interval on atlas_v5z:w1000000000000/z_1e12",
+   "passed_records": "0/20",
+   "closed_A": false,
+   "claim_B": false,
+   "detected": true
+  },
+  {
+   "control": "NC5 swapped zero interval on atlas_v5z4:w1000000000000000000000000/w_1e24",
+   "passed_records": "4/38",
+   "closed_A": false,
+   "claim_B": false,
+   "detected": true
+  },
+  {
+   "control": "NC6 regeneration with zs_step x2 (z_1e12)",
+   "process": {
+    "rc": 0,
+    "killed": null,
+    "peak_gb": 0.03,
+    "seconds": 7.48,
+    "zfast_env": {
+     "ZFAST_THREADS": 2
+    }
+   },
+   "identical": false,
+   "detected": true
+  },
+  {
+   "control": "NC7",
+   "changed_line": 3,
+   "audit_rc": 1,
+   "output_differs": true,
+   "violations": 1,
+   "detected": true
+  }
+ ],
+ "ok": false
+}

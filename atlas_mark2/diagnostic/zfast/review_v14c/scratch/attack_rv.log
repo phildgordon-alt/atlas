@@ -1,0 +1,73 @@
+OK   A_fresh_identical {}
+OK   B_new_header_existing_key_reported {"note": "stderr has EXISTING key note"}
+OK   A_B_items_comparable {"same_index_tokens": 480, "differing_bodies": 480}
+OK   splice_A_into_B_0 {"rejected": 40, "loaded": 480}
+OK   splice_A_into_B_1 {"rejected": 40, "loaded": 480}
+OK   splice_A_into_B_2 {"rejected": 40, "loaded": 480}
+OK   splice_only_A_lines_under_B_header {"rejected": 480}
+OK   A2_same_params_header_differs_only_in_hnonce {}
+OK   splice_same_params_other_file_rejected {}
+OK   transplant_lines_other_hnonce_rejected {}
+OK   keyholder_conflicting_duplicate_refused {"reason": "checkpoint out_attack/forge_dup.txt line 7: authenticated but invalid: conflicting duplicate: a second authenticated line for an already loaded item, with different contents (MJ1) (refusing)"}
+OK   keyholder_forgery_all_items_caught_by_verify {"reason": "resume verification FAILED: item (b=631, i=0) recomputed differs from the checkpoint (refusing)"}
+OK   keyholder_single_forgery_detect_rate_vn8 (info) {"detected_of_10": 0, "expected": 0.17}
+OK   index_token_changed_rejected {}
+OK   keyholder_x_mismatch_first_b_plus_i_refused {"reason": "checkpoint out_attack/idx2.txt line 12: authenticated but invalid: item index x does not equal first[b] + i (refusing)"}
+OK   keyholder_item_relabelled_refused {"rc": 3, "reason": "checkpoint out_attack/idx3.txt line 481: authenticated but invalid: item (b, i, lo, hi) does not match this session (refusing)"}
+OK   nokey_identical_duplicate_makes_ckpt_unresumable {"reason": "checkpoint out_attack/dup.txt line 482: authenticated but invalid: identical duplicate: a second authenticated line for an already loaded item (an honest writer never emits one; MJ1) (refusing)"}
+OK   nokey_identical_duplicate_before_original {"reason": "checkpoint out_attack/dup2.txt line 9: authenticated but invalid: identical duplicate: a second authenticated line for an already loaded item (an honest writer never emits one; MJ1) (refusing)"}
+OK   shuffled_identical_full_verify {}
+OK   removed_30pct_identical {}
+OK   torn_1 {"rc": 3, "loaded": null, "loaded2": null, "w2": null, "reason": "checkpoint out_attack/torn_1.txt: header line is not authenticated under this ru"}
+OK   torn_1210 {"rc": 0, "loaded": 0, "loaded2": 480, "w2": 0, "reason": ""}
+OK   torn_1211 {"rc": 0, "loaded": 0, "loaded2": 480, "w2": 0, "reason": ""}
+OK   torn_1212 {"rc": 0, "loaded": 0, "loaded2": 480, "w2": 0, "reason": ""}
+OK   torn_121864 {"rc": 0, "loaded": 61, "loaded2": 480, "w2": 0, "reason": ""}
+OK   torn_203724 {"rc": 0, "loaded": 103, "loaded2": 480, "w2": 0, "reason": ""}
+OK   torn_208112 {"rc": 0, "loaded": 106, "loaded2": 480, "w2": 0, "reason": ""}
+OK   torn_253388 {"rc": 0, "loaded": 129, "loaded2": 480, "w2": 0, "reason": ""}
+OK   torn_266218 {"rc": 0, "loaded": 136, "loaded2": 480, "w2": 0, "reason": ""}
+OK   torn_307737 {"rc": 0, "loaded": 157, "loaded2": 480, "w2": 0, "reason": ""}
+OK   torn_342950 {"rc": 0, "loaded": 175, "loaded2": 480, "w2": 0, "reason": ""}
+OK   torn_500583 {"rc": 0, "loaded": 258, "loaded2": 480, "w2": 0, "reason": ""}
+OK   torn_586208 {"rc": 0, "loaded": 304, "loaded2": 480, "w2": 0, "reason": ""}
+OK   torn_642242 {"rc": 0, "loaded": 334, "loaded2": 480, "w2": 0, "reason": ""}
+OK   torn_839146 {"rc": 0, "loaded": 448, "loaded2": 480, "w2": 0, "reason": ""}
+OK   torn_863725 {"rc": 0, "loaded": 463, "loaded2": 480, "w2": 0, "reason": ""}
+OK   nul_padded_tail_then_resume_twice {"rej2": 1}
+OK   crlf_file_refused_header {"reason": "checkpoint out_attack/crlf.txt: header line is not authenticated under this run's key (a foreign, tampered, v14/v14b-format or differently keyed checkpoint) (refusing)"}
+OK   leading_blank_line_refused (DoS, no key) {"reason": "checkpoint out_attack/blank.txt: header line is not authenticated under this run's key (a foreign, tampered, v14/v14b-format or differently keyed checkpoint) (refusing)"}
+OK   keyholder_header_hnonce_changed {"rc": 0, "loaded": 0, "reason": ""}
+OK   keyholder_header_hnonce_dropped {"rc": 3, "loaded": null, "reason": "checkpoint out_attack/h_hnonce_dropped.txt: header mismatch in field(s) [hnonce] (refusing; M1/M2: a different session, role, run, library o"}
+OK   keyholder_header_hnonce_upper {"rc": 3, "loaded": null, "reason": "checkpoint out_attack/h_hnonce_upper.txt: header mismatch in field(s) [hnonce] (refusing; M1/M2: a different session, role, run, library or "}
+OK   keyholder_header_hnonce_twice {"rc": 3, "loaded": null, "reason": "checkpoint out_attack/h_hnonce_twice.txt: header mismatch in field(s) [fieldcount] (refusing; M1/M2: a different session, role, run, library"}
+OK   keyholder_header_dyld_changed {"rc": 3, "loaded": null, "reason": "checkpoint out_attack/h_dyld_changed.txt: header mismatch in field(s) [dyld_cache_uuid] (refusing; M1/M2: a different session, role, run, li"}
+OK   keyholder_header_hw_changed {"rc": 3, "loaded": null, "reason": "checkpoint out_attack/h_hw_changed.txt: header mismatch in field(s) [hw_model] (refusing; M1/M2: a different session, role, run, library or "}
+OK   keyholder_header_extra_field {"rc": 3, "loaded": null, "reason": "checkpoint out_attack/h_extra_field.txt: header mismatch in field(s) [hooks,fieldcount] (refusing; M1/M2: a different session, role, run, li"}
+OK   keyholder_header_wp_changed {"rc": 3, "loaded": null, "reason": "checkpoint out_attack/h_wp_changed.txt: header mismatch in field(s) [wp] (refusing; M1/M2: a different session, role, run, library or enviro"}
+OK   keyholder_header_nitems_changed {"rc": 3, "loaded": null, "reason": "checkpoint out_attack/h_nitems_changed.txt: header mismatch in field(s) [nitems] (refusing; M1/M2: a different session, role, run, library o"}
+OK   keyholder_header_double_space {"rc": 0, "loaded": 0, "reason": ""}
+OK   nokey_header_tamper_refused {}
+OK   gen_file_as_replay_with_gen_key_refused {"reason": "checkpoint out_attack/Arep.txt: header mismatch in field(s) [role] (refusing; M1/M2: a different session, role, run, library or environment)"}
+OK   other_nonce_refused {"reason": "checkpoint out_attack/Arep.txt: header mismatch in field(s) [nonce] (refusing; M1/M2: a different session, role, run, library or environment)"}
+OK   existing_ckpt_missing_key_refused {"reason": "checkpoint key out_attack/keys/nokey_here.key missing or unreadable (No such file or directory) for an existing checkpoint (refusing)"}
+OK   v14b_format_refused {"reason": "checkpoint out_attack/v14b.txt: header line is not authenticated under this run's key (a foreign, tampered, v14/v14b-format or differently keyed checkpoint) (refusing)"}
+OK   testhooks_ckpt_refused_by_production {"reason": "checkpoint out_attack/T.txt: header mismatch in field(s) [bin_sha,bin_uuid,bin_text_sha,hooks] (refusing; M1/M2: a different session, role, run, library or environment)"}
+OK   production_ckpt_refused_by_testhooks {"reason": "checkpoint out_attack/A.txt: header mismatch in field(s) [bin_sha,bin_uuid,bin_text_sha,hooks] (refusing; M1/M2: a different session, role, run, library or environment)"}
+OK   key_symlink_refused {"reason": "checkpoint key out_attack/keys/k_sym.key is a symbolic link (refusing)"}
+OK   key_0644_refused {"reason": "checkpoint key out_attack/keys/k_m644.key has group/other permissions (mode 644; must be 0600 or stricter) (refusing)"}
+OK   key_0400_ok {}
+OK   key_0byte_empty_ckpt_refused {"reason": "checkpoint key out_attack/keys/k_zero.key is a 0-byte file (an interrupted pre-v14c key creation); it is neither reused nor overwritten: start a fresh run name (refusing)"}
+OK   key_33byte_refused {"reason": "checkpoint key out_attack/keys/k_k33.key is not a 32-byte key file (refusing)"}
+OK   key_is_dir_refused {"reason": "checkpoint key out_attack/keys/k_dir.key is not a regular file (refusing)"}
+OK   key_hardlink_accepted (same user; info) {"rc": 0}
+FAIL key_fifo (hang?) {"rc": "timeout", "reason": ""}
+OK   keycrash_then_rerun {"rc": 78, "stray": ["kc.key.tmp.4695.8d3731d9"], "rc2": 0, "ckpt_size_after_crash": 0}
+OK   overlong_64MiB_line {"maxrss": 25.4, "base_maxrss": 25.3}
+OK   provider_refuses_ZFAST14C_TEST_ENVFAIL {"rc": 1}
+OK   provider_refuses_ZFAST14C_TEST_KEYCRASH {"rc": 1}
+OK   provider_refuses_ZFAST14_TEST_EXIT_AFTER {"rc": 1}
+OK   provider_refuses_ZFAST14B_TEST_LBSHIFT {"rc": 1}
+OK   provider_refuses_ZFAST14_GENERIC_KERNEL {"rc": 1}
+OK   provider_refuses_verify0 {"tail": "VERIFY >= 1')\nRuntimeError: zfast_provider: ZFAST_CKPT needs ZFAST_CKPT_ROLE (gen|replay), ZFAST_CKPT_NONCE (32 hex), ZFAST_CKPT_KEY and ZFAST_CKPT_VERIFY >= 1\n"}
+{"total": 72, "fail": ["key_fifo (hang?)"]}

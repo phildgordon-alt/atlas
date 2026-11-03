@@ -1,0 +1,23 @@
+{
+ "check": "G4: checkpoint I/O error through the pipeline (review_v14c mn-C4)",
+ "results": {
+  "ref_rc": 0,
+  "limited_rc": 3,
+  "abort_logged": 1,
+  "abort_error": "CKPT-IO-ABORT: checkpoint write failed (File too large); session aborted with 147 of 1075 items done (144 checkpoint lines, header included, written this session); the checkpoint is valid up to the error: fix the cause and resume (review_v14c mn-C4, PREDICTIONS_M14)",
+  "banner": true,
+  "no_replay": true,
+  "refusal_records": 1,
+  "resume_rc": 0,
+  "compare_identical": true,
+  "turing_grid_identical": true,
+  "resumed_loaded": [
+   143
+  ],
+  "replay_zfast_ckpt_ok": true
+ },
+ "ok": true,
+ "tree": "atlas_v5za",
+ "stamp": "20261102_225727",
+ "predictions": "diagnostic/zfast/PREDICTIONS_M14.md (sha in PREDICTIONS_M14.sha256)"
+}

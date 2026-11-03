@@ -1,0 +1,130 @@
+Traceback (most recent call last):
+  File "/Users/kiosk/atlas_mark2/diagnostic/zfast/review2/py/bat2_run.py", line 10, in <module>
+    pts = json.load(open(f'{R}/data/bat2_points.json'))
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/Users/kiosk/atlas_mark2/diagnostic/zfast/review2/data/bat2_points.json'
+Traceback (most recent call last):
+  File "/Users/kiosk/atlas_mark2/diagnostic/zfast/review2/py/bat2_run.py", line 10, in <module>
+    pts = json.load(open(f'{R}/data/bat2_points.json'))
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/Users/kiosk/atlas_mark2/diagnostic/zfast/review2/data/bat2_points.json'
+Traceback (most recent call last):
+  File "/Users/kiosk/atlas_mark2/diagnostic/zfast/review2/py/bat2_run.py", line 10, in <module>
+    pts = json.load(open(f'{R}/data/bat2_points.json'))
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/Users/kiosk/atlas_mark2/diagnostic/zfast/review2/data/bat2_points.json'
+Traceback (most recent call last):
+  File "/Users/kiosk/atlas_mark2/diagnostic/zfast/review2/py/bat2_run.py", line 10, in <module>
+    pts = json.load(open(f'{R}/data/bat2_points.json'))
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/Users/kiosk/atlas_mark2/diagnostic/zfast/review2/data/bat2_points.json'
+Traceback (most recent call last):
+  File "/Users/kiosk/atlas_mark2/diagnostic/zfast/review2/py/bat2_run.py", line 10, in <module>
+    pts = json.load(open(f'{R}/data/bat2_points.json'))
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/Users/kiosk/atlas_mark2/diagnostic/zfast/review2/data/bat2_points.json'
+Traceback (most recent call last):
+  File "/Users/kiosk/atlas_mark2/diagnostic/zfast/review2/py/bat2_run.py", line 10, in <module>
+    pts = json.load(open(f'{R}/data/bat2_points.json'))
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/Users/kiosk/atlas_mark2/diagnostic/zfast/review2/data/bat2_points.json'
+Traceback (most recent call last):
+  File "/Users/kiosk/atlas_mark2/diagnostic/zfast/review2/py/bat2_run.py", line 10, in <module>
+    pts = json.load(open(f'{R}/data/bat2_points.json'))
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/Users/kiosk/atlas_mark2/diagnostic/zfast/review2/data/bat2_points.json'
+Traceback (most recent call last):
+  File "/Users/kiosk/atlas_mark2/diagnostic/zfast/review2/py/bat2_run.py", line 10, in <module>
+    pts = json.load(open(f'{R}/data/bat2_points.json'))
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/Users/kiosk/atlas_mark2/diagnostic/zfast/review2/data/bat2_points.json'
+Traceback (most recent call last):
+  File "/Users/kiosk/atlas_mark2/diagnostic/zfast/review2/py/bat2_run.py", line 10, in <module>
+    pts = json.load(open(f'{R}/data/bat2_points.json'))
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/Users/kiosk/atlas_mark2/diagnostic/zfast/review2/data/bat2_points.json'
+Traceback (most recent call last):
+  File "/Users/kiosk/atlas_mark2/diagnostic/zfast/review2/py/bat2_run.py", line 10, in <module>
+    pts = json.load(open(f'{R}/data/bat2_points.json'))
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/Users/kiosk/atlas_mark2/diagnostic/zfast/review2/data/bat2_points.json'
+Traceback (most recent call last):
+  File "/Users/kiosk/atlas_mark2/diagnostic/zfast/review2/py/bat2_run.py", line 10, in <module>
+    pts = json.load(open(f'{R}/data/bat2_points.json'))
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/Users/kiosk/atlas_mark2/diagnostic/zfast/review2/data/bat2_points.json'
+Traceback (most recent call last):
+  File "/Users/kiosk/atlas_mark2/diagnostic/zfast/review2/py/bat2_run.py", line 10, in <module>
+    pts = json.load(open(f'{R}/data/bat2_points.json'))
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/Users/kiosk/atlas_mark2/diagnostic/zfast/review2/data/bat2_points.json'
+Traceback (most recent call last):
+  File "/Users/kiosk/atlas_mark2/diagnostic/zfast/review2/py/bat2_run.py", line 10, in <module>
+    pts = json.load(open(f'{R}/data/bat2_points.json'))
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/Users/kiosk/atlas_mark2/diagnostic/zfast/review2/data/bat2_points.json'
+Traceback (most recent call last):
+  File "/Users/kiosk/atlas_mark2/diagnostic/zfast/review2/py/bat2_run.py", line 10, in <module>
+    pts = json.load(open(f'{R}/data/bat2_points.json'))
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/Users/kiosk/atlas_mark2/diagnostic/zfast/review2/data/bat2_points.json'
+Traceback (most recent call last):
+  File "/Users/kiosk/atlas_mark2/diagnostic/zfast/review2/py/bat2_run.py", line 10, in <module>
+    pts = json.load(open(f'{R}/data/bat2_points.json'))
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/Users/kiosk/atlas_mark2/diagnostic/zfast/review2/data/bat2_points.json'
+Traceback (most recent call last):
+  File "/Users/kiosk/atlas_mark2/diagnostic/zfast/review2/py/bat2_run.py", line 10, in <module>
+    pts = json.load(open(f'{R}/data/bat2_points.json'))
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/Users/kiosk/atlas_mark2/diagnostic/zfast/review2/data/bat2_points.json'
+Traceback (most recent call last):
+  File "/Users/kiosk/atlas_mark2/diagnostic/zfast/review2/py/bat2_run.py", line 10, in <module>
+    pts = json.load(open(f'{R}/data/bat2_points.json'))
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/Users/kiosk/atlas_mark2/diagnostic/zfast/review2/data/bat2_points.json'
+Traceback (most recent call last):
+  File "/Users/kiosk/atlas_mark2/diagnostic/zfast/review2/py/bat2_run.py", line 10, in <module>
+    pts = json.load(open(f'{R}/data/bat2_points.json'))
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/Users/kiosk/atlas_mark2/diagnostic/zfast/review2/data/bat2_points.json'
+Traceback (most recent call last):
+  File "/Users/kiosk/atlas_mark2/diagnostic/zfast/review2/py/bat2_run.py", line 10, in <module>
+    pts = json.load(open(f'{R}/data/bat2_points.json'))
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/Users/kiosk/atlas_mark2/diagnostic/zfast/review2/data/bat2_points.json'
+Traceback (most recent call last):
+  File "/Users/kiosk/atlas_mark2/diagnostic/zfast/review2/py/bat2_run.py", line 10, in <module>
+    pts = json.load(open(f'{R}/data/bat2_points.json'))
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/Users/kiosk/atlas_mark2/diagnostic/zfast/review2/data/bat2_points.json'
+Traceback (most recent call last):
+  File "/Users/kiosk/atlas_mark2/diagnostic/zfast/review2/py/bat2_run.py", line 10, in <module>
+    pts = json.load(open(f'{R}/data/bat2_points.json'))
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/Users/kiosk/atlas_mark2/diagnostic/zfast/review2/data/bat2_points.json'
+Traceback (most recent call last):
+  File "/Users/kiosk/atlas_mark2/diagnostic/zfast/review2/py/bat2_run.py", line 10, in <module>
+    pts = json.load(open(f'{R}/data/bat2_points.json'))
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/Users/kiosk/atlas_mark2/diagnostic/zfast/review2/data/bat2_points.json'
+Traceback (most recent call last):
+  File "/Users/kiosk/atlas_mark2/diagnostic/zfast/review2/py/bat2_run.py", line 10, in <module>
+    pts = json.load(open(f'{R}/data/bat2_points.json'))
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/Users/kiosk/atlas_mark2/diagnostic/zfast/review2/data/bat2_points.json'
+Traceback (most recent call last):
+  File "/Users/kiosk/atlas_mark2/diagnostic/zfast/review2/py/bat2_run.py", line 10, in <module>
+    pts = json.load(open(f'{R}/data/bat2_points.json'))
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/Users/kiosk/atlas_mark2/diagnostic/zfast/review2/data/bat2_points.json'
+Traceback (most recent call last):
+  File "/Users/kiosk/atlas_mark2/diagnostic/zfast/review2/py/bat2_run.py", line 10, in <module>
+    pts = json.load(open(f'{R}/data/bat2_points.json'))
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/Users/kiosk/atlas_mark2/diagnostic/zfast/review2/data/bat2_points.json'
+Traceback (most recent call last):
+  File "/Users/kiosk/atlas_mark2/diagnostic/zfast/review2/py/bat2_run.py", line 10, in <module>
+    pts = json.load(open(f'{R}/data/bat2_points.json'))
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/Users/kiosk/atlas_mark2/diagnostic/zfast/review2/data/bat2_points.json'

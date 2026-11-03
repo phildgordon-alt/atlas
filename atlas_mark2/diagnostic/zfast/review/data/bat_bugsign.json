@@ -1,0 +1,100 @@
+{
+"build": "bugsign",
+"families": [
+{
+"family": "K",
+"n": 60000,
+"max_err": 1.7343076621607935e-16,
+"E_c": 4.88e-16,
+"pass_": true,
+"fails": 0,
+"max_ratio": 0.35539091437721176
+},
+{
+"family": "P",
+"n": 7,
+"fails": 0,
+"pass_": true,
+"max_ratio": 0.9998915331475993,
+"first_fail": null
+},
+{
+"family": "Zp",
+"n": 36,
+"fails": 26,
+"pass_": false,
+"max_ratio": 7645415551.104194,
+"first_fail": {
+"T0": 10000000000,
+"u": 0.5545090606235941,
+"cls": "rand",
+"ok": false,
+"ratio": 4329415647.250472
+}
+},
+{
+"family": "Sp",
+"n": 36,
+"fails": 26,
+"pass_": false,
+"max_ratio": 3558058776.2426744,
+"first_fail": {
+"T0": 10000000000,
+"u": 0.5545090606235941,
+"cls": "rand",
+"ok": false,
+"ratio": 2164707823.6254263
+}
+},
+{
+"family": "Zs",
+"n": 54,
+"fails": 24,
+"pass_": false,
+"max_ratio": 5286258756.030344,
+"first_fail": {
+"T0": 1001,
+"u": 0.6229016948897019,
+"cls": "small",
+"var": "kcorr2",
+"ok": false,
+"ratio": 747.6544259376442
+}
+},
+{
+"family": "Ss",
+"n": 36,
+"fails": 15,
+"pass_": false,
+"max_ratio": 122111978.86502422,
+"first_fail": {
+"T0": 10000000000,
+"u": 0.5545090606235941,
+"cls": "rand",
+"var": [
+5,
+0.6
+],
+"ok": false,
+"ratio": 143.91728829644188
+}
+},
+{
+"family": "Rp",
+"n": 36,
+"fails": 36,
+"pass_": false,
+"max_ratio": 1000253632.8426851,
+"first_fail": {
+"T0": 10000000000,
+"u": -0.8231058039333381,
+"cls": "row",
+"a": 2.8,
+"kind": "sess",
+"ok": false,
+"ratio": 796280342.2623805
+}
+}
+],
+"detected": true
+}

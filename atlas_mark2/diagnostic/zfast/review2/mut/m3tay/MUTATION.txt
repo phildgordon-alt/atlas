@@ -1,0 +1,5 @@
+file: zfast_m3b.inc
+--- old
+        mag_mul(q, q, fac); mag_mul(q, q, ex); mag_mul(q, q, S->V + j * S->nb + b);
++++ new
+        mag_mul(q, q, fac); mag_mul(q, q, ex); mag_mul(q, q, S->V + j * S->nb + b); mag_div_ui(q, q, 10);

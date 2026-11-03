@@ -1,0 +1,76 @@
+{
+"build": "bugquad",
+"families": [
+{
+"family": "K",
+"n": 60000,
+"max_err": 1.7343076621607935e-16,
+"E_c": 4.88e-16,
+"pass_": true,
+"fails": 0,
+"max_ratio": 0.35539091437721176
+},
+{
+"family": "P",
+"n": 7,
+"fails": 0,
+"pass_": true,
+"max_ratio": 0.9998915331475993,
+"first_fail": null
+},
+{
+"family": "Zp",
+"n": 36,
+"fails": 36,
+"pass_": false,
+"max_ratio": 1743814290592.4106,
+"first_fail": {
+"T0": 10000000000,
+"u": 0.5545090606235941,
+"cls": "rand",
+"ok": false,
+"ratio": 878923404043.3983
+}
+},
+{
+"family": "Sp",
+"n": 36,
+"fails": 0,
+"pass_": true,
+"max_ratio": 8.363795083519161e-05,
+"first_fail": null
+},
+{
+"family": "Zs",
+"n": 54,
+"fails": 30,
+"pass_": false,
+"max_ratio": 1591132854746.2012,
+"first_fail": {
+"T0": 100000,
+"u": 0.46906904778216374,
+"cls": "small",
+"var": "kcorr2",
+"ok": false,
+"ratio": 14.804398698773017
+}
+},
+{
+"family": "Ss",
+"n": 36,
+"fails": 0,
+"pass_": true,
+"max_ratio": 0.003112535883449937,
+"first_fail": null
+},
+{
+"family": "Rp",
+"n": 36,
+"fails": 0,
+"pass_": true,
+"max_ratio": 0.00016654181779959272,
+"first_fail": null
+}
+],
+"detected": true
+}

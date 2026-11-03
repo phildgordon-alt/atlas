@@ -1,0 +1,5 @@
+{"stage": "start", "args": {"T0": 100000000000000, "tlo": "100000000000000", "thi": "100000000000002", "grid": "v5", "evaluator": "dirichlet", "zs_refine": 0.0001, "name": "z_1e14", "pw": 1.0, "wm": 2.0, "zs_step": 0.005, "gen_timeout": 21600.0}, "lim_gb": 2.5, "lib_sha": {"gen_target5.py": "780bcc8
+{"stage": "pieces", "hull": [0.0, 2.0], "n": 2, "t": 0.0}
+{"stage": "generator", "rc": 0, "killed": null, "peak_gb": 0.198, "seconds": 5.45, "t": 5.46}
+{"stage": "replay_target", "rc": 0, "killed": null, "peak_gb": 0.032, "seconds": 3.55, "t": 9.0}
+{"stage": "done", "all_closed": true, "wall_seconds": 9.0, "peak_gb": 0.198, "t": 9.0}

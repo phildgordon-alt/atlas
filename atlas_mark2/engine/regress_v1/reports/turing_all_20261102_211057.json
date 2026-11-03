@@ -1,0 +1,1222 @@
+{
+ "check": "Turing count-equality over every closed zfast window",
+ "windows": 52,
+ "gated": 50,
+ "with_turing_record": 43,
+ "passed": 43,
+ "no_record": [
+  "atlas_v5:w10000000.00/t4v4_10000000",
+  "atlas_v5:w663310.00/t2_663318",
+  "atlas_v5:w6820046.00/rosser",
+  "atlas_v5:w7000.00/c7002",
+  "atlas_v5:w7000.00/lehmer",
+  "atlas_v5:w7000.00/lehmer_full_pair",
+  "atlas_v5:w9000.00/v1_9000"
+ ],
+ "results": [
+  {
+   "run": "/Users/kiosk/atlas_mark2/diagnostic/atlas_v5/runs/w10000000.00/t4v4_10000000",
+   "T0": "10000000",
+   "target": [
+    "0",
+    "2"
+   ],
+   "turing_record": null,
+   "N_lo": null,
+   "N_hi": null,
+   "U_minus_L": [
+    null,
+    null
+   ],
+   "turing_count": null,
+   "certified_sign_changes": 5,
+   "straddling": [],
+   "fails": [
+    "G-T1/G-T2: no scan_turing5 record with T0 and both target ends"
+   ],
+   "ok": false,
+   "id": "atlas_v5:w10000000.00/t4v4_10000000"
+  },
+  {
+   "run": "/Users/kiosk/atlas_mark2/diagnostic/atlas_v5/runs/w1000000000000/big_1e12",
+   "T0": "1000000000000",
+   "target": [
+    "0",
+    "2"
+   ],
+   "turing_record": [
+    "/Users/kiosk/atlas_mark2/diagnostic/zfast/runs/m8/fresh/s5_1e12/scan_turing.json",
+    "898bf5c506fea8f97a75c19b684f32901b98de97e1d00c250f473fca0618b2da"
+   ],
+   "N_lo": 3945951430271,
+   "N_hi": 3945951430279,
+   "U_minus_L": [
+    0.2991934696335736,
+    0.2781934696463189
+   ],
+   "turing_count": 8,
+   "certified_sign_changes": 8,
+   "straddling": [],
+   "fails": [],
+   "ok": true,
+   "id": "atlas_v5:w1000000000000/big_1e12"
+  },
+  {
+   "run": "/Users/kiosk/atlas_mark2/diagnostic/atlas_v5/runs/w10000000000000/big_1e13",
+   "T0": "10000000000000",
+   "target": [
+    "0",
+    "2"
+   ],
+   "turing_record": [
+    "/Users/kiosk/atlas_mark2/diagnostic/zfast/runs/m8/fresh/s5_10000000000000_c1/scan_turing.json",
+    "898bf5c506fea8f97a75c19b684f32901b98de97e1d00c250f473fca0618b2da"
+   ],
+   "N_lo": 43124192297102,
+   "N_hi": 43124192297111,
+   "U_minus_L": [
+    0.3129419918171763,
+    0.2991419918184503
+   ],
+   "turing_count": 9,
+   "certified_sign_changes": 9,
+   "straddling": [],
+   "fails": [],
+   "ok": true,
+   "id": "atlas_v5:w10000000000000/big_1e13"
+  },
+  {
+   "run": "/Users/kiosk/atlas_mark2/diagnostic/atlas_v5/runs/w100000000000000/big_1e14",
+   "T0": "100000000000000",
+   "target": [
+    "0",
+    "2"
+   ],
+   "turing_record": [
+    "/Users/kiosk/atlas_mark2/diagnostic/zfast/runs/m8/fresh/s5_100000000000000_c1/scan_turing.json",
+    "898bf5c506fea8f97a75c19b684f32901b98de97e1d00c250f473fca0618b2da"
+   ],
+   "N_lo": 467888702914983,
+   "N_hi": 467888702914992,
+   "U_minus_L": [
+    0.3201905140008817,
+    0.3362905140010091
+   ],
+   "turing_count": 9,
+   "certified_sign_changes": 9,
+   "straddling": [],
+   "fails": [],
+   "ok": true,
+   "id": "atlas_v5:w100000000000000/big_1e14"
+  },
+  {
+   "run": "/Users/kiosk/atlas_mark2/diagnostic/atlas_v5/runs/w663310.00/t2_663318",
+   "T0": "663310",
+   "target": [
+    "72155450573/8589934592",
+    "73873437491/8589934592"
+   ],
+   "turing_record": null,
+   "N_lo": null,
+   "N_hi": null,
+   "U_minus_L": [
+    null,
+    null
+   ],
+   "turing_count": null,
+   "certified_sign_changes": 2,
+   "straddling": [],
+   "fails": [
+    "G-T1/G-T2: no scan_turing5 record with T0 and both target ends"
+   ],
+   "ok": false,
+   "id": "atlas_v5:w663310.00/t2_663318"
+  },
+  {
+   "run": "/Users/kiosk/atlas_mark2/diagnostic/atlas_v5/runs/w6820046.00/rosser",
+   "T0": "6820046",
+   "target": [
+    "1336808571/268435456",
+    "3301756109/536870912"
+   ],
+   "turing_record": null,
+   "N_lo": null,
+   "N_hi": null,
+   "U_minus_L": [
+    null,
+    null
+   ],
+   "turing_count": null,
+   "certified_sign_changes": 3,
+   "straddling": [],
+   "fails": [
+    "G-T1/G-T2: no scan_turing5 record with T0 and both target ends"
+   ],
+   "ok": false,
+   "id": "atlas_v5:w6820046.00/rosser"
+  },
+  {
+   "run": "/Users/kiosk/atlas_mark2/diagnostic/atlas_v5/runs/w7000.00/c7002",
+   "T0": "7000",
+   "target": [
+    "681697209221/274877906944",
+    "1368891976581/549755813888"
+   ],
+   "turing_record": null,
+   "N_lo": null,
+   "N_hi": null,
+   "U_minus_L": [
+    null,
+    null
+   ],
+   "turing_count": null,
+   "certified_sign_changes": 0,
+   "straddling": [],
+   "fails": [
+    "G-T1/G-T2: no scan_turing5 record with T0 and both target ends"
+   ],
+   "ok": false,
+   "id": "atlas_v5:w7000.00/c7002"
+  },
+  {
+   "run": "/Users/kiosk/atlas_mark2/diagnostic/atlas_v5/runs/w7000.00/lehmer",
+   "T0": "7000",
+   "target": [
+    "5563528836547/1099511627776",
+    "2803754650829/549755813888"
+   ],
+   "turing_record": null,
+   "N_lo": null,
+   "N_hi": null,
+   "U_minus_L": [
+    null,
+    null
+   ],
+   "turing_count": null,
+   "certified_sign_changes": 1,
+   "straddling": [],
+   "fails": [
+    "G-T1/G-T2: no scan_turing5 record with T0 and both target ends"
+   ],
+   "ok": false,
+   "id": "atlas_v5:w7000.00/lehmer"
+  },
+  {
+   "run": "/Users/kiosk/atlas_mark2/diagnostic/atlas_v5/runs/w7000.00/lehmer_full_pair",
+   "T0": "7000",
+   "target": [
+    "5",
+    "5717460464435/1099511627776"
+   ],
+   "turing_record": null,
+   "N_lo": null,
+   "N_hi": null,
+   "U_minus_L": [
+    null,
+    null
+   ],
+   "turing_count": null,
+   "certified_sign_changes": 2,
+   "straddling": [],
+   "fails": [
+    "G-T1/G-T2: no scan_turing5 record with T0 and both target ends"
+   ],
+   "ok": false,
+   "id": "atlas_v5:w7000.00/lehmer_full_pair"
+  },
+  {
+   "run": "/Users/kiosk/atlas_mark2/diagnostic/atlas_v5/runs/w9000.00/v1_9000",
+   "T0": "9000",
+   "target": [
+    "0",
+    "10"
+   ],
+   "turing_record": null,
+   "N_lo": null,
+   "N_hi": null,
+   "U_minus_L": [
+    null,
+    null
+   ],
+   "turing_count": null,
+   "certified_sign_changes": 11,
+   "straddling": [],
+   "fails": [
+    "G-T1/G-T2: no scan_turing5 record with T0 and both target ends"
+   ],
+   "ok": false,
+   "id": "atlas_v5:w9000.00/v1_9000"
+  },
+  {
+   "run": "/Users/kiosk/atlas_mark2/diagnostic/record_heights/v5run/runs/w1000000000000000/big_1e15",
+   "T0": "1000000000000000",
+   "target": [
+    "0",
+    "2"
+   ],
+   "turing_record": [
+    "/Users/kiosk/atlas_mark2/diagnostic/zfast/runs/m8/fresh/s5_1000000000000000_c1/scan_turing.json",
+    "898bf5c506fea8f97a75c19b684f32901b98de97e1d00c250f473fca0618b2da"
+   ],
+   "N_lo": 5045354828589535,
+   "N_hi": 5045354828589545,
+   "U_minus_L": [
+    0.3669390361845959,
+    0.3814390361846084
+   ],
+   "turing_count": 10,
+   "certified_sign_changes": 10,
+   "straddling": [],
+   "fails": [],
+   "ok": true,
+   "id": "record_heights:w1000000000000000/big_1e15"
+  },
+  {
+   "run": "/Users/kiosk/atlas_mark2/diagnostic/record_heights/v5run/runs/w1000000000000000/pair_1e15_286",
+   "T0": "1000000000000000",
+   "target": [
+    "286",
+    "288"
+   ],
+   "turing_record": [
+    "/Users/kiosk/atlas_mark2/diagnostic/zfast/runs/m8/fresh/s5_1000000000000000_c287/scan_turing.json",
+    "898bf5c506fea8f97a75c19b684f32901b98de97e1d00c250f473fca0618b2da"
+   ],
+   "N_lo": 5045354828591023,
+   "N_hi": 5045354828591033,
+   "U_minus_L": [
+    0.3302390361864318,
+    0.3389390361864427
+   ],
+   "turing_count": 10,
+   "certified_sign_changes": 10,
+   "straddling": [],
+   "fails": [],
+   "ok": true,
+   "id": "record_heights:w1000000000000000/pair_1e15_286"
+  },
+  {
+   "run": "/Users/kiosk/atlas_mark2/diagnostic/record_heights/v5run/runs/w10000000000000000/big_1e16",
+   "T0": "10000000000000000",
+   "target": [
+    "0",
+    "2"
+   ],
+   "turing_record": [
+    "/Users/kiosk/atlas_mark2/diagnostic/zfast/runs/m8/fresh/s5_10000000000000000_c1/scan_turing.json",
+    "898bf5c506fea8f97a75c19b684f32901b98de97e1d00c250f473fca0618b2da"
+   ],
+   "N_lo": 54118226280292478,
+   "N_hi": 54118226280292488,
+   "U_minus_L": [
+    0.40328755836831537,
+    0.3808875583683161
+   ],
+   "turing_count": 10,
+   "certified_sign_changes": 10,
+   "straddling": [],
+   "fails": [],
+   "ok": true,
+   "id": "record_heights:w10000000000000000/big_1e16"
+  },
+  {
+   "run": "/Users/kiosk/atlas_mark2/diagnostic/zfast/atlas_v5z/runs/w1000000000000/z_1e12",
+   "T0": "1000000000000",
+   "target": [
+    "0",
+    "2"
+   ],
+   "turing_record": [
+    "/Users/kiosk/atlas_mark2/diagnostic/zfast/runs/m8/fresh/s5_1e12/scan_turing.json",
+    "898bf5c506fea8f97a75c19b684f32901b98de97e1d00c250f473fca0618b2da"
+   ],
+   "N_lo": 3945951430271,
+   "N_hi": 3945951430279,
+   "U_minus_L": [
+    0.2991934696335736,
+    0.2781934696463189
+   ],
+   "turing_count": 8,
+   "certified_sign_changes": 8,
+   "straddling": [],
+   "fails": [],
+   "ok": true,
+   "id": "atlas_v5z:w1000000000000/z_1e12"
+  },
+  {
+   "run": "/Users/kiosk/atlas_mark2/diagnostic/zfast/atlas_v5z/runs/w10000000000000/z_1e13",
+   "T0": "10000000000000",
+   "target": [
+    "0",
+    "2"
+   ],
+   "turing_record": [
+    "/Users/kiosk/atlas_mark2/diagnostic/zfast/runs/m8/fresh/s5_10000000000000_c1/scan_turing.json",
+    "898bf5c506fea8f97a75c19b684f32901b98de97e1d00c250f473fca0618b2da"
+   ],
+   "N_lo": 43124192297102,
+   "N_hi": 43124192297111,
+   "U_minus_L": [
+    0.3129419918171763,
+    0.2991419918184503
+   ],
+   "turing_count": 9,
+   "certified_sign_changes": 9,
+   "straddling": [],
+   "fails": [],
+   "ok": true,
+   "id": "atlas_v5z:w10000000000000/z_1e13"
+  },
+  {
+   "run": "/Users/kiosk/atlas_mark2/diagnostic/zfast/atlas_v5z/runs/w100000000000000/z_1e14",
+   "T0": "100000000000000",
+   "target": [
+    "0",
+    "2"
+   ],
+   "turing_record": [
+    "/Users/kiosk/atlas_mark2/diagnostic/zfast/runs/m8/fresh/s5_100000000000000_c1/scan_turing.json",
+    "898bf5c506fea8f97a75c19b684f32901b98de97e1d00c250f473fca0618b2da"
+   ],
+   "N_lo": 467888702914983,
+   "N_hi": 467888702914992,
+   "U_minus_L": [
+    0.3201905140008817,
+    0.3362905140010091
+   ],
+   "turing_count": 9,
+   "certified_sign_changes": 9,
+   "straddling": [],
+   "fails": [],
+   "ok": true,
+   "id": "atlas_v5z:w100000000000000/z_1e14"
+  },
+  {
+   "run": "/Users/kiosk/atlas_mark2/diagnostic/zfast/atlas_v5z/runs/w1000000000000000/z_1e15",
+   "T0": "1000000000000000",
+   "target": [
+    "0",
+    "2"
+   ],
+   "turing_record": [
+    "/Users/kiosk/atlas_mark2/diagnostic/zfast/runs/m8/fresh/s5_1000000000000000_c1/scan_turing.json",
+    "898bf5c506fea8f97a75c19b684f32901b98de97e1d00c250f473fca0618b2da"
+   ],
+   "N_lo": 5045354828589535,
+   "N_hi": 5045354828589545,
+   "U_minus_L": [
+    0.3669390361845959,
+    0.3814390361846084
+   ],
+   "turing_count": 10,
+   "certified_sign_changes": 10,
+   "straddling": [],
+   "fails": [],
+   "ok": true,
+   "id": "atlas_v5z:w1000000000000000/z_1e15"
+  },
+  {
+   "run": "/Users/kiosk/atlas_mark2/diagnostic/zfast/atlas_v5z/runs/w1000000000000000/z_pair_1e15_286",
+   "T0": "1000000000000000",
+   "target": [
+    "286",
+    "288"
+   ],
+   "turing_record": [
+    "/Users/kiosk/atlas_mark2/diagnostic/zfast/runs/m8/fresh/s5_1000000000000000_c287/scan_turing.json",
+    "898bf5c506fea8f97a75c19b684f32901b98de97e1d00c250f473fca0618b2da"
+   ],
+   "N_lo": 5045354828591023,
+   "N_hi": 5045354828591033,
+   "U_minus_L": [
+    0.3302390361864318,
+    0.3389390361864427
+   ],
+   "turing_count": 10,
+   "certified_sign_changes": 10,
+   "straddling": [],
+   "fails": [],
+   "ok": true,
+   "id": "atlas_v5z:w1000000000000000/z_pair_1e15_286"
+  },
+  {
+   "run": "/Users/kiosk/atlas_mark2/diagnostic/zfast/atlas_v5z/runs/w10000000000000000/z_1e16",
+   "T0": "10000000000000000",
+   "target": [
+    "0",
+    "2"
+   ],
+   "turing_record": [
+    "/Users/kiosk/atlas_mark2/diagnostic/zfast/runs/m8/fresh/s5_10000000000000000_c1/scan_turing.json",
+    "898bf5c506fea8f97a75c19b684f32901b98de97e1d00c250f473fca0618b2da"
+   ],
+   "N_lo": 54118226280292478,
+   "N_hi": 54118226280292488,
+   "U_minus_L": [
+    0.40328755836831537,
+    0.3808875583683161
+   ],
+   "turing_count": 10,
+   "certified_sign_changes": 10,
+   "straddling": [],
+   "fails": [],
+   "ok": true,
+   "id": "atlas_v5z:w10000000000000000/z_1e16"
+  },
+  {
+   "run": "/Users/kiosk/atlas_mark2/diagnostic/zfast/atlas_v5z/runs/w100000000000000000/z_1e17",
+   "T0": "100000000000000000",
+   "target": [
+    "0",
+    "2"
+   ],
+   "turing_record": [
+    "/Users/kiosk/atlas_mark2/diagnostic/zfast/runs/m8/fresh/s5_100000000000000000_c1/scan_turing.json",
+    "898bf5c506fea8f97a75c19b684f32901b98de97e1d00c250f473fca0618b2da"
+   ],
+   "N_lo": 577829042746896155,
+   "N_hi": 577829042746896166,
+   "U_minus_L": [
+    0.3687360805520353,
+    0.40563608055203587
+   ],
+   "turing_count": 11,
+   "certified_sign_changes": 11,
+   "straddling": [],
+   "fails": [],
+   "ok": true,
+   "id": "atlas_v5z:w100000000000000000/z_1e17"
+  },
+  {
+   "run": "/Users/kiosk/atlas_mark2/diagnostic/zfast/atlas_v5z/runs/w1000000000000000000/z_1e18",
+   "T0": "1000000000000000000",
+   "target": [
+    "0",
+    "2"
+   ],
+   "turing_record": [
+    "/Users/kiosk/atlas_mark2/diagnostic/zfast/runs/m8/fresh/s5_1000000000000000000_c1/scan_turing.json",
+    "898bf5c506fea8f97a75c19b684f32901b98de97e1d00c250f473fca0618b2da"
+   ],
+   "N_lo": 6144758226908675409,
+   "N_hi": 6144758226908675420,
+   "U_minus_L": [
+    0.37898460273574863,
+    0.4383846027357489
+   ],
+   "turing_count": 11,
+   "certified_sign_changes": 11,
+   "straddling": [],
+   "fails": [],
+   "ok": true,
+   "id": "atlas_v5z:w1000000000000000000/z_1e18"
+  },
+  {
+   "run": "/Users/kiosk/atlas_mark2/diagnostic/zfast/atlas_v5z2/runs/w1000000000000/y_1e12",
+   "T0": "1000000000000",
+   "target": [
+    "0",
+    "2"
+   ],
+   "turing_record": [
+    "/Users/kiosk/atlas_mark2/diagnostic/zfast/runs/m8/fresh/s5_1e12/scan_turing.json",
+    "898bf5c506fea8f97a75c19b684f32901b98de97e1d00c250f473fca0618b2da"
+   ],
+   "N_lo": 3945951430271,
+   "N_hi": 3945951430279,
+   "U_minus_L": [
+    0.2991934696335736,
+    0.2781934696463189
+   ],
+   "turing_count": 8,
+   "certified_sign_changes": 8,
+   "straddling": [],
+   "fails": [],
+   "ok": true,
+   "id": "atlas_v5z2:w1000000000000/y_1e12"
+  },
+  {
+   "run": "/Users/kiosk/atlas_mark2/diagnostic/zfast/atlas_v5z2/runs/w10000000000000/y_1e13",
+   "T0": "10000000000000",
+   "target": [
+    "0",
+    "2"
+   ],
+   "turing_record": [
+    "/Users/kiosk/atlas_mark2/diagnostic/zfast/runs/m8/fresh/s5_10000000000000_c1/scan_turing.json",
+    "898bf5c506fea8f97a75c19b684f32901b98de97e1d00c250f473fca0618b2da"
+   ],
+   "N_lo": 43124192297102,
+   "N_hi": 43124192297111,
+   "U_minus_L": [
+    0.3129419918171763,
+    0.2991419918184503
+   ],
+   "turing_count": 9,
+   "certified_sign_changes": 9,
+   "straddling": [],
+   "fails": [],
+   "ok": true,
+   "id": "atlas_v5z2:w10000000000000/y_1e13"
+  },
+  {
+   "run": "/Users/kiosk/atlas_mark2/diagnostic/zfast/atlas_v5z2/runs/w100000000000000/y_1e14",
+   "T0": "100000000000000",
+   "target": [
+    "0",
+    "2"
+   ],
+   "turing_record": [
+    "/Users/kiosk/atlas_mark2/diagnostic/zfast/runs/m8/fresh/s5_100000000000000_c1/scan_turing.json",
+    "898bf5c506fea8f97a75c19b684f32901b98de97e1d00c250f473fca0618b2da"
+   ],
+   "N_lo": 467888702914983,
+   "N_hi": 467888702914992,
+   "U_minus_L": [
+    0.3201905140008817,
+    0.3362905140010091
+   ],
+   "turing_count": 9,
+   "certified_sign_changes": 9,
+   "straddling": [],
+   "fails": [],
+   "ok": true,
+   "id": "atlas_v5z2:w100000000000000/y_1e14"
+  },
+  {
+   "run": "/Users/kiosk/atlas_mark2/diagnostic/zfast/atlas_v5z2/runs/w1000000000000000/y_1e15",
+   "T0": "1000000000000000",
+   "target": [
+    "0",
+    "2"
+   ],
+   "turing_record": [
+    "/Users/kiosk/atlas_mark2/diagnostic/zfast/runs/m8/fresh/s5_1000000000000000_c1/scan_turing.json",
+    "898bf5c506fea8f97a75c19b684f32901b98de97e1d00c250f473fca0618b2da"
+   ],
+   "N_lo": 5045354828589535,
+   "N_hi": 5045354828589545,
+   "U_minus_L": [
+    0.3669390361845959,
+    0.3814390361846084
+   ],
+   "turing_count": 10,
+   "certified_sign_changes": 10,
+   "straddling": [],
+   "fails": [],
+   "ok": true,
+   "id": "atlas_v5z2:w1000000000000000/y_1e15"
+  },
+  {
+   "run": "/Users/kiosk/atlas_mark2/diagnostic/zfast/atlas_v5z2/runs/w1000000000000000/y_pair_1e15_286",
+   "T0": "1000000000000000",
+   "target": [
+    "286",
+    "288"
+   ],
+   "turing_record": [
+    "/Users/kiosk/atlas_mark2/diagnostic/zfast/runs/m8/fresh/s5_1000000000000000_c287/scan_turing.json",
+    "898bf5c506fea8f97a75c19b684f32901b98de97e1d00c250f473fca0618b2da"
+   ],
+   "N_lo": 5045354828591023,
+   "N_hi": 5045354828591033,
+   "U_minus_L": [
+    0.3302390361864318,
+    0.3389390361864427
+   ],
+   "turing_count": 10,
+   "certified_sign_changes": 10,
+   "straddling": [],
+   "fails": [],
+   "ok": true,
+   "id": "atlas_v5z2:w1000000000000000/y_pair_1e15_286"
+  },
+  {
+   "run": "/Users/kiosk/atlas_mark2/diagnostic/zfast/atlas_v5z2/runs/w10000000000000000/y_1e16",
+   "T0": "10000000000000000",
+   "target": [
+    "0",
+    "2"
+   ],
+   "turing_record": [
+    "/Users/kiosk/atlas_mark2/diagnostic/zfast/runs/m8/fresh/s5_10000000000000000_c1/scan_turing.json",
+    "898bf5c506fea8f97a75c19b684f32901b98de97e1d00c250f473fca0618b2da"
+   ],
+   "N_lo": 54118226280292478,
+   "N_hi": 54118226280292488,
+   "U_minus_L": [
+    0.40328755836831537,
+    0.3808875583683161
+   ],
+   "turing_count": 10,
+   "certified_sign_changes": 10,
+   "straddling": [],
+   "fails": [],
+   "ok": true,
+   "id": "atlas_v5z2:w10000000000000000/y_1e16"
+  },
+  {
+   "run": "/Users/kiosk/atlas_mark2/diagnostic/zfast/atlas_v5z2/runs/w100000000000000000/y_1e17",
+   "T0": "100000000000000000",
+   "target": [
+    "0",
+    "2"
+   ],
+   "turing_record": [
+    "/Users/kiosk/atlas_mark2/diagnostic/zfast/runs/m8/fresh/s5_100000000000000000_c1/scan_turing.json",
+    "898bf5c506fea8f97a75c19b684f32901b98de97e1d00c250f473fca0618b2da"
+   ],
+   "N_lo": 577829042746896155,
+   "N_hi": 577829042746896166,
+   "U_minus_L": [
+    0.3687360805520353,
+    0.40563608055203587
+   ],
+   "turing_count": 11,
+   "certified_sign_changes": 11,
+   "straddling": [],
+   "fails": [],
+   "ok": true,
+   "id": "atlas_v5z2:w100000000000000000/y_1e17"
+  },
+  {
+   "run": "/Users/kiosk/atlas_mark2/diagnostic/zfast/atlas_v5z2/runs/w1000000000000000000/y_1e18",
+   "T0": "1000000000000000000",
+   "target": [
+    "0",
+    "2"
+   ],
+   "turing_record": [
+    "/Users/kiosk/atlas_mark2/diagnostic/zfast/runs/m8/fresh/s5_1000000000000000000_c1/scan_turing.json",
+    "898bf5c506fea8f97a75c19b684f32901b98de97e1d00c250f473fca0618b2da"
+   ],
+   "N_lo": 6144758226908675409,
+   "N_hi": 6144758226908675420,
+   "U_minus_L": [
+    0.37898460273574863,
+    0.4383846027357489
+   ],
+   "turing_count": 11,
+   "certified_sign_changes": 11,
+   "straddling": [],
+   "fails": [],
+   "ok": true,
+   "id": "atlas_v5z2:w1000000000000000000/y_1e18"
+  },
+  {
+   "run": "/Users/kiosk/atlas_mark2/diagnostic/zfast/atlas_v5z2/runs/w100000000000000000000/h_1e20",
+   "T0": "100000000000000000000",
+   "target": [
+    "0",
+    "2"
+   ],
+   "turing_record": [
+    "/Users/kiosk/atlas_mark2/diagnostic/zfast/runs/m8/turing5_recount/scan2_1e20_scan_turing__scan2_1e20_DT40.json",
+    "898bf5c506fea8f97a75c19b684f32901b98de97e1d00c250f473fca0618b2da"
+   ],
+   "N_lo": 687769382578810314775,
+   "N_hi": 687769382578810314788,
+   "U_minus_L": [
+    0.442581647103183,
+    0.4693816471031838
+   ],
+   "turing_count": 13,
+   "certified_sign_changes": 13,
+   "straddling": [],
+   "fails": [],
+   "ok": true,
+   "id": "atlas_v5z2:w100000000000000000000/h_1e20"
+  },
+  {
+   "run": "/Users/kiosk/atlas_mark2/diagnostic/zfast/atlas_v5z2/runs/w100000000000000000000/hp_1e20",
+   "T0": "100000000000000000000",
+   "target": [
+    "4",
+    "6"
+   ],
+   "turing_record": [
+    "/Users/kiosk/atlas_mark2/diagnostic/zfast/runs/m8/turing5_recount/scan2_1e20_scan_turing__scan2_1e20_DT40.json",
+    "898bf5c506fea8f97a75c19b684f32901b98de97e1d00c250f473fca0618b2da"
+   ],
+   "N_lo": 687769382578810314803,
+   "N_hi": 687769382578810314817,
+   "U_minus_L": [
+    0.4383816471031846,
+    0.4073816471031837
+   ],
+   "turing_count": 14,
+   "certified_sign_changes": 14,
+   "straddling": [],
+   "fails": [],
+   "ok": true,
+   "id": "atlas_v5z2:w100000000000000000000/hp_1e20"
+  },
+  {
+   "run": "/Users/kiosk/atlas_mark2/diagnostic/zfast/atlas_v5z2/runs/w1000000000000000000000/h_1e21",
+   "T0": "1000000000000000000000",
+   "target": [
+    "0",
+    "2"
+   ],
+   "turing_record": [
+    "/Users/kiosk/atlas_mark2/diagnostic/zfast/runs/m8/turing5_recount/scan2_1e21_scan_turing__scan2_1e21_DT40.json",
+    "898bf5c506fea8f97a75c19b684f32901b98de97e1d00c250f473fca0618b2da"
+   ],
+   "N_lo": 7244161625227817018173,
+   "N_hi": 7244161625227817018188,
+   "U_minus_L": [
+    0.45833016928690096,
+    0.4279301692869009
+   ],
+   "turing_count": 15,
+   "certified_sign_changes": 15,
+   "straddling": [],
+   "fails": [],
+   "ok": true,
+   "id": "atlas_v5z2:w1000000000000000000000/h_1e21"
+  },
+  {
+   "run": "/Users/kiosk/atlas_mark2/diagnostic/zfast/atlas_v5z2/runs/w1000000000000000000000/hp_1e21",
+   "T0": "1000000000000000000000",
+   "target": [
+    "-6",
+    "-4"
+   ],
+   "turing_record": [
+    "/Users/kiosk/atlas_mark2/diagnostic/zfast/runs/m8/turing5_recount/scan2_1e21_scan_turing__scan2_1e21_DT40.json",
+    "898bf5c506fea8f97a75c19b684f32901b98de97e1d00c250f473fca0618b2da"
+   ],
+   "N_lo": 7244161625227817018129,
+   "N_hi": 7244161625227817018144,
+   "U_minus_L": [
+    0.43183016928690177,
+    0.4585301692869021
+   ],
+   "turing_count": 15,
+   "certified_sign_changes": 15,
+   "straddling": [],
+   "fails": [],
+   "ok": true,
+   "id": "atlas_v5z2:w1000000000000000000000/hp_1e21"
+  },
+  {
+   "run": "/Users/kiosk/atlas_mark2/diagnostic/zfast/atlas_v5z2/runs/w10000000000000000000000/h_1e22",
+   "T0": "10000000000000000000000",
+   "target": [
+    "0",
+    "2"
+   ],
+   "turing_record": [
+    "/Users/kiosk/atlas_mark2/diagnostic/zfast/runs/m8/turing5_recount/scan2_1e22_scan_turing__scan2_1e22_DT40.json",
+    "898bf5c506fea8f97a75c19b684f32901b98de97e1d00c250f473fca0618b2da"
+   ],
+   "N_lo": 76106294246675308886088,
+   "N_hi": 76106294246675308886104,
+   "U_minus_L": [
+    0.47427869147061774,
+    0.4450786914706174
+   ],
+   "turing_count": 16,
+   "certified_sign_changes": 16,
+   "straddling": [],
+   "fails": [],
+   "ok": true,
+   "id": "atlas_v5z2:w10000000000000000000000/h_1e22"
+  },
+  {
+   "run": "/Users/kiosk/atlas_mark2/diagnostic/zfast/atlas_v5z2/runs/w10000000000000000000000/hp_1e22",
+   "T0": "10000000000000000000000",
+   "target": [
+    "17",
+    "19"
+   ],
+   "turing_record": [
+    "/Users/kiosk/atlas_mark2/diagnostic/zfast/runs/m8/turing5_recount/scan2_1e22_scan_turing__scan2_1e22_DT40.json",
+    "898bf5c506fea8f97a75c19b684f32901b98de97e1d00c250f473fca0618b2da"
+   ],
+   "N_lo": 76106294246675308886220,
+   "N_hi": 76106294246675308886236,
+   "U_minus_L": [
+    0.49367869147061527,
+    0.45487869147061544
+   ],
+   "turing_count": 16,
+   "certified_sign_changes": 16,
+   "straddling": [],
+   "fails": [],
+   "ok": true,
+   "id": "atlas_v5z2:w10000000000000000000000/hp_1e22"
+  },
+  {
+   "run": "/Users/kiosk/atlas_mark2/diagnostic/zfast/atlas_v5z3/runs/w10000000000000000/x_1e16",
+   "T0": "10000000000000000",
+   "target": [
+    "0",
+    "2"
+   ],
+   "turing_record": [
+    "/Users/kiosk/atlas_mark2/diagnostic/zfast/runs/m8/fresh/s5_10000000000000000_c1/scan_turing.json",
+    "898bf5c506fea8f97a75c19b684f32901b98de97e1d00c250f473fca0618b2da"
+   ],
+   "N_lo": 54118226280292478,
+   "N_hi": 54118226280292488,
+   "U_minus_L": [
+    0.40328755836831537,
+    0.3808875583683161
+   ],
+   "turing_count": 10,
+   "certified_sign_changes": 10,
+   "straddling": [],
+   "fails": [],
+   "ok": true,
+   "id": "atlas_v5z3:w10000000000000000/x_1e16"
+  },
+  {
+   "run": "/Users/kiosk/atlas_mark2/diagnostic/zfast/atlas_v5z3/runs/w100000000000000000000/x_1e20",
+   "T0": "100000000000000000000",
+   "target": [
+    "0",
+    "2"
+   ],
+   "turing_record": [
+    "/Users/kiosk/atlas_mark2/diagnostic/zfast/runs/m8/turing5_recount/scan2_1e20_scan_turing__scan2_1e20_DT40.json",
+    "898bf5c506fea8f97a75c19b684f32901b98de97e1d00c250f473fca0618b2da"
+   ],
+   "N_lo": 687769382578810314775,
+   "N_hi": 687769382578810314788,
+   "U_minus_L": [
+    0.442581647103183,
+    0.4693816471031838
+   ],
+   "turing_count": 13,
+   "certified_sign_changes": 13,
+   "straddling": [],
+   "fails": [],
+   "ok": true,
+   "id": "atlas_v5z3:w100000000000000000000/x_1e20"
+  },
+  {
+   "run": "/Users/kiosk/atlas_mark2/diagnostic/zfast/atlas_v5z3/runs/w100000000000000000000/xp_1e20",
+   "T0": "100000000000000000000",
+   "target": [
+    "4",
+    "6"
+   ],
+   "turing_record": [
+    "/Users/kiosk/atlas_mark2/diagnostic/zfast/runs/m8/turing5_recount/scan2_1e20_scan_turing__scan2_1e20_DT40.json",
+    "898bf5c506fea8f97a75c19b684f32901b98de97e1d00c250f473fca0618b2da"
+   ],
+   "N_lo": 687769382578810314803,
+   "N_hi": 687769382578810314817,
+   "U_minus_L": [
+    0.4383816471031846,
+    0.4073816471031837
+   ],
+   "turing_count": 14,
+   "certified_sign_changes": 14,
+   "straddling": [],
+   "fails": [],
+   "ok": true,
+   "id": "atlas_v5z3:w100000000000000000000/xp_1e20"
+  },
+  {
+   "run": "/Users/kiosk/atlas_mark2/diagnostic/zfast/atlas_v5z3/runs/w1000000000000000000000/x_1e21",
+   "T0": "1000000000000000000000",
+   "target": [
+    "0",
+    "2"
+   ],
+   "turing_record": [
+    "/Users/kiosk/atlas_mark2/diagnostic/zfast/runs/m8/turing5_recount/scan2_1e21_scan_turing__scan2_1e21_DT40.json",
+    "898bf5c506fea8f97a75c19b684f32901b98de97e1d00c250f473fca0618b2da"
+   ],
+   "N_lo": 7244161625227817018173,
+   "N_hi": 7244161625227817018188,
+   "U_minus_L": [
+    0.45833016928690096,
+    0.4279301692869009
+   ],
+   "turing_count": 15,
+   "certified_sign_changes": 15,
+   "straddling": [],
+   "fails": [],
+   "ok": true,
+   "id": "atlas_v5z3:w1000000000000000000000/x_1e21"
+  },
+  {
+   "run": "/Users/kiosk/atlas_mark2/diagnostic/zfast/atlas_v5z3/runs/w1000000000000000000000/xp_1e21",
+   "T0": "1000000000000000000000",
+   "target": [
+    "-6",
+    "-4"
+   ],
+   "turing_record": [
+    "/Users/kiosk/atlas_mark2/diagnostic/zfast/runs/m8/turing5_recount/scan2_1e21_scan_turing__scan2_1e21_DT40.json",
+    "898bf5c506fea8f97a75c19b684f32901b98de97e1d00c250f473fca0618b2da"
+   ],
+   "N_lo": 7244161625227817018129,
+   "N_hi": 7244161625227817018144,
+   "U_minus_L": [
+    0.43183016928690177,
+    0.4585301692869021
+   ],
+   "turing_count": 15,
+   "certified_sign_changes": 15,
+   "straddling": [],
+   "fails": [],
+   "ok": true,
+   "id": "atlas_v5z3:w1000000000000000000000/xp_1e21"
+  },
+  {
+   "run": "/Users/kiosk/atlas_mark2/diagnostic/zfast/atlas_v5z3/runs/w10000000000000000000000/x_1e22",
+   "T0": "10000000000000000000000",
+   "target": [
+    "0",
+    "2"
+   ],
+   "turing_record": [
+    "/Users/kiosk/atlas_mark2/diagnostic/zfast/runs/m8/turing5_recount/scan2_1e22_scan_turing__scan2_1e22_DT40.json",
+    "898bf5c506fea8f97a75c19b684f32901b98de97e1d00c250f473fca0618b2da"
+   ],
+   "N_lo": 76106294246675308886088,
+   "N_hi": 76106294246675308886104,
+   "U_minus_L": [
+    0.47427869147061774,
+    0.4450786914706174
+   ],
+   "turing_count": 16,
+   "certified_sign_changes": 16,
+   "straddling": [],
+   "fails": [],
+   "ok": true,
+   "id": "atlas_v5z3:w10000000000000000000000/x_1e22"
+  },
+  {
+   "run": "/Users/kiosk/atlas_mark2/diagnostic/zfast/atlas_v5z3/runs/w10000000000000000000000/xp_1e22",
+   "T0": "10000000000000000000000",
+   "target": [
+    "17",
+    "19"
+   ],
+   "turing_record": [
+    "/Users/kiosk/atlas_mark2/diagnostic/zfast/runs/m8/turing5_recount/scan2_1e22_scan_turing__scan2_1e22_DT40.json",
+    "898bf5c506fea8f97a75c19b684f32901b98de97e1d00c250f473fca0618b2da"
+   ],
+   "N_lo": 76106294246675308886220,
+   "N_hi": 76106294246675308886236,
+   "U_minus_L": [
+    0.49367869147061527,
+    0.45487869147061544
+   ],
+   "turing_count": 16,
+   "certified_sign_changes": 16,
+   "straddling": [],
+   "fails": [],
+   "ok": true,
+   "id": "atlas_v5z3:w10000000000000000000000/xp_1e22"
+  },
+  {
+   "run": "atlas_v5z3:w100000000000000000000000/h_1e23",
+   "skipped": "not closed (failed-closed run; no claim)"
+  },
+  {
+   "run": "atlas_v5z3:w100000000000000000000000/hp_1e23",
+   "skipped": "not closed (failed-closed run; no claim)"
+  },
+  {
+   "run": "/Users/kiosk/atlas_mark2/diagnostic/zfast/atlas_v5z4/runs/w10000000000000000000000/w_1e22",
+   "T0": "10000000000000000000000",
+   "target": [
+    "0",
+    "2"
+   ],
+   "turing_record": [
+    "/Users/kiosk/atlas_mark2/diagnostic/zfast/runs/m8/turing5_recount/scan2_1e22_scan_turing__scan2_1e22_DT40.json",
+    "898bf5c506fea8f97a75c19b684f32901b98de97e1d00c250f473fca0618b2da"
+   ],
+   "N_lo": 76106294246675308886088,
+   "N_hi": 76106294246675308886104,
+   "U_minus_L": [
+    0.47427869147061774,
+    0.4450786914706174
+   ],
+   "turing_count": 16,
+   "certified_sign_changes": 16,
+   "straddling": [],
+   "fails": [],
+   "ok": true,
+   "id": "atlas_v5z4:w10000000000000000000000/w_1e22"
+  },
+  {
+   "run": "/Users/kiosk/atlas_mark2/diagnostic/zfast/atlas_v5z4/runs/w100000000000000000000000/w_1e23",
+   "T0": "100000000000000000000000",
+   "target": [
+    "0",
+    "2"
+   ],
+   "turing_record": [
+    "/Users/kiosk/atlas_mark2/diagnostic/zfast/runs/m8/turing5_recount/m6_turing_extra_1e23__scan2_1e23_DT40.json",
+    "898bf5c506fea8f97a75c19b684f32901b98de97e1d00c250f473fca0618b2da"
+   ],
+   "N_lo": 797709722410724475904516,
+   "N_hi": 797709722410724475904532,
+   "U_minus_L": [
+    0.5051272136543353,
+    0.5216272136543356
+   ],
+   "turing_count": 16,
+   "certified_sign_changes": 16,
+   "straddling": [],
+   "fails": [],
+   "ok": true,
+   "id": "atlas_v5z4:w100000000000000000000000/w_1e23"
+  },
+  {
+   "run": "/Users/kiosk/atlas_mark2/diagnostic/zfast/atlas_v5z4/runs/w100000000000000000000000/wp_1e23",
+   "T0": "100000000000000000000000",
+   "target": [
+    "2",
+    "4"
+   ],
+   "turing_record": [
+    "/Users/kiosk/atlas_mark2/diagnostic/zfast/runs/m8/turing5_recount/scan2_1e23_scan_turing__scan2_1e23_DT40.json",
+    "898bf5c506fea8f97a75c19b684f32901b98de97e1d00c250f473fca0618b2da"
+   ],
+   "N_lo": 797709722410724475904532,
+   "N_hi": 797709722410724475904548,
+   "U_minus_L": [
+    0.5216272136543356,
+    0.4750272136543355
+   ],
+   "turing_count": 16,
+   "certified_sign_changes": 16,
+   "straddling": [],
+   "fails": [],
+   "ok": true,
+   "id": "atlas_v5z4:w100000000000000000000000/wp_1e23"
+  },
+  {
+   "run": "/Users/kiosk/atlas_mark2/diagnostic/zfast/atlas_v5z4/runs/w100000000000000000000000/wq_1e23",
+   "T0": "100000000000000000000000",
+   "target": [
+    "-24",
+    "-22"
+   ],
+   "turing_record": [
+    "/Users/kiosk/atlas_mark2/diagnostic/zfast/runs/m8/turing5_recount/m6_turing_extra_1e23__scan2_1e23_DT40.json",
+    "898bf5c506fea8f97a75c19b684f32901b98de97e1d00c250f473fca0618b2da"
+   ],
+   "N_lo": 797709722410724475904320,
+   "N_hi": 797709722410724475904337,
+   "U_minus_L": [
+    0.526011936600966,
+    0.5084671174501986
+   ],
+   "turing_count": 17,
+   "certified_sign_changes": 17,
+   "straddling": [],
+   "fails": [],
+   "ok": true,
+   "id": "atlas_v5z4:w100000000000000000000000/wq_1e23"
+  },
+  {
+   "run": "/Users/kiosk/atlas_mark2/diagnostic/zfast/atlas_v5z4/runs/w100000000000000000000000/wr_1e23",
+   "T0": "100000000000000000000000",
+   "target": [
+    "-2",
+    "0"
+   ],
+   "turing_record": [
+    "/Users/kiosk/atlas_mark2/diagnostic/zfast/runs/m8/turing5_recount/m6_turing_extra_1e23__scan2_1e23_DT40.json",
+    "898bf5c506fea8f97a75c19b684f32901b98de97e1d00c250f473fca0618b2da"
+   ],
+   "N_lo": 797709722410724475904499,
+   "N_hi": 797709722410724475904516,
+   "U_minus_L": [
+    0.4614272136543359,
+    0.5051272136543353
+   ],
+   "turing_count": 17,
+   "certified_sign_changes": 17,
+   "straddling": [],
+   "fails": [],
+   "ok": true,
+   "id": "atlas_v5z4:w100000000000000000000000/wr_1e23"
+  },
+  {
+   "run": "/Users/kiosk/atlas_mark2/diagnostic/zfast/atlas_v5z4/runs/w1000000000000000000000000/w_1e24",
+   "T0": "1000000000000000000000000",
+   "target": [
+    "0",
+    "2"
+   ],
+   "turing_record": [
+    "/Users/kiosk/atlas_mark2/diagnostic/zfast/runs/m8/turing5_recount/scan3_1e24_scan_turing__scan3_1e24_DT40.json",
+    "898bf5c506fea8f97a75c19b684f32901b98de97e1d00c250f473fca0618b2da"
+   ],
+   "N_lo": 8343565023546958629481544,
+   "N_hi": 8343565023546958629481561,
+   "U_minus_L": [
+    0.5031757358380494,
+    0.4786757358380495
+   ],
+   "turing_count": 17,
+   "certified_sign_changes": 17,
+   "straddling": [],
+   "fails": [],
+   "ok": true,
+   "id": "atlas_v5z4:w1000000000000000000000000/w_1e24"
+  },
+  {
+   "run": "/Users/kiosk/atlas_mark2/diagnostic/zfast/atlas_v5z4/runs/w1000000000000000000000000/wp_1e24",
+   "T0": "1000000000000000000000000",
+   "target": [
+    "-3",
+    "-1"
+   ],
+   "turing_record": [
+    "/Users/kiosk/atlas_mark2/diagnostic/zfast/runs/m8/turing5_recount/scan3_1e24_scan_turing__scan3_1e24_DT40.json",
+    "898bf5c506fea8f97a75c19b684f32901b98de97e1d00c250f473fca0618b2da"
+   ],
+   "N_lo": 8343565023546958629481519,
+   "N_hi": 8343565023546958629481535,
+   "U_minus_L": [
+    0.5229757358380497,
+    0.5203757358380495
+   ],
+   "turing_count": 16,
+   "certified_sign_changes": 16,
+   "straddling": [],
+   "fails": [],
+   "ok": true,
+   "id": "atlas_v5z4:w1000000000000000000000000/wp_1e24"
+  },
+  {
+   "run": "/Users/kiosk/atlas_mark2/diagnostic/zfast/atlas_v5z5/runs/w10000000000000000000000/wide_1e22",
+   "T0": "10000000000000000000000",
+   "target": [
+    "0",
+    "100"
+   ],
+   "turing_record": [
+    "/Users/kiosk/atlas_mark2/diagnostic/zfast/runs/m8/turing5_recount/m7_turing2_1e22_D39__scan4_1e22_DT39.json",
+    "898bf5c506fea8f97a75c19b684f32901b98de97e1d00c250f473fca0618b2da"
+   ],
+   "N_lo": 76106294246675308886088,
+   "N_hi": 76106294246675308886865,
+   "U_minus_L": [
+    0.4763636565597429,
+    0.47656878476487313
+   ],
+   "turing_count": 777,
+   "certified_sign_changes": 777,
+   "straddling": [],
+   "fails": [],
+   "ok": true,
+   "id": "atlas_v5z5:w10000000000000000000000/wide_1e22"
+  }
+ ],
+ "ok": true,
+ "stamp": "20261102_211057",
+ "amendment": "PREREG_AMENDMENTS.md A6"
+}

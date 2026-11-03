@@ -1,0 +1,21 @@
+Copyright (c) 2026 Philip Gordon
+
+The data, certificates and documentation in this repository are licensed under the
+Creative Commons Attribution 4.0 International License (CC BY 4.0).
+
+You are free to share (copy and redistribute the material in any medium or format) and
+adapt (remix, transform, and build upon the material) for any purpose, even commercially,
+under the following term: Attribution. You must give appropriate credit, provide a link to
+the license, and indicate if changes were made. You may do so in any reasonable manner, but
+not in any way that suggests the licensor endorses you or your use.
+
+No additional restrictions: you may not apply legal terms or technological measures that
+legally restrict others from doing anything the license permits.
+
+Full legal code: https://creativecommons.org/licenses/by/4.0/legalcode
+
+Scope (see README, "Licence"): "data, certificates and documentation" means every file that is
+not source code, including certificate files (*.json), run records and logs, Lean audit datasets
+(*.txt, *.txt.xz), Turing grids (*.npz), the data release archive under data_release/, and all
+Markdown documents. Source code (*.py, *.sh, *.c, *.h, *.inc, *.lean, build files) is under the
+MIT License in LICENSE. Third-party components keep their own licences (README, "Licence").

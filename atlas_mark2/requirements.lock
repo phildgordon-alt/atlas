@@ -1,0 +1,20 @@
+# Atlas Mark II — exact environment lock
+#
+# Interpreter (the ONLY python-flint-capable interpreter on this host):
+#   /Users/kiosk/projects/atlas-rerun/.venv/bin/python
+#   CPython 3.12.13, darwin/arm64 (macOS 27.0, build 26A428, Darwin 27.0.0)
+#
+# Reproduce from scratch:
+#   python3.12 -m venv .venv && .venv/bin/python -m pip install -r requirements.lock
+#
+# LP solver: HiGHS, bundled with SciPy and reached via scipy.optimize.linprog(method="highs").
+# It is not a separate distribution and carries no independent version pin; the HiGHS build is
+# whatever scipy 1.18.1 ships for macosx_14_0_arm64.
+#
+# Arbitrary precision: python-flint 0.9.0 bundles FLINT/Arb (prebuilt wheel, no system FLINT).
+# ctx.prec is set explicitly at every use site (300 bits in seal_mark1.py).
+
+mpmath==1.4.1
+numpy==2.5.3
+python-flint==0.9.0
+scipy==1.18.1

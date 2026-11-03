@@ -1,0 +1,5 @@
+{"stage": "start", "args": {"T0": 1000000000000, "tlo": "1000000000000", "thi": "1000000000010", "grid": "v5", "evaluator": "dirichlet", "zs_refine": 0.0001, "name": "smoke_1e12", "pw": 1.0, "wm": 2.0, "zs_step": 0.005, "gen_timeout": 1209600.0, "wide": true, "zfast_center": null, "zfast_h": 91.0, "
+{"stage": "pieces", "hull": [0.0, 10.0], "n": 10, "t": 0.03}
+{"stage": "generator", "rc": 0, "killed": null, "peak_gb": 0.218, "seconds": 34.63, "t": 34.66}
+{"stage": "replay_target", "rc": 0, "killed": null, "peak_gb": 0.032, "seconds": 7.57, "t": 42.23}
+{"stage": "done", "all_closed": true, "wall_seconds": 42.23, "peak_gb": 0.218, "t": 42.23}

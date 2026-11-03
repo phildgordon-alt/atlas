@@ -1,0 +1,291 @@
+{
+ "D1_reference": {
+  "ok": true,
+  "rc": 0,
+  "s": 65.4,
+  "log": "/Users/kiosk/atlas_mark2/diagnostic/zfast/review_v14d/scratch/drv_logs/ref_x.log"
+ },
+ "D2_kill_in_turing_grid_then_resume": {
+  "ok": false,
+  "kill": {
+   "rc": 0,
+   "killed": null,
+   "stages": null
+  },
+  "resume": {
+   "rc": 0,
+   "s": 0.1,
+   "log": "/Users/kiosk/atlas_mark2/diagnostic/zfast/review_v14d/scratch/drv_logs/d2_resume.log"
+  },
+  "moved": [],
+  "sessions": [
+   [
+    0,
+    1075,
+    0
+   ]
+  ]
+ },
+ "D3_kill_in_cert_stage_then_resume": {
+  "ok": true,
+  "kill": {
+   "rc": 1,
+   "killed": [
+    76391
+   ],
+   "stages": [
+    "zs",
+    "attempt"
+   ]
+  },
+  "resume": {
+   "rc": 0,
+   "s": 64.6,
+   "log": "/Users/kiosk/atlas_mark2/diagnostic/zfast/review_v14d/scratch/drv_logs/d3_resume.log"
+  },
+  "moved": [
+   "README.txt",
+   "certs",
+   "gen.jsonl",
+   "gen.log",
+   "zs.json"
+  ],
+  "old_certs": 1
+ },
+ "D9_planted_cert_moved_not_used": {
+  "ok": true,
+  "resume": {
+   "rc": 0,
+   "s": 64.5,
+   "log": "/Users/kiosk/atlas_mark2/diagnostic/zfast/review_v14d/scratch/drv_logs/d9_resume.log"
+  }
+ },
+ "D4_replay_killed_then_resume": {
+  "ok": true,
+  "kill": {
+   "rc": 1,
+   "killed": [
+    77658
+   ],
+   "stages": [
+    "zs",
+    "attempt",
+    "attempt",
+    "attempt",
+    "attempt",
+    "attempt",
+    "attempt",
+    "attempt",
+    "attempt",
+    "attempt",
+    "attempt",
+    "main_done",
+    "attempt_np",
+    "attempt_np",
+    "attempt_np",
+    "attempt_np",
+    "attempt_np",
+    "attempt_np",
+    "attempt_np",
+    "attempt_np",
+    "attempt_np",
+    "attempt_np",
+    "attempt_np",
+    "attempt_np",
+    "attempt_np",
+    "attempt_np",
+    "attempt_np",
+    "attempt_np",
+    "attempt_np",
+    "attempt_np",
+    "attempt_np",
+    "attempt_np",
+    "attempt_np",
+    "attempt_np",
+    "attempt_np",
+    "attempt_np",
+    "attempt_np",
+    "attempt_np",
+    "attempt_np",
+    "attempt_np",
+    "attempt_np",
+    "attempt_np",
+    "attempt_np",
+    "attempt_np",
+    "attempt_np",
+    "attempt_np",
+    "attempt_np",
+    "attempt_np",
+    "attempt_np",
+    "attempt_np",
+    "attempt_np",
+    "attempt_np",
+    "attempt_np",
+    "attempt_np",
+    "attempt_np",
+    "attempt_np",
+    "attempt_np",
+    "attempt_np",
+    "attempt_np",
+    "attempt_np",
+    "attempt_np",
+    "attempt_np",
+    "attempt_np",
+    "attempt_np",
+    "attempt_np",
+    "attempt_np",
+    "attempt_np",
+    "gen_done",
+    "turing_grid"
+   ]
+  },
+  "resume": {
+   "rc": 0,
+   "s": 9.1,
+   "log": "/Users/kiosk/atlas_mark2/diagnostic/zfast/review_v14d/scratch/drv_logs/d4_resume.log"
+  },
+  "replay_sessions": [
+   [
+    0,
+    1075,
+    0
+   ],
+   [
+    1075,
+    1075,
+    8
+   ]
+  ]
+ },
+ "D5_replay_io_abort_rc3_then_resume": {
+  "ok": false,
+  "limited": {
+   "rc": 0,
+   "s": 9.1,
+   "log": "/Users/kiosk/atlas_mark2/diagnostic/zfast/review_v14d/scratch/drv_logs/d5_limited.log"
+  },
+  "resume": {
+   "rc": 0,
+   "s": 0.1,
+   "log": "/Users/kiosk/atlas_mark2/diagnostic/zfast/review_v14d/scratch/drv_logs/d5_resume.log"
+  },
+  "abort": null
+ },
+ "D6_io_abort_rc3_then_nonio_refusal_not_rc3": {
+  "ok": false,
+  "limited": {
+   "rc": 3,
+   "s": 1.2,
+   "log": "/Users/kiosk/atlas_mark2/diagnostic/zfast/review_v14d/scratch/drv_logs/d6_limited.log"
+  },
+  "tampered": {
+   "rc": 3,
+   "s": 0.7,
+   "log": "/Users/kiosk/atlas_mark2/diagnostic/zfast/review_v14d/scratch/drv_logs/d6_tampered.log"
+  },
+  "tail": "IONS_M14)\nThe checkpoint /Users/kiosk/atlas_mark2/diagnostic/zfast/review_v14d/scratch/v5za_copy/runs/w10000000000000000/d6/zfast_ckpt_gen.txt is valid up to the error.  Fix the cause (e.g. free disk space), then re-run the\nsame command with --resume (run_wideA.sh: RESUME=1).  Nothing was deleted.\n\n"
+ },
+ "D7_replay_fifo_refusal_not_rc3": {
+  "ok": true,
+  "fifo_placed": true,
+  "kill": {
+   "rc": -9,
+   "killed": [
+    78224
+   ],
+   "stages": [
+    "zs",
+    "attempt",
+    "attempt",
+    "attempt",
+    "attempt",
+    "attempt",
+    "attempt",
+    "attempt",
+    "attempt",
+    "attempt",
+    "attempt",
+    "main_done",
+    "attempt_np",
+    "attempt_np",
+    "attempt_np",
+    "attempt_np",
+    "attempt_np",
+    "attempt_np",
+    "attempt_np",
+    "attempt_np",
+    "attempt_np",
+    "attempt_np",
+    "attempt_np",
+    "attempt_np",
+    "attempt_np",
+    "attempt_np",
+    "attempt_np",
+    "attempt_np",
+    "attempt_np",
+    "attempt_np",
+    "attempt_np",
+    "attempt_np",
+    "attempt_np",
+    "attempt_np",
+    "attempt_np",
+    "attempt_np",
+    "attempt_np",
+    "attempt_np",
+    "attempt_np",
+    "attempt_np",
+    "attempt_np",
+    "attempt_np",
+    "attempt_np",
+    "attempt_np",
+    "attempt_np",
+    "attempt_np",
+    "attempt_np",
+    "attempt_np",
+    "attempt_np",
+    "attempt_np",
+    "attempt_np",
+    "attempt_np",
+    "attempt_np",
+    "attempt_np",
+    "attempt_np",
+    "attempt_np",
+    "attempt_np",
+    "attempt_np",
+    "attempt_np",
+    "attempt_np",
+    "attempt_np",
+    "attempt_np",
+    "attempt_np",
+    "attempt_np",
+    "attempt_np",
+    "attempt_np",
+    "attempt_np",
+    "gen_done",
+    "turing_grid"
+   ]
+  },
+  "run": {
+   "rc": 1,
+   "s": 1.2,
+   "log": "/Users/kiosk/atlas_mark2/diagnostic/zfast/review_v14d/scratch/drv_logs/d7_fifo.log"
+  },
+  "replay": {
+   "passed": false,
+   "zck": false
+  },
+  "refusals": [
+   "checkpoint /Users/kiosk/atlas_mark2/diagnostic/zfast/review_v14d/scratch/v5za_copy/runs/w10000000000000000/d7/zfast_ckpt"
+  ]
+ },
+ "D8_nonce_removed_refused_no_move": {
+  "ok": true,
+  "run": {
+   "rc": 1,
+   "s": 0.1,
+   "log": "/Users/kiosk/atlas_mark2/diagnostic/zfast/review_v14d/scratch/drv_logs/d8_nononce.log"
+  },
+  "tail": "^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nRuntimeError: v5z never deletes: no generator session record of this run nonce (zfast_ckpt_gen.txt.sessions.jsonl); otherwise use a fresh --name (generator outputs present: ['zs.json'])\n",
+  "new_nonce_file_created": true
+ }
+}

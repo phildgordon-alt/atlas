@@ -1,0 +1,4 @@
+smoke_1e12 pipeline rc=0 wall=42s D=2 W=4
+smoke_1e12 turing recount rc=0 wall=0s {"0,10": {"count": 41, "sign_changes_in_window": 41, "straddling": []}} {"0": [3945951430271, true, 0.299, "40"], "10": [3945951430312, true, 0.287, "40"]}
+smoke_1e12 turing gate rc=0 REPORT /Users/kiosk/atlas_mark2/engine/regress_v1/reports/turing_check_20261101_180921.json: PASS
+smoke_1e12 done

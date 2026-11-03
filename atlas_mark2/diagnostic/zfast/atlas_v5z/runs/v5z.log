@@ -1,0 +1,32 @@
+z_1e12 pipeline rc=0 wall=8s
+z_1e12 independent replay rc=0 wall=3s {"passed": true, "passed_B_simple_without_lemma2": true, "np": "8/8", "certs": "2/2", "seams": [0, 0, 0], "min_candidate_lower": 0.9435444104376903, "seconds": 2.49, "replay_peak_gb": 0.092}
+{"arb_count": 8, "atlas_sign_changes_in_target": 8, "straddling": [], "disjoint": true, "match": true, "closed": true, "claimB": true} [["p0_100", "t1", "CERTIFIED", 0.943544412300339, 4, 21], ["p100_200", "t1", "CERTIFIED", 0.9480905456463332, 4, 21]]
+z_1e12 done
+z_1e13 pipeline rc=0 wall=8s
+z_1e13 independent replay rc=0 wall=3s {"passed": true, "passed_B_simple_without_lemma2": true, "np": "9/9", "certs": "2/2", "seams": [0, 0, 0], "min_candidate_lower": 0.9392192753735757, "seconds": 2.75, "replay_peak_gb": 0.096}
+{"arb_count": 9, "atlas_sign_changes_in_target": 9, "straddling": [], "disjoint": true, "match": true, "closed": true, "claimB": true} [["p0_100", "t1", "CERTIFIED", 0.9392192772362244, 4, 23], ["p100_200", "t1", "CERTIFIED", 0.959231541648155, 4, 24]]
+z_1e13 done
+z_1e14 pipeline rc=0 wall=9s
+z_1e14 independent replay rc=0 wall=3s {"passed": true, "passed_B_simple_without_lemma2": true, "np": "9/9", "certs": "2/2", "seams": [0, 0, 0], "min_candidate_lower": 0.9024751707675914, "seconds": 3.0, "replay_peak_gb": 0.093}
+{"arb_count": 9, "atlas_sign_changes_in_target": 9, "straddling": [], "disjoint": true, "match": true, "closed": true, "claimB": true} [["p0_100", "t1", "CERTIFIED", 0.9109078097241393, 4, 25], ["p100_200", "t1", "CERTIFIED", 0.9024751726302401, 4, 24]]
+z_1e14 done
+z_1e15 pipeline rc=0 wall=11s
+z_1e15 independent replay rc=0 wall=5s {"passed": true, "passed_B_simple_without_lemma2": true, "np": "10/10", "certs": "2/2", "seams": [0, 0, 0], "min_candidate_lower": 0.8639199061388787, "seconds": 4.07, "replay_peak_gb": 0.094}
+{"arb_count": 10, "atlas_sign_changes_in_target": 10, "straddling": [], "disjoint": true, "match": true, "closed": true, "claimB": true} [["p0_100", "t1", "CERTIFIED", 0.8857599972062361, 4, 26], ["p100_200", "t1", "CERTIFIED", 0.8639199080015274, 4, 25]]
+z_1e15 done
+z_pair_1e15_286 pipeline rc=0 wall=10s
+z_pair_1e15_286 independent replay rc=0 wall=4s {"passed": true, "passed_B_simple_without_lemma2": true, "np": "10/10", "certs": "2/2", "seams": [0, 0, 0], "min_candidate_lower": 0.8644913957802872, "seconds": 3.84, "replay_peak_gb": 0.094}
+{"arb_count": 10, "atlas_sign_changes_in_target": 10, "straddling": [], "disjoint": true, "match": true, "closed": true, "claimB": true} [["p28600_28700", "t1", "CERTIFIED", 0.8828694403509069, 4, 26], ["p28700_28800", "t1", "CERTIFIED", 0.8644913976429359, 4, 26]]
+z_pair_1e15_286 done
+z_1e16 pipeline rc=0 wall=17s
+z_1e16 independent replay rc=0 wall=6s {"passed": true, "passed_B_simple_without_lemma2": true, "np": "10/10", "certs": "2/2", "seams": [0, 0, 0], "min_candidate_lower": 0.8256182590293083, "seconds": 6.57, "replay_peak_gb": 0.093}
+{"arb_count": 10, "atlas_sign_changes_in_target": 10, "straddling": [], "disjoint": true, "match": true, "closed": true, "claimB": true} [["p0_100", "t1", "CERTIFIED", 0.825618260891957, 3, 27], ["p100_200", "t1", "CERTIFIED", 0.8326265868205732, 3, 27]]
+z_1e16 done
+ALLDONE
+z_1e17 pipeline rc=0 wall=33s
+z_1e17 independent replay rc=0 wall=15s {"passed": true, "passed_B_simple_without_lemma2": true, "np": "11/11", "certs": "2/2", "seams": [0, 0, 0], "min_candidate_lower": 0.8362815697257229, "seconds": 14.96, "replay_peak_gb": 0.093}
+z_1e17 done
+z_1e18 pipeline rc=0 wall=90s
+z_1e18 independent replay rc=0 wall=41s {"passed": true, "passed_B_simple_without_lemma2": true, "np": "11/11", "certs": "2/2", "seams": [0, 0, 0], "min_candidate_lower": 0.8092282336034444, "seconds": 41.19, "replay_peak_gb": 0.094}
+z_1e18 done
+NEWDONE

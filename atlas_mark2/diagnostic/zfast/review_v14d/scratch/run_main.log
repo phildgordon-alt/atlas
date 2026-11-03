@@ -1,0 +1,12 @@
+== diff start 23:46:06
+== diff rc=0 end 00:04:43
+{"cases": 29, "mismatches": 0}
+== kill start 00:04:43
+== kill rc=0 end 00:15:05
+{"trials": 9, "mismatches": 0}
+== attack start 00:15:05
+== attack rc=0 end 00:15:41
+{"total": 75, "fail": ["nokey_identical_duplicate_makes_ckpt_unresumable", "nokey_identical_duplicate_before_original"]}
+== fuzz start 00:15:41
+== fuzz rc=1 end 00:15:41
+IndexError: list index out of range

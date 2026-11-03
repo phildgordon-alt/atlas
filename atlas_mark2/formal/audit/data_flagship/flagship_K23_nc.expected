@@ -1,0 +1,14 @@
+CERT nc/d1_049	region d-range [0, 0.49]
+CERT nc/d0_001	region d-range [0.01, 0.5] (d = 0 line missing)
+CERT nc/cell_outside	cell beyond window
+CERT nc/cell_reversed	cell x0 > x1
+CERT nc/iv_outside	interval leaves window
+CERT nc/iv_swapped	two intervals swapped
+CERT nc/iv_touching	touching intervals t2_k = t1_{k+1}
+CERT nc/iv_reversed	interval t1 > t2
+CERT nc/central_recorded	central reduction recorded although expect_m0 = 0 and window not containing 0
+CERT nc/iv_duplicate	duplicated interval
+TARGET gap_w5010_missing_cell	missing cell
+TARGET gap_union_5000_5020	missing cell in union
+TARGET overreach_1ulp	target 2^-40 beyond coverage
+TARGET wrong_groups	wrong groups

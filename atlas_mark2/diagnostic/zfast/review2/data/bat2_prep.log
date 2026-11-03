@@ -1,0 +1,8 @@
+Traceback (most recent call last):
+  File "/Users/kiosk/atlas_mark2/diagnostic/zfast/review2/py/bat2_prep2.py", line 56, in <module>
+    Tj, uj = T0_for(E, 0)                       # N jump at u = uj
+             ^^^^^^^^^^^^
+  File "/Users/kiosk/atlas_mark2/diagnostic/zfast/review2/py/bat2_prep2.py", line 24, in T0_for
+    T0 = int(t.floor().mid()) - 1
+         ^^^^^^^^^^^^^^^^^^^^
+TypeError: int() argument must be a string, a bytes-like object or a real number, not 'flint.types.arb.arb'

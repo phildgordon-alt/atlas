@@ -1,0 +1,5 @@
+file: zfast_m3b.inc
+--- old
+                mag_mul(tmp, sumc, mw[j]); mag_mul(tmp, tmp, Xk); mag_add(term, term, tmp);
++++ new
+                mag_mul(tmp, sumc, mw[j]); mag_mul(tmp, tmp, Xk); mag_div_ui(tmp, tmp, 10); mag_add(term, term, tmp);

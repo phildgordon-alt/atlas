@@ -1,0 +1,130 @@
+{
+ "driver": "bin/rd4.bugquad",
+ "tag": "mut_bugquad",
+ "v10b": false,
+ "light": true,
+ "sec": 7.39352011680603,
+ "families": [
+  {
+   "family": "K",
+   "n": 1,
+   "excluded": 0,
+   "fails": 1,
+   "max_ratio": 0.3470293032786885,
+   "first_fail": {
+    "ok": false,
+    "ratio": 0.3470293032786885,
+    "what": "[{'cmd': 'KER', 'n': 300000, 'max_cos': 1.693503e-16, 'max_cos_only': 1.414214, 'max_sin': 1.715278e-16, 'ZF_EC': 4.88e-16, 'ok': 0}]"
+   }
+  },
+  {
+   "family": "PH",
+   "n": 6,
+   "excluded": 0,
+   "fails": 0,
+   "max_ratio": 0.9999,
+   "first_fail": null
+  },
+  {
+   "family": "WP",
+   "n": 30,
+   "excluded": 0,
+   "fails": 0,
+   "max_ratio": 0.2189,
+   "first_fail": null
+  },
+  {
+   "family": "Z1_prod",
+   "n": 4,
+   "excluded": 0,
+   "fails": 4,
+   "max_ratio": 2219380097390.777,
+   "first_fail": {
+    "ok": false,
+    "ratio": 2219380097390.777,
+    "what": "prod 10000000000",
+    "z": "[-2.374474106689361456414842837540927146495 +/- 1.21e-12]",
+    "ref": "[0.310975820424959103278767075451939039524440352 +/- 4.26e-38]"
+   }
+  },
+  {
+   "family": "Z1_stress",
+   "n": 10,
+   "excluded": 0,
+   "fails": 7,
+   "max_ratio": 85664294927770.88,
+   "first_fail": {
+    "ok": false,
+    "ratio": 110.77520527178162,
+    "what": "J6 10000000000",
+    "z": "[-1.318101297983667672089667802205368020142 +/- 3.39e-3]",
+    "ref": "[-0.942573351121017779166279166110785951918376016 +/- 6.33e-38]"
+   }
+  },
+  {
+   "family": "SZ_prod",
+   "n": 142,
+   "excluded": 0,
+   "fails": 0,
+   "max_ratio": 0.00043652843388584337,
+   "first_fail": null
+  },
+  {
+   "family": "SZ_stress",
+   "n": 72,
+   "excluded": 0,
+   "fails": 0,
+   "max_ratio": 0.1709961073301059,
+   "first_fail": null
+  },
+  {
+   "family": "SZ_stress2",
+   "n": 32,
+   "excluded": 0,
+   "fails": 0,
+   "max_ratio": 0.01588156255024959,
+   "first_fail": null
+  },
+  {
+   "family": "ROW_prod",
+   "n": 200,
+   "excluded": 20,
+   "fails": 0,
+   "max_ratio": 0.00021126413680902994,
+   "first_fail": null
+  },
+  {
+   "family": "ROW_stress",
+   "n": 120,
+   "excluded": 12,
+   "fails": 0,
+   "max_ratio": 0.17960980201386323,
+   "first_fail": null
+  },
+  {
+   "family": "ROW_stress2",
+   "n": 240,
+   "excluded": 3,
+   "fails": 0,
+   "max_ratio": 0.15496979929478422,
+   "first_fail": null
+  },
+  {
+   "family": "ROW1_prod",
+   "n": 140,
+   "excluded": 20,
+   "fails": 0,
+   "max_ratio": 0.00020045831724897244,
+   "first_fail": null
+  },
+  {
+   "family": "ROW1_stress2",
+   "n": 240,
+   "excluded": 3,
+   "fails": 0,
+   "max_ratio": 0.18624354157145098,
+   "first_fail": null
+  }
+ ],
+ "detected": true
+}

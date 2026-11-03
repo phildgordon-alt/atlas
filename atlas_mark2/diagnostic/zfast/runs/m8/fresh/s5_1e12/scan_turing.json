@@ -1,0 +1,102 @@
+{
+ "tool": "scan_turing5.py scan",
+ "tool_sha256": "898bf5c506fea8f97a75c19b684f32901b98de97e1d00c250f473fca0618b2da",
+ "T0": "1000000000000",
+ "lib": "/Users/kiosk/atlas_mark2/diagnostic/zfast/bin/libzfast.v13b.dylib",
+ "lib_sha256": "82489d1a89e25bef117cd87f47d591d9426282c4b211f92ace12d097767dffca",
+ "session": {
+  "sec_build": 0.1135,
+  "sec_head": 0.0446,
+  "sec_fast": 0.0647,
+  "buckets": 754,
+  "Nw": 398942,
+  "nhead": 8879,
+  "blocks": 1184,
+  "max_phase_err": 6.695e-20
+ },
+ "session_params": {
+  "centre": 1.0,
+  "H": 61.0,
+  "Delta": 0.012,
+  "K": 18,
+  "J": 12,
+  "threads": 2,
+  "u0": -59.0,
+  "n": 30001,
+  "step": 0.004
+ },
+ "grid": {
+  "points": 30001,
+  "step": 0.004,
+  "undecided": 0,
+  "seconds": 37.2,
+  "ends": [
+   "-59",
+   "61"
+  ]
+ },
+ "zeros_found": 493,
+ "dips": 0,
+ "dip_zeros": 0,
+ "DT": "40",
+ "turing": {
+  "0": {
+   "v": 0.0,
+   "v_exact": "0",
+   "Delta": 40.0,
+   "Delta_exact": "40",
+   "N_lower": 3945951430271,
+   "N_upper": 3945951430271,
+   "Z_sign": 1,
+   "Z_src": {
+    "source": "grid",
+    "k": 14750,
+    "mid": 4.308833354808418,
+    "rad": 9.5247902176087e-12
+   },
+   "U": "3.94595143027e+12",
+   "L": "3.94595143027e+12",
+   "U_minus_L": 0.2991934696335736,
+   "zeros_up": 164,
+   "zeros_down": 164,
+   "pinned": true,
+   "N": 3945951430271
+  },
+  "2": {
+   "v": 2.0,
+   "v_exact": "2",
+   "Delta": 40.0,
+   "Delta_exact": "40",
+   "N_lower": 3945951430279,
+   "N_upper": 3945951430279,
+   "Z_sign": 1,
+   "Z_src": {
+    "source": "grid",
+    "k": 15250,
+    "mid": 0.4429853655112926,
+    "rad": 7.206329974483554e-12
+   },
+   "U": "3.94595143028e+12",
+   "L": "3.94595143028e+12",
+   "U_minus_L": 0.2781934696463189,
+   "zeros_up": 164,
+   "zeros_down": 164,
+   "pinned": true,
+   "N": 3945951430279
+  }
+ },
+ "windows": {
+  "0,2": {
+   "count": 8,
+   "sign_changes_in_window": 8,
+   "straddling": []
+  }
+ },
+ "build_seconds": 0.1,
+ "wall": 37.4,
+ "flint": "0.9.0",
+ "env": {
+  "ZFAST_THREADS": null,
+  "OMP_NUM_THREADS": null
+ }
+}

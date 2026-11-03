@@ -1,0 +1,3276 @@
+{
+ "kind": "tier0",
+ "stamp": "20261102_193011",
+ "prereg_sha256": "80774906223b4f8e59c96633191377c646fd8c322daf5645a7be75b2419ecabd",
+ "sections": {
+  "frozen_integrity": {
+   "checked": 68153,
+   "mismatches": [],
+   "n_mismatch": 0,
+   "by_family": {
+    "artin_sweep": {
+     "files": 18028,
+     "bad": 0
+    },
+    "zfast_windows": {
+     "files": 1206,
+     "bad": 0
+    },
+    "flagship_K23": {
+     "files": 23520,
+     "bad": 0
+    },
+    "flagship_K23_ext": {
+     "files": 24000,
+     "bad": 0
+    },
+    "geval_c": {
+     "files": 110,
+     "bad": 0
+    },
+    "geval_stream": {
+     "files": 28,
+     "bad": 0
+    },
+    "level1": {
+     "files": 590,
+     "bad": 0
+    },
+    "races": {
+     "files": 178,
+     "bad": 0
+    },
+    "races2": {
+     "files": 406,
+     "bad": 0
+    },
+    "lean_audit": {
+     "files": 87,
+     "bad": 0
+    }
+   },
+   "seconds": 10.6,
+   "ok": true
+  },
+  "historical_manifests": {
+   "manifests": 64,
+   "entries": 17384,
+   "hard_mismatches": 0,
+   "info_mismatches": 6,
+   "superseded": 14,
+   "detail": [
+    {
+     "manifest": "/Users/kiosk/atlas_mark2/diagnostic/zfast/MANIFEST_M10.sha256",
+     "entries": 1013,
+     "fail": [],
+     "info": [],
+     "superseded": []
+    },
+    {
+     "manifest": "/Users/kiosk/atlas_mark2/diagnostic/zfast/MANIFEST_M11.sha256",
+     "entries": 1054,
+     "fail": [],
+     "info": [],
+     "superseded": []
+    },
+    {
+     "manifest": "/Users/kiosk/atlas_mark2/diagnostic/zfast/MANIFEST_M2.sha256",
+     "entries": 164,
+     "fail": [],
+     "info": [],
+     "superseded": []
+    },
+    {
+     "manifest": "/Users/kiosk/atlas_mark2/diagnostic/zfast/MANIFEST_M4.sha256",
+     "entries": 731,
+     "fail": [],
+     "info": [],
+     "superseded": [
+      "/Users/kiosk/atlas_mark2/diagnostic/zfast/atlas_v5z_runner.sha256"
+     ]
+    },
+    {
+     "manifest": "/Users/kiosk/atlas_mark2/diagnostic/zfast/MANIFEST_M5.sha256",
+     "entries": 2058,
+     "fail": [],
+     "info": [],
+     "superseded": [
+      "/Users/kiosk/atlas_mark2/diagnostic/zfast/atlas_v5z_runner.sha256",
+      "/Users/kiosk/atlas_mark2/diagnostic/zfast/atlas_v5z3/runs/v5z.log"
+     ]
+    },
+    {
+     "manifest": "/Users/kiosk/atlas_mark2/diagnostic/zfast/MANIFEST_M5d.sha256",
+     "entries": 2364,
+     "fail": [],
+     "info": [],
+     "superseded": []
+    },
+    {
+     "manifest": "/Users/kiosk/atlas_mark2/diagnostic/zfast/MANIFEST_M6.sha256",
+     "entries": 50,
+     "fail": [],
+     "info": [
+      {
+       "file": "/Users/kiosk/atlas_mark2/diagnostic/zfast/atlas_v5z4/runs/m6.log",
+       "problem": "sha256 differs from every manifest entry"
+      }
+     ],
+     "superseded": []
+    },
+    {
+     "manifest": "/Users/kiosk/atlas_mark2/diagnostic/zfast/MANIFEST_M7.sha256",
+     "entries": 1106,
+     "fail": [],
+     "info": [],
+     "superseded": [
+      "/Users/kiosk/atlas_mark2/engine/regress_v1/PREREG_AMENDMENTS.md"
+     ]
+    },
+    {
+     "manifest": "/Users/kiosk/atlas_mark2/diagnostic/zfast/MANIFEST_M8.sha256",
+     "entries": 89,
+     "fail": [],
+     "info": [],
+     "superseded": [
+      "/Users/kiosk/atlas_mark2/engine/regress_v1/PREREG_AMENDMENTS.md"
+     ]
+    },
+    {
+     "manifest": "/Users/kiosk/atlas_mark2/diagnostic/zfast/MANIFEST_M9.sha256",
+     "entries": 30,
+     "fail": [],
+     "info": [],
+     "superseded": []
+    },
+    {
+     "manifest": "/Users/kiosk/atlas_mark2/diagnostic/zfast/atlas_v5z/V5Z_FREEZE.sha256",
+     "entries": 28,
+     "fail": [],
+     "info": [],
+     "superseded": []
+    },
+    {
+     "manifest": "/Users/kiosk/atlas_mark2/diagnostic/zfast/atlas_v5z/VERIFY_ZS5.sha256",
+     "entries": 1,
+     "fail": [],
+     "info": [],
+     "superseded": []
+    },
+    {
+     "manifest": "/Users/kiosk/atlas_mark2/diagnostic/zfast/atlas_v5z2/V5Z2_FREEZE.sha256",
+     "entries": 30,
+     "fail": [],
+     "info": [],
+     "superseded": []
+    },
+    {
+     "manifest": "/Users/kiosk/atlas_mark2/diagnostic/zfast/atlas_v5z2/VERIFY_ZS5.sha256",
+     "entries": 1,
+     "fail": [],
+     "info": [],
+     "superseded": []
+    },
+    {
+     "manifest": "/Users/kiosk/atlas_mark2/diagnostic/zfast/atlas_v5z3/V5Z3_FREEZE.sha256",
+     "entries": 30,
+     "fail": [],
+     "info": [],
+     "superseded": []
+    },
+    {
+     "manifest": "/Users/kiosk/atlas_mark2/diagnostic/zfast/atlas_v5z3/VERIFY_ZS5.sha256",
+     "entries": 1,
+     "fail": [],
+     "info": [],
+     "superseded": []
+    },
+    {
+     "manifest": "/Users/kiosk/atlas_mark2/diagnostic/zfast/atlas_v5z4/V5Z4_FREEZE.sha256",
+     "entries": 30,
+     "fail": [],
+     "info": [],
+     "superseded": []
+    },
+    {
+     "manifest": "/Users/kiosk/atlas_mark2/diagnostic/zfast/atlas_v5z4/VERIFY_ZS5.sha256",
+     "entries": 1,
+     "fail": [],
+     "info": [],
+     "superseded": []
+    },
+    {
+     "manifest": "/Users/kiosk/atlas_mark2/diagnostic/atlas_v5/V5_FREEZE.sha256",
+     "entries": 21,
+     "fail": [],
+     "info": [],
+     "superseded": []
+    },
+    {
+     "manifest": "/Users/kiosk/atlas_mark2/diagnostic/atlas_v5/VERIFY_ZS5.sha256",
+     "entries": 1,
+     "fail": [],
+     "info": [],
+     "superseded": []
+    },
+    {
+     "manifest": "/Users/kiosk/atlas_mark2/diagnostic/record_heights/SHA256SUMS",
+     "entries": 224,
+     "fail": [],
+     "info": [],
+     "superseded": []
+    },
+    {
+     "manifest": "/Users/kiosk/atlas_mark2/diagnostic/record_heights/v5run/V5_FREEZE.sha256",
+     "entries": 21,
+     "fail": [],
+     "info": [],
+     "superseded": []
+    },
+    {
+     "manifest": "/Users/kiosk/atlas_mark2/diagnostic/record_heights/v5run/VERIFY_ZS5.sha256",
+     "entries": 1,
+     "fail": [],
+     "info": [],
+     "superseded": []
+    },
+    {
+     "manifest": "/Users/kiosk/atlas_mark2/diagnostic/flagship_K23/CODE_SHA256_FROZEN.txt",
+     "entries": 34,
+     "fail": [],
+     "info": [],
+     "superseded": []
+    },
+    {
+     "manifest": "/Users/kiosk/atlas_mark2/diagnostic/flagship_K23_ext/CODE_SHA256_FROZEN.txt",
+     "entries": 42,
+     "fail": [],
+     "info": [],
+     "superseded": []
+    },
+    {
+     "manifest": "/Users/kiosk/atlas_mark2/diagnostic/geval_c/CODE_AT_VALIDATION.sha256",
+     "entries": 13,
+     "fail": [],
+     "info": [],
+     "superseded": []
+    },
+    {
+     "manifest": "/Users/kiosk/atlas_mark2/diagnostic/geval_c/CODE_AT_VALIDATION_v2.sha256",
+     "entries": 13,
+     "fail": [],
+     "info": [],
+     "superseded": []
+    },
+    {
+     "manifest": "/Users/kiosk/atlas_mark2/diagnostic/geval_c/CODE_AT_VALIDATION_v3.sha256",
+     "entries": 14,
+     "fail": [],
+     "info": [],
+     "superseded": []
+    },
+    {
+     "manifest": "/Users/kiosk/atlas_mark2/diagnostic/geval_c/CODE_AT_VALIDATION_v4.sha256",
+     "entries": 28,
+     "fail": [],
+     "info": [],
+     "superseded": []
+    },
+    {
+     "manifest": "/Users/kiosk/atlas_mark2/diagnostic/geval_c/CODE_AT_VALIDATION_v5.sha256",
+     "entries": 45,
+     "fail": [],
+     "info": [],
+     "superseded": []
+    },
+    {
+     "manifest": "/Users/kiosk/atlas_mark2/diagnostic/geval_c/SHA256SUMS",
+     "entries": 249,
+     "fail": [],
+     "info": [],
+     "superseded": []
+    },
+    {
+     "manifest": "/Users/kiosk/atlas_mark2/diagnostic/geval_stream/CODE_AT_P6.sha256",
+     "entries": 4,
+     "fail": [],
+     "info": [],
+     "superseded": []
+    },
+    {
+     "manifest": "/Users/kiosk/atlas_mark2/diagnostic/geval_stream/CODE_AT_P7.sha256",
+     "entries": 4,
+     "fail": [],
+     "info": [],
+     "superseded": []
+    },
+    {
+     "manifest": "/Users/kiosk/atlas_mark2/diagnostic/geval_stream/CODE_AT_VALIDATION.sha256",
+     "entries": 13,
+     "fail": [],
+     "info": [],
+     "superseded": []
+    },
+    {
+     "manifest": "/Users/kiosk/atlas_mark2/diagnostic/geval_stream/SHA256SUMS",
+     "entries": 108,
+     "fail": [],
+     "info": [
+      {
+       "file": "/Users/kiosk/atlas_mark2/diagnostic/geval_stream/runs/compare_v1.jsonl",
+       "problem": "sha256 differs from every manifest entry"
+      }
+     ],
+     "superseded": []
+    },
+    {
+     "manifest": "/Users/kiosk/atlas_mark2/diagnostic/artin_sweep/SHA256SUMS",
+     "entries": 129,
+     "fail": [],
+     "info": [
+      {
+       "file": "/Users/kiosk/atlas_mark2/diagnostic/artin_sweep/runs/queue_v1.jsonl",
+       "problem": "sha256 differs from every manifest entry"
+      }
+     ],
+     "superseded": []
+    },
+    {
+     "manifest": "/Users/kiosk/atlas_mark2/diagnostic/artin_sweep/SHA256SUMS_v2",
+     "entries": 17,
+     "fail": [],
+     "info": [],
+     "superseded": []
+    },
+    {
+     "manifest": "/Users/kiosk/atlas_mark2/diagnostic/artin_sweep/SHA256SUMS_v3",
+     "entries": 30,
+     "fail": [],
+     "info": [],
+     "superseded": []
+    },
+    {
+     "manifest": "/Users/kiosk/atlas_mark2/diagnostic/level1/CODE_SHA256.txt",
+     "entries": 6,
+     "fail": [],
+     "info": [],
+     "superseded": []
+    },
+    {
+     "manifest": "/Users/kiosk/atlas_mark2/diagnostic/level1/SHA256SUMS_RUNS.txt",
+     "entries": 615,
+     "fail": [],
+     "info": [],
+     "superseded": []
+    },
+    {
+     "manifest": "/Users/kiosk/atlas_mark2/diagnostic/races/SHA256SUMS",
+     "entries": 13,
+     "fail": [],
+     "info": [],
+     "superseded": []
+    },
+    {
+     "manifest": "/Users/kiosk/atlas_mark2/diagnostic/races2/SHA256SUMS",
+     "entries": 609,
+     "fail": [],
+     "info": [],
+     "superseded": []
+    },
+    {
+     "manifest": "/Users/kiosk/atlas_mark2/formal/audit/SHA256SUMS",
+     "entries": 23,
+     "fail": [],
+     "info": [],
+     "superseded": []
+    },
+    {
+     "manifest": "/Users/kiosk/atlas_mark2/formal/audit/SHA256SUMS.bak_prev5",
+     "entries": 16,
+     "fail": [],
+     "info": [],
+     "superseded": [
+      "/Users/kiosk/atlas_mark2/formal/export/export_certs.py"
+     ]
+    },
+    {
+     "manifest": "/Users/kiosk/atlas_mark2/formal/audit/data_v5/SHA256SUMS",
+     "entries": 4,
+     "fail": [],
+     "info": [],
+     "superseded": []
+    },
+    {
+     "manifest": "/Users/kiosk/atlas_mark2/diagnostic/artin_literal/SHA256SUMS",
+     "entries": 136,
+     "fail": [],
+     "info": [],
+     "superseded": []
+    },
+    {
+     "manifest": "/Users/kiosk/atlas_mark2/diagnostic/artin_all/SHA256SUMS",
+     "entries": 968,
+     "fail": [],
+     "info": [],
+     "superseded": []
+    },
+    {
+     "manifest": "/Users/kiosk/atlas_mark2/diagnostic/artin_all/SHA256SUMS.erratum",
+     "entries": 1,
+     "fail": [],
+     "info": [],
+     "superseded": []
+    },
+    {
+     "manifest": "/Users/kiosk/atlas_mark2/diagnostic/general_eval/calegari3/SHA256SUMS",
+     "entries": 775,
+     "fail": [],
+     "info": [],
+     "superseded": []
+    },
+    {
+     "manifest": "/Users/kiosk/atlas_mark2/diagnostic/lmfdb_ecnf/CODE_AT_ADDENDUM.sha256",
+     "entries": 7,
+     "fail": [],
+     "info": [],
+     "superseded": [
+      "/Users/kiosk/atlas_mark2/diagnostic/lmfdb_ecnf/ecnf_cert.py",
+      "/Users/kiosk/atlas_mark2/diagnostic/lmfdb_ecnf/ecnf_pari.py",
+      "/Users/kiosk/atlas_mark2/diagnostic/lmfdb_ecnf/ecnf_pari.py",
+      "/Users/kiosk/atlas_mark2/diagnostic/lmfdb_ecnf/ecnf_cert.py",
+      "/Users/kiosk/atlas_mark2/diagnostic/lmfdb_ecnf/ecnf_cert.py"
+     ]
+    },
+    {
+     "manifest": "/Users/kiosk/atlas_mark2/diagnostic/lmfdb_ecnf/CODE_AT_PREREG.sha256",
+     "entries": 7,
+     "fail": [],
+     "info": [],
+     "superseded": [
+      "/Users/kiosk/atlas_mark2/diagnostic/lmfdb_ecnf/ecnf_pari.py",
+      "/Users/kiosk/atlas_mark2/diagnostic/lmfdb_ecnf/ecnf_cert.py"
+     ]
+    },
+    {
+     "manifest": "/Users/kiosk/atlas_mark2/diagnostic/lmfdb_ecnf/SHA256SUMS",
+     "entries": 100,
+     "fail": [],
+     "info": [],
+     "superseded": []
+    },
+    {
+     "manifest": "/Users/kiosk/atlas_mark2/diagnostic/mertens_cubic/SHA256SUMS",
+     "entries": 82,
+     "fail": [],
+     "info": [],
+     "superseded": []
+    },
+    {
+     "manifest": "/Users/kiosk/atlas_mark2/diagnostic/mertens_cubic2/SHA256SUMS",
+     "entries": 155,
+     "fail": [],
+     "info": [],
+     "superseded": []
+    },
+    {
+     "manifest": "/Users/kiosk/atlas_mark2/diagnostic/race_skewes/SHA256SUMS",
+     "entries": 116,
+     "fail": [],
+     "info": [
+      {
+       "file": "/Users/kiosk/atlas_mark2/diagnostic/race_skewes/logs/enum13_ng12.log",
+       "problem": "sha256 differs from every manifest entry"
+      }
+     ],
+     "superseded": []
+    },
+    {
+     "manifest": "/Users/kiosk/atlas_mark2/diagnostic/race_signs/SHA256SUMS",
+     "entries": 76,
+     "fail": [],
+     "info": [],
+     "superseded": []
+    },
+    {
+     "manifest": "/Users/kiosk/atlas_mark2/diagnostic/new_territory/tollis/CODE_SHA256_FROZEN.txt",
+     "entries": 33,
+     "fail": [],
+     "info": [],
+     "superseded": [
+      "/Users/kiosk/atlas_mark2/diagnostic/new_territory/tollis/diag_tollis.py"
+     ]
+    },
+    {
+     "manifest": "/Users/kiosk/atlas_mark2/diagnostic/new_territory/tollis/SHA256SUMS",
+     "entries": 2508,
+     "fail": [],
+     "info": [
+      {
+       "file": "/Users/kiosk/atlas_mark2/diagnostic/new_territory/tollis/RESULTS.md",
+       "problem": "sha256 differs from every manifest entry"
+      },
+      {
+       "file": "/Users/kiosk/atlas_mark2/diagnostic/new_territory/tollis/runs/SUMMARY.log",
+       "problem": "sha256 differs from every manifest entry"
+      }
+     ],
+     "superseded": []
+    },
+    {
+     "manifest": "/Users/kiosk/atlas_mark2/diagnostic/new_territory/ec37a/CODE_SHA256_FROZEN.txt",
+     "entries": 18,
+     "fail": [],
+     "info": [],
+     "superseded": []
+    },
+    {
+     "manifest": "/Users/kiosk/atlas_mark2/diagnostic/new_territory/ec37a/SHA256SUMS",
+     "entries": 512,
+     "fail": [],
+     "info": [],
+     "superseded": []
+    },
+    {
+     "manifest": "/Users/kiosk/atlas_mark2/diagnostic/new_territory/ec389a/CODE_SHA256_FROZEN.txt",
+     "entries": 24,
+     "fail": [],
+     "info": [],
+     "superseded": []
+    },
+    {
+     "manifest": "/Users/kiosk/atlas_mark2/diagnostic/new_territory/ec389a/SHA256SUMS",
+     "entries": 756,
+     "fail": [],
+     "info": [],
+     "superseded": []
+    },
+    {
+     "manifest": "/Users/kiosk/atlas_mark2/diagnostic/deg2_fast/SHA256SUMS",
+     "entries": 17,
+     "fail": [],
+     "info": [],
+     "superseded": []
+    },
+    {
+     "manifest": "/Users/kiosk/atlas_mark2/diagnostic/atlas_v4/V4_FREEZE.sha256",
+     "entries": 15,
+     "fail": [],
+     "info": [],
+     "superseded": []
+    }
+   ],
+   "seconds": 4.9,
+   "ok": true
+  },
+  "zfast_tree_freeze": {
+   "trees": [
+    {
+     "tree": "atlas_v5",
+     "files": 21,
+     "mismatches": [],
+     "ok": true
+    },
+    {
+     "tree": "record_heights",
+     "files": 21,
+     "mismatches": [],
+     "ok": true
+    },
+    {
+     "tree": "atlas_v5z",
+     "files": 28,
+     "mismatches": [],
+     "ok": true
+    },
+    {
+     "tree": "atlas_v5z2",
+     "files": 30,
+     "mismatches": [],
+     "ok": true
+    },
+    {
+     "tree": "atlas_v5z3",
+     "files": 30,
+     "mismatches": [],
+     "ok": true
+    },
+    {
+     "tree": "atlas_v5z4",
+     "files": 30,
+     "mismatches": [],
+     "ok": true
+    }
+   ],
+   "ok": true
+  },
+  "zfast_windows": {
+   "runs": [
+    {
+     "id": "atlas_v5:w10000000.00/t4v4_10000000",
+     "T0": 10000000,
+     "control": null,
+     "records": 14,
+     "passed_records": 14,
+     "errors": 0,
+     "model_mismatch": 0,
+     "missing_measurements": 0,
+     "geometry": {
+      "main_passed": "2/2",
+      "np_passed": "5/5",
+      "seams_hull": 0,
+      "seams_target": 0,
+      "gaps_d0": 0,
+      "closed_A": true,
+      "claim_B": true,
+      "intervals_to_cover": 5,
+      "uncovered": 0,
+      "sign_changes_in_target": 5,
+      "disjoint": true
+     },
+     "stored_replay": {
+      "source": "replay_check_independent",
+      "matched": 14,
+      "same_passed": 14,
+      "identical_min_candidate_lower": 14,
+      "max_abs_diff_min_candidate_lower": 0.0,
+      "stored_closed": true,
+      "stored_claim_B": true
+     },
+     "crosscheck": null,
+     "min_candidate_lower": 1.0119071289786687,
+     "worker_seconds": 0.21,
+     "process": {
+      "rc": 0,
+      "killed": null,
+      "peak_gb": 0.041,
+      "seconds": 0.56
+     },
+     "ok": true
+    },
+    {
+     "id": "atlas_v5:w1000000000000/big_1e12",
+     "T0": 1000000000000,
+     "control": null,
+     "records": 20,
+     "passed_records": 20,
+     "errors": 0,
+     "model_mismatch": 0,
+     "missing_measurements": 0,
+     "geometry": {
+      "main_passed": "2/2",
+      "np_passed": "8/8",
+      "seams_hull": 0,
+      "seams_target": 0,
+      "gaps_d0": 0,
+      "closed_A": true,
+      "claim_B": true,
+      "intervals_to_cover": 8,
+      "uncovered": 0,
+      "sign_changes_in_target": 8,
+      "disjoint": true
+     },
+     "stored_replay": {
+      "source": "replay_check_independent",
+      "matched": 20,
+      "same_passed": 20,
+      "identical_min_candidate_lower": 20,
+      "max_abs_diff_min_candidate_lower": 0.0,
+      "stored_closed": true,
+      "stored_claim_B": true
+     },
+     "crosscheck": {
+      "arb_count": 8,
+      "stored_in_target": 8,
+      "tier0_in_target": 8,
+      "agree": true
+     },
+     "min_candidate_lower": 0.9435444104376921,
+     "worker_seconds": 0.26,
+     "process": {
+      "rc": 0,
+      "killed": null,
+      "peak_gb": 0.041,
+      "seconds": 0.57
+     },
+     "ok": true
+    },
+    {
+     "id": "atlas_v5:w10000000000000/big_1e13",
+     "T0": 10000000000000,
+     "control": null,
+     "records": 22,
+     "passed_records": 22,
+     "errors": 0,
+     "model_mismatch": 0,
+     "missing_measurements": 0,
+     "geometry": {
+      "main_passed": "2/2",
+      "np_passed": "9/9",
+      "seams_hull": 0,
+      "seams_target": 0,
+      "gaps_d0": 0,
+      "closed_A": true,
+      "claim_B": true,
+      "intervals_to_cover": 9,
+      "uncovered": 0,
+      "sign_changes_in_target": 9,
+      "disjoint": true
+     },
+     "stored_replay": {
+      "source": "replay_check_independent",
+      "matched": 22,
+      "same_passed": 22,
+      "identical_min_candidate_lower": 22,
+      "max_abs_diff_min_candidate_lower": 0.0,
+      "stored_closed": true,
+      "stored_claim_B": true
+     },
+     "crosscheck": {
+      "arb_count": 9,
+      "stored_in_target": 9,
+      "tier0_in_target": 9,
+      "agree": true
+     },
+     "min_candidate_lower": 0.9392192753735779,
+     "worker_seconds": 0.31,
+     "process": {
+      "rc": 0,
+      "killed": null,
+      "peak_gb": 0.042,
+      "seconds": 0.57
+     },
+     "ok": true
+    },
+    {
+     "id": "atlas_v5:w100000000000000/big_1e14",
+     "T0": 100000000000000,
+     "control": null,
+     "records": 22,
+     "passed_records": 22,
+     "errors": 0,
+     "model_mismatch": 0,
+     "missing_measurements": 0,
+     "geometry": {
+      "main_passed": "2/2",
+      "np_passed": "9/9",
+      "seams_hull": 0,
+      "seams_target": 0,
+      "gaps_d0": 0,
+      "closed_A": true,
+      "claim_B": true,
+      "intervals_to_cover": 9,
+      "uncovered": 0,
+      "sign_changes_in_target": 9,
+      "disjoint": true
+     },
+     "stored_replay": {
+      "source": "replay_check_independent",
+      "matched": 22,
+      "same_passed": 22,
+      "identical_min_candidate_lower": 22,
+      "max_abs_diff_min_candidate_lower": 0.0,
+      "stored_closed": true,
+      "stored_claim_B": true
+     },
+     "crosscheck": {
+      "arb_count": 9,
+      "stored_in_target": 9,
+      "tier0_in_target": 9,
+      "agree": true
+     },
+     "min_candidate_lower": 0.9024751707676052,
+     "worker_seconds": 0.3,
+     "process": {
+      "rc": 0,
+      "killed": null,
+      "peak_gb": 0.041,
+      "seconds": 0.56
+     },
+     "ok": true
+    },
+    {
+     "id": "atlas_v5:w663310.00/t2_663318",
+     "T0": 663310,
+     "control": null,
+     "records": 6,
+     "passed_records": 6,
+     "errors": 0,
+     "model_mismatch": 0,
+     "missing_measurements": 0,
+     "geometry": {
+      "main_passed": "1/1",
+      "np_passed": "2/2",
+      "seams_hull": 0,
+      "seams_target": 0,
+      "gaps_d0": 0,
+      "closed_A": true,
+      "claim_B": true,
+      "intervals_to_cover": 2,
+      "uncovered": 0,
+      "sign_changes_in_target": 2,
+      "disjoint": true
+     },
+     "stored_replay": {
+      "source": "replay_check_independent",
+      "matched": 6,
+      "same_passed": 6,
+      "identical_min_candidate_lower": 6,
+      "max_abs_diff_min_candidate_lower": 0.0,
+      "stored_closed": true,
+      "stored_claim_B": true
+     },
+     "crosscheck": null,
+     "min_candidate_lower": 1.3851588751197215,
+     "worker_seconds": 0.06,
+     "process": {
+      "rc": 0,
+      "killed": null,
+      "peak_gb": 0.007,
+      "seconds": 0.3
+     },
+     "ok": true
+    },
+    {
+     "id": "atlas_v5:w6820046.00/rosser",
+     "T0": 6820046,
+     "control": null,
+     "records": 10,
+     "passed_records": 10,
+     "errors": 0,
+     "model_mismatch": 0,
+     "missing_measurements": 0,
+     "geometry": {
+      "main_passed": "2/2",
+      "np_passed": "3/3",
+      "seams_hull": 0,
+      "seams_target": 0,
+      "gaps_d0": 0,
+      "closed_A": true,
+      "claim_B": true,
+      "intervals_to_cover": 3,
+      "uncovered": 0,
+      "sign_changes_in_target": 3,
+      "disjoint": true
+     },
+     "stored_replay": {
+      "source": "replay_check_independent",
+      "matched": 10,
+      "same_passed": 10,
+      "identical_min_candidate_lower": 10,
+      "max_abs_diff_min_candidate_lower": 0.0,
+      "stored_closed": true,
+      "stored_claim_B": true
+     },
+     "crosscheck": null,
+     "min_candidate_lower": 0.7987567942814627,
+     "worker_seconds": 0.11,
+     "process": {
+      "rc": 0,
+      "killed": null,
+      "peak_gb": 0.007,
+      "seconds": 0.3
+     },
+     "ok": true
+    },
+    {
+     "id": "atlas_v5:w7000.00/c7002",
+     "T0": 7000,
+     "control": null,
+     "records": 2,
+     "passed_records": 2,
+     "errors": 0,
+     "model_mismatch": 0,
+     "missing_measurements": 0,
+     "geometry": {
+      "main_passed": "1/1",
+      "np_passed": "0/0",
+      "seams_hull": 0,
+      "seams_target": 0,
+      "gaps_d0": 0,
+      "closed_A": true,
+      "claim_B": true,
+      "intervals_to_cover": 0,
+      "uncovered": 0,
+      "sign_changes_in_target": 0,
+      "disjoint": true
+     },
+     "stored_replay": {
+      "source": "replay_check_independent",
+      "matched": 2,
+      "same_passed": 2,
+      "identical_min_candidate_lower": 2,
+      "max_abs_diff_min_candidate_lower": 0.0,
+      "stored_closed": true,
+      "stored_claim_B": true
+     },
+     "crosscheck": null,
+     "min_candidate_lower": 1.5188260012892645,
+     "worker_seconds": 0.02,
+     "process": {
+      "rc": 0,
+      "killed": null,
+      "peak_gb": 0.007,
+      "seconds": 0.29
+     },
+     "ok": true
+    },
+    {
+     "id": "atlas_v5:w7000.00/lehmer",
+     "T0": 7000,
+     "control": null,
+     "records": 4,
+     "passed_records": 4,
+     "errors": 0,
+     "model_mismatch": 0,
+     "missing_measurements": 0,
+     "geometry": {
+      "main_passed": "1/1",
+      "np_passed": "1/1",
+      "seams_hull": 0,
+      "seams_target": 0,
+      "gaps_d0": 0,
+      "closed_A": true,
+      "claim_B": true,
+      "intervals_to_cover": 1,
+      "uncovered": 0,
+      "sign_changes_in_target": 1,
+      "disjoint": true
+     },
+     "stored_replay": {
+      "source": "replay_check_independent",
+      "matched": 4,
+      "same_passed": 4,
+      "identical_min_candidate_lower": 4,
+      "max_abs_diff_min_candidate_lower": 0.0,
+      "stored_closed": true,
+      "stored_claim_B": true
+     },
+     "crosscheck": null,
+     "min_candidate_lower": 1.4326700009021966,
+     "worker_seconds": 0.04,
+     "process": {
+      "rc": 0,
+      "killed": null,
+      "peak_gb": 0.007,
+      "seconds": 0.31
+     },
+     "ok": true
+    },
+    {
+     "id": "atlas_v5:w7000.00/lehmer_full_pair",
+     "T0": 7000,
+     "control": null,
+     "records": 6,
+     "passed_records": 6,
+     "errors": 0,
+     "model_mismatch": 0,
+     "missing_measurements": 0,
+     "geometry": {
+      "main_passed": "1/1",
+      "np_passed": "2/2",
+      "seams_hull": 0,
+      "seams_target": 0,
+      "gaps_d0": 0,
+      "closed_A": true,
+      "claim_B": true,
+      "intervals_to_cover": 2,
+      "uncovered": 0,
+      "sign_changes_in_target": 2,
+      "disjoint": true
+     },
+     "stored_replay": {
+      "source": "replay_check_independent",
+      "matched": 6,
+      "same_passed": 6,
+      "identical_min_candidate_lower": 6,
+      "max_abs_diff_min_candidate_lower": 0.0,
+      "stored_closed": true,
+      "stored_claim_B": true
+     },
+     "crosscheck": null,
+     "min_candidate_lower": 1.345136820255405,
+     "worker_seconds": 0.06,
+     "process": {
+      "rc": 0,
+      "killed": null,
+      "peak_gb": 0.007,
+      "seconds": 0.31
+     },
+     "ok": true
+    },
+    {
+     "id": "atlas_v5:w9000.00/v1_9000",
+     "T0": 9000,
+     "control": null,
+     "records": 42,
+     "passed_records": 42,
+     "errors": 0,
+     "model_mismatch": 0,
+     "missing_measurements": 0,
+     "geometry": {
+      "main_passed": "10/10",
+      "np_passed": "11/11",
+      "seams_hull": 0,
+      "seams_target": 0,
+      "gaps_d0": 0,
+      "closed_A": true,
+      "claim_B": true,
+      "intervals_to_cover": 11,
+      "uncovered": 0,
+      "sign_changes_in_target": 11,
+      "disjoint": true
+     },
+     "stored_replay": {
+      "source": "replay_check_independent",
+      "matched": 42,
+      "same_passed": 42,
+      "identical_min_candidate_lower": 42,
+      "max_abs_diff_min_candidate_lower": 0.0,
+      "stored_closed": true,
+      "stored_claim_B": true
+     },
+     "crosscheck": null,
+     "min_candidate_lower": 1.0440785352643986,
+     "worker_seconds": 0.58,
+     "process": {
+      "rc": 0,
+      "killed": null,
+      "peak_gb": 0.041,
+      "seconds": 0.83
+     },
+     "ok": true
+    },
+    {
+     "id": "record_heights:w1000000000000000/big_1e15",
+     "T0": 1000000000000000,
+     "control": null,
+     "records": 24,
+     "passed_records": 24,
+     "errors": 0,
+     "model_mismatch": 0,
+     "missing_measurements": 0,
+     "geometry": {
+      "main_passed": "2/2",
+      "np_passed": "10/10",
+      "seams_hull": 0,
+      "seams_target": 0,
+      "gaps_d0": 0,
+      "closed_A": true,
+      "claim_B": true,
+      "intervals_to_cover": 10,
+      "uncovered": 0,
+      "sign_changes_in_target": 10,
+      "disjoint": true
+     },
+     "stored_replay": {
+      "source": "replay_check_independent",
+      "matched": 24,
+      "same_passed": 24,
+      "identical_min_candidate_lower": 24,
+      "max_abs_diff_min_candidate_lower": 0.0,
+      "stored_closed": true,
+      "stored_claim_B": true
+     },
+     "crosscheck": {
+      "arb_count": 10,
+      "stored_in_target": 10,
+      "tier0_in_target": 10,
+      "agree": true
+     },
+     "min_candidate_lower": 0.8639199061388785,
+     "worker_seconds": 0.33,
+     "process": {
+      "rc": 0,
+      "killed": null,
+      "peak_gb": 0.041,
+      "seconds": 0.56
+     },
+     "ok": true
+    },
+    {
+     "id": "record_heights:w1000000000000000/pair_1e15_286",
+     "T0": 1000000000000000,
+     "control": null,
+     "records": 24,
+     "passed_records": 24,
+     "errors": 0,
+     "model_mismatch": 0,
+     "missing_measurements": 0,
+     "geometry": {
+      "main_passed": "2/2",
+      "np_passed": "10/10",
+      "seams_hull": 0,
+      "seams_target": 0,
+      "gaps_d0": 0,
+      "closed_A": true,
+      "claim_B": true,
+      "intervals_to_cover": 10,
+      "uncovered": 0,
+      "sign_changes_in_target": 10,
+      "disjoint": true
+     },
+     "stored_replay": {
+      "source": "replay_check_independent",
+      "matched": 24,
+      "same_passed": 24,
+      "identical_min_candidate_lower": 24,
+      "max_abs_diff_min_candidate_lower": 0.0,
+      "stored_closed": true,
+      "stored_claim_B": true
+     },
+     "crosscheck": {
+      "arb_count": 10,
+      "stored_in_target": 10,
+      "tier0_in_target": 10,
+      "agree": true
+     },
+     "min_candidate_lower": 0.8644913957802675,
+     "worker_seconds": 0.34,
+     "process": {
+      "rc": 0,
+      "killed": null,
+      "peak_gb": 0.041,
+      "seconds": 0.56
+     },
+     "ok": true
+    },
+    {
+     "id": "record_heights:w10000000000000000/big_1e16",
+     "T0": 10000000000000000,
+     "control": null,
+     "records": 24,
+     "passed_records": 24,
+     "errors": 0,
+     "model_mismatch": 0,
+     "missing_measurements": 0,
+     "geometry": {
+      "main_passed": "2/2",
+      "np_passed": "10/10",
+      "seams_hull": 0,
+      "seams_target": 0,
+      "gaps_d0": 0,
+      "closed_A": true,
+      "claim_B": true,
+      "intervals_to_cover": 10,
+      "uncovered": 0,
+      "sign_changes_in_target": 10,
+      "disjoint": true
+     },
+     "stored_replay": {
+      "source": "replay_check_independent",
+      "matched": 24,
+      "same_passed": 24,
+      "identical_min_candidate_lower": 24,
+      "max_abs_diff_min_candidate_lower": 0.0,
+      "stored_closed": true,
+      "stored_claim_B": true
+     },
+     "crosscheck": {
+      "arb_count": 10,
+      "stored_in_target": 10,
+      "tier0_in_target": 10,
+      "agree": true
+     },
+     "min_candidate_lower": 0.8256182590293206,
+     "worker_seconds": 0.34,
+     "process": {
+      "rc": 0,
+      "killed": null,
+      "peak_gb": 0.041,
+      "seconds": 0.56
+     },
+     "ok": true
+    },
+    {
+     "id": "atlas_v5z:w1000000000000/z_1e12",
+     "T0": 1000000000000,
+     "control": null,
+     "records": 20,
+     "passed_records": 20,
+     "errors": 0,
+     "model_mismatch": 0,
+     "missing_measurements": 0,
+     "geometry": {
+      "main_passed": "2/2",
+      "np_passed": "8/8",
+      "seams_hull": 0,
+      "seams_target": 0,
+      "gaps_d0": 0,
+      "closed_A": true,
+      "claim_B": true,
+      "intervals_to_cover": 8,
+      "uncovered": 0,
+      "sign_changes_in_target": 8,
+      "disjoint": true
+     },
+     "stored_replay": {
+      "source": "replay_check_independent",
+      "matched": 20,
+      "same_passed": 20,
+      "identical_min_candidate_lower": 20,
+      "max_abs_diff_min_candidate_lower": 0.0,
+      "stored_closed": true,
+      "stored_claim_B": true
+     },
+     "crosscheck": {
+      "arb_count": 8,
+      "stored_in_target": 8,
+      "tier0_in_target": 8,
+      "agree": true
+     },
+     "min_candidate_lower": 0.9435444104376903,
+     "worker_seconds": 0.26,
+     "process": {
+      "rc": 0,
+      "killed": null,
+      "peak_gb": 0.042,
+      "seconds": 0.56
+     },
+     "ok": true
+    },
+    {
+     "id": "atlas_v5z:w10000000000000/z_1e13",
+     "T0": 10000000000000,
+     "control": null,
+     "records": 22,
+     "passed_records": 22,
+     "errors": 0,
+     "model_mismatch": 0,
+     "missing_measurements": 0,
+     "geometry": {
+      "main_passed": "2/2",
+      "np_passed": "9/9",
+      "seams_hull": 0,
+      "seams_target": 0,
+      "gaps_d0": 0,
+      "closed_A": true,
+      "claim_B": true,
+      "intervals_to_cover": 9,
+      "uncovered": 0,
+      "sign_changes_in_target": 9,
+      "disjoint": true
+     },
+     "stored_replay": {
+      "source": "replay_check_independent",
+      "matched": 22,
+      "same_passed": 22,
+      "identical_min_candidate_lower": 22,
+      "max_abs_diff_min_candidate_lower": 0.0,
+      "stored_closed": true,
+      "stored_claim_B": true
+     },
+     "crosscheck": {
+      "arb_count": 9,
+      "stored_in_target": 9,
+      "tier0_in_target": 9,
+      "agree": true
+     },
+     "min_candidate_lower": 0.9392192753735757,
+     "worker_seconds": 0.29,
+     "process": {
+      "rc": 0,
+      "killed": null,
+      "peak_gb": 0.042,
+      "seconds": 0.57
+     },
+     "ok": true
+    },
+    {
+     "id": "atlas_v5z:w100000000000000/z_1e14",
+     "T0": 100000000000000,
+     "control": null,
+     "records": 22,
+     "passed_records": 22,
+     "errors": 0,
+     "model_mismatch": 0,
+     "missing_measurements": 0,
+     "geometry": {
+      "main_passed": "2/2",
+      "np_passed": "9/9",
+      "seams_hull": 0,
+      "seams_target": 0,
+      "gaps_d0": 0,
+      "closed_A": true,
+      "claim_B": true,
+      "intervals_to_cover": 9,
+      "uncovered": 0,
+      "sign_changes_in_target": 9,
+      "disjoint": true
+     },
+     "stored_replay": {
+      "source": "replay_check_independent",
+      "matched": 22,
+      "same_passed": 22,
+      "identical_min_candidate_lower": 22,
+      "max_abs_diff_min_candidate_lower": 0.0,
+      "stored_closed": true,
+      "stored_claim_B": true
+     },
+     "crosscheck": {
+      "arb_count": 9,
+      "stored_in_target": 9,
+      "tier0_in_target": 9,
+      "agree": true
+     },
+     "min_candidate_lower": 0.9024751707675914,
+     "worker_seconds": 0.3,
+     "process": {
+      "rc": 0,
+      "killed": null,
+      "peak_gb": 0.042,
+      "seconds": 0.57
+     },
+     "ok": true
+    },
+    {
+     "id": "atlas_v5z:w1000000000000000/z_1e15",
+     "T0": 1000000000000000,
+     "control": null,
+     "records": 24,
+     "passed_records": 24,
+     "errors": 0,
+     "model_mismatch": 0,
+     "missing_measurements": 0,
+     "geometry": {
+      "main_passed": "2/2",
+      "np_passed": "10/10",
+      "seams_hull": 0,
+      "seams_target": 0,
+      "gaps_d0": 0,
+      "closed_A": true,
+      "claim_B": true,
+      "intervals_to_cover": 10,
+      "uncovered": 0,
+      "sign_changes_in_target": 10,
+      "disjoint": true
+     },
+     "stored_replay": {
+      "source": "replay_check_independent",
+      "matched": 24,
+      "same_passed": 24,
+      "identical_min_candidate_lower": 24,
+      "max_abs_diff_min_candidate_lower": 0.0,
+      "stored_closed": true,
+      "stored_claim_B": true
+     },
+     "crosscheck": {
+      "arb_count": 10,
+      "stored_in_target": 10,
+      "tier0_in_target": 10,
+      "agree": true
+     },
+     "min_candidate_lower": 0.8639199061388787,
+     "worker_seconds": 0.34,
+     "process": {
+      "rc": 0,
+      "killed": null,
+      "peak_gb": 0.042,
+      "seconds": 0.57
+     },
+     "ok": true
+    },
+    {
+     "id": "atlas_v5z:w1000000000000000/z_pair_1e15_286",
+     "T0": 1000000000000000,
+     "control": null,
+     "records": 24,
+     "passed_records": 24,
+     "errors": 0,
+     "model_mismatch": 0,
+     "missing_measurements": 0,
+     "geometry": {
+      "main_passed": "2/2",
+      "np_passed": "10/10",
+      "seams_hull": 0,
+      "seams_target": 0,
+      "gaps_d0": 0,
+      "closed_A": true,
+      "claim_B": true,
+      "intervals_to_cover": 10,
+      "uncovered": 0,
+      "sign_changes_in_target": 10,
+      "disjoint": true
+     },
+     "stored_replay": {
+      "source": "replay_check_independent",
+      "matched": 24,
+      "same_passed": 24,
+      "identical_min_candidate_lower": 24,
+      "max_abs_diff_min_candidate_lower": 0.0,
+      "stored_closed": true,
+      "stored_claim_B": true
+     },
+     "crosscheck": {
+      "arb_count": 10,
+      "stored_in_target": 10,
+      "tier0_in_target": 10,
+      "agree": true
+     },
+     "min_candidate_lower": 0.8644913957802872,
+     "worker_seconds": 0.34,
+     "process": {
+      "rc": 0,
+      "killed": null,
+      "peak_gb": 0.042,
+      "seconds": 0.56
+     },
+     "ok": true
+    },
+    {
+     "id": "atlas_v5z:w10000000000000000/z_1e16",
+     "T0": 10000000000000000,
+     "control": null,
+     "records": 24,
+     "passed_records": 24,
+     "errors": 0,
+     "model_mismatch": 0,
+     "missing_measurements": 0,
+     "geometry": {
+      "main_passed": "2/2",
+      "np_passed": "10/10",
+      "seams_hull": 0,
+      "seams_target": 0,
+      "gaps_d0": 0,
+      "closed_A": true,
+      "claim_B": true,
+      "intervals_to_cover": 10,
+      "uncovered": 0,
+      "sign_changes_in_target": 10,
+      "disjoint": true
+     },
+     "stored_replay": {
+      "source": "replay_check_independent",
+      "matched": 24,
+      "same_passed": 24,
+      "identical_min_candidate_lower": 24,
+      "max_abs_diff_min_candidate_lower": 0.0,
+      "stored_closed": true,
+      "stored_claim_B": true
+     },
+     "crosscheck": {
+      "arb_count": 10,
+      "stored_in_target": 10,
+      "tier0_in_target": 10,
+      "agree": true
+     },
+     "min_candidate_lower": 0.8256182590293083,
+     "worker_seconds": 0.33,
+     "process": {
+      "rc": 0,
+      "killed": null,
+      "peak_gb": 0.042,
+      "seconds": 0.56
+     },
+     "ok": true
+    },
+    {
+     "id": "atlas_v5z:w100000000000000000/z_1e17",
+     "T0": 100000000000000000,
+     "control": null,
+     "records": 26,
+     "passed_records": 26,
+     "errors": 0,
+     "model_mismatch": 0,
+     "missing_measurements": 0,
+     "geometry": {
+      "main_passed": "2/2",
+      "np_passed": "11/11",
+      "seams_hull": 0,
+      "seams_target": 0,
+      "gaps_d0": 0,
+      "closed_A": true,
+      "claim_B": true,
+      "intervals_to_cover": 11,
+      "uncovered": 0,
+      "sign_changes_in_target": 11,
+      "disjoint": true
+     },
+     "stored_replay": {
+      "source": "replay_check_independent",
+      "matched": 26,
+      "same_passed": 26,
+      "identical_min_candidate_lower": 26,
+      "max_abs_diff_min_candidate_lower": 0.0,
+      "stored_closed": true,
+      "stored_claim_B": true
+     },
+     "crosscheck": null,
+     "min_candidate_lower": 0.8362815697257229,
+     "worker_seconds": 0.38,
+     "process": {
+      "rc": 0,
+      "killed": null,
+      "peak_gb": 0.042,
+      "seconds": 0.56
+     },
+     "ok": true
+    },
+    {
+     "id": "atlas_v5z:w1000000000000000000/z_1e18",
+     "T0": 1000000000000000000,
+     "control": null,
+     "records": 26,
+     "passed_records": 26,
+     "errors": 0,
+     "model_mismatch": 0,
+     "missing_measurements": 0,
+     "geometry": {
+      "main_passed": "2/2",
+      "np_passed": "11/11",
+      "seams_hull": 0,
+      "seams_target": 0,
+      "gaps_d0": 0,
+      "closed_A": true,
+      "claim_B": true,
+      "intervals_to_cover": 11,
+      "uncovered": 0,
+      "sign_changes_in_target": 11,
+      "disjoint": true
+     },
+     "stored_replay": {
+      "source": "replay_check_independent",
+      "matched": 26,
+      "same_passed": 26,
+      "identical_min_candidate_lower": 26,
+      "max_abs_diff_min_candidate_lower": 0.0,
+      "stored_closed": true,
+      "stored_claim_B": true
+     },
+     "crosscheck": null,
+     "min_candidate_lower": 0.8092282336034444,
+     "worker_seconds": 0.37,
+     "process": {
+      "rc": 0,
+      "killed": null,
+      "peak_gb": 0.042,
+      "seconds": 0.56
+     },
+     "ok": true
+    },
+    {
+     "id": "atlas_v5z2:w1000000000000/y_1e12",
+     "T0": 1000000000000,
+     "control": null,
+     "records": 20,
+     "passed_records": 20,
+     "errors": 0,
+     "model_mismatch": 0,
+     "missing_measurements": 0,
+     "geometry": {
+      "main_passed": "2/2",
+      "np_passed": "8/8",
+      "seams_hull": 0,
+      "seams_target": 0,
+      "gaps_d0": 0,
+      "closed_A": true,
+      "claim_B": true,
+      "intervals_to_cover": 8,
+      "uncovered": 0,
+      "sign_changes_in_target": 8,
+      "disjoint": true
+     },
+     "stored_replay": {
+      "source": "replay_check_independent",
+      "matched": 20,
+      "same_passed": 20,
+      "identical_min_candidate_lower": 20,
+      "max_abs_diff_min_candidate_lower": 0.0,
+      "stored_closed": true,
+      "stored_claim_B": true
+     },
+     "crosscheck": {
+      "arb_count": 8,
+      "stored_in_target": 8,
+      "tier0_in_target": 8,
+      "agree": true
+     },
+     "min_candidate_lower": 0.9435444104376903,
+     "worker_seconds": 0.26,
+     "process": {
+      "rc": 0,
+      "killed": null,
+      "peak_gb": 0.042,
+      "seconds": 0.56
+     },
+     "ok": true
+    },
+    {
+     "id": "atlas_v5z2:w10000000000000/y_1e13",
+     "T0": 10000000000000,
+     "control": null,
+     "records": 22,
+     "passed_records": 22,
+     "errors": 0,
+     "model_mismatch": 0,
+     "missing_measurements": 0,
+     "geometry": {
+      "main_passed": "2/2",
+      "np_passed": "9/9",
+      "seams_hull": 0,
+      "seams_target": 0,
+      "gaps_d0": 0,
+      "closed_A": true,
+      "claim_B": true,
+      "intervals_to_cover": 9,
+      "uncovered": 0,
+      "sign_changes_in_target": 9,
+      "disjoint": true
+     },
+     "stored_replay": {
+      "source": "replay_check_independent",
+      "matched": 22,
+      "same_passed": 22,
+      "identical_min_candidate_lower": 22,
+      "max_abs_diff_min_candidate_lower": 0.0,
+      "stored_closed": true,
+      "stored_claim_B": true
+     },
+     "crosscheck": {
+      "arb_count": 9,
+      "stored_in_target": 9,
+      "tier0_in_target": 9,
+      "agree": true
+     },
+     "min_candidate_lower": 0.9392192753735759,
+     "worker_seconds": 0.29,
+     "process": {
+      "rc": 0,
+      "killed": null,
+      "peak_gb": 0.042,
+      "seconds": 0.57
+     },
+     "ok": true
+    },
+    {
+     "id": "atlas_v5z2:w100000000000000/y_1e14",
+     "T0": 100000000000000,
+     "control": null,
+     "records": 22,
+     "passed_records": 22,
+     "errors": 0,
+     "model_mismatch": 0,
+     "missing_measurements": 0,
+     "geometry": {
+      "main_passed": "2/2",
+      "np_passed": "9/9",
+      "seams_hull": 0,
+      "seams_target": 0,
+      "gaps_d0": 0,
+      "closed_A": true,
+      "claim_B": true,
+      "intervals_to_cover": 9,
+      "uncovered": 0,
+      "sign_changes_in_target": 9,
+      "disjoint": true
+     },
+     "stored_replay": {
+      "source": "replay_check_independent",
+      "matched": 22,
+      "same_passed": 22,
+      "identical_min_candidate_lower": 22,
+      "max_abs_diff_min_candidate_lower": 0.0,
+      "stored_closed": true,
+      "stored_claim_B": true
+     },
+     "crosscheck": {
+      "arb_count": 9,
+      "stored_in_target": 9,
+      "tier0_in_target": 9,
+      "agree": true
+     },
+     "min_candidate_lower": 0.9024751707675914,
+     "worker_seconds": 0.3,
+     "process": {
+      "rc": 0,
+      "killed": null,
+      "peak_gb": 0.042,
+      "seconds": 0.57
+     },
+     "ok": true
+    },
+    {
+     "id": "atlas_v5z2:w1000000000000000/y_1e15",
+     "T0": 1000000000000000,
+     "control": null,
+     "records": 24,
+     "passed_records": 24,
+     "errors": 0,
+     "model_mismatch": 0,
+     "missing_measurements": 0,
+     "geometry": {
+      "main_passed": "2/2",
+      "np_passed": "10/10",
+      "seams_hull": 0,
+      "seams_target": 0,
+      "gaps_d0": 0,
+      "closed_A": true,
+      "claim_B": true,
+      "intervals_to_cover": 10,
+      "uncovered": 0,
+      "sign_changes_in_target": 10,
+      "disjoint": true
+     },
+     "stored_replay": {
+      "source": "replay_check_independent",
+      "matched": 24,
+      "same_passed": 24,
+      "identical_min_candidate_lower": 24,
+      "max_abs_diff_min_candidate_lower": 0.0,
+      "stored_closed": true,
+      "stored_claim_B": true
+     },
+     "crosscheck": {
+      "arb_count": 10,
+      "stored_in_target": 10,
+      "tier0_in_target": 10,
+      "agree": true
+     },
+     "min_candidate_lower": 0.8639199061388787,
+     "worker_seconds": 0.34,
+     "process": {
+      "rc": 0,
+      "killed": null,
+      "peak_gb": 0.042,
+      "seconds": 0.56
+     },
+     "ok": true
+    },
+    {
+     "id": "atlas_v5z2:w1000000000000000/y_pair_1e15_286",
+     "T0": 1000000000000000,
+     "control": null,
+     "records": 24,
+     "passed_records": 24,
+     "errors": 0,
+     "model_mismatch": 0,
+     "missing_measurements": 0,
+     "geometry": {
+      "main_passed": "2/2",
+      "np_passed": "10/10",
+      "seams_hull": 0,
+      "seams_target": 0,
+      "gaps_d0": 0,
+      "closed_A": true,
+      "claim_B": true,
+      "intervals_to_cover": 10,
+      "uncovered": 0,
+      "sign_changes_in_target": 10,
+      "disjoint": true
+     },
+     "stored_replay": {
+      "source": "replay_check_independent",
+      "matched": 24,
+      "same_passed": 24,
+      "identical_min_candidate_lower": 24,
+      "max_abs_diff_min_candidate_lower": 0.0,
+      "stored_closed": true,
+      "stored_claim_B": true
+     },
+     "crosscheck": {
+      "arb_count": 10,
+      "stored_in_target": 10,
+      "tier0_in_target": 10,
+      "agree": true
+     },
+     "min_candidate_lower": 0.8644913957802872,
+     "worker_seconds": 0.34,
+     "process": {
+      "rc": 0,
+      "killed": null,
+      "peak_gb": 0.042,
+      "seconds": 0.56
+     },
+     "ok": true
+    },
+    {
+     "id": "atlas_v5z2:w10000000000000000/y_1e16",
+     "T0": 10000000000000000,
+     "control": null,
+     "records": 24,
+     "passed_records": 24,
+     "errors": 0,
+     "model_mismatch": 0,
+     "missing_measurements": 0,
+     "geometry": {
+      "main_passed": "2/2",
+      "np_passed": "10/10",
+      "seams_hull": 0,
+      "seams_target": 0,
+      "gaps_d0": 0,
+      "closed_A": true,
+      "claim_B": true,
+      "intervals_to_cover": 10,
+      "uncovered": 0,
+      "sign_changes_in_target": 10,
+      "disjoint": true
+     },
+     "stored_replay": {
+      "source": "replay_check_independent",
+      "matched": 24,
+      "same_passed": 24,
+      "identical_min_candidate_lower": 24,
+      "max_abs_diff_min_candidate_lower": 0.0,
+      "stored_closed": true,
+      "stored_claim_B": true
+     },
+     "crosscheck": {
+      "arb_count": 10,
+      "stored_in_target": 10,
+      "tier0_in_target": 10,
+      "agree": true
+     },
+     "min_candidate_lower": 0.8256182590293206,
+     "worker_seconds": 0.33,
+     "process": {
+      "rc": 0,
+      "killed": null,
+      "peak_gb": 0.042,
+      "seconds": 0.56
+     },
+     "ok": true
+    },
+    {
+     "id": "atlas_v5z2:w100000000000000000/y_1e17",
+     "T0": 100000000000000000,
+     "control": null,
+     "records": 26,
+     "passed_records": 26,
+     "errors": 0,
+     "model_mismatch": 0,
+     "missing_measurements": 0,
+     "geometry": {
+      "main_passed": "2/2",
+      "np_passed": "11/11",
+      "seams_hull": 0,
+      "seams_target": 0,
+      "gaps_d0": 0,
+      "closed_A": true,
+      "claim_B": true,
+      "intervals_to_cover": 11,
+      "uncovered": 0,
+      "sign_changes_in_target": 11,
+      "disjoint": true
+     },
+     "stored_replay": {
+      "source": "replay_check_independent",
+      "matched": 26,
+      "same_passed": 26,
+      "identical_min_candidate_lower": 26,
+      "max_abs_diff_min_candidate_lower": 0.0,
+      "stored_closed": true,
+      "stored_claim_B": true
+     },
+     "crosscheck": null,
+     "min_candidate_lower": 0.8362815697257229,
+     "worker_seconds": 0.37,
+     "process": {
+      "rc": 0,
+      "killed": null,
+      "peak_gb": 0.042,
+      "seconds": 0.56
+     },
+     "ok": true
+    },
+    {
+     "id": "atlas_v5z2:w1000000000000000000/y_1e18",
+     "T0": 1000000000000000000,
+     "control": null,
+     "records": 26,
+     "passed_records": 26,
+     "errors": 0,
+     "model_mismatch": 0,
+     "missing_measurements": 0,
+     "geometry": {
+      "main_passed": "2/2",
+      "np_passed": "11/11",
+      "seams_hull": 0,
+      "seams_target": 0,
+      "gaps_d0": 0,
+      "closed_A": true,
+      "claim_B": true,
+      "intervals_to_cover": 11,
+      "uncovered": 0,
+      "sign_changes_in_target": 11,
+      "disjoint": true
+     },
+     "stored_replay": {
+      "source": "replay_check_independent",
+      "matched": 26,
+      "same_passed": 26,
+      "identical_min_candidate_lower": 26,
+      "max_abs_diff_min_candidate_lower": 0.0,
+      "stored_closed": true,
+      "stored_claim_B": true
+     },
+     "crosscheck": null,
+     "min_candidate_lower": 0.8092282336034444,
+     "worker_seconds": 0.37,
+     "process": {
+      "rc": 0,
+      "killed": null,
+      "peak_gb": 0.042,
+      "seconds": 0.56
+     },
+     "ok": true
+    },
+    {
+     "id": "atlas_v5z2:w100000000000000000000/h_1e20",
+     "T0": 100000000000000000000,
+     "control": null,
+     "records": 30,
+     "passed_records": 30,
+     "errors": 0,
+     "model_mismatch": 0,
+     "missing_measurements": 0,
+     "geometry": {
+      "main_passed": "2/2",
+      "np_passed": "13/13",
+      "seams_hull": 0,
+      "seams_target": 0,
+      "gaps_d0": 0,
+      "closed_A": true,
+      "claim_B": true,
+      "intervals_to_cover": 13,
+      "uncovered": 0,
+      "sign_changes_in_target": 13,
+      "disjoint": true
+     },
+     "stored_replay": {
+      "source": "replay_check_independent",
+      "matched": 30,
+      "same_passed": 30,
+      "identical_min_candidate_lower": 30,
+      "max_abs_diff_min_candidate_lower": 0.0,
+      "stored_closed": true,
+      "stored_claim_B": true
+     },
+     "crosscheck": null,
+     "min_candidate_lower": 0.7936622631856001,
+     "worker_seconds": 0.47,
+     "process": {
+      "rc": 0,
+      "killed": null,
+      "peak_gb": 0.042,
+      "seconds": 0.82
+     },
+     "ok": true
+    },
+    {
+     "id": "atlas_v5z2:w100000000000000000000/hp_1e20",
+     "T0": 100000000000000000000,
+     "control": null,
+     "records": 32,
+     "passed_records": 32,
+     "errors": 0,
+     "model_mismatch": 0,
+     "missing_measurements": 0,
+     "geometry": {
+      "main_passed": "2/2",
+      "np_passed": "14/14",
+      "seams_hull": 0,
+      "seams_target": 0,
+      "gaps_d0": 0,
+      "closed_A": true,
+      "claim_B": true,
+      "intervals_to_cover": 14,
+      "uncovered": 0,
+      "sign_changes_in_target": 14,
+      "disjoint": true
+     },
+     "stored_replay": {
+      "source": "replay_check_independent",
+      "matched": 32,
+      "same_passed": 32,
+      "identical_min_candidate_lower": 32,
+      "max_abs_diff_min_candidate_lower": 0.0,
+      "stored_closed": true,
+      "stored_claim_B": true
+     },
+     "crosscheck": null,
+     "min_candidate_lower": 0.7726391951627157,
+     "worker_seconds": 0.49,
+     "process": {
+      "rc": 0,
+      "killed": null,
+      "peak_gb": 0.042,
+      "seconds": 0.83
+     },
+     "ok": true
+    },
+    {
+     "id": "atlas_v5z2:w1000000000000000000000/h_1e21",
+     "T0": 1000000000000000000000,
+     "control": null,
+     "records": 34,
+     "passed_records": 34,
+     "errors": 0,
+     "model_mismatch": 0,
+     "missing_measurements": 0,
+     "geometry": {
+      "main_passed": "2/2",
+      "np_passed": "15/15",
+      "seams_hull": 0,
+      "seams_target": 0,
+      "gaps_d0": 0,
+      "closed_A": true,
+      "claim_B": true,
+      "intervals_to_cover": 15,
+      "uncovered": 0,
+      "sign_changes_in_target": 15,
+      "disjoint": true
+     },
+     "stored_replay": {
+      "source": "replay_check_independent",
+      "matched": 34,
+      "same_passed": 34,
+      "identical_min_candidate_lower": 34,
+      "max_abs_diff_min_candidate_lower": 0.0,
+      "stored_closed": true,
+      "stored_claim_B": true
+     },
+     "crosscheck": null,
+     "min_candidate_lower": 0.7693532418017396,
+     "worker_seconds": 0.54,
+     "process": {
+      "rc": 0,
+      "killed": null,
+      "peak_gb": 0.042,
+      "seconds": 0.83
+     },
+     "ok": true
+    },
+    {
+     "id": "atlas_v5z2:w1000000000000000000000/hp_1e21",
+     "T0": 1000000000000000000000,
+     "control": null,
+     "records": 34,
+     "passed_records": 34,
+     "errors": 0,
+     "model_mismatch": 0,
+     "missing_measurements": 0,
+     "geometry": {
+      "main_passed": "2/2",
+      "np_passed": "15/15",
+      "seams_hull": 0,
+      "seams_target": 0,
+      "gaps_d0": 0,
+      "closed_A": true,
+      "claim_B": true,
+      "intervals_to_cover": 15,
+      "uncovered": 0,
+      "sign_changes_in_target": 15,
+      "disjoint": true
+     },
+     "stored_replay": {
+      "source": "replay_check_independent",
+      "matched": 34,
+      "same_passed": 34,
+      "identical_min_candidate_lower": 34,
+      "max_abs_diff_min_candidate_lower": 0.0,
+      "stored_closed": true,
+      "stored_claim_B": true
+     },
+     "crosscheck": null,
+     "min_candidate_lower": 0.7942768215466341,
+     "worker_seconds": 0.53,
+     "process": {
+      "rc": 0,
+      "killed": null,
+      "peak_gb": 0.042,
+      "seconds": 0.83
+     },
+     "ok": true
+    },
+    {
+     "id": "atlas_v5z2:w10000000000000000000000/h_1e22",
+     "T0": 10000000000000000000000,
+     "control": null,
+     "records": 36,
+     "passed_records": 36,
+     "errors": 0,
+     "model_mismatch": 0,
+     "missing_measurements": 0,
+     "geometry": {
+      "main_passed": "2/2",
+      "np_passed": "16/16",
+      "seams_hull": 0,
+      "seams_target": 0,
+      "gaps_d0": 0,
+      "closed_A": true,
+      "claim_B": true,
+      "intervals_to_cover": 16,
+      "uncovered": 0,
+      "sign_changes_in_target": 16,
+      "disjoint": true
+     },
+     "stored_replay": {
+      "source": "replay_check_independent",
+      "matched": 36,
+      "same_passed": 36,
+      "identical_min_candidate_lower": 36,
+      "max_abs_diff_min_candidate_lower": 0.0,
+      "stored_closed": true,
+      "stored_claim_B": true
+     },
+     "crosscheck": null,
+     "min_candidate_lower": 0.7475326795220493,
+     "worker_seconds": 0.58,
+     "process": {
+      "rc": 0,
+      "killed": null,
+      "peak_gb": 0.042,
+      "seconds": 0.82
+     },
+     "ok": true
+    },
+    {
+     "id": "atlas_v5z2:w10000000000000000000000/hp_1e22",
+     "T0": 10000000000000000000000,
+     "control": null,
+     "records": 36,
+     "passed_records": 36,
+     "errors": 0,
+     "model_mismatch": 0,
+     "missing_measurements": 0,
+     "geometry": {
+      "main_passed": "2/2",
+      "np_passed": "16/16",
+      "seams_hull": 0,
+      "seams_target": 0,
+      "gaps_d0": 0,
+      "closed_A": true,
+      "claim_B": true,
+      "intervals_to_cover": 16,
+      "uncovered": 0,
+      "sign_changes_in_target": 16,
+      "disjoint": true
+     },
+     "stored_replay": {
+      "source": "replay_check_independent",
+      "matched": 36,
+      "same_passed": 36,
+      "identical_min_candidate_lower": 36,
+      "max_abs_diff_min_candidate_lower": 0.0,
+      "stored_closed": true,
+      "stored_claim_B": true
+     },
+     "crosscheck": null,
+     "min_candidate_lower": 0.7686889707178968,
+     "worker_seconds": 0.59,
+     "process": {
+      "rc": 0,
+      "killed": null,
+      "peak_gb": 0.042,
+      "seconds": 0.82
+     },
+     "ok": true
+    },
+    {
+     "id": "atlas_v5z3:w10000000000000000/x_1e16",
+     "T0": 10000000000000000,
+     "control": null,
+     "records": 24,
+     "passed_records": 24,
+     "errors": 0,
+     "model_mismatch": 0,
+     "missing_measurements": 0,
+     "geometry": {
+      "main_passed": "2/2",
+      "np_passed": "10/10",
+      "seams_hull": 0,
+      "seams_target": 0,
+      "gaps_d0": 0,
+      "closed_A": true,
+      "claim_B": true,
+      "intervals_to_cover": 10,
+      "uncovered": 0,
+      "sign_changes_in_target": 10,
+      "disjoint": true
+     },
+     "stored_replay": {
+      "source": "replay_check_independent",
+      "matched": 24,
+      "same_passed": 24,
+      "identical_min_candidate_lower": 24,
+      "max_abs_diff_min_candidate_lower": 0.0,
+      "stored_closed": true,
+      "stored_claim_B": true
+     },
+     "crosscheck": {
+      "arb_count": 10,
+      "stored_in_target": 10,
+      "tier0_in_target": 10,
+      "agree": true
+     },
+     "min_candidate_lower": 0.8256182590293206,
+     "worker_seconds": 0.33,
+     "process": {
+      "rc": 0,
+      "killed": null,
+      "peak_gb": 0.042,
+      "seconds": 0.56
+     },
+     "ok": true
+    },
+    {
+     "id": "atlas_v5z3:w100000000000000000000/x_1e20",
+     "T0": 100000000000000000000,
+     "control": null,
+     "records": 30,
+     "passed_records": 30,
+     "errors": 0,
+     "model_mismatch": 0,
+     "missing_measurements": 0,
+     "geometry": {
+      "main_passed": "2/2",
+      "np_passed": "13/13",
+      "seams_hull": 0,
+      "seams_target": 0,
+      "gaps_d0": 0,
+      "closed_A": true,
+      "claim_B": true,
+      "intervals_to_cover": 13,
+      "uncovered": 0,
+      "sign_changes_in_target": 13,
+      "disjoint": true
+     },
+     "stored_replay": {
+      "source": "replay_check_independent",
+      "matched": 30,
+      "same_passed": 30,
+      "identical_min_candidate_lower": 30,
+      "max_abs_diff_min_candidate_lower": 0.0,
+      "stored_closed": true,
+      "stored_claim_B": true
+     },
+     "crosscheck": null,
+     "min_candidate_lower": 0.7936622631856001,
+     "worker_seconds": 0.46,
+     "process": {
+      "rc": 0,
+      "killed": null,
+      "peak_gb": 0.042,
+      "seconds": 0.82
+     },
+     "ok": true
+    },
+    {
+     "id": "atlas_v5z3:w100000000000000000000/xp_1e20",
+     "T0": 100000000000000000000,
+     "control": null,
+     "records": 32,
+     "passed_records": 32,
+     "errors": 0,
+     "model_mismatch": 0,
+     "missing_measurements": 0,
+     "geometry": {
+      "main_passed": "2/2",
+      "np_passed": "14/14",
+      "seams_hull": 0,
+      "seams_target": 0,
+      "gaps_d0": 0,
+      "closed_A": true,
+      "claim_B": true,
+      "intervals_to_cover": 14,
+      "uncovered": 0,
+      "sign_changes_in_target": 14,
+      "disjoint": true
+     },
+     "stored_replay": {
+      "source": "replay_check_independent",
+      "matched": 32,
+      "same_passed": 32,
+      "identical_min_candidate_lower": 32,
+      "max_abs_diff_min_candidate_lower": 0.0,
+      "stored_closed": true,
+      "stored_claim_B": true
+     },
+     "crosscheck": null,
+     "min_candidate_lower": 0.7726391951627157,
+     "worker_seconds": 0.49,
+     "process": {
+      "rc": 0,
+      "killed": null,
+      "peak_gb": 0.042,
+      "seconds": 0.83
+     },
+     "ok": true
+    },
+    {
+     "id": "atlas_v5z3:w1000000000000000000000/x_1e21",
+     "T0": 1000000000000000000000,
+     "control": null,
+     "records": 34,
+     "passed_records": 34,
+     "errors": 0,
+     "model_mismatch": 0,
+     "missing_measurements": 0,
+     "geometry": {
+      "main_passed": "2/2",
+      "np_passed": "15/15",
+      "seams_hull": 0,
+      "seams_target": 0,
+      "gaps_d0": 0,
+      "closed_A": true,
+      "claim_B": true,
+      "intervals_to_cover": 15,
+      "uncovered": 0,
+      "sign_changes_in_target": 15,
+      "disjoint": true
+     },
+     "stored_replay": {
+      "source": "replay_check_independent",
+      "matched": 34,
+      "same_passed": 34,
+      "identical_min_candidate_lower": 34,
+      "max_abs_diff_min_candidate_lower": 0.0,
+      "stored_closed": true,
+      "stored_claim_B": true
+     },
+     "crosscheck": null,
+     "min_candidate_lower": 0.7693532418017396,
+     "worker_seconds": 0.55,
+     "process": {
+      "rc": 0,
+      "killed": null,
+      "peak_gb": 0.042,
+      "seconds": 0.83
+     },
+     "ok": true
+    },
+    {
+     "id": "atlas_v5z3:w1000000000000000000000/xp_1e21",
+     "T0": 1000000000000000000000,
+     "control": null,
+     "records": 34,
+     "passed_records": 34,
+     "errors": 0,
+     "model_mismatch": 0,
+     "missing_measurements": 0,
+     "geometry": {
+      "main_passed": "2/2",
+      "np_passed": "15/15",
+      "seams_hull": 0,
+      "seams_target": 0,
+      "gaps_d0": 0,
+      "closed_A": true,
+      "claim_B": true,
+      "intervals_to_cover": 15,
+      "uncovered": 0,
+      "sign_changes_in_target": 15,
+      "disjoint": true
+     },
+     "stored_replay": {
+      "source": "replay_check_independent",
+      "matched": 34,
+      "same_passed": 34,
+      "identical_min_candidate_lower": 34,
+      "max_abs_diff_min_candidate_lower": 0.0,
+      "stored_closed": true,
+      "stored_claim_B": true
+     },
+     "crosscheck": null,
+     "min_candidate_lower": 0.7942768215466341,
+     "worker_seconds": 0.53,
+     "process": {
+      "rc": 0,
+      "killed": null,
+      "peak_gb": 0.042,
+      "seconds": 0.83
+     },
+     "ok": true
+    },
+    {
+     "id": "atlas_v5z3:w10000000000000000000000/x_1e22",
+     "T0": 10000000000000000000000,
+     "control": null,
+     "records": 36,
+     "passed_records": 36,
+     "errors": 0,
+     "model_mismatch": 0,
+     "missing_measurements": 0,
+     "geometry": {
+      "main_passed": "2/2",
+      "np_passed": "16/16",
+      "seams_hull": 0,
+      "seams_target": 0,
+      "gaps_d0": 0,
+      "closed_A": true,
+      "claim_B": true,
+      "intervals_to_cover": 16,
+      "uncovered": 0,
+      "sign_changes_in_target": 16,
+      "disjoint": true
+     },
+     "stored_replay": {
+      "source": "replay_check_independent",
+      "matched": 36,
+      "same_passed": 36,
+      "identical_min_candidate_lower": 36,
+      "max_abs_diff_min_candidate_lower": 0.0,
+      "stored_closed": true,
+      "stored_claim_B": true
+     },
+     "crosscheck": null,
+     "min_candidate_lower": 0.7475326795220493,
+     "worker_seconds": 0.58,
+     "process": {
+      "rc": 0,
+      "killed": null,
+      "peak_gb": 0.042,
+      "seconds": 0.83
+     },
+     "ok": true
+    },
+    {
+     "id": "atlas_v5z3:w10000000000000000000000/xp_1e22",
+     "T0": 10000000000000000000000,
+     "control": null,
+     "records": 36,
+     "passed_records": 36,
+     "errors": 0,
+     "model_mismatch": 0,
+     "missing_measurements": 0,
+     "geometry": {
+      "main_passed": "2/2",
+      "np_passed": "16/16",
+      "seams_hull": 0,
+      "seams_target": 0,
+      "gaps_d0": 0,
+      "closed_A": true,
+      "claim_B": true,
+      "intervals_to_cover": 16,
+      "uncovered": 0,
+      "sign_changes_in_target": 16,
+      "disjoint": true
+     },
+     "stored_replay": {
+      "source": "replay_check_independent",
+      "matched": 36,
+      "same_passed": 36,
+      "identical_min_candidate_lower": 36,
+      "max_abs_diff_min_candidate_lower": 0.0,
+      "stored_closed": true,
+      "stored_claim_B": true
+     },
+     "crosscheck": null,
+     "min_candidate_lower": 0.7686889707178968,
+     "worker_seconds": 0.59,
+     "process": {
+      "rc": 0,
+      "killed": null,
+      "peak_gb": 0.042,
+      "seconds": 0.82
+     },
+     "ok": true
+    },
+    {
+     "id": "atlas_v5z3:w100000000000000000000000/h_1e23",
+     "T0": 100000000000000000000000,
+     "control": null,
+     "records": 36,
+     "passed_records": 34,
+     "errors": 0,
+     "model_mismatch": 2,
+     "missing_measurements": 0,
+     "geometry": {
+      "main_passed": "1/2",
+      "np_passed": "16/16",
+      "seams_hull": 1,
+      "seams_target": 1,
+      "gaps_d0": 1,
+      "closed_A": false,
+      "claim_B": false,
+      "intervals_to_cover": 8,
+      "uncovered": 0,
+      "sign_changes_in_target": 16,
+      "disjoint": true
+     },
+     "stored_replay": {
+      "source": "replay_check_independent",
+      "matched": 36,
+      "same_passed": 36,
+      "identical_min_candidate_lower": 36,
+      "max_abs_diff_min_candidate_lower": 0.0,
+      "stored_closed": false,
+      "stored_claim_B": false
+     },
+     "crosscheck": null,
+     "min_candidate_lower": 0.7553842622248133,
+     "worker_seconds": 0.54,
+     "process": {
+      "rc": 0,
+      "killed": null,
+      "peak_gb": 0.042,
+      "seconds": 0.82
+     },
+     "ok": true,
+     "expected": "recorded NOT closed (failed closed); tier 0 must also find NOT closed"
+    },
+    {
+     "id": "atlas_v5z3:w100000000000000000000000/hp_1e23",
+     "T0": 100000000000000000000000,
+     "control": null,
+     "records": 36,
+     "passed_records": 34,
+     "errors": 0,
+     "model_mismatch": 2,
+     "missing_measurements": 0,
+     "geometry": {
+      "main_passed": "1/2",
+      "np_passed": "16/16",
+      "seams_hull": 1,
+      "seams_target": 1,
+      "gaps_d0": 1,
+      "closed_A": false,
+      "claim_B": false,
+      "intervals_to_cover": 9,
+      "uncovered": 0,
+      "sign_changes_in_target": 16,
+      "disjoint": true
+     },
+     "stored_replay": {
+      "source": "replay_check_independent",
+      "matched": 36,
+      "same_passed": 36,
+      "identical_min_candidate_lower": 36,
+      "max_abs_diff_min_candidate_lower": 0.0,
+      "stored_closed": false,
+      "stored_claim_B": false
+     },
+     "crosscheck": null,
+     "min_candidate_lower": 0.7263942695185815,
+     "worker_seconds": 0.54,
+     "process": {
+      "rc": 0,
+      "killed": null,
+      "peak_gb": 0.042,
+      "seconds": 0.82
+     },
+     "ok": true,
+     "expected": "recorded NOT closed (failed closed); tier 0 must also find NOT closed"
+    },
+    {
+     "id": "atlas_v5z4:w10000000000000000000000/w_1e22",
+     "T0": 10000000000000000000000,
+     "control": null,
+     "records": 36,
+     "passed_records": 36,
+     "errors": 0,
+     "model_mismatch": 0,
+     "missing_measurements": 0,
+     "geometry": {
+      "main_passed": "2/2",
+      "np_passed": "16/16",
+      "seams_hull": 0,
+      "seams_target": 0,
+      "gaps_d0": 0,
+      "closed_A": true,
+      "claim_B": true,
+      "intervals_to_cover": 16,
+      "uncovered": 0,
+      "sign_changes_in_target": 16,
+      "disjoint": true
+     },
+     "stored_replay": {
+      "source": "replay_check_independent",
+      "matched": 36,
+      "same_passed": 36,
+      "identical_min_candidate_lower": 36,
+      "max_abs_diff_min_candidate_lower": 0.0,
+      "stored_closed": true,
+      "stored_claim_B": true
+     },
+     "crosscheck": null,
+     "min_candidate_lower": 0.7475326795220493,
+     "worker_seconds": 0.58,
+     "process": {
+      "rc": 0,
+      "killed": null,
+      "peak_gb": 0.042,
+      "seconds": 0.82
+     },
+     "ok": true
+    },
+    {
+     "id": "atlas_v5z4:w100000000000000000000000/w_1e23",
+     "T0": 100000000000000000000000,
+     "control": null,
+     "records": 36,
+     "passed_records": 36,
+     "errors": 0,
+     "model_mismatch": 0,
+     "missing_measurements": 0,
+     "geometry": {
+      "main_passed": "2/2",
+      "np_passed": "16/16",
+      "seams_hull": 0,
+      "seams_target": 0,
+      "gaps_d0": 0,
+      "closed_A": true,
+      "claim_B": true,
+      "intervals_to_cover": 16,
+      "uncovered": 0,
+      "sign_changes_in_target": 16,
+      "disjoint": true
+     },
+     "stored_replay": {
+      "source": "replay_check_independent",
+      "matched": 36,
+      "same_passed": 36,
+      "identical_min_candidate_lower": 36,
+      "max_abs_diff_min_candidate_lower": 0.0,
+      "stored_closed": true,
+      "stored_claim_B": true
+     },
+     "crosscheck": null,
+     "min_candidate_lower": 0.729413761191354,
+     "worker_seconds": 0.59,
+     "process": {
+      "rc": 0,
+      "killed": null,
+      "peak_gb": 0.042,
+      "seconds": 0.82
+     },
+     "ok": true
+    },
+    {
+     "id": "atlas_v5z4:w100000000000000000000000/wp_1e23",
+     "T0": 100000000000000000000000,
+     "control": null,
+     "records": 36,
+     "passed_records": 36,
+     "errors": 0,
+     "model_mismatch": 0,
+     "missing_measurements": 0,
+     "geometry": {
+      "main_passed": "2/2",
+      "np_passed": "16/16",
+      "seams_hull": 0,
+      "seams_target": 0,
+      "gaps_d0": 0,
+      "closed_A": true,
+      "claim_B": true,
+      "intervals_to_cover": 16,
+      "uncovered": 0,
+      "sign_changes_in_target": 16,
+      "disjoint": true
+     },
+     "stored_replay": {
+      "source": "replay_check_independent",
+      "matched": 36,
+      "same_passed": 36,
+      "identical_min_candidate_lower": 36,
+      "max_abs_diff_min_candidate_lower": 0.0,
+      "stored_closed": true,
+      "stored_claim_B": true
+     },
+     "crosscheck": null,
+     "min_candidate_lower": 0.7263942695185815,
+     "worker_seconds": 0.59,
+     "process": {
+      "rc": 0,
+      "killed": null,
+      "peak_gb": 0.042,
+      "seconds": 0.82
+     },
+     "ok": true
+    },
+    {
+     "id": "atlas_v5z4:w100000000000000000000000/wq_1e23",
+     "T0": 100000000000000000000000,
+     "control": null,
+     "records": 38,
+     "passed_records": 38,
+     "errors": 0,
+     "model_mismatch": 0,
+     "missing_measurements": 0,
+     "geometry": {
+      "main_passed": "2/2",
+      "np_passed": "17/17",
+      "seams_hull": 0,
+      "seams_target": 0,
+      "gaps_d0": 0,
+      "closed_A": true,
+      "claim_B": true,
+      "intervals_to_cover": 17,
+      "uncovered": 0,
+      "sign_changes_in_target": 17,
+      "disjoint": true
+     },
+     "stored_replay": {
+      "source": "replay_check_independent",
+      "matched": 38,
+      "same_passed": 38,
+      "identical_min_candidate_lower": 38,
+      "max_abs_diff_min_candidate_lower": 0.0,
+      "stored_closed": true,
+      "stored_claim_B": true
+     },
+     "crosscheck": null,
+     "min_candidate_lower": 0.7437305083574092,
+     "worker_seconds": 0.64,
+     "process": {
+      "rc": 0,
+      "killed": null,
+      "peak_gb": 0.042,
+      "seconds": 0.82
+     },
+     "ok": true
+    },
+    {
+     "id": "atlas_v5z4:w100000000000000000000000/wr_1e23",
+     "T0": 100000000000000000000000,
+     "control": null,
+     "records": 38,
+     "passed_records": 38,
+     "errors": 0,
+     "model_mismatch": 0,
+     "missing_measurements": 0,
+     "geometry": {
+      "main_passed": "2/2",
+      "np_passed": "17/17",
+      "seams_hull": 0,
+      "seams_target": 0,
+      "gaps_d0": 0,
+      "closed_A": true,
+      "claim_B": true,
+      "intervals_to_cover": 17,
+      "uncovered": 0,
+      "sign_changes_in_target": 17,
+      "disjoint": true
+     },
+     "stored_replay": {
+      "source": "replay_check_independent",
+      "matched": 38,
+      "same_passed": 38,
+      "identical_min_candidate_lower": 38,
+      "max_abs_diff_min_candidate_lower": 0.0,
+      "stored_closed": true,
+      "stored_claim_B": true
+     },
+     "crosscheck": null,
+     "min_candidate_lower": 0.6132372554491857,
+     "worker_seconds": 0.65,
+     "process": {
+      "rc": 0,
+      "killed": null,
+      "peak_gb": 0.042,
+      "seconds": 0.82
+     },
+     "ok": true
+    },
+    {
+     "id": "atlas_v5z4:w1000000000000000000000000/w_1e24",
+     "T0": 1000000000000000000000000,
+     "control": null,
+     "records": 38,
+     "passed_records": 38,
+     "errors": 0,
+     "model_mismatch": 0,
+     "missing_measurements": 0,
+     "geometry": {
+      "main_passed": "2/2",
+      "np_passed": "17/17",
+      "seams_hull": 0,
+      "seams_target": 0,
+      "gaps_d0": 0,
+      "closed_A": true,
+      "claim_B": true,
+      "intervals_to_cover": 17,
+      "uncovered": 0,
+      "sign_changes_in_target": 17,
+      "disjoint": true
+     },
+     "stored_replay": {
+      "source": "replay_check_independent",
+      "matched": 38,
+      "same_passed": 38,
+      "identical_min_candidate_lower": 38,
+      "max_abs_diff_min_candidate_lower": 0.0,
+      "stored_closed": true,
+      "stored_claim_B": true
+     },
+     "crosscheck": null,
+     "min_candidate_lower": 0.6155925086489527,
+     "worker_seconds": 0.65,
+     "process": {
+      "rc": 0,
+      "killed": null,
+      "peak_gb": 0.042,
+      "seconds": 0.82
+     },
+     "ok": true
+    },
+    {
+     "id": "atlas_v5z4:w1000000000000000000000000/wp_1e24",
+     "T0": 1000000000000000000000000,
+     "control": null,
+     "records": 36,
+     "passed_records": 36,
+     "errors": 0,
+     "model_mismatch": 0,
+     "missing_measurements": 0,
+     "geometry": {
+      "main_passed": "2/2",
+      "np_passed": "16/16",
+      "seams_hull": 0,
+      "seams_target": 0,
+      "gaps_d0": 0,
+      "closed_A": true,
+      "claim_B": true,
+      "intervals_to_cover": 16,
+      "uncovered": 0,
+      "sign_changes_in_target": 16,
+      "disjoint": true
+     },
+     "stored_replay": {
+      "source": "replay_check_independent",
+      "matched": 36,
+      "same_passed": 36,
+      "identical_min_candidate_lower": 36,
+      "max_abs_diff_min_candidate_lower": 0.0,
+      "stored_closed": true,
+      "stored_claim_B": true
+     },
+     "crosscheck": null,
+     "min_candidate_lower": 0.6144840396533866,
+     "worker_seconds": 0.62,
+     "process": {
+      "rc": 0,
+      "killed": null,
+      "peak_gb": 0.042,
+      "seconds": 0.81
+     },
+     "ok": true
+    }
+   ],
+   "n": 51,
+   "passed": 51,
+   "ok": true,
+   "seconds": 34.2
+  },
+  "lean_audit": {
+   "audit_bin_sha256": "b77863fc3b7854d821a9476673f6991dfa6ae6d7e2eb4d6bdb176688732033db",
+   "exporter_sha256": "5ceaaeb1b5d48b97ddd6d55307bae4e16e3de9fb0c2ce7e18d287bdc2640ae84",
+   "data_v5_audit": {
+    "rc": 0,
+    "identical": true,
+    "zero_violations": true
+   },
+   "v5": [
+    {
+     "name": "record_1e15",
+     "runs": 1,
+     "export_rc": 0,
+     "export_identical": true,
+     "audit_rc": 0,
+     "audit_identical": true,
+     "stored_audit": true,
+     "zero_violations": true
+    },
+    {
+     "name": "record_1e16",
+     "runs": 1,
+     "export_rc": 0,
+     "export_identical": true,
+     "audit_rc": 0,
+     "audit_identical": true,
+     "stored_audit": true,
+     "zero_violations": true
+    },
+    {
+     "name": "record_pair_1e15_286",
+     "runs": 1,
+     "export_rc": 0,
+     "export_identical": true,
+     "audit_rc": 0,
+     "audit_identical": true,
+     "stored_audit": true,
+     "zero_violations": true
+    },
+    {
+     "name": "v5_check_1e14",
+     "runs": 1,
+     "export_rc": 0,
+     "export_identical": true,
+     "audit_rc": 0,
+     "audit_identical": null,
+     "stored_audit": false,
+     "zero_violations": true
+    },
+    {
+     "name": "v5z_1e12",
+     "runs": 1,
+     "export_rc": 0,
+     "export_identical": true,
+     "audit_rc": 0,
+     "audit_identical": true,
+     "stored_audit": true,
+     "zero_violations": true
+    },
+    {
+     "name": "v5z_1e13",
+     "runs": 1,
+     "export_rc": 0,
+     "export_identical": true,
+     "audit_rc": 0,
+     "audit_identical": true,
+     "stored_audit": true,
+     "zero_violations": true
+    },
+    {
+     "name": "v5z_1e14",
+     "runs": 1,
+     "export_rc": 0,
+     "export_identical": true,
+     "audit_rc": 0,
+     "audit_identical": true,
+     "stored_audit": true,
+     "zero_violations": true
+    },
+    {
+     "name": "v5z_1e15",
+     "runs": 1,
+     "export_rc": 0,
+     "export_identical": true,
+     "audit_rc": 0,
+     "audit_identical": true,
+     "stored_audit": true,
+     "zero_violations": true
+    },
+    {
+     "name": "v5z_1e16",
+     "runs": 1,
+     "export_rc": 0,
+     "export_identical": true,
+     "audit_rc": 0,
+     "audit_identical": true,
+     "stored_audit": true,
+     "zero_violations": true
+    },
+    {
+     "name": "v5z_1e17",
+     "runs": 1,
+     "export_rc": 0,
+     "export_identical": true,
+     "audit_rc": 0,
+     "audit_identical": true,
+     "stored_audit": true,
+     "zero_violations": true
+    },
+    {
+     "name": "v5z_1e18",
+     "runs": 1,
+     "export_rc": 0,
+     "export_identical": true,
+     "audit_rc": 0,
+     "audit_identical": true,
+     "stored_audit": true,
+     "zero_violations": true
+    },
+    {
+     "name": "v5z_pair_1e15_286",
+     "runs": 1,
+     "export_rc": 0,
+     "export_identical": true,
+     "audit_rc": 0,
+     "audit_identical": true,
+     "stored_audit": true,
+     "zero_violations": true
+    },
+    {
+     "name": "v5z2_h_1e20",
+     "runs": 1,
+     "export_rc": 0,
+     "export_identical": true,
+     "audit_rc": 0,
+     "audit_identical": true,
+     "stored_audit": true,
+     "zero_violations": true
+    },
+    {
+     "name": "v5z2_h_1e21",
+     "runs": 1,
+     "export_rc": 0,
+     "export_identical": true,
+     "audit_rc": 0,
+     "audit_identical": true,
+     "stored_audit": true,
+     "zero_violations": true
+    },
+    {
+     "name": "v5z2_h_1e22",
+     "runs": 1,
+     "export_rc": 0,
+     "export_identical": true,
+     "audit_rc": 0,
+     "audit_identical": true,
+     "stored_audit": true,
+     "zero_violations": true
+    },
+    {
+     "name": "v5z2_hp_1e20",
+     "runs": 1,
+     "export_rc": 0,
+     "export_identical": true,
+     "audit_rc": 0,
+     "audit_identical": true,
+     "stored_audit": true,
+     "zero_violations": true
+    },
+    {
+     "name": "v5z2_hp_1e21",
+     "runs": 1,
+     "export_rc": 0,
+     "export_identical": true,
+     "audit_rc": 0,
+     "audit_identical": true,
+     "stored_audit": true,
+     "zero_violations": true
+    },
+    {
+     "name": "v5z2_hp_1e22",
+     "runs": 1,
+     "export_rc": 0,
+     "export_identical": true,
+     "audit_rc": 0,
+     "audit_identical": true,
+     "stored_audit": true,
+     "zero_violations": true
+    },
+    {
+     "name": "v5z3_x_1e16",
+     "runs": 1,
+     "export_rc": 0,
+     "export_identical": true,
+     "audit_rc": 0,
+     "audit_identical": true,
+     "stored_audit": true,
+     "zero_violations": true
+    },
+    {
+     "name": "v5z3_x_1e20",
+     "runs": 1,
+     "export_rc": 0,
+     "export_identical": true,
+     "audit_rc": 0,
+     "audit_identical": true,
+     "stored_audit": true,
+     "zero_violations": true
+    },
+    {
+     "name": "v5z3_x_1e21",
+     "runs": 1,
+     "export_rc": 0,
+     "export_identical": true,
+     "audit_rc": 0,
+     "audit_identical": true,
+     "stored_audit": true,
+     "zero_violations": true
+    },
+    {
+     "name": "v5z3_x_1e22",
+     "runs": 1,
+     "export_rc": 0,
+     "export_identical": true,
+     "audit_rc": 0,
+     "audit_identical": true,
+     "stored_audit": true,
+     "zero_violations": true
+    },
+    {
+     "name": "v5z3_xp_1e20",
+     "runs": 1,
+     "export_rc": 0,
+     "export_identical": true,
+     "audit_rc": 0,
+     "audit_identical": true,
+     "stored_audit": true,
+     "zero_violations": true
+    },
+    {
+     "name": "v5z3_xp_1e21",
+     "runs": 1,
+     "export_rc": 0,
+     "export_identical": true,
+     "audit_rc": 0,
+     "audit_identical": true,
+     "stored_audit": true,
+     "zero_violations": true
+    },
+    {
+     "name": "v5z3_xp_1e22",
+     "runs": 1,
+     "export_rc": 0,
+     "export_identical": true,
+     "audit_rc": 0,
+     "audit_identical": true,
+     "stored_audit": true,
+     "zero_violations": true
+    },
+    {
+     "name": "v5z4_w_1e23",
+     "runs": 1,
+     "export_rc": 0,
+     "export_identical": true,
+     "audit_rc": 0,
+     "audit_identical": true,
+     "stored_audit": true,
+     "zero_violations": true
+    },
+    {
+     "name": "v5z4_w_1e24",
+     "runs": 1,
+     "export_rc": 0,
+     "export_identical": true,
+     "audit_rc": 0,
+     "audit_identical": true,
+     "stored_audit": true,
+     "zero_violations": true
+    },
+    {
+     "name": "v5z4_wp_1e23",
+     "runs": 1,
+     "export_rc": 0,
+     "export_identical": true,
+     "audit_rc": 0,
+     "audit_identical": true,
+     "stored_audit": true,
+     "zero_violations": true
+    },
+    {
+     "name": "v5z4_wp_1e24",
+     "runs": 1,
+     "export_rc": 0,
+     "export_identical": true,
+     "audit_rc": 0,
+     "audit_identical": true,
+     "stored_audit": true,
+     "zero_violations": true
+    },
+    {
+     "name": "v5z4_wq_1e23",
+     "runs": 1,
+     "export_rc": 0,
+     "export_identical": true,
+     "audit_rc": 0,
+     "audit_identical": true,
+     "stored_audit": true,
+     "zero_violations": true
+    },
+    {
+     "name": "v5z4_wr_1e23",
+     "runs": 1,
+     "export_rc": 0,
+     "export_identical": true,
+     "audit_rc": 0,
+     "audit_identical": true,
+     "stored_audit": true,
+     "zero_violations": true
+    },
+    {
+     "name": "v5_acceptance",
+     "runs": 7,
+     "export_rc": 0,
+     "export_identical": true
+    },
+    {
+     "name": "v5_big",
+     "runs": 3,
+     "export_rc": 0,
+     "export_identical": true
+    }
+   ],
+   "base": {
+    "export_rc": 0,
+    "export_identical": {
+     "deg2.txt": true,
+     "deg2_nc.txt": true,
+     "ec37a.txt": true,
+     "ec37a_nc.txt": true,
+     "ec389a.txt": true,
+     "ec389a_nc.txt": true,
+     "tollis.txt": true,
+     "tollis_extra.txt": true,
+     "tollis_nc.txt": true,
+     "v4_acceptance.txt": true,
+     "v4_other.txt": true
+    },
+    "audit_rc": 0,
+    "audit_identical": true
+   },
+   "flagship": {
+    "export_rc": 0,
+    "export_identical": {
+     "flagship_K23.txt": true,
+     "flagship_K23_nc.expected": true,
+     "flagship_K23_nc.txt": true
+    },
+    "audit_rc": 0,
+    "audit_seconds": 6.12,
+    "audit_peak_gb": 0.38,
+    "audit_identical": true
+   },
+   "ok": true,
+   "seconds": 42.7
+  },
+  "artin_sweep": {
+   "process": {
+    "rc": 0,
+    "killed": null,
+    "peak_gb": 0.045,
+    "seconds": 16.31
+   },
+   "totals": {
+    "n_fields_with_summary": 2258,
+    "n_done": 2258,
+    "theorem_C": 2256,
+    "calegari_published": 130,
+    "n_v4": 2205,
+    "n_gate_v2": 2168,
+    "n_gate_v2_rejected": 0,
+    "n_v4_engine_rejected": 0,
+    "d_max_contiguous": 98369,
+    "root": "."
+   },
+   "theorem_C": 2256,
+   "done_not_certified": [
+    "5.1.105177.1",
+    "5.1.98385.1"
+   ],
+   "expected_theorem_C": 2256,
+   "expected_gaps": [
+    "5.1.105177.1",
+    "5.1.98385.1"
+   ],
+   "ok": true,
+   "seconds": 16.4
+  },
+  "golden": {
+   "status": "compared",
+   "entries": 53,
+   "differing": [],
+   "ok": true
+  }
+ },
+ "lean_out_of_scope": [
+  {
+   "name": "v5z5_wide_1e22",
+   "export": "/Users/kiosk/atlas_mark2/diagnostic/zfast/atlas_v5z5/lean_audit/v5z5_wide_1e22.txt",
+   "tree": "atlas_v5z5"
+  },
+  {
+   "name": "v5z7_wide7_1e25",
+   "export": "/Users/kiosk/atlas_mark2/diagnostic/zfast/atlas_v5z7/lean_audit/v5z7_wide7_1e25.txt",
+   "tree": "atlas_v5z7"
+  },
+  {
+   "name": "v5z7_wide7_1e26",
+   "export": "/Users/kiosk/atlas_mark2/diagnostic/zfast/atlas_v5z7/lean_audit/v5z7_wide7_1e26.txt",
+   "tree": "atlas_v5z7"
+  }
+ ],
+ "ok": true,
+ "seconds": 108.8
+}

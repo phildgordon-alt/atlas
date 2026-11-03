@@ -1,0 +1,48 @@
+{
+ "tool": "atlas_v5z6 zfast_provider.turing_grid (scan_turing5 scan logic; counts by scan_turing5.py recount)",
+ "T0": "10000000000000000000000000",
+ "lib": "/Users/kiosk/atlas_mark2/diagnostic/zfast/bin/libzfast.v14.dylib",
+ "lib_sha256": "7abaaa8aa0a913290cdb202a55d18c6c195130b20032614f3a60d07f0f10fa5b",
+ "session": {
+  "sec_build": 5194.3328,
+  "sec_head": 0.4725,
+  "sec_fast": 5193.8582,
+  "buckets": 2951,
+  "Nw": 1261566261010,
+  "nhead": 88793,
+  "blocks": 77017566,
+  "max_phase_err": 3.15e-19,
+  "D": 4,
+  "workers": 8,
+  "items": 6142,
+  "items_loaded": 0,
+  "generic_kernel": 0,
+  "lib": "v14"
+ },
+ "session_params": {
+  "centre": 50.0,
+  "H": 91.0,
+  "Delta": 0.008,
+  "K": 18,
+  "J": 12,
+  "threads": 4,
+  "workers": 8,
+  "u0": -40.0,
+  "n": 45001,
+  "step": 0.004
+ },
+ "grid": {
+  "points": 45001,
+  "step": 0.004,
+  "undecided": 0,
+  "seconds": 38.5,
+  "ends": [
+   "-40.0",
+   "140.0"
+  ]
+ },
+ "zeros_found": 1596,
+ "dips": 0,
+ "dip_zeros": 0,
+ "turing": {}
+}

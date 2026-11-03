@@ -1,0 +1,6 @@
+file: zfast.c
+--- old
+    if (fmpz_is_even(N)) acb_neg(S, S);
+    acb_set(res, S);
++++ new
+    acb_set(res, S);

@@ -1,0 +1,11 @@
+{
+ "check": "NC-W controls on /Users/kiosk/atlas_mark2/diagnostic/zfast/atlas_v5z7/runs/w100000000000000000000000000/wide7_1e26",
+ "detected": {
+  "NC-W1 w x 1.10": true,
+  "NC-W2 swapped interval": true,
+  "NC-W3 w x (1+1e-3)": true,
+  "NC-W4 deleted interval": false
+ },
+ "ok": false
+}
+REPORT /Users/kiosk/atlas_mark2/engine/regress_v1/reports/v5z5_controls_20261102_185910.json: FAIL

@@ -1,0 +1,2 @@
+uncaught exception: no such file or directory (error code: 2)
+  file: /Users/kiosk/atlas_mark2/diagnostic/zfast/atlas_v5z/lean_audit/v5z_.txt

@@ -1,0 +1,5 @@
+file: zfast_m3b.inc
+--- old
+            arb_get_mag(mg, w); mag_add(S->V + j * nb + b, S->V + j * nb + b, mg);
++++ new
+            arb_get_mag(mg, w); mag_div_ui(mg, mg, 10); mag_add(S->V + j * nb + b, S->V + j * nb + b, mg);

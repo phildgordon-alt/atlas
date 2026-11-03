@@ -1,0 +1,108 @@
+{
+ "check": "G: v5z6 (wide_1e22 frozen session parameters) regenerates atlas_v5z5 wide_1e22",
+ "frozen_run": "/Users/kiosk/atlas_mark2/diagnostic/zfast/atlas_v5z5/runs/w10000000000000000000000/wide_1e22",
+ "regenerated": "/Users/kiosk/atlas_mark2/engine/regress_v1/work/trees/atlas_v5z7/runs/w10000000000000000000000/wide_1e22__v5z7_20261101_190737",
+ "process": {
+  "rc": 0,
+  "killed": null,
+  "peak_gb": 0.032,
+  "seconds": 808.54
+ },
+ "zfast_env": {
+  "ZFAST_THREADS": "2",
+  "ZFAST_WORKERS": "8",
+  "V4_LIM_GB": "1.0"
+ },
+ "compare": {
+  "certs": {
+   "frozen": 100,
+   "regenerated": 100,
+   "same_names": 100,
+   "canonical_identical": 100,
+   "byte_identical": 56,
+   "differing": [],
+   "only_frozen": [],
+   "only_new": []
+  },
+  "certs_np": {
+   "frozen": 777,
+   "regenerated": 777,
+   "same_names": 777,
+   "canonical_identical": 777,
+   "byte_identical": 534,
+   "differing": [],
+   "only_frozen": [],
+   "only_new": []
+  },
+  "pieces.json": {
+   "canonical_identical": false,
+   "byte_identical": false
+  },
+  "zs.json": {
+   "canonical_identical": true,
+   "byte_identical": true
+  },
+  "gen_measurements.json": {
+   "canonical_identical": true,
+   "byte_identical": true
+  },
+  "replay_check": {
+   "frozen": {
+    "passed": true,
+    "passed_B": true,
+    "certificates": 100,
+    "passed_both": 100,
+    "min_candidate_lower": 0.5806231051610221,
+    "seams": [
+     0,
+     0
+    ],
+    "gaps_d0": 0,
+    "uncovered": 0
+   },
+   "regenerated": {
+    "passed": true,
+    "passed_B": true,
+    "certificates": 100,
+    "passed_both": 100,
+    "min_candidate_lower": 0.5806231051610221,
+    "seams": [
+     0,
+     0
+    ],
+    "gaps_d0": 0,
+    "uncovered": 0
+   },
+   "identical": true
+  },
+  "replay_records_identical": true,
+  "identical": false
+ },
+ "pieces_differing_keys": [
+  "z_provider",
+  "zfast_session"
+ ],
+ "zfast_session_core_identical": true,
+ "new_zfast_session": {
+  "mode": "wide",
+  "center": "50.0",
+  "H": 61.0,
+  "Delta": 0.012,
+  "K": 18,
+  "J": 12,
+  "strict": true,
+  "threads": 2,
+  "z_span": [
+   -2.0,
+   102.0
+  ],
+  "lib": "v14"
+ },
+ "summary_wall": 808.22,
+ "generator_seconds": 504.62,
+ "replay_seconds": 303.55,
+ "ok": true,
+ "tree": "atlas_v5z7",
+ "stamp": "20261101_190737",
+ "predictions": "diagnostic/zfast/PREDICTIONS_M9.md (sha in PREDICTIONS_M9.sha256)"
+}

@@ -1,0 +1,30 @@
+== T0=100262293031823
+resumed items_loaded 480 / 480
+u=  18.0841 |mid diff|=1.124e-14 rad_honest=3.75e-11 rad_resumed=3.75e-11  overlap
+u=  55.3871 |mid diff|=3.319e-14 rad_honest=2.98e-11 rad_resumed=2.98e-11  overlap
+u=  34.1605 |mid diff|=4.002e-14 rad_honest=3.58e-11 rad_resumed=3.58e-11  overlap
+u=  62.6575 |mid diff|=9.717e-15 rad_honest=3.74e-11 rad_resumed=3.74e-11  overlap
+u=  65.3127 |mid diff|=2.065e-14 rad_honest=3.37e-11 rad_resumed=3.37e-11  overlap
+u=  -2.9186 |mid diff|=1.251e-13 rad_honest=4.05e-11 rad_resumed=4.05e-11  overlap
+u=  -9.2961 |mid diff|=9.946e-14 rad_honest=4.82e-11 rad_resumed=4.82e-11  overlap
+u=  91.1037 |mid diff|=1.835e-14 rad_honest=4.28e-11 rad_resumed=4.28e-11  overlap
+u=  20.6893 |mid diff|=1.661e-14 rad_honest=4.18e-11 rad_resumed=4.18e-11  overlap
+u=  17.6415 |mid diff|=8.545e-14 rad_honest=3.62e-11 rad_resumed=3.62e-11  overlap
+u= -10.5000 |mid diff|=2.003e-13 rad_honest=5.42e-11 rad_resumed=5.42e-11  overlap
+u= 110.5000 |mid diff|=4.479e-13 rad_honest=5.43e-11 rad_resumed=5.43e-11  overlap
+disjoint 0 of 12
+== T0=10006976730618388
+resumed items_loaded 751 / 751
+u=  18.0841 |mid diff|=1.495e-14 rad_honest=1.20e-10 rad_resumed=1.20e-10  overlap
+u=  55.3871 |mid diff|=9.582e-14 rad_honest=1.05e-10 rad_resumed=1.05e-10  overlap
+u=  34.1605 |mid diff|=3.511e-14 rad_honest=1.17e-10 rad_resumed=1.17e-10  overlap
+u=  62.6575 |mid diff|=2.993e-14 rad_honest=1.10e-10 rad_resumed=1.10e-10  overlap
+u=  65.3127 |mid diff|=1.649e-13 rad_honest=1.22e-10 rad_resumed=1.22e-10  overlap
+u=  -2.9186 |mid diff|=2.324e-13 rad_honest=1.37e-10 rad_resumed=1.37e-10  overlap
+u=  -9.2961 |mid diff|=1.964e-13 rad_honest=1.34e-10 rad_resumed=1.34e-10  overlap
+u=  91.1037 |mid diff|=2.788e-13 rad_honest=1.40e-10 rad_resumed=1.40e-10  overlap
+u=  20.6893 |mid diff|=1.327e-14 rad_honest=1.20e-10 rad_resumed=1.20e-10  overlap
+u=  17.6415 |mid diff|=8.334e-14 rad_honest=1.27e-10 rad_resumed=1.27e-10  overlap
+u= -10.5000 |mid diff|=4.446e-13 rad_honest=1.69e-10 rad_resumed=1.69e-10  overlap
+u= 110.5000 |mid diff|=3.625e-13 rad_honest=1.47e-10 rad_resumed=1.47e-10  overlap
+disjoint 0 of 12

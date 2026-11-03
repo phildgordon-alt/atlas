@@ -1,0 +1,14 @@
+wide7_1e22 pipeline rc=0 wall=894s D=2 W=8
+wide7_1e22 turing recount rc=0 wall=0s {"0,100": {"count": 777, "sign_changes_in_window": 777, "straddling": []}} {"0": [76106294246675308886088, true, 0.474, "40"], "100": [76106294246675308886865, true, 0.469, "40"]}
+wide7_1e22 turing gate rc=0 REPORT /Users/kiosk/atlas_mark2/engine/regress_v1/reports/turing_check_20261101_193614.json: PASS
+wide7_1e22 done
+TOTAL_WALL 895
+rc=done
+wide7_1e25 pipeline rc=0 wall=10830s D=4 W=8
+wide7_1e25 turing recount rc=0 wall=1s {"0,100": {"count": 888, "sign_changes_in_window": 888, "straddling": []}} {"0": [87100328229866724999179370, true, 0.548, "40"], "100": [87100328229866724999180258, true, 0.529, "40"]}
+wide7_1e25 turing gate rc=0 REPORT /Users/kiosk/atlas_mark2/engine/regress_v1/reports/turing_check_20261102_092150.json: PASS
+wide7_1e25 done
+wide7_1e26 pipeline rc=0 wall=33025s D=4 W=8
+wide7_1e26 turing recount rc=0 wall=0s {"0,100": {"count": 924, "sign_changes_in_window": 924, "straddling": []}} {"0": [907650062242638637035433072, true, 0.512, "40"], "100": [907650062242638637035433996, true, 0.519, "40"]}
+wide7_1e26 turing gate rc=0 REPORT /Users/kiosk/atlas_mark2/engine/regress_v1/reports/turing_check_20261102_185658.json: PASS
+wide7_1e26 done

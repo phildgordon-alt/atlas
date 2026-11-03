@@ -1,0 +1,12 @@
+file: zfast_m3.inc
+--- old
+    mag_add(e, e, tmp);
+    mag_mul_2exp_si(tmp, e, 1); mag_add(mx, sumabs, tmp);
+done:
+    arb_clear(a); arb_clear(q); arb_clear(Lba);
++++ new
+    mag_add(e, e, tmp);
+    mag_div_ui(e, e, 10);
+    mag_mul_2exp_si(tmp, e, 1); mag_add(mx, sumabs, tmp);
+done:
+    arb_clear(a); arb_clear(q); arb_clear(Lba);

@@ -1,0 +1,35 @@
+{
+ "10000000000": {
+  "z_overlap": 60,
+  "z_n": 60,
+  "z_maxdiff": 0.0,
+  "row_overlap": 20,
+  "row_n": 20,
+  "row_maxdiff": 0.0,
+  "combined_build": 0.1578,
+  "z_only_build": 0.0441,
+  "ratio": 3.578231292517007
+ },
+ "10000000000000": {
+  "z_overlap": 60,
+  "z_n": 60,
+  "z_maxdiff": 0.0,
+  "row_overlap": 20,
+  "row_n": 20,
+  "row_maxdiff": 4e-12,
+  "combined_build": 0.5105,
+  "z_only_build": 0.1787,
+  "ratio": 2.856743144935646
+ },
+ "10000000000000000": {
+  "z_overlap": 60,
+  "z_n": 60,
+  "z_maxdiff": 5e-10,
+  "row_overlap": 20,
+  "row_n": 20,
+  "row_maxdiff": 4e-12,
+  "combined_build": 5.6825,
+  "z_only_build": 2.3352,
+  "ratio": 2.4334104145255226
+ }
+}

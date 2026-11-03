@@ -1,0 +1,10 @@
+== fuzz start 00:16:02
+== fuzz rc=0 00:17:28
+{"summary": {"rc1": 26, "accepted_changed": 86, "refused": 238, "accepted_honest": 12}}
+== a14d start 00:17:28
+== a14d rc=0 00:18:13
+{"total": 48, "fail": ["PATH_ckpt_symlink_to_regular_followed (info, unchanged from v14c)"]}
+== drv start 00:18:13
+== drv rc=0 00:26:17
+{"total": 9, "fail": ["D2_kill_in_turing_grid_then_resume", "D5_replay_io_abort_rc3_then_resume", "D6_io_abort_rc3_then_nonio_refusal_not_rc3"]}
+ALLDONE

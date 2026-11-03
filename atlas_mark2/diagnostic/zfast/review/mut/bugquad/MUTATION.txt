@@ -1,0 +1,5 @@
+file: zfast.c
+--- old
+    return ((q + 1) & 2) ? -r : r;          /* q = 1, 2 negative */
++++ new
+    return (q & 2) ? -r : r;

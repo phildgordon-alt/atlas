@@ -1,0 +1,3 @@
+WD peak_rss_kb=432320 peak_footprint_mb=393 status=ok rc=0 wall=124s
+ /Users/kiosk/atlas_mark2/diagnostic/general_eval/calegari2/wd_fp.sh:6: nice(5) failed: operation not permitted
+

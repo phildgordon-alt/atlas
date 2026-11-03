@@ -1,0 +1,35 @@
+STAGE1 start Fri Oct 23 01:48:06 PDT 2026 T=1000000000000000000000000 threads=1
+scan3_1e24 wall=20194s exit 0 peak_rss_kb 41968 
+[{"role": "smallest |mid|/rad (decided)", "k": 11002, "u": -15.991999999999997, "u_hex": "-0x1.ffbe76c8b4394p+3", "mid": 2.3719385162446785e-05, "rad": 1.2554369835382495e-08, "decided": true}, {"role": "largest |mid|", "k": 9856, "u": -20.576, "u_hex": "-0x1.49374bc6a7efap+4", "mid": 115.3050624658401, "rad": 1.3135909554540248e-08, "decided": true}, {"role": "nearest closest-pair midpoint", "k": 14574, "u": -1.7040000000000006, "u_hex": "-0x1.b4395810624e0p+0", "mid": 0.03903757273956997, "rad": 1.1223917004143935e-08, "decided": true}]
+{"-24.0,-22.0": {"count": 17, "sign_changes_in_window": 17}, "-2.0,0.0": {"count": 17, "sign_changes_in_window": 17}, "0.0,2.0": {"count": 16, "sign_changes_in_window": 16}} {"-24.0": [797709722410724475904320, true, 0.526, 36.0], "-22.0": [797709722410724475904337, true, 0.508, 38.0], "-2.0": [797709722410724475904499, true, 0.461, 40.0], "0.0": [797709722410724475904516, true, 0.505, 40.0], "2.0": [797709722410724475904532, true, 0.522, 40.0]}
+STAGE1 DONE Fri Oct 23 07:24:40 PDT 2026
+GZ start Fri Oct 23 07:25:35 PDT 2026: GZ 1000000000000000000000000 -0x1.ffbe76c8b4394p+3 192 -1;GZ 1000000000000000000000000 -0x1.49374bc6a7efap+4 192 -1;GZ 1000000000000000000000000 -0x1.b4395810624e0p+0 192 -1;
+STAGE2 start Fri Oct 23 07:25:35 PDT 2026 pair window offset K=-3
+w_1e24 pipeline rc=0 wall=41443s threads=1
+w_1e24 independent replay rc=0 wall=20733s {"passed": true, "passed_B_simple_without_lemma2": true, "np": "17/17", "certs": "2/2", "seams": [0, 0, 0], "min_candidate_lower": 0.6155925086489527, "seconds": 20732.48, "replay_peak_gb": 0.078}
+w_1e24 done
+/opt/homebrew/Cellar/python@3.12/3.12.13/Frameworks/Python.framework/Versions/3.12/Resources/Python.app/Contents/MacOS/Python: can't open file '/Users/kiosk/atlas_mark2/diagnostic/zfast/atlas_v5z4/tools/pair_gap2.py': [Errno 2] No such file or directory
+/opt/homebrew/Cellar/python@3.14/3.14.7/Frameworks/Python.framework/Versions/3.14/Resources/Python.app/Contents/MacOS/Python: can't open file '/Users/kiosk/atlas_mark2/diagnostic/zfast/atlas_v5z4/tools/provenance_m6.py': [Errno 2] No such file or directory
+w_1e24 lean:   certificates 19 (main 2, no-parity 17), replay-passed 19, regions 19, intervals 665, central reductions 0, model boxes 15634 TOTAL VIOLATIONS (non-control datasets): 0 
+wp_1e24 pipeline rc=0 wall=41554s threads=1
+wp_1e24 independent replay rc=0 wall=20727s {"passed": true, "passed_B_simple_without_lemma2": true, "np": "16/16", "certs": "2/2", "seams": [0, 0, 0], "min_candidate_lower": 0.6144840396533866, "seconds": 20726.91, "replay_peak_gb": 0.084}
+wp_1e24 done
+/opt/homebrew/Cellar/python@3.12/3.12.13/Frameworks/Python.framework/Versions/3.12/Resources/Python.app/Contents/MacOS/Python: can't open file '/Users/kiosk/atlas_mark2/diagnostic/zfast/atlas_v5z4/tools/pair_gap2.py': [Errno 2] No such file or directory
+/opt/homebrew/Cellar/python@3.14/3.14.7/Frameworks/Python.framework/Versions/3.14/Resources/Python.app/Contents/MacOS/Python: can't open file '/Users/kiosk/atlas_mark2/diagnostic/zfast/atlas_v5z4/tools/provenance_m6.py': [Errno 2] No such file or directory
+wp_1e24 lean:   certificates 18 (main 2, no-parity 16), replay-passed 18, regions 18, intervals 626, central reductions 0, model boxes 14832 TOTAL VIOLATIONS (non-control datasets): 0 
+wq_1e23 pipeline rc=0 wall=13194s threads=1
+wq_1e23 independent replay rc=0 wall=6595s {"passed": true, "passed_B_simple_without_lemma2": true, "np": "17/17", "certs": "2/2", "seams": [0, 0, 0], "min_candidate_lower": 0.7437305083574092, "seconds": 6594.71, "replay_peak_gb": 0.08}
+wq_1e23 done
+/opt/homebrew/Cellar/python@3.12/3.12.13/Frameworks/Python.framework/Versions/3.12/Resources/Python.app/Contents/MacOS/Python: can't open file '/Users/kiosk/atlas_mark2/diagnostic/zfast/atlas_v5z4/tools/pair_gap2.py': [Errno 2] No such file or directory
+/opt/homebrew/Cellar/python@3.14/3.14.7/Frameworks/Python.framework/Versions/3.14/Resources/Python.app/Contents/MacOS/Python: can't open file '/Users/kiosk/atlas_mark2/diagnostic/zfast/atlas_v5z4/tools/provenance_m6.py': [Errno 2] No such file or directory
+wq_1e23 lean:   certificates 19 (main 2, no-parity 17), replay-passed 19, regions 19, intervals 638, central reductions 0, model boxes 15634 TOTAL VIOLATIONS (non-control datasets): 0 
+wr_1e23 pipeline rc=0 wall=13255s threads=1
+wr_1e23 independent replay rc=0 wall=6589s {"passed": true, "passed_B_simple_without_lemma2": true, "np": "17/17", "certs": "2/2", "seams": [0, 0, 0], "min_candidate_lower": 0.6132372554491857, "seconds": 6589.72, "replay_peak_gb": 0.087}
+wr_1e23 done
+/opt/homebrew/Cellar/python@3.12/3.12.13/Frameworks/Python.framework/Versions/3.12/Resources/Python.app/Contents/MacOS/Python: can't open file '/Users/kiosk/atlas_mark2/diagnostic/zfast/atlas_v5z4/tools/pair_gap2.py': [Errno 2] No such file or directory
+/opt/homebrew/Cellar/python@3.14/3.14.7/Frameworks/Python.framework/Versions/3.14/Resources/Python.app/Contents/MacOS/Python: can't open file '/Users/kiosk/atlas_mark2/diagnostic/zfast/atlas_v5z4/tools/provenance_m6.py': [Errno 2] No such file or directory
+wr_1e23 lean:   certificates 19 (main 2, no-parity 17), replay-passed 19, regions 19, intervals 643, central reductions 0, model boxes 15634 TOTAL VIOLATIONS (non-control datasets): 0 
+STAGE2 DONE Sun Oct 25 05:00:28 PDT 2026
+GZ done wall=164187s 
+GZ STOPPED by M6 agent Sun Oct 25 05:02:04 PDT 2026: point 1 at prec 192 gave Z=[+/- 4.27e+91] after 121659 s; diagnosing before relaunch
+provenance + pair_gap2_m6 written by hand Sun Oct 25 05:02:05 PDT 2026 (stage-2 post step used a wrong relative path; pair_gap2.json files are empty junk, kept)

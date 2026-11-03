@@ -1,0 +1,5 @@
+{"stage": "start", "args": {"T0": 1000000000000000000000000, "tlo": "1000000000000000000000000", "thi": "1000000000000000000000002", "grid": "v5", "evaluator": "dirichlet", "zs_refine": 0.0001, "name": "w_1e24", "pw": 1.0, "wm": 2.0, "zs_step": 0.005, "gen_timeout": 172800.0}, "lim_gb": 0.5, "lib_sh
+{"stage": "pieces", "hull": [0.0, 2.0], "n": 2, "t": 0.0}
+{"stage": "generator", "rc": 0, "killed": null, "peak_gb": 0.207, "seconds": 20816.19, "t": 20816.2}
+{"stage": "replay_target", "rc": 0, "killed": null, "peak_gb": 0.032, "seconds": 20627.02, "t": 41443.22}
+{"stage": "done", "all_closed": true, "wall_seconds": 41443.22, "peak_gb": 0.207, "t": 41443.22}

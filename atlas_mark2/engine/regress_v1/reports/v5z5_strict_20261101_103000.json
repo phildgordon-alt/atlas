@@ -1,0 +1,50 @@
+{
+ "check": "G4 strict-mode unit checks",
+ "cases": [
+  {
+   "case": "strict mode, point inside",
+   "rc": 0,
+   "out": "{\"ok\": true, \"Z\": \"[-0.4189758482 +/- 3.82e-11]\", \"cfg\": {\"H\": 4.0, \"Delta\": 0.15, \"K\": 18, \"J\": 12, \"threads\": 1, \"strict\": true, \"center\": \"0.0\", \"lib_sha\": \"82489d1a89e25bef117cd87f47d591d9426282c4b211f92ace12d097767dffca\"}, \"stats\": {\"sessions\": 1, \"build_seconds\": 0.0868, \"z_points\": 1, \"row_points\": 0, \"session_keys\": [[\"1000000000000\", 0.0]]}}",
+   "expect": "value",
+   "ok": true
+  },
+  {
+   "case": "point outside session",
+   "rc": 0,
+   "out": "{\"raised\": true, \"error\": \"zfast_provider strict mode: point u=10.0 outside session [0.0 - 4.0, 0.0 + 4.0]\"}",
+   "expect": "raise",
+   "ok": true
+  },
+  {
+   "case": "second session",
+   "rc": 0,
+   "out": "{\"raised\": true, \"error\": \"zfast_provider strict mode: a second session (1000000000000, 0.0) was requested (have [(1000000000000, 99.0)])\"}",
+   "expect": "raise",
+   "ok": true
+  },
+  {
+   "case": "strict without centre",
+   "rc": 1,
+   "err": "ll last):\n  File \"<string>\", line 4, in <module>\n  File \"/Users/kiosk/atlas_mark2/diagnostic/zfast/atlas_v5z5/lib/zfast_provider.py\", line 42, in <module>\n    raise RuntimeError('zfast_provider strict mode: ZFAST_CENTER is required')\nRuntimeError: zfast_provider strict mode: ZFAST_CENTER is required",
+   "expect": "refuse at import",
+   "ok": true
+  },
+  {
+   "case": "PYTHONOPTIMIZE=1",
+   "rc": 1,
+   "err": "atlas_v5z5: refusing to run under python -O / PYTHONOPTIMIZE (Atlas rule)",
+   "expect": "refuse",
+   "ok": true
+  },
+  {
+   "case": "python -O",
+   "rc": 1,
+   "err": "atlas_v5z5: refusing to run under python -O / PYTHONOPTIMIZE (Atlas rule)",
+   "expect": "refuse",
+   "ok": true
+  }
+ ],
+ "ok": true,
+ "stamp": "20261101_103000",
+ "predictions": "diagnostic/zfast/PREDICTIONS_M7.md sha 34b281570dc2415757d5d3d93f1331031c3d30c48a585c4dca7fa31f58d3c5b6"
+}

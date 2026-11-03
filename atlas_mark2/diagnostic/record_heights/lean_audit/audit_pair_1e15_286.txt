@@ -1,0 +1,6 @@
+dataset record_pair_1e15_286
+  certificates 12 (main 2, no-parity 10), replay-passed 12, regions 12, intervals 264, central reductions 0, model boxes 10020
+  expect_m0 0; per-certificate checks passed 12/12
+  targets covered (target x [0,1/2], exact, binary64 endpoints as stored) 2/2; claim (B) groups 1/1; decimal-endpoint versions covered 0/0
+  VIOLATIONS 0
+TOTAL VIOLATIONS (non-control datasets): 0

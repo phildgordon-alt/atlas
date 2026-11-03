@@ -1,0 +1,7 @@
+file: zfast_m3.inc
+--- old
+        mag_add(rem, rem, q);
+    }
++++ new
+        mag_div_ui(q, q, 10); mag_add(rem, rem, q);
+    }

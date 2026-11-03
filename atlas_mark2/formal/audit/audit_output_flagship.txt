@@ -1,0 +1,25 @@
+dataset flagship_K23
+  certificates 20000 (main 20000, no-parity 0), replay-passed 20000, regions 20000, intervals 1111420, central reductions 0, model boxes 0
+  expect_m0 0; per-certificate checks passed 20000/20000
+  targets covered (target x [0,1/2], exact, binary64 endpoints as stored) 1003/1003; claim (B) groups 0/0; decimal-endpoint versions covered 0/0
+  VIOLATIONS 0
+dataset flagship_K23_nc (NEGATIVE CONTROLS: violations expected where the control breaks a checked condition)
+  certificates 49 (main 49, no-parity 0), replay-passed 49, regions 49, intervals 2825, central reductions 1, model boxes 0
+  expect_m0 0; per-certificate checks passed 39/49
+  targets covered (target x [0,1/2], exact, binary64 endpoints as stored) 1/5; claim (B) groups 0/0; decimal-endpoint versions covered 0/0
+  CERT nc/d1_049/cell_1000.0000.json: [region not in window / d-range]
+  CERT nc/d0_001/cell_2000.5000.json: [region not in window / d-range]
+  CERT nc/cell_outside/cell_3001.0000.json: [region not in window / d-range]
+  CERT nc/cell_reversed/cell_3011.5000.json: [region not in window / d-range]
+  CERT nc/iv_outside/cell_4002.0000.json: [interval not in window or t1 >= t2]
+  CERT nc/iv_swapped/cell_5002.5000.json: [intervals not sorted/disjoint]
+  CERT nc/iv_touching/cell_6003.0000.json: [intervals not sorted/disjoint]
+  CERT nc/iv_reversed/cell_7003.5000.json: [interval not in window or t1 >= t2]
+  CERT nc/central_recorded/cell_8004.0000.json: [central policy (m0 = 2, recorded = true, window ∋ 0: false)]
+  CERT nc/iv_duplicate/cell_9004.5000.json: [intervals not sorted/disjoint]
+  TARGET gap_w5010_missing_cell [5010, 5020] NOT covered
+  TARGET gap_union_5000_5020 [5000, 5020] NOT covered
+  TARGET overreach_1ulp [5000, 5508553255157761/1099511627776] NOT covered
+  TARGET wrong_groups [5000, 5010] NOT covered
+  VIOLATIONS 14
+TOTAL VIOLATIONS (non-control datasets): 0

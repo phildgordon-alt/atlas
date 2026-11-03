@@ -1,0 +1,38 @@
+{
+ "orig": "/Users/kiosk/atlas_mark2/diagnostic/atlas_v5/runs/w1000000000000/big_1e12",
+ "new": "atlas_v5z/runs/w1000000000000/z_1e12",
+ "closed": [
+  true,
+  true
+ ],
+ "claimB": [
+  true,
+  true
+ ],
+ "independent_replay": [
+  true,
+  true
+ ],
+ "independent_B": [
+  true,
+  true
+ ],
+ "counts": [
+  8,
+  8
+ ],
+ "arb_count": 8,
+ "new_matches_arb": true,
+ "one_to_one": true,
+ "identical_intervals": true,
+ "min_candidate_lower": [
+  0.9435444104376921,
+  0.9435444104376903
+ ],
+ "seams": [
+  0,
+  0
+ ],
+ "mcl_diff": 1.7763568394002505e-15,
+ "ACCEPT": true
+}

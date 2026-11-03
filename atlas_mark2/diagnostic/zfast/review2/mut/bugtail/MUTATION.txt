@@ -1,0 +1,5 @@
+file: zfast_m3b.inc
+--- old
+        for (ulong n = Nt + 1; n <= S->Nw; n++)
++++ new
+        for (ulong n = Nt + 2; n <= S->Nw; n++)

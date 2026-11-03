@@ -1,0 +1,10 @@
+file: zfast_m3b.inc
+--- old
+    mag_set_d(tmp, (RDEG + 1) * u / (1 - (RDEG + 1) * u)); mag_mul(tmp, tmp, sumabs);
+    mag_add(e, e, tmp);
+
++++ new
+    mag_set_d(tmp, (RDEG + 1) * u / (1 - (RDEG + 1) * u)); mag_mul(tmp, tmp, sumabs);
+    mag_add(e, e, tmp);
+    mag_div_ui(e, e, 10);
+

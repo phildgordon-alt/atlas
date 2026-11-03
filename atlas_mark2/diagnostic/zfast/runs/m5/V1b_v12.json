@@ -1,0 +1,33 @@
+{
+ "10000000000": {
+  "rows_overlap_v9": 20,
+  "n": 20,
+  "z_identical_to_v11": 13,
+  "zn": 20,
+  "max_rad_ratio_vs_v10b": 0.8561730099030399,
+  "build": 0.0458,
+  "max_row_sec": 0.00769
+ },
+ "10000000000000": {
+  "rows_overlap_v9": 20,
+  "n": 20,
+  "z_identical_to_v11": 13,
+  "zn": 20,
+  "max_rad_ratio_vs_v10b": 0.8557129625545803,
+  "build": 0.1759,
+  "max_row_sec": 0.00605
+ },
+ "10000000000000000": {
+  "rows_overlap_v9": 20,
+  "n": 20,
+  "z_identical_to_v11": 18,
+  "zn": 20,
+  "max_rad_ratio_vs_v10b": 0.8555224277210883,
+  "build": 2.6957,
+  "max_row_sec": 0.00687
+ },
+ "arb_jets": {
+  "points": 38,
+  "contained": 38
+ }
+}

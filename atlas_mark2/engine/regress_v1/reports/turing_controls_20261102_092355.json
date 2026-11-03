@@ -1,0 +1,150 @@
+{
+ "check": "Turing gate negative controls on /Users/kiosk/atlas_mark2/diagnostic/zfast/atlas_v5z7/runs/w10000000000000000000000000/wide7_1e25",
+ "turing_json": "/Users/kiosk/atlas_mark2/diagnostic/zfast/atlas_v5z7/runs/w10000000000000000000000000/wide7_1e25/turing_recount.json",
+ "results": {
+  "baseline (copy, unmodified)": {
+   "run": "/Users/kiosk/atlas_mark2/engine/regress_v1/work/turing_nc_20261102_092355/baseline",
+   "T0": "10000000000000000000000000",
+   "target": [
+    "0",
+    "100"
+   ],
+   "turing_record": [
+    "/Users/kiosk/atlas_mark2/diagnostic/zfast/atlas_v5z7/runs/w10000000000000000000000000/wide7_1e25/turing_recount.json",
+    "898bf5c506fea8f97a75c19b684f32901b98de97e1d00c250f473fca0618b2da"
+   ],
+   "N_lo": 87100328229866724999179370,
+   "N_hi": 87100328229866724999180258,
+   "U_minus_L": [
+    0.5475242580217679,
+    0.529424258021775
+   ],
+   "turing_count": 888,
+   "certified_sign_changes": 888,
+   "straddling": [],
+   "fails": [],
+   "ok": true
+  },
+  "NC-T1 one zero deleted from all covering certificates": {
+   "run": "/Users/kiosk/atlas_mark2/engine/regress_v1/work/turing_nc_20261102_092355/nct1",
+   "T0": "10000000000000000000000000",
+   "target": [
+    "0",
+    "100"
+   ],
+   "turing_record": [
+    "/Users/kiosk/atlas_mark2/diagnostic/zfast/atlas_v5z7/runs/w10000000000000000000000000/wide7_1e25/turing_recount.json",
+    "898bf5c506fea8f97a75c19b684f32901b98de97e1d00c250f473fca0618b2da"
+   ],
+   "N_lo": 87100328229866724999179370,
+   "N_hi": 87100328229866724999180258,
+   "U_minus_L": [
+    0.5475242580217679,
+    0.529424258021775
+   ],
+   "turing_count": 888,
+   "certified_sign_changes": 887,
+   "straddling": [],
+   "fails": [
+    "G-T6: Turing count 888 != certified sign changes 887"
+   ],
+   "ok": false,
+   "deleted": [
+    50.02578125000001,
+    50.02585937500001
+   ],
+   "main_certs_hit": [
+    "cert_p4800_4900.json",
+    "cert_p4900_5000.json",
+    "cert_p5000_5100.json",
+    "cert_p5100_5200.json",
+    "cert_p5200_5300.json"
+   ],
+   "np_certs_removed": [
+    "cert_z0444.json"
+   ]
+  },
+  "NC-T2 Turing N(hi) + 1": {
+   "run": "/Users/kiosk/atlas_mark2/engine/regress_v1/work/turing_nc_20261102_092355/baseline",
+   "T0": "10000000000000000000000000",
+   "target": [
+    "0",
+    "100"
+   ],
+   "turing_record": [
+    "/Users/kiosk/atlas_mark2/engine/regress_v1/work/turing_nc_20261102_092355/nct2_turing.json",
+    "898bf5c506fea8f97a75c19b684f32901b98de97e1d00c250f473fca0618b2da"
+   ],
+   "N_lo": 87100328229866724999179370,
+   "N_hi": 87100328229866724999180259,
+   "U_minus_L": [
+    0.5475242580217679,
+    0.529424258021775
+   ],
+   "turing_count": 889,
+   "certified_sign_changes": 888,
+   "straddling": [],
+   "fails": [
+    "G-T6: Turing count 889 != certified sign changes 888"
+   ],
+   "ok": false
+  },
+  "NC-T3 lower end unpinned": {
+   "run": "/Users/kiosk/atlas_mark2/engine/regress_v1/work/turing_nc_20261102_092355/baseline",
+   "T0": "10000000000000000000000000",
+   "target": [
+    "0",
+    "100"
+   ],
+   "turing_record": [
+    "/Users/kiosk/atlas_mark2/engine/regress_v1/work/turing_nc_20261102_092355/nct3_turing.json",
+    "898bf5c506fea8f97a75c19b684f32901b98de97e1d00c250f473fca0618b2da"
+   ],
+   "N_lo": null,
+   "N_hi": 87100328229866724999180258,
+   "U_minus_L": [
+    0.5475242580217679,
+    0.529424258021775
+   ],
+   "turing_count": null,
+   "certified_sign_changes": 888,
+   "straddling": [],
+   "fails": [
+    "G-T2: a target end is not pinned"
+   ],
+   "ok": false
+  },
+  "NC-T4 record from a pre-fix tool": {
+   "run": "/Users/kiosk/atlas_mark2/engine/regress_v1/work/turing_nc_20261102_092355/baseline",
+   "T0": "10000000000000000000000000",
+   "target": [
+    "0",
+    "100"
+   ],
+   "turing_record": null,
+   "N_lo": null,
+   "N_hi": null,
+   "U_minus_L": [
+    null,
+    null
+   ],
+   "turing_count": null,
+   "certified_sign_changes": 888,
+   "straddling": [],
+   "fails": [
+    "G-T1/G-T2: no scan_turing5 record with T0 and both target ends"
+   ],
+   "ok": false
+  }
+ },
+ "detected": {
+  "NC-T1 one zero deleted from all covering certificates": true,
+  "NC-T2 Turing N(hi) + 1": true,
+  "NC-T3 lower end unpinned": true,
+  "NC-T4 record from a pre-fix tool": true
+ },
+ "baseline_ok": true,
+ "ok": true,
+ "stamp": "20261102_092355",
+ "amendment": "PREREG_AMENDMENTS.md A6"
+}

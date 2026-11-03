@@ -1,0 +1,18 @@
+{
+ "deleted": [
+  54.05570312500001,
+  54.05578125000001
+ ],
+ "certs_touched": [
+  "cert_p5200_5300.json",
+  "cert_p5300_5400.json",
+  "cert_p5400_5500.json",
+  "cert_p5500_5600.json",
+  "cert_p5600_5700.json"
+ ],
+ "count_mutated": 776,
+ "turing": 777,
+ "records": 200,
+ "passed": 200,
+ "failing": []
+}

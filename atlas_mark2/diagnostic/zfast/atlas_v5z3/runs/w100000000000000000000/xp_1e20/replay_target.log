@@ -1,0 +1,1 @@
+{"passed": true, "passed_B_simple_without_lemma2": true, "np": "14/14", "certs": "2/2", "seams": [0, 0, 0], "min_candidate_lower": 0.7726391951627157, "seconds": 98.35, "replay_peak_gb": 0.089}

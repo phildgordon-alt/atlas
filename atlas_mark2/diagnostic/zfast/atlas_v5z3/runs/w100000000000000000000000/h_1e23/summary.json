@@ -1,0 +1,218 @@
+{
+ "T0": 100000000000000000000000,
+ "grid": "v5",
+ "evaluator": "dirichlet",
+ "target_input": [
+  "100000000000000000000000",
+  "100000000000000000000002"
+ ],
+ "target": [
+  0.0,
+  2.0
+ ],
+ "target_note": "exact",
+ "name": "h_1e23",
+ "hull": [
+  0.0,
+  2.0
+ ],
+ "hull_exact": [
+  "100000000000000000000000",
+  "100000000000000000000002"
+ ],
+ "pieces": 2,
+ "test_hooks": {},
+ "certificates": 2,
+ "replay_passed_plain_and_hardened": 1,
+ "tiling": {
+  "coordinates": "offsets from T0 (exact translation)",
+  "T0": 100000000000000000000000,
+  "tiling_script": "/Users/kiosk/atlas/workbench/math_ablation_20260928/audit_20261004/exact_tiling_check.py",
+  "tiling_sha256": "0868990ee2027ba493593d514607acc0aad729ed94c7cf61b1cf3d1f22a08b45",
+  "tiling_sha_ok": true,
+  "hull": [
+   0.0,
+   2.0
+  ],
+  "target": [
+   0.0,
+   2.0
+  ],
+  "regions": 1,
+  "seams_hull": 1,
+  "seams_target": 1,
+  "gaps_d0": [
+   [
+    0.0,
+    1.0
+   ]
+  ],
+  "seams": [
+   {
+    "column": "hull",
+    "d_strip": [
+     "0",
+     "1/2"
+    ],
+    "x_gap": [
+     "0",
+     "1"
+    ],
+    "d_strip_float": [
+     0.0,
+     0.5
+    ],
+    "x_gap_float": [
+     0.0,
+     1.0
+    ]
+   },
+   {
+    "column": "target",
+    "d_strip": [
+     "0",
+     "1/2"
+    ],
+    "x_gap": [
+     "0",
+     "1"
+    ],
+    "d_strip_float": [
+     0.0,
+     0.5
+    ],
+    "x_gap_float": [
+     0.0,
+     1.0
+    ]
+   }
+  ]
+ },
+ "all_closed": false,
+ "simple_without_lemma2": false,
+ "claim_B": {
+  "np_certificates": 16,
+  "np_passed_both": 16,
+  "intervals_to_cover": 8,
+  "uncovered": [],
+  "np_min_candidate_lower": 0.8965661586387959,
+  "verifier": "pinned verify_zs5.py with one line changed (replay5.noparity_check)"
+ },
+ "generator": {
+  "seconds": 3029.82,
+  "peak_gb": 0.2,
+  "killed": null,
+  "zs_seconds": 3024.32,
+  "zs_intervals": 49,
+  "zs_evals": 1495,
+  "measurements": 18,
+  "meas_seconds": 1.75,
+  "attempts": 2,
+  "tiers": [
+   [
+    "p0_100",
+    "t1",
+    "CERTIFIED"
+   ],
+   [
+    "p100_200",
+    "t1",
+    "CERTIFIED"
+   ]
+  ],
+  "main_done_at": 3026.68,
+  "np_certificates": 16,
+  "np_intervals": 16,
+  "np_tiers": [
+   [
+    0,
+    "z1",
+    "CERTIFIED"
+   ],
+   [
+    1,
+    "z1",
+    "CERTIFIED"
+   ],
+   [
+    2,
+    "z1",
+    "CERTIFIED"
+   ],
+   [
+    3,
+    "z1",
+    "CERTIFIED"
+   ],
+   [
+    4,
+    "z1",
+    "CERTIFIED"
+   ],
+   [
+    5,
+    "z1",
+    "CERTIFIED"
+   ],
+   [
+    6,
+    "z1",
+    "CERTIFIED"
+   ],
+   [
+    7,
+    "z1",
+    "CERTIFIED"
+   ],
+   [
+    8,
+    "z1",
+    "CERTIFIED"
+   ],
+   [
+    9,
+    "z1",
+    "CERTIFIED"
+   ],
+   [
+    10,
+    "z1",
+    "CERTIFIED"
+   ],
+   [
+    11,
+    "z1",
+    "CERTIFIED"
+   ],
+   [
+    12,
+    "z1",
+    "CERTIFIED"
+   ],
+   [
+    13,
+    "z1",
+    "CERTIFIED"
+   ],
+   [
+    14,
+    "z1",
+    "CERTIFIED"
+   ],
+   [
+    15,
+    "z1",
+    "CERTIFIED"
+   ]
+  ]
+ },
+ "replay": {
+  "seconds": 3033.09,
+  "peak_gb": 0.032,
+  "min_candidate_lower": 0.7553842622248133
+ },
+ "wall_seconds": 6062.93,
+ "peak_gb": 0.2,
+ "claim": "NOT CLOSED: see replay_check/replay_check.json",
+ "claim_simple_without_lemma2": "claim (B) not established"
+}

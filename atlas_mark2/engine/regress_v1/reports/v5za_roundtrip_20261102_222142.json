@@ -1,0 +1,274 @@
+{
+ "check": "R1/R1c/R1n/R2: exact radius parse (MJ-C1) round-trip",
+ "results": {
+  "v14d": {
+   "rc": 0,
+   "rt": {
+    "random": {
+     "n": 300000,
+     "fail": 0,
+     "refused_radius_exponent_over_40_bits": 10105,
+     "nonzero_radius": 207419,
+     "rad30": 53112
+    },
+    "width": {
+     "n": 300000,
+     "fail": 0,
+     "nonzero_radius": 300000,
+     "rad30": 10000,
+     "fail_by_width": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+     ],
+     "n_by_width": [
+      10000,
+      10000,
+      10000,
+      10000,
+      10000,
+      10000,
+      10000,
+      10000,
+      10000,
+      10000,
+      10000,
+      10000,
+      10000,
+      10000,
+      10000,
+      10000,
+      10000,
+      10000,
+      10000,
+      10000,
+      10000,
+      10000,
+      10000,
+      10000,
+      10000,
+      10000,
+      10000,
+      10000,
+      10000,
+      10000
+     ]
+    },
+    "files": {
+     "n": 1240720,
+     "fail": 0,
+     "nonzero_radius": 2892
+    },
+    "noncanonical": {
+     "n": 12,
+     "accepted": 0,
+     "first_accepted": ""
+    },
+    "first_fail": ""
+   },
+   "extract": {
+    "/Users/kiosk/atlas_mark2/diagnostic/zfast/atlas_v5z7/runs/w10000000000000000000000/wide7_1e22/zfast_ckpt_gen.txt": {
+     "format": "ZFAST14CKPT v1",
+     "lines": 2671,
+     "balls": 106840,
+     "nonzero_radius": 0
+    },
+    "/Users/kiosk/atlas_mark2/diagnostic/zfast/atlas_v5z7/runs/w10000000000000000000000/wide7_1e22/zfast_ckpt_replay.txt": {
+     "format": "ZFAST14CKPT v1",
+     "lines": 2671,
+     "balls": 106840,
+     "nonzero_radius": 0
+    },
+    "/Users/kiosk/atlas_mark2/diagnostic/zfast/atlas_v5z7/runs/w10000000000000000000000000/wide7_1e25/zfast_ckpt_gen.txt": {
+     "format": "ZFAST14CKPT v1",
+     "lines": 6142,
+     "balls": 245680,
+     "nonzero_radius": 348
+    },
+    "/Users/kiosk/atlas_mark2/diagnostic/zfast/atlas_v5z7/runs/w10000000000000000000000000/wide7_1e25/zfast_ckpt_replay.txt": {
+     "format": "ZFAST14CKPT v1",
+     "lines": 6142,
+     "balls": 245680,
+     "nonzero_radius": 348
+    },
+    "/Users/kiosk/atlas_mark2/diagnostic/zfast/atlas_v5z7/runs/w100000000000000000000000000/wide7_1e26/zfast_ckpt_gen.txt": {
+     "format": "ZFAST14CKPT v1",
+     "lines": 6696,
+     "balls": 267840,
+     "nonzero_radius": 1098
+    },
+    "/Users/kiosk/atlas_mark2/diagnostic/zfast/atlas_v5z7/runs/w100000000000000000000000000/wide7_1e26/zfast_ckpt_replay.txt": {
+     "format": "ZFAST14CKPT v1",
+     "lines": 6696,
+     "balls": 267840,
+     "nonzero_radius": 1098
+    }
+   },
+   "tail": "00, 10000, 10000, 10000, 10000, 10000, 10000, 10000, 10000, 10000, 10000, 10000, 10000, 10000, 10000, 10000, 10000, 10000, 10000, 10000, 10000]}, \"files\": {\"n\": 1240720, \"fail\": 0, \"nonzero_radius\": 2892}, \"noncanonical\": {\"n\": 12, \"accepted\": 0, \"first_accepted\": \"\"}, \"first_fail\": \"\"}\nrt_arb rc=0\n"
+  },
+  "v14c_control": {
+   "rc": 1,
+   "rt": {
+    "random": {
+     "n": 300000,
+     "fail": 50442,
+     "refused_radius_exponent_over_40_bits": 10105,
+     "nonzero_radius": 207419,
+     "rad30": 53112
+    },
+    "width": {
+     "n": 300000,
+     "fail": 10000,
+     "nonzero_radius": 300000,
+     "rad30": 10000,
+     "fail_by_width": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      10000
+     ],
+     "n_by_width": [
+      10000,
+      10000,
+      10000,
+      10000,
+      10000,
+      10000,
+      10000,
+      10000,
+      10000,
+      10000,
+      10000,
+      10000,
+      10000,
+      10000,
+      10000,
+      10000,
+      10000,
+      10000,
+      10000,
+      10000,
+      10000,
+      10000,
+      10000,
+      10000,
+      10000,
+      10000,
+      10000,
+      10000,
+      10000,
+      10000
+     ]
+    },
+    "files": {
+     "n": 1240720,
+     "fail": 0,
+     "nonzero_radius": 2892
+    },
+    "noncanonical": {
+     "n": 12,
+     "accepted": 0,
+     "first_accepted": ""
+    },
+    "first_fail": "width 30: 3 -46f 3374e0d7 -5c0"
+   },
+   "extract": {
+    "/Users/kiosk/atlas_mark2/diagnostic/zfast/atlas_v5z7/runs/w10000000000000000000000/wide7_1e22/zfast_ckpt_gen.txt": {
+     "format": "ZFAST14CKPT v1",
+     "lines": 2671,
+     "balls": 106840,
+     "nonzero_radius": 0
+    },
+    "/Users/kiosk/atlas_mark2/diagnostic/zfast/atlas_v5z7/runs/w10000000000000000000000/wide7_1e22/zfast_ckpt_replay.txt": {
+     "format": "ZFAST14CKPT v1",
+     "lines": 2671,
+     "balls": 106840,
+     "nonzero_radius": 0
+    },
+    "/Users/kiosk/atlas_mark2/diagnostic/zfast/atlas_v5z7/runs/w10000000000000000000000000/wide7_1e25/zfast_ckpt_gen.txt": {
+     "format": "ZFAST14CKPT v1",
+     "lines": 6142,
+     "balls": 245680,
+     "nonzero_radius": 348
+    },
+    "/Users/kiosk/atlas_mark2/diagnostic/zfast/atlas_v5z7/runs/w10000000000000000000000000/wide7_1e25/zfast_ckpt_replay.txt": {
+     "format": "ZFAST14CKPT v1",
+     "lines": 6142,
+     "balls": 245680,
+     "nonzero_radius": 348
+    },
+    "/Users/kiosk/atlas_mark2/diagnostic/zfast/atlas_v5z7/runs/w100000000000000000000000000/wide7_1e26/zfast_ckpt_gen.txt": {
+     "format": "ZFAST14CKPT v1",
+     "lines": 6696,
+     "balls": 267840,
+     "nonzero_radius": 1098
+    },
+    "/Users/kiosk/atlas_mark2/diagnostic/zfast/atlas_v5z7/runs/w100000000000000000000000000/wide7_1e26/zfast_ckpt_replay.txt": {
+     "format": "ZFAST14CKPT v1",
+     "lines": 6696,
+     "balls": 267840,
+     "nonzero_radius": 1098
+    }
+   },
+   "tail": ", 10000, 10000, 10000, 10000, 10000, 10000, 10000, 10000, 10000, 10000, 10000, 10000, 10000, 10000, 10000, 10000]}, \"files\": {\"n\": 1240720, \"fail\": 0, \"nonzero_radius\": 2892}, \"noncanonical\": {\"n\": 12, \"accepted\": 0, \"first_accepted\": \"\"}, \"first_fail\": \"width 30: 3 -46f 3374e0d7 -5c0\"}\nrt_arb rc=1\n"
+  }
+ },
+ "production_nonzero_radii": 2892,
+ "ok": true,
+ "tree": "atlas_v5za",
+ "stamp": "20261102_222142",
+ "predictions": "diagnostic/zfast/PREDICTIONS_M14.md (sha in PREDICTIONS_M14.sha256)"
+}

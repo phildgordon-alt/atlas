@@ -1,0 +1,73 @@
+{
+ "points": 38,
+ "all_ok": true,
+ "fails": [],
+ "by_height": [
+  {
+   "T0": "10000000000",
+   "n": 10,
+   "ok": true,
+   "max_P_rad": 5.060000024707865e-13,
+   "max_P_diff": 4.449005744657e-13,
+   "med_sec_zfast": 0.0285,
+   "med_sec_arb": 0.05083060264587402,
+   "max_rss_zfast": 4.2,
+   "max_rss_arb": 27.90625
+  },
+  {
+   "T0": "100000000000",
+   "n": 8,
+   "ok": true,
+   "max_P_rad": 6.070000018842513e-13,
+   "max_P_diff": 2.977772933587e-13,
+   "med_sec_zfast": 0.04,
+   "med_sec_arb": 0.15775537490844727,
+   "max_rss_zfast": 4.3,
+   "max_rss_arb": 30.96875
+  },
+  {
+   "T0": "1000000000000",
+   "n": 8,
+   "ok": true,
+   "max_P_rad": 6.810000019409276e-13,
+   "max_P_diff": 4.28083282867e-13,
+   "med_sec_zfast": 0.0568,
+   "med_sec_arb": 0.48416101932525635,
+   "max_rss_zfast": 4.3,
+   "max_rss_arb": 41.3125
+  },
+  {
+   "T0": "10000000000000",
+   "n": 6,
+   "ok": true,
+   "max_P_rad": 6.800000024666957e-13,
+   "max_P_diff": 2.634080820211e-13,
+   "med_sec_zfast": 0.08810000000000001,
+   "med_sec_arb": 1.5715014934539795,
+   "max_rss_zfast": 4.4,
+   "max_rss_arb": 73.859375
+  },
+  {
+   "T0": "100000000000000",
+   "n": 4,
+   "ok": true,
+   "max_P_rad": 3.9800000123198427e-13,
+   "max_P_diff": 2.076939065215e-13,
+   "med_sec_zfast": 0.15385,
+   "med_sec_arb": 5.238515853881836,
+   "max_rss_zfast": 4.4,
+   "max_rss_arb": 175.359375
+  },
+  {
+   "T0": "1000000000000000",
+   "n": 2,
+   "ok": true,
+   "max_P_rad": 6.060000024100194e-13,
+   "max_P_diff": 4.615450137147e-13,
+   "med_sec_zfast": 0.3215,
+   "med_sec_arb": 18.790465593338013,
+   "max_rss_zfast": 4.4,
+   "max_rss_arb": 451.984375
+  }
+ ]
+}

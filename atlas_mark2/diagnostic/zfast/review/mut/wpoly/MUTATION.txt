@@ -1,0 +1,5 @@
+file: zfast.c
+--- old
+    mag_mul_2exp_si(tmp, e, 1); mag_add(mx, sumabs, tmp);       /* |p_hat|
++++ new
+    mag_div_ui(e, e, 10); mag_mul_2exp_si(tmp, e, 1); mag_add(mx, sumabs, tmp);       /* |p_hat|

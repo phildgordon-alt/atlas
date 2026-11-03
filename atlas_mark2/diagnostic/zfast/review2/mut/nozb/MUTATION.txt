@@ -1,0 +1,5 @@
+file: zfast_m3c.inc
+--- old
+mag_mul(q, q, S->V + bb); mag_mul(q, q, zb);
++++ new
+mag_mul(q, q, S->V + bb);

@@ -1,0 +1,166 @@
+{
+ "check": "G3/G3a/G3n: --resume after the generator session build (review_v14c mn-C3)",
+ "results": {
+  "ref": {
+   "rc": 0,
+   "seconds": 49.52
+  },
+  "G3": {
+   "kill_rc": 1,
+   "killed_pid": 34841,
+   "stages_at_kill": [
+    "zs",
+    "attempt",
+    "attempt",
+    "attempt",
+    "attempt",
+    "attempt",
+    "attempt",
+    "attempt",
+    "attempt",
+    "attempt",
+    "attempt",
+    "main_done",
+    "attempt_np",
+    "attempt_np",
+    "attempt_np",
+    "attempt_np",
+    "attempt_np",
+    "attempt_np",
+    "attempt_np",
+    "attempt_np",
+    "attempt_np",
+    "attempt_np",
+    "attempt_np",
+    "attempt_np",
+    "attempt_np",
+    "attempt_np",
+    "attempt_np",
+    "attempt_np",
+    "attempt_np",
+    "attempt_np",
+    "attempt_np",
+    "attempt_np",
+    "attempt_np",
+    "attempt_np",
+    "attempt_np",
+    "attempt_np",
+    "attempt_np",
+    "attempt_np",
+    "attempt_np",
+    "attempt_np",
+    "attempt_np",
+    "attempt_np",
+    "attempt_np",
+    "attempt_np",
+    "attempt_np",
+    "attempt_np",
+    "attempt_np",
+    "attempt_np",
+    "attempt_np",
+    "attempt_np",
+    "attempt_np",
+    "attempt_np",
+    "attempt_np",
+    "attempt_np",
+    "attempt_np",
+    "attempt_np",
+    "attempt_np",
+    "attempt_np",
+    "attempt_np",
+    "attempt_np",
+    "attempt_np",
+    "attempt_np",
+    "attempt_np",
+    "attempt_np",
+    "attempt_np",
+    "attempt_np",
+    "attempt_np",
+    "gen_done"
+   ],
+   "killed_after_zs_before_grid": true,
+   "resume_rc": 0,
+   "moved": [
+    "README.txt",
+    "certs",
+    "certs_np",
+    "gen.jsonl",
+    "gen.log",
+    "gen_measurements.json",
+    "zs.json"
+   ],
+   "sessions": [
+    {
+     "loaded": 0,
+     "items": 1075,
+     "verified": 0
+    },
+    {
+     "loaded": 1075,
+     "items": 1075,
+     "verified": 64
+    }
+   ],
+   "compare_identical": true,
+   "turing_grid_identical": true,
+   "replay_zfast_ckpt_ok": true,
+   "negatives": {},
+   "ok": true
+  },
+  "G3a": {
+   "kill_rc": 1,
+   "killed_pid": 35612,
+   "stages_at_kill": [
+    "zs"
+   ],
+   "killed_after_zs_before_grid": true,
+   "resume_rc": 0,
+   "moved": [
+    "README.txt",
+    "certs",
+    "gen.jsonl",
+    "gen.log",
+    "zs.json"
+   ],
+   "sessions": [
+    {
+     "loaded": 0,
+     "items": 1075,
+     "verified": 0
+    },
+    {
+     "loaded": 1075,
+     "items": 1075,
+     "verified": 64
+    }
+   ],
+   "compare_identical": true,
+   "turing_grid_identical": true,
+   "replay_zfast_ckpt_ok": true,
+   "negatives": {
+    "(i) no --resume": {
+     "rc": 1,
+     "refused": true
+    },
+    "(ii) replay_check present": {
+     "rc": 1,
+     "refused": true
+    },
+    "(iii) generator sidecar moved away": {
+     "rc": 1,
+     "refused": true
+    },
+    "(iv) nonce file replaced": {
+     "rc": 1,
+     "refused": true,
+     "by": "driver"
+    }
+   },
+   "ok": true
+  }
+ },
+ "ok": true,
+ "tree": "atlas_v5za",
+ "stamp": "20261102_225430",
+ "predictions": "diagnostic/zfast/PREDICTIONS_M14.md (sha in PREDICTIONS_M14.sha256)"
+}

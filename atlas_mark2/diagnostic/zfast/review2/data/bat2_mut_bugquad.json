@@ -1,0 +1,95 @@
+{
+ "driver": "/Users/kiosk/atlas_mark2/diagnostic/zfast/review2/bin/rd4.bugquad",
+ "tag": "mut_bugquad",
+ "v10b": false,
+ "light": true,
+ "sec": 4.843689918518066,
+ "families": [
+  {
+   "family": "K",
+   "n": 1,
+   "fails": 1,
+   "max_ratio": 0.3470293032786885,
+   "first_fail": {
+    "ok": false,
+    "ratio": 0.3470293032786885,
+    "what": "[{'cmd': 'KER', 'n': 300000, 'max_cos': 1.693503e-16, 'max_cos_only': 1.414214, 'max_sin': 1.715278e-16, 'ZF_EC': 4.88e-16, 'ok': 0}]"
+   }
+  },
+  {
+   "family": "PH",
+   "n": 6,
+   "fails": 0,
+   "max_ratio": 0.9999,
+   "first_fail": null
+  },
+  {
+   "family": "WP",
+   "n": 30,
+   "fails": 0,
+   "max_ratio": 0.2189,
+   "first_fail": null
+  },
+  {
+   "family": "Z1_prod",
+   "n": 4,
+   "fails": 4,
+   "max_ratio": 2219380097390.777,
+   "first_fail": {
+    "ok": false,
+    "ratio": 2219380097390.777,
+    "what": "prod 10000000000",
+    "z": "[-2.374474106689361456414842837540927146495 +/- 1.21e-12]",
+    "ref": "[0.310975820424959103278767075451939039524440352 +/- 4.26e-38]"
+   }
+  },
+  {
+   "family": "Z1_stress",
+   "n": 10,
+   "fails": 7,
+   "max_ratio": 85664294927770.88,
+   "first_fail": {
+    "ok": false,
+    "ratio": 110.77520527178162,
+    "what": "J6 10000000000",
+    "z": "[-1.318101297983667672089667802205368020142 +/- 3.39e-3]",
+    "ref": "[-0.942573351121017779166279166110785951918376016 +/- 6.33e-38]"
+   }
+  },
+  {
+   "family": "SZ_prod",
+   "n": 142,
+   "fails": 0,
+   "max_ratio": 0.00043652843388584337,
+   "first_fail": null
+  },
+  {
+   "family": "SZ_stress",
+   "n": 72,
+   "fails": 0,
+   "max_ratio": 0.1709961073301059,
+   "first_fail": null
+  },
+  {
+   "family": "ROW_prod",
+   "n": 200,
+   "fails": 20,
+   "max_ratio": 65626339.326641195,
+   "first_fail": {
+    "ok": false,
+    "ratio": 9242842.134783054,
+    "what": "P a2.8 999998594275 1.1752200836134767 ok=0",
+    "z": "[0.2660404307562011644361524522763796201661 +/- 1.26e-13]",
+    "ref": "[0.266039266158087957199122698441861762941234352 +/- 4.51e-46]"
+   }
+  },
+  {
+   "family": "ROW_stress",
+   "n": 120,
+   "fails": 0,
+   "max_ratio": NaN,
+   "first_fail": null
+  }
+ ],
+ "detected": true
+}

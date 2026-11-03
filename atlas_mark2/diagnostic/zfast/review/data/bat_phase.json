@@ -1,0 +1,75 @@
+{
+"build": "phase",
+"families": [
+{
+"family": "K",
+"n": 60000,
+"max_err": 1.7343076621607935e-16,
+"E_c": 4.88e-16,
+"pass_": true,
+"fails": 0,
+"max_ratio": 0.35539091437721176
+},
+{
+"family": "P",
+"n": 7,
+"fails": 4,
+"pass_": false,
+"max_ratio": 9.998915331475992,
+"first_fail": {
+"case": [
+10000000000,
+0.3,
+20000,
+300,
+6
+],
+"obs": 3.486926e-05,
+"bound": 3.794988e-06,
+"ok": false,
+"ratio": 9.188239857411933
+}
+},
+{
+"family": "Zp",
+"n": 36,
+"fails": 0,
+"pass_": true,
+"max_ratio": 0.00026927773852446636,
+"first_fail": null
+},
+{
+"family": "Sp",
+"n": 36,
+"fails": 0,
+"pass_": true,
+"max_ratio": 8.363795083519161e-05,
+"first_fail": null
+},
+{
+"family": "Zs",
+"n": 54,
+"fails": 0,
+"pass_": true,
+"max_ratio": 0.02773000013539554,
+"first_fail": null
+},
+{
+"family": "Ss",
+"n": 36,
+"fails": 0,
+"pass_": true,
+"max_ratio": 0.003112535883449937,
+"first_fail": null
+},
+{
+"family": "Rp",
+"n": 36,
+"fails": 0,
+"pass_": true,
+"max_ratio": 0.00016654181779959272,
+"first_fail": null
+}
+],
+"detected": true
+}

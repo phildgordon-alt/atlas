@@ -1,0 +1,828 @@
+{
+ "check": "I1: libzfast.v14d bit-identity with libzfast.v14",
+ "cases": [
+  {
+   "T0": "1000000000000",
+   "H": 61.0,
+   "Delta": 0.012,
+   "D": 1,
+   "v14": {
+    "state": "2c1b59454dc7d5c4bd2f94aa4a52f3c23908208bf1f88816e951f86ddb4d8470",
+    "build": 0.053,
+    "rc": 0
+   },
+   "v14c": [
+    {
+     "W": 1,
+     "build": 0.091,
+     "rc": 0,
+     "identical": true
+    },
+    {
+     "W": 3,
+     "build": 0.06,
+     "rc": 0,
+     "identical": true
+    },
+    {
+     "W": 8,
+     "build": 0.053,
+     "rc": 0,
+     "identical": true
+    }
+   ],
+   "ok": true
+  },
+  {
+   "T0": "1000000000000",
+   "H": 61.0,
+   "Delta": 0.012,
+   "D": 2,
+   "v14": {
+    "state": "2c1b59454dc7d5c4bd2f94aa4a52f3c23908208bf1f88816e951f86ddb4d8470",
+    "build": 0.053,
+    "rc": 0
+   },
+   "v14c": [
+    {
+     "W": 1,
+     "build": 0.091,
+     "rc": 0,
+     "identical": true
+    },
+    {
+     "W": 3,
+     "build": 0.06,
+     "rc": 0,
+     "identical": true
+    },
+    {
+     "W": 8,
+     "build": 0.053,
+     "rc": 0,
+     "identical": true
+    }
+   ],
+   "ok": true
+  },
+  {
+   "T0": "1000000000000",
+   "H": 61.0,
+   "Delta": 0.012,
+   "D": 3,
+   "v14": {
+    "state": "2c1b59454dc7d5c4bd2f94aa4a52f3c23908208bf1f88816e951f86ddb4d8470",
+    "build": 0.053,
+    "rc": 0
+   },
+   "v14c": [
+    {
+     "W": 1,
+     "build": 0.091,
+     "rc": 0,
+     "identical": true
+    },
+    {
+     "W": 3,
+     "build": 0.06,
+     "rc": 0,
+     "identical": true
+    },
+    {
+     "W": 8,
+     "build": 0.053,
+     "rc": 0,
+     "identical": true
+    }
+   ],
+   "ok": true
+  },
+  {
+   "T0": "1000000000000",
+   "H": 61.0,
+   "Delta": 0.012,
+   "D": 5,
+   "v14": {
+    "state": "2c1b59454dc7d5c4bd2f94aa4a52f3c23908208bf1f88816e951f86ddb4d8470",
+    "build": 0.053,
+    "rc": 0
+   },
+   "v14c": [
+    {
+     "W": 1,
+     "build": 0.09,
+     "rc": 0,
+     "identical": true
+    },
+    {
+     "W": 3,
+     "build": 0.06,
+     "rc": 0,
+     "identical": true
+    },
+    {
+     "W": 8,
+     "build": 0.053,
+     "rc": 0,
+     "identical": true
+    }
+   ],
+   "ok": true
+  },
+  {
+   "T0": "1000000000000",
+   "H": 61.0,
+   "Delta": 0.012,
+   "D": 7,
+   "v14": {
+    "state": "2c1b59454dc7d5c4bd2f94aa4a52f3c23908208bf1f88816e951f86ddb4d8470",
+    "build": 0.053,
+    "rc": 0
+   },
+   "v14c": [
+    {
+     "W": 1,
+     "build": 0.092,
+     "rc": 0,
+     "identical": true
+    },
+    {
+     "W": 3,
+     "build": 0.059,
+     "rc": 0,
+     "identical": true
+    },
+    {
+     "W": 8,
+     "build": 0.053,
+     "rc": 0,
+     "identical": true
+    }
+   ],
+   "ok": true
+  },
+  {
+   "T0": "100000000000000",
+   "H": 61.0,
+   "Delta": 0.012,
+   "D": 1,
+   "v14": {
+    "state": "2a35fa1c6099187b55c87649e80553e41a14bff7cb877be6360872df90cb1923",
+    "build": 0.093,
+    "rc": 0
+   },
+   "v14c": [
+    {
+     "W": 1,
+     "build": 0.211,
+     "rc": 0,
+     "identical": true
+    },
+    {
+     "W": 3,
+     "build": 0.114,
+     "rc": 0,
+     "identical": true
+    },
+    {
+     "W": 8,
+     "build": 0.092,
+     "rc": 0,
+     "identical": true
+    }
+   ],
+   "ok": true
+  },
+  {
+   "T0": "100000000000000",
+   "H": 61.0,
+   "Delta": 0.012,
+   "D": 2,
+   "v14": {
+    "state": "2a35fa1c6099187b55c87649e80553e41a14bff7cb877be6360872df90cb1923",
+    "build": 0.092,
+    "rc": 0
+   },
+   "v14c": [
+    {
+     "W": 1,
+     "build": 0.21,
+     "rc": 0,
+     "identical": true
+    },
+    {
+     "W": 3,
+     "build": 0.114,
+     "rc": 0,
+     "identical": true
+    },
+    {
+     "W": 8,
+     "build": 0.092,
+     "rc": 0,
+     "identical": true
+    }
+   ],
+   "ok": true
+  },
+  {
+   "T0": "100000000000000",
+   "H": 61.0,
+   "Delta": 0.012,
+   "D": 3,
+   "v14": {
+    "state": "2a35fa1c6099187b55c87649e80553e41a14bff7cb877be6360872df90cb1923",
+    "build": 0.092,
+    "rc": 0
+   },
+   "v14c": [
+    {
+     "W": 1,
+     "build": 0.228,
+     "rc": 0,
+     "identical": true
+    },
+    {
+     "W": 3,
+     "build": 0.114,
+     "rc": 0,
+     "identical": true
+    },
+    {
+     "W": 8,
+     "build": 0.093,
+     "rc": 0,
+     "identical": true
+    }
+   ],
+   "ok": true
+  },
+  {
+   "T0": "100000000000000",
+   "H": 61.0,
+   "Delta": 0.012,
+   "D": 5,
+   "v14": {
+    "state": "2a35fa1c6099187b55c87649e80553e41a14bff7cb877be6360872df90cb1923",
+    "build": 0.092,
+    "rc": 0
+   },
+   "v14c": [
+    {
+     "W": 1,
+     "build": 0.212,
+     "rc": 0,
+     "identical": true
+    },
+    {
+     "W": 3,
+     "build": 0.114,
+     "rc": 0,
+     "identical": true
+    },
+    {
+     "W": 8,
+     "build": 0.093,
+     "rc": 0,
+     "identical": true
+    }
+   ],
+   "ok": true
+  },
+  {
+   "T0": "100000000000000",
+   "H": 61.0,
+   "Delta": 0.012,
+   "D": 7,
+   "v14": {
+    "state": "2a35fa1c6099187b55c87649e80553e41a14bff7cb877be6360872df90cb1923",
+    "build": 0.092,
+    "rc": 0
+   },
+   "v14c": [
+    {
+     "W": 1,
+     "build": 0.212,
+     "rc": 0,
+     "identical": true
+    },
+    {
+     "W": 3,
+     "build": 0.114,
+     "rc": 0,
+     "identical": true
+    },
+    {
+     "W": 8,
+     "build": 0.099,
+     "rc": 0,
+     "identical": true
+    }
+   ],
+   "ok": true
+  },
+  {
+   "T0": "10000000000000000",
+   "H": 61.0,
+   "Delta": 0.012,
+   "D": 1,
+   "v14": {
+    "state": "1282f38d5d6f293087a64f985bad1ed5e8ac5ac537413d125f92d50e91499779",
+    "build": 0.274,
+    "rc": 0
+   },
+   "v14c": [
+    {
+     "W": 1,
+     "build": 0.972,
+     "rc": 0,
+     "identical": true
+    },
+    {
+     "W": 3,
+     "build": 0.405,
+     "rc": 0,
+     "identical": true
+    },
+    {
+     "W": 8,
+     "build": 0.28,
+     "rc": 0,
+     "identical": true
+    }
+   ],
+   "ok": true
+  },
+  {
+   "T0": "10000000000000000",
+   "H": 61.0,
+   "Delta": 0.012,
+   "D": 2,
+   "v14": {
+    "state": "b01a765796389b6e1bc53878ea8d0e9b61f65bbcba6d5b49ebddf1198d53f598",
+    "build": 0.275,
+    "rc": 0
+   },
+   "v14c": [
+    {
+     "W": 1,
+     "build": 0.983,
+     "rc": 0,
+     "identical": true
+    },
+    {
+     "W": 3,
+     "build": 0.408,
+     "rc": 0,
+     "identical": true
+    },
+    {
+     "W": 8,
+     "build": 0.282,
+     "rc": 0,
+     "identical": true
+    }
+   ],
+   "ok": true
+  },
+  {
+   "T0": "10000000000000000",
+   "H": 61.0,
+   "Delta": 0.012,
+   "D": 3,
+   "v14": {
+    "state": "9c5a7b0a81cd6cfc1760728f066fcbb220fe6acd774c6323fa6871221e977243",
+    "build": 0.277,
+    "rc": 0
+   },
+   "v14c": [
+    {
+     "W": 1,
+     "build": 0.989,
+     "rc": 0,
+     "identical": true
+    },
+    {
+     "W": 3,
+     "build": 0.412,
+     "rc": 0,
+     "identical": true
+    },
+    {
+     "W": 8,
+     "build": 0.283,
+     "rc": 0,
+     "identical": true
+    }
+   ],
+   "ok": true
+  },
+  {
+   "T0": "10000000000000000",
+   "H": 61.0,
+   "Delta": 0.012,
+   "D": 5,
+   "v14": {
+    "state": "bcb265e3c02b0ca03e4aef1a949091de34c36e9265bf71dc1970fe79a656839e",
+    "build": 0.279,
+    "rc": 0
+   },
+   "v14c": [
+    {
+     "W": 1,
+     "build": 0.994,
+     "rc": 0,
+     "identical": true
+    },
+    {
+     "W": 3,
+     "build": 0.413,
+     "rc": 0,
+     "identical": true
+    },
+    {
+     "W": 8,
+     "build": 0.288,
+     "rc": 0,
+     "identical": true
+    }
+   ],
+   "ok": true
+  },
+  {
+   "T0": "10000000000000000",
+   "H": 61.0,
+   "Delta": 0.012,
+   "D": 7,
+   "v14": {
+    "state": "74fa93aada43078ecb13da805c6d59f82fd96af325f5eb121e775b518c5a42e1",
+    "build": 0.279,
+    "rc": 0
+   },
+   "v14c": [
+    {
+     "W": 1,
+     "build": 0.995,
+     "rc": 0,
+     "identical": true
+    },
+    {
+     "W": 3,
+     "build": 0.417,
+     "rc": 0,
+     "identical": true
+    },
+    {
+     "W": 8,
+     "build": 0.285,
+     "rc": 0,
+     "identical": true
+    }
+   ],
+   "ok": true
+  },
+  {
+   "T0": "1000000000000000000",
+   "H": 61.0,
+   "Delta": 0.012,
+   "D": 1,
+   "v14": {
+    "state": "9e74d44bb45ba0c7c2a010b3f8cc823752bee424b9b6cf88c846a45183342541",
+    "build": 1.776,
+    "rc": 0
+   },
+   "v14c": [
+    {
+     "W": 1,
+     "build": 8.009,
+     "rc": 0,
+     "identical": true
+    },
+    {
+     "W": 3,
+     "build": 2.928,
+     "rc": 0,
+     "identical": true
+    },
+    {
+     "W": 8,
+     "build": 1.845,
+     "rc": 0,
+     "identical": true
+    }
+   ],
+   "ok": true
+  },
+  {
+   "T0": "1000000000000000000",
+   "H": 61.0,
+   "Delta": 0.012,
+   "D": 2,
+   "v14": {
+    "state": "43ffdf50ab577ecfbeb085519f1527f6b58d4e270f5e1c7e3c43f3abef93186e",
+    "build": 1.774,
+    "rc": 0
+   },
+   "v14c": [
+    {
+     "W": 1,
+     "build": 8.028,
+     "rc": 0,
+     "identical": true
+    },
+    {
+     "W": 3,
+     "build": 2.937,
+     "rc": 0,
+     "identical": true
+    },
+    {
+     "W": 8,
+     "build": 1.833,
+     "rc": 0,
+     "identical": true
+    }
+   ],
+   "ok": true
+  },
+  {
+   "T0": "1000000000000000000",
+   "H": 61.0,
+   "Delta": 0.012,
+   "D": 3,
+   "v14": {
+    "state": "ed55ea550d87a11add5bbc7165bc32a373d95317972bf1ad65d55e49816fd4d2",
+    "build": 1.804,
+    "rc": 0
+   },
+   "v14c": [
+    {
+     "W": 1,
+     "build": 8.042,
+     "rc": 0,
+     "identical": true
+    },
+    {
+     "W": 3,
+     "build": 2.959,
+     "rc": 0,
+     "identical": true
+    },
+    {
+     "W": 8,
+     "build": 1.85,
+     "rc": 0,
+     "identical": true
+    }
+   ],
+   "ok": true
+  },
+  {
+   "T0": "1000000000000000000",
+   "H": 61.0,
+   "Delta": 0.012,
+   "D": 5,
+   "v14": {
+    "state": "47078b897b6df16b08a1e57abde43d76562d430a19b29c310dee6bd5429736e6",
+    "build": 1.784,
+    "rc": 0
+   },
+   "v14c": [
+    {
+     "W": 1,
+     "build": 8.09,
+     "rc": 0,
+     "identical": true
+    },
+    {
+     "W": 3,
+     "build": 2.961,
+     "rc": 0,
+     "identical": true
+    },
+    {
+     "W": 8,
+     "build": 1.865,
+     "rc": 0,
+     "identical": true
+    }
+   ],
+   "ok": true
+  },
+  {
+   "T0": "1000000000000000000",
+   "H": 61.0,
+   "Delta": 0.012,
+   "D": 7,
+   "v14": {
+    "state": "8bd8608adf3b6e75789512b1820b22dfbe52c2e1a9acfddee92e0ecb0ca463ba",
+    "build": 1.796,
+    "rc": 0
+   },
+   "v14c": [
+    {
+     "W": 1,
+     "build": 8.143,
+     "rc": 0,
+     "identical": true
+    },
+    {
+     "W": 3,
+     "build": 2.973,
+     "rc": 0,
+     "identical": true
+    },
+    {
+     "W": 8,
+     "build": 1.855,
+     "rc": 0,
+     "identical": true
+    }
+   ],
+   "ok": true
+  },
+  {
+   "T0": "100000000000000000000",
+   "H": 61.0,
+   "Delta": 0.012,
+   "D": 1,
+   "v14": {
+    "state": "33d57270ce1626bb6ef658ab4f279388b534f07332112cc1896aae5e3a791c14",
+    "build": 16.356,
+    "rc": 0
+   },
+   "v14c": [
+    {
+     "W": 1,
+     "build": 77.355,
+     "rc": 0,
+     "identical": true
+    },
+    {
+     "W": 3,
+     "build": 27.729,
+     "rc": 0,
+     "identical": true
+    },
+    {
+     "W": 8,
+     "build": 16.947,
+     "rc": 0,
+     "identical": true
+    }
+   ],
+   "ok": true
+  },
+  {
+   "T0": "100000000000000000000",
+   "H": 61.0,
+   "Delta": 0.012,
+   "D": 2,
+   "v14": {
+    "state": "d14b27ee3e6bb65e514d8c9d47d5057d53aa1811b6fac0418a415c1978600847",
+    "build": 16.392,
+    "rc": 0
+   },
+   "v14c": [
+    {
+     "W": 1,
+     "build": 77.646,
+     "rc": 0,
+     "identical": true
+    },
+    {
+     "W": 3,
+     "build": 27.637,
+     "rc": 0,
+     "identical": true
+    },
+    {
+     "W": 8,
+     "build": 16.954,
+     "rc": 0,
+     "identical": true
+    }
+   ],
+   "ok": true
+  },
+  {
+   "T0": "100000000000000000000",
+   "H": 61.0,
+   "Delta": 0.012,
+   "D": 3,
+   "v14": {
+    "state": "5368fd5743d4769b12ddd6924566d041914da9198f7a08a91861ab2cfa292990",
+    "build": 16.38,
+    "rc": 0
+   },
+   "v14c": [
+    {
+     "W": 1,
+     "build": 77.674,
+     "rc": 0,
+     "identical": true
+    },
+    {
+     "W": 3,
+     "build": 27.643,
+     "rc": 0,
+     "identical": true
+    },
+    {
+     "W": 8,
+     "build": 16.989,
+     "rc": 0,
+     "identical": true
+    }
+   ],
+   "ok": true
+  },
+  {
+   "T0": "100000000000000000000",
+   "H": 61.0,
+   "Delta": 0.012,
+   "D": 5,
+   "v14": {
+    "state": "c40613c6d34f5d87a7609b9c2f33724c31b9965c35fce8ac26d2a578cb8b7f43",
+    "build": 16.379,
+    "rc": 0
+   },
+   "v14c": [
+    {
+     "W": 1,
+     "build": 77.78,
+     "rc": 0,
+     "identical": true
+    },
+    {
+     "W": 3,
+     "build": 27.695,
+     "rc": 0,
+     "identical": true
+    },
+    {
+     "W": 8,
+     "build": 16.973,
+     "rc": 0,
+     "identical": true
+    }
+   ],
+   "ok": true
+  },
+  {
+   "T0": "100000000000000000000",
+   "H": 61.0,
+   "Delta": 0.012,
+   "D": 7,
+   "v14": {
+    "state": "fa25f52f8962737fd6c59e9f50a5de02424fa45c014c58756b8bcb466d14f92c",
+    "build": 16.381,
+    "rc": 0
+   },
+   "v14c": [
+    {
+     "W": 1,
+     "build": 77.711,
+     "rc": 0,
+     "identical": true
+    },
+    {
+     "W": 3,
+     "build": 27.692,
+     "rc": 0,
+     "identical": true
+    },
+    {
+     "W": 8,
+     "build": 17.032,
+     "rc": 0,
+     "identical": true
+    }
+   ],
+   "ok": true
+  },
+  {
+   "T0": "10000000000000000",
+   "H": 4.0,
+   "Delta": 0.15,
+   "D": 2,
+   "W": 1,
+   "ok": true
+  },
+  {
+   "T0": "10000000000000000",
+   "H": 4.0,
+   "Delta": 0.15,
+   "D": 2,
+   "W": 8,
+   "ok": true
+  }
+ ],
+ "controls": {
+  "NC_D1_vs_D2_differ": true
+ },
+ "ok": true,
+ "tree": "atlas_v5za",
+ "stamp": "20261102_230031",
+ "predictions": "diagnostic/zfast/PREDICTIONS_M14.md (sha in PREDICTIONS_M14.sha256)"
+}

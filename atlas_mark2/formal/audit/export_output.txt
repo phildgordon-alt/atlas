@@ -1,0 +1,12 @@
+deg2               737 certificates -> /Users/kiosk/atlas_mark2/formal/audit/data/deg2.txt
+deg2_nc              1 certificates -> /Users/kiosk/atlas_mark2/formal/audit/data/deg2_nc.txt
+ec37a              400 certificates -> /Users/kiosk/atlas_mark2/formal/audit/data/ec37a.txt
+ec37a_nc            28 certificates -> /Users/kiosk/atlas_mark2/formal/audit/data/ec37a_nc.txt
+ec389a             420 certificates -> /Users/kiosk/atlas_mark2/formal/audit/data/ec389a.txt
+ec389a_nc           59 certificates -> /Users/kiosk/atlas_mark2/formal/audit/data/ec389a_nc.txt
+tollis            1764 certificates -> /Users/kiosk/atlas_mark2/formal/audit/data/tollis.txt
+tollis_nc           20 certificates -> /Users/kiosk/atlas_mark2/formal/audit/data/tollis_nc.txt
+tollis_extra      4636 certificates -> /Users/kiosk/atlas_mark2/formal/audit/data/tollis_extra.txt
+v4_acceptance       32 certificates -> /Users/kiosk/atlas_mark2/formal/audit/data/v4_acceptance.txt
+v4_other           102 certificates -> /Users/kiosk/atlas_mark2/formal/audit/data/v4_other.txt
+tollis_ext_unions  4636 certificates -> /Users/kiosk/atlas_mark2/formal/audit/data/tollis_ext_unions.txt

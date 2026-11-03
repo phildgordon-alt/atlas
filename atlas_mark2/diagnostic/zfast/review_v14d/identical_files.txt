@@ -1,0 +1,9 @@
+identical zfast.c
+identical zfast_m3c.inc
+identical zfast_api3.c
+identical zfast_api4.c
+identical zfast_api14.c
+identical zfast_hash14.inc
+identical zfast_cli2.c
+identical zfm4_cli.c
+identical zfast.h

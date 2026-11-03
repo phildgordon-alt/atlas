@@ -1,0 +1,10 @@
+file: zfast.c
+--- old
+    mag_set_d(tmp, (RDEG + 1) * u / (1 - (RDEG + 1) * u)); mag_mul(tmp, tmp, sumabs);
+    mag_add(e, e, tmp);
+    mag_mul_2exp_si(tmp, e, 1); mag_add(mx, sumabs, tmp);       /* |p_hat|
++++ new
+    mag_set_d(tmp, (RDEG + 1) * u / (1 - (RDEG + 1) * u)); mag_mul(tmp, tmp, sumabs);
+    mag_add(e, e, tmp);
+    mag_div_ui(e, e, 10);
+    mag_mul_2exp_si(tmp, e, 1); mag_add(mx, sumabs, tmp);       /* |p_hat|

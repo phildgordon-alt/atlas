@@ -1,0 +1,16 @@
+[
+ {
+  "control": "NC3b (post hoc) golden check under Ehi-1e-3",
+  "id": "atlas_v5z:w1000000000000/z_1e12",
+  "replay_ok": true,
+  "mcl": 0.9445444104376898,
+  "golden_differs": true
+ },
+ {
+  "control": "NC3b (post hoc) golden check under Ehi-1e-3",
+  "id": "atlas_v5z4:w1000000000000000000000000/w_1e24",
+  "replay_ok": true,
+  "mcl": 0.6165925086489529,
+  "golden_differs": true
+ }
+]

@@ -1,0 +1,30 @@
+{
+ "check": "N13: generator checkpoint misrouted to the replay",
+ "results": {
+  "atlas_v5z7": {
+   "A_rc": 0,
+   "B_rc": 0,
+   "B_replay_passed": true,
+   "B_replay_zfast_ckpt": null,
+   "generator_items_reused_silently": true,
+   "replay_log_tail": "/trees/atlas_v5z7/runs/w1000000000000/n13B_za_20261102_225907/certs_np/cert_z0040.json\", \"hardened\": false, \"passed\": true, \"min_candidate_lower\": 0.9697167224474603, \"model_match\": {\"vars\": true, \"window\": true, \"Nwin\": true, \"regions_in_window\": true}, \"seconds\": 0.09}\n{\"cert\": \"/Users/kiosk/atlas_mark2/engine/regress_v1/work/trees/atlas_v5z7/runs/w1000000000000/n13B_za_20261102_225907/certs_np/cert_z0040.json\", \"hardened\": true, \"passed\": true, \"min_candidate_lower\": 0.9697167224474585, \"model_match\": {\"vars\": true, \"window\": true, \"Nwin\": true, \"regions_in_window\": true}, \"seconds\": 0.01}\n"
+  },
+  "atlas_v5za": {
+   "A_rc": 0,
+   "B_rc": 1,
+   "B_replay_passed": false,
+   "B_replay_zfast_ckpt": {
+    "path": "/Users/kiosk/atlas_mark2/engine/regress_v1/work/trees/atlas_v5za/runs/w1000000000000/n13B_za_20261102_225907/zfast_ckpt_replay.txt",
+    "run_nonce": "1a6b1fefe468bea0623c495339b58c2b",
+    "ok": false,
+    "sessions": []
+   },
+   "generator_items_reused_silently": false,
+   "replay_log_tail": "                      ^^^^^^^^^^^^^^^\n  File \"/Users/kiosk/atlas_mark2/engine/regress_v1/work/trees/atlas_v5za/runs/w1000000000000/n13B_za_20261102_225907/replay_check/zfast_provider.py\", line 133, in _session\n    raise RuntimeError('zfa14b_new refused the session: ' + err)\nRuntimeError: zfa14b_new refused the session: checkpoint /Users/kiosk/atlas_mark2/engine/regress_v1/work/trees/atlas_v5za/runs/w1000000000000/n13B_za_20261102_225907/zfast_ckpt_replay.txt: header line is not authenticated under this run's key (a foreign, tampered, v14/v14b-format or differently keyed checkpoint) (refusing)\n"
+  }
+ },
+ "ok": true,
+ "tree": "atlas_v5za",
+ "stamp": "20261102_225907",
+ "predictions": "diagnostic/zfast/PREDICTIONS_M14.md (sha in PREDICTIONS_M14.sha256)"
+}

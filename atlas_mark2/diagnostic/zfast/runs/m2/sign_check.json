@@ -1,0 +1,20 @@
+{
+ "big_1e15": {
+  "intervals": 30,
+  "decided_and_opposite": 30,
+  "min_absZ": 1.7926033403472785e-05,
+  "min_absZ_over_rad": 524597.3973706027
+ },
+ "pair_1e15_286": {
+  "intervals": 31,
+  "decided_and_opposite": 31,
+  "min_absZ": 3.1001397581825627e-05,
+  "min_absZ_over_rad": 907242.1165480125
+ },
+ "big_1e16": {
+  "intervals": 33,
+  "decided_and_opposite": 33,
+  "min_absZ": 4.551454038958571e-06,
+  "min_absZ_over_rad": 73894.04250291498
+ }
+}
