@@ -20,7 +20,7 @@ about 5 minutes (results below).
 
 ## Story
 
-Atlas started as a moonshot: a launch pad for me to practise on. My role is the conductor. I don't understand all of the mathematics myself, so I push the limits, form the theories and decide where to aim next. The steps, simply:
+Atlas started as a moonshot: a launch pad for me to practice on. My role is the conductor. I don't understand all of the mathematics myself, so I push the limits, form the theories and decide where to aim next. The steps, simply:
 
 1. Map the primes from the zeros. I wanted to see if I could recover the primes from the locations of the zeta zeros. It is known mathematics; I just wanted to do it. It worked: 33 of 33 prime powers recovered, and 200 scrambled control runs found nothing.
 2. Look for hidden patterns. I tested whether the maps repeat across scales. The pattern held, but it wasn't strong enough to use as a detector.
